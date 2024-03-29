@@ -2,6 +2,12 @@
 
 Targeting analysis at 200 Gbps with ATLAS PHYSLITE. This repository is very much a work in progress.
 
+Description of files:
+
+- `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
+- `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
+- `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
+
 
 ## Acknowledgements
 
