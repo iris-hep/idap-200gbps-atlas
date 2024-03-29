@@ -8,6 +8,13 @@ Description of files:
 - `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
 - `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
 
+## Usage
+
+WHen run on the UChicago AF Jupyter Notebook no package installs are required.
+
+There is a `requirements.txt` which should allow this to be run on a bare-bones machine (modulo location of files, etc.).
+
+If you are going to use the `servicex` version, you have to pin `dask_awkward==2024.2.0`. The future versions have a [bug](https://github.com/dask-contrib/dask-awkward/issues/456) which hasn't been fixed yet.
 
 ## Acknowledgements
 
