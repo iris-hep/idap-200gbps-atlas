@@ -1,7 +1,7 @@
 jupyterlab
-servicex-cli
 servicex
 awkward
+hist[dask]
 # Necessary due to bug in uproot/dask-awkward that prevents
 # ak.concat working.
 dask_awkward==2024.2.0
