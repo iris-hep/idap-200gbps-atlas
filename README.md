@@ -2,7 +2,13 @@
 
 Targeting analysis at 200 Gbps with ATLAS PHYSLITE. This repository is very much a work in progress.
 
-Description of files:
+ATLAS does not have released OpenData, so there isn't a AGC we can copy and try to run. As a result, this repository's main purpose is as a facilities test:
+
+* Run from PHYSLITE
+* Load 200 Gbps off of the PHYSLITE samples
+* Push all that data downstream to DASK (or similar) workers.
+
+## Description of files
 
 - `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
 - `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
