@@ -2,12 +2,25 @@
 
 Targeting analysis at 200 Gbps with ATLAS PHYSLITE. This repository is very much a work in progress.
 
-Description of files:
+ATLAS does not have released OpenData, so there isn't an AGC we can copy and try to run. As a result, this repository's main purpose is as a facilities test:
+
+* Run from PHYSLITE
+* Load 200 Gbps off of the PHYSLITE samples
+* Push all that data downstream to DASK (or similar) workers.
+
+## Description of files
 
 - `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
 - `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
 - `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
 
+## Usage
+
+When run on the UChicago AF Jupyter Notebook no package installs are required.
+
+There is a `requirements.txt` which should allow this to be run on a bare-bones machine (modulo location of files, etc.).
+
+If you are going to use the `servicex` version, you have to pin `dask_awkward==2024.2.0`. The future versions have a [bug](https://github.com/dask-contrib/dask-awkward/issues/456) which hasn't been fixed yet.
 
 ## Acknowledgements
 

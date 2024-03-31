@@ -161,3 +161,8 @@ cython_debug/
 
 # custom
 *.root.*
+
+# vscode
+.vscode/
+
+servicex.yaml
