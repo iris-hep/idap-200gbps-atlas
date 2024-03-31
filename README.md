@@ -2,7 +2,7 @@
 
 Targeting analysis at 200 Gbps with ATLAS PHYSLITE. This repository is very much a work in progress.
 
-ATLAS does not have released OpenData, so there isn't a AGC we can copy and try to run. As a result, this repository's main purpose is as a facilities test:
+ATLAS does not have released OpenData, so there isn't an AGC we can copy and try to run. As a result, this repository's main purpose is as a facilities test:
 
 * Run from PHYSLITE
 * Load 200 Gbps off of the PHYSLITE samples
@@ -16,7 +16,7 @@ ATLAS does not have released OpenData, so there isn't a AGC we can copy and try 
 
 ## Usage
 
-WHen run on the UChicago AF Jupyter Notebook no package installs are required.
+When run on the UChicago AF Jupyter Notebook no package installs are required.
 
 There is a `requirements.txt` which should allow this to be run on a bare-bones machine (modulo location of files, etc.).
 
