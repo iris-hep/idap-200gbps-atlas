@@ -4,8 +4,11 @@ awkward
 hist[dask]
 # Necessary due to bug in uproot/dask-awkward that prevents
 # ak.concat working.
-dask_awkward==2024.2.0
 uproot
 # Get the version with PHYSLITE support sort-of built it
 func_adl_servicex_xaodr21>=2.0a1
 ipywidgets
+
+# To load from s3 the servicex outputs into uproot, we needed
+# to add a few things by hand! :-(
+fsspec-xrootd
