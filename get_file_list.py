@@ -27,7 +27,7 @@ logger.info("DID Finder starting up.")
 did_client = DIDClient()
 replica_client = ReplicaClient()
 
-caches=['192.170.240.148']
+caches=['192.170.240.145','192.170.240.146','192.170.240.147','192.170.240.148']
 
 if len(sys.argv) > 1:
     did = sys.argv[1]  
