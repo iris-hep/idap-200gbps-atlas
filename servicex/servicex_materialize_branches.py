@@ -27,7 +27,7 @@ class ElapsedFormatter(logging.Formatter):
         return super().format(record)
 
 
-def query_servicex() -> List[str]:
+def query_servicex(disable_cache: bool) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
@@ -63,7 +63,9 @@ def query_servicex() -> List[str]:
     # fmt: on
 
     # Do the query.
-    ds_prime = ServiceXDataset(rucio_ds, backend_name="atlasr22")
+    ds_prime = ServiceXDataset(
+        rucio_ds, backend_name="atlasr22", ignore_cache=disable_cache
+    )
     logging.info("Starting ServiceX query")
     files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
     logging.info("Finished ServiceX query")
@@ -71,7 +73,7 @@ def query_servicex() -> List[str]:
     return [str(f) for f in files]
 
 
-def main():
+def main(disable_cache: bool = False):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
@@ -79,7 +81,7 @@ def main():
     logging.info(f"Using release {atlas_release}")
 
     # Execute the query and get back the files.
-    files = query_servicex()
+    files = query_servicex(disable_cache=disable_cache)
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
@@ -108,6 +110,11 @@ if __name__ == "__main__":
         "-v", "--verbose", action="count", default=0, help="Increase output verbosity"
     )
 
+    # Add the flag to disable servicex cache
+    parser.add_argument(
+        "--disable-cache", action="store_true", help="Disable ServiceX cache"
+    )
+
     # Parse the command line arguments
     args = parser.parse_args()
 
@@ -129,4 +136,4 @@ if __name__ == "__main__":
     root_logger.addHandler(handler)
 
     # Now run the main function
-    main()
+    main(disable_cache=args.disable_cache)
