@@ -1,4 +1,6 @@
+import argparse
 import logging
+import time
 from typing import List
 
 import awkward as ak
@@ -10,10 +12,26 @@ from servicex import ServiceXDataset
 # TODO: Update to use R22/23 or whatever.
 
 
+class ElapsedFormatter(logging.Formatter):
+    """Logging formatter that adds an elapsed time record since it was
+    first created. Error messages are printed relative to when the code
+    started - which makes it easier to understand how long operations took.
+    """
+
+    def __init__(self, fmt="%(elapsed)s - %(levelname)s - %(message)s"):
+        super().__init__(fmt)
+        self._start_time = time.time()
+
+    def format(self, record):
+        record.elapsed = f"{time.time() - self._start_time:0>9.4f}"
+        return super().format(record)
+
+
 def query_servicex() -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
+    logging.info("Building ServiceX query")
     ds_name = (
         "mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep"
         ".deriv.DAOD_PHYSLITE.e8514_s4162_r14622_p6026"
@@ -46,7 +64,9 @@ def query_servicex() -> List[str]:
 
     # Do the query.
     ds_prime = ServiceXDataset(rucio_ds, backend_name="atlasr22")
+    logging.info("Starting ServiceX query")
     files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
+    logging.info("Finished ServiceX query")
 
     return [str(f) for f in files]
 
@@ -62,16 +82,51 @@ def main():
     files = query_servicex()
 
     # now materialize everything.
+    logging.info("Using `uproot.dask` to open files")
     data = uproot.dask({f: "atlas_xaod_tree" for f in files})
+    logging.info("Generating the dask compute graph")
     total_count = (
         ak.count(data["event_number"])  # type: ignore
         + ak.count(ak.flatten(data["jet_pt"]))
         + ak.count(data["run_number"])
     )
+    logging.info("Computing the total count")
     r = total_count.compute()
-    print(f"{r:,}")
+    logging.info(f"Done: result = {r:,}")
 
 
 if __name__ == "__main__":
+    # This block of code just setups for the run (command line arguments, logging, etc)
 
+    # Create the argument parser
+    parser = argparse.ArgumentParser(
+        description="Run simple ServiceX query and processing"
+    )
+
+    # Add the verbosity flag
+    parser.add_argument(
+        "-v", "--verbose", action="count", default=0, help="Increase output verbosity"
+    )
+
+    # Parse the command line arguments
+    args = parser.parse_args()
+
+    # Create a handler, set the formatter to it, and add this handler to the logger
+    handler = logging.StreamHandler()
+    handler.setFormatter(ElapsedFormatter())
+    root_logger = logging.getLogger()
+
+    # Set the logging level based on the verbosity flag.
+    # make sure the time comes out so people can "track" what is going on.
+    format = "%(levelname)s - %(message)s"
+    # format = "%(elapsed)s - %(levelname)s - %(message)s"
+    if args.verbose == 1:
+        root_logger.setLevel(level=logging.INFO)
+    elif args.verbose >= 2:
+        root_logger.setLevel(level=logging.DEBUG)
+    else:
+        root_logger.setLevel(level=logging.WARNING)
+    root_logger.addHandler(handler)
+
+    # Now run the main function
     main()
