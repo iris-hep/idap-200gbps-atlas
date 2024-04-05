@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
     # Add the flag to disable servicex cache
     parser.add_argument(
-        "--disable-cache", action="store_true", help="Disable ServiceX cache"
+        "--ignore-cache", action="store_true", help="Disable ServiceX cache"
     )
 
     parser.add_argument(
