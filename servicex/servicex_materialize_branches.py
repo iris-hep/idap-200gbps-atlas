@@ -62,7 +62,9 @@ def query_servicex(disable_cache: bool) -> List[str]:
             "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
             "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
             "jet_EnergyPerSampling":
-                ei.jet.Select(lambda j: j.getAttributeVectorFloat("EnergyPerSampling")),
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeVectorFloat("EnergyPerSampling")
+                ),
         })
     )
 
