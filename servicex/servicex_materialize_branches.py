@@ -1,10 +1,12 @@
 import argparse
 import logging
+import multiprocessing
 import time
 from typing import List
 
 import awkward as ak
 import uproot
+from dask.distributed import Client, LocalCluster
 from func_adl_servicex_xaodr21 import SXDSAtlasxAODR21, atlas_release
 
 from servicex import ServiceXDataset
@@ -149,8 +151,25 @@ if __name__ == "__main__":
         "--disable-cache", action="store_true", help="Disable ServiceX cache"
     )
 
+    # Add the flag to enable/disable local Dask cluster
+    parser.add_argument(
+        "--distributed-client",
+        choices=["local", "none"],
+        default="local",
+        help="Specify the type of Dask cluster to enable (default: local uses all cores "
+        "in process, none doesn't use any)",
+    )
+
     # Parse the command line arguments
     args = parser.parse_args()
+
+    # Create the client dask worker
+    if args.distributed_client == "local":
+        n_workers = multiprocessing.cpu_count()
+        cluster = LocalCluster(
+            n_workers=n_workers, processes=False, threads_per_worker=1
+        )
+        client = Client(cluster)
 
     # Create a handler, set the formatter to it, and add this handler to the logger
     handler = logging.StreamHandler()

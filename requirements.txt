@@ -2,6 +2,7 @@ jupyterlab
 servicex
 awkward
 hist[dask]
+dask[distributed]
 # Necessary due to bug in uproot/dask-awkward that prevents
 # ak.concat working.
 uproot
