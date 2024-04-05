@@ -9,9 +9,9 @@ The default `servicex.yaml` file was used from the UChicago AF.
 | File | Description |
 |------|-------------|
 | 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be. |
-| servicex_materalize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
+| servicex_materialize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
 
-## Notes on using `servicex_materalize_branches.py
+## Notes on using `servicex_materialize_branches.py
 
 This script is basic and mostly hard-coded. There are a few command line options that are useful:
 
@@ -38,4 +38,4 @@ Use `none` and it will not set up any sort of distributed `dask` client, which l
 
 ### `--profile`
 
-This will write out a `sx_materalize_branches.pstats` file, which you can then run `snakeviz` on.
+This will write out a `sx_materialize_branches.pstats` file, which you can then run `snakeviz` on.
