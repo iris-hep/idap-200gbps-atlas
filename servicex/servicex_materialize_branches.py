@@ -216,7 +216,7 @@ def main(ignore_cache: bool = False):
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
-    total_count = ak.sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
+    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
     logging.info("Computing the total count")
     r = total_count.compute()  # type: ignore
     logging.info(f"Done: result = {r:,}")

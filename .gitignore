@@ -167,3 +167,4 @@ cython_debug/
 
 servicex.yaml
 *.pstats
+servicex/test.py
