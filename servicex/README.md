@@ -10,3 +10,32 @@ The default `servicex.yaml` file was used from the UChicago AF.
 |------|-------------|
 | 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be. |
 | servicex_materalize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
+
+## Notes on using `servicex_materalize_branches.py
+
+This script is basic and mostly hard-coded. There are a few command line options that are useful:
+
+### `-v`
+
+Gives you a nice high level dump:
+
+```text
+PS C:\Users\gordo\Code\iris-hep\idap-200gbps-atlas> python .\servicex\servicex_materialize_branches.py -v     
+0000.0000 - INFO - Using release 21.2.231
+0000.0010 - INFO - Building ServiceX query
+0000.0471 - WARNING - Fetched the default calibration configuration for a query. It should have been intentionally configured - using configuration for data format PHYS
+0000.1173 - INFO - Starting ServiceX query
+0000.2509 - INFO - Finished ServiceX query
+0000.2519 - INFO - Using `uproot.dask` to open files
+0000.2960 - INFO - Generating the dask compute graph for 7 fields
+0000.3357 - INFO - Computing the total count
+0017.1230 - INFO - Done: result = 59,779,410
+```
+
+### `--distributed-client`
+
+Use `none` and it will not set up any sort of distributed `dask` client, which likely means it will run single threaded. If you use `local`, then it will create a local in-process distributed client, that will have the same number of workers as there are cores (as determined by python's `multiprocessing` package)
+
+### `--profile`
+
+This will write out a `sx_materalize_branches.pstats` file, which you can then run `snakeviz` on.
