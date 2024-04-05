@@ -68,13 +68,25 @@ def query_servicex(ignore_cache: bool) -> List[str]:
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttributeVectorFloat("EnergyPerSampling")
                 ),
+            "jet_SumPtTrkPt500":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeVectorFloat("SumPtTrkPt500")
+                ),
+            "jet_TrackWidthPt1000":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeVectorFloat("TrackWidthPt1000")
+                ),
+            # "jet_NumTrkPt500":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeVectorInt("NumTrkPt500")
+            #     ),
+            # "jet_NumTrkPt1000":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeVectorInt("NumTrkPt1000")
+            #     ),
         })
     )
 
-    # _counter += ak.count_nonzero(events.Jets.SumPtTrkPt500)
-    # _counter += ak.count_nonzero(events.Jets.TrackWidthPt1000)
-    # _counter += ak.count_nonzero(events.Jets.NumTrkPt500)
-    # _counter += ak.count_nonzero(events.Jets.NumTrkPt1000)
     # _counter += ak.count_nonzero(events.Jets.SumPtChargedPFOPt500)
     # _counter += ak.count_nonzero(events.Jets.Timing)
     # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_eta)
@@ -106,7 +118,7 @@ def query_servicex(ignore_cache: bool) -> List[str]:
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request")
+    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request", as_signed_url=True)
     logging.info("Finished ServiceX query")
 
     return [str(f.url) for f in files]
@@ -121,7 +133,6 @@ def main(ignore_cache: bool = False):
 
     # Execute the query and get back the files.
     files = query_servicex(ignore_cache=ignore_cache)
-    print(files)
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
