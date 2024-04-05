@@ -120,8 +120,10 @@ def main(disable_cache: bool = False):
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
     data = uproot.dask({f: "atlas_xaod_tree" for f in files})
-    logging.info(f"Generating the dask compute graph for {len(data.fields)} fields")
-    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)
+    logging.info(
+        f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
+    )
+    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
     logging.info("Computing the total count")
     r = total_count.compute()
     logging.info(f"Done: result = {r:,}")
