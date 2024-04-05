@@ -58,8 +58,42 @@ def query_servicex(disable_cache: bool) -> List[str]:
             "event_number": ei.evt.eventNumber(),  # type: ignore
             "run_number": ei.evt.runNumber(),  # type: ignore
             "jet_pt": ei.jet.Select(lambda j: j.pt() / 1000),  # type: ignore
+            "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
+            "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
+            "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
+            "jet_EnergyPerSampling":
+                ei.jet.Select(lambda j: j.getAttributeVectorFloat("EnergyPerSampling")),  # type: ignore
         })
     )
+
+    # _counter += ak.count_nonzero(events.Jets.SumPtTrkPt500)
+    # _counter += ak.count_nonzero(events.Jets.TrackWidthPt1000)
+    # _counter += ak.count_nonzero(events.Jets.NumTrkPt500)
+    # _counter += ak.count_nonzero(events.Jets.NumTrkPt1000)
+    # _counter += ak.count_nonzero(events.Jets.SumPtChargedPFOPt500)
+    # _counter += ak.count_nonzero(events.Jets.Timing)
+    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_eta)
+    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_eta)
+    # _counter += ak.count_nonzero(events.Jets.DetectorEta)
+    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_phi)
+    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_phi)
+    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_m)
+    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_pt)
+    # _counter += ak.count_nonzero(events.Jets.Width)
+    # _counter += ak.count_nonzero(events.Jets.EMFrac)
+    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_m)
+    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_pt)
+    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_TracksWidth)
+    # _counter += ak.count_nonzero(events.Jets.JVFCorr)
+    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_TracksC1)
+    # _counter += ak.count_nonzero(events.Jets.PSFrac)
+    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_NTracks)
+    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_fJvt)
+    # _counter += ak.count_nonzero(events.Jets.PartonTruthLabelID)
+    # _counter += ak.count_nonzero(events.Jets.HadronConeExclExtendedTruthLabelID)
+    # _counter += ak.count_nonzero(events.Jets.ConeTruthLabelID)
+    # _counter += ak.count_nonzero(events.Jets.HadronConeExclTruthLabelID)
+
     # fmt: on
 
     # Do the query.
@@ -86,12 +120,8 @@ def main(disable_cache: bool = False):
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
     data = uproot.dask({f: "atlas_xaod_tree" for f in files})
-    logging.info("Generating the dask compute graph")
-    total_count = (
-        ak.count(data["event_number"])  # type: ignore
-        + ak.count(ak.flatten(data["jet_pt"]))
-        + ak.count(data["run_number"])
-    )
+    logging.info(f"Generating the dask compute graph for {len(data.fields)} fields")
+    total_count = sum(ak.count(data[field]) for field in data.fields)
     logging.info("Computing the total count")
     r = total_count.compute()
     logging.info(f"Done: result = {r:,}")
