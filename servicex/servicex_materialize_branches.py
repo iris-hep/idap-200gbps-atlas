@@ -62,7 +62,7 @@ def query_servicex(disable_cache: bool) -> List[str]:
             "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
             "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
             "jet_EnergyPerSampling":
-                ei.jet.Select(lambda j: j.getAttributeVectorFloat("EnergyPerSampling")),  # type: ignore
+                ei.jet.Select(lambda j: j.getAttributeVectorFloat("EnergyPerSampling")),
         })
     )
 
@@ -121,7 +121,7 @@ def main(disable_cache: bool = False):
     logging.info("Using `uproot.dask` to open files")
     data = uproot.dask({f: "atlas_xaod_tree" for f in files})
     logging.info(f"Generating the dask compute graph for {len(data.fields)} fields")
-    total_count = sum(ak.count(data[field]) for field in data.fields)
+    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)
     logging.info("Computing the total count")
     r = total_count.compute()
     logging.info(f"Done: result = {r:,}")
