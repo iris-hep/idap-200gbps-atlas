@@ -1,4 +1,5 @@
 import argparse
+import cProfile
 import logging
 import multiprocessing
 import time
@@ -151,6 +152,13 @@ if __name__ == "__main__":
         "--disable-cache", action="store_true", help="Disable ServiceX cache"
     )
 
+    parser.add_argument(
+        "--profile",
+        action="store_true",
+        help="Enable profiling of the code. This will output a file "
+        "called `sx_materialize_branches.pstats`.",
+    )
+
     # Add the flag to enable/disable local Dask cluster
     parser.add_argument(
         "--distributed-client",
@@ -189,4 +197,10 @@ if __name__ == "__main__":
     root_logger.addHandler(handler)
 
     # Now run the main function
-    main(disable_cache=args.disable_cache)
+    if args.profile is False:
+        main(disable_cache=args.disable_cache)
+    else:
+        cProfile.run(
+            "main(disable_cache=args.disable_cache)", "sx_materialize_branches.pstats"
+        )
+        logging.info("Profiling data saved to `sx_materialize_branches.pstats`")

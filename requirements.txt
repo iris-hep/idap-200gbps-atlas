@@ -13,3 +13,6 @@ ipywidgets
 # To load from s3 the servicex outputs into uproot, we needed
 # to add a few things by hand! :-(
 fsspec-xrootd
+
+# To look at profiles
+snakeviz
