@@ -41,7 +41,7 @@ def query_servicex(ignore_cache: bool) -> List[str]:
     )
 
     # Build the data query for SX
-    rucio_ds = f"rucio://{ds_name}?files=4"
+    rucio_ds = f"rucio://{ds_name}?files=10"
 
     # Because we are going to do a specialized query, we'll alter the return type here.
     ds = SXDSAtlasxAODR21(rucio_ds, backend="atlasr22")
@@ -64,8 +64,8 @@ def query_servicex(ignore_cache: bool) -> List[str]:
             "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
             "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
             "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
-            # TODO: this stuff is hard to code - mistakes, only find out at run time crash, because
-            # nothing is strongly typed here. Can we do better?
+            # TODO: this stuff is hard to code - mistakes, only find out at run time crash,
+            # because nothing is strongly typed here. Can we do better?
             "jet_EnergyPerSampling":
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttributeVectorFloat("EnergyPerSampling")
@@ -151,7 +151,7 @@ def query_servicex(ignore_cache: bool) -> List[str]:
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttributeFloat("PSFrac")
                 ),
-            # TODO: Why does this fail?
+            # TODO: Int just doesn't seem to be working right
             # "jet_DFCommonJets_QGTagger_NTracks":
             #     ei.jet.Select(  # type: ignore
             #         lambda j: j.getAttributeInt("DFCommonJets_QGTagger_NTracks")
@@ -206,6 +206,9 @@ def main(ignore_cache: bool = False):
 
     # Execute the query and get back the files.
     files = query_servicex(ignore_cache=ignore_cache)
+    assert len(files) > 0
+    for i, f in enumerate(files):
+        logging.debug(f"{i:00}: {f}")
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
@@ -213,9 +216,9 @@ def main(ignore_cache: bool = False):
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
-    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
+    total_count = ak.sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
     logging.info("Computing the total count")
-    r = total_count.compute()
+    r = total_count.compute()  # type: ignore
     logging.info(f"Done: result = {r:,}")
 
 
@@ -256,14 +259,6 @@ if __name__ == "__main__":
     # Parse the command line arguments
     args = parser.parse_args()
 
-    # Create the client dask worker
-    if args.distributed_client == "local":
-        n_workers = multiprocessing.cpu_count()
-        cluster = LocalCluster(
-            n_workers=n_workers, processes=False, threads_per_worker=1
-        )
-        client = Client(cluster)
-
     # Create a handler, set the formatter to it, and add this handler to the logger
     handler = logging.StreamHandler()
     handler.setFormatter(ElapsedFormatter())
@@ -280,6 +275,15 @@ if __name__ == "__main__":
     else:
         root_logger.setLevel(level=logging.WARNING)
     root_logger.addHandler(handler)
+
+    # Create the client dask worker
+    if args.distributed_client == "local":
+        logging.debug("Creating local Dask cluster")
+        n_workers = multiprocessing.cpu_count()
+        cluster = LocalCluster(
+            n_workers=n_workers, processes=False, threads_per_worker=1
+        )
+        client = Client(cluster)
 
     # Now run the main function
     if args.profile is False:
