@@ -64,6 +64,8 @@ def query_servicex(ignore_cache: bool) -> List[str]:
             "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
             "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
             "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
+            # TODO: this stuff is hard to code - mistakes, only find out at run time crash, because
+            # nothing is strongly typed here. Can we do better?
             "jet_EnergyPerSampling":
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttributeVectorFloat("EnergyPerSampling")
@@ -76,6 +78,7 @@ def query_servicex(ignore_cache: bool) -> List[str]:
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttributeVectorFloat("TrackWidthPt1000")
                 ),
+            # TODO: Make sure int is supported (thought it was, skipping for now)
             # "jet_NumTrkPt500":
             #     ei.jet.Select(  # type: ignore
             #         lambda j: j.getAttributeVectorInt("NumTrkPt500")
@@ -84,32 +87,101 @@ def query_servicex(ignore_cache: bool) -> List[str]:
             #     ei.jet.Select(  # type: ignore
             #         lambda j: j.getAttributeVectorInt("NumTrkPt1000")
             #     ),
+            "jet_SumPtChargedPFOPt500":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeVectorFloat("SumPtChargedPFOPt500")
+                ),
+            "jet_Timing":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("Timing")
+                ),
+            "jet_JetConstitScaleMomentum_eta":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_eta")
+                ),
+            "jet_ActiveArea4vec_eta":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("ActiveArea4vec_eta")
+                ),
+            "jet_DetectorEta":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("DetectorEta")
+                ),
+            "jet_JetConstitScaleMomentum_phi":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_phi")
+                ),
+            "jet_ActiveArea4vec_phi":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("ActiveArea4vec_phi")
+                ),
+            "jet_JetConstitScaleMomentum_m":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_m")
+                ),
+            "jet_JetConstitScaleMomentum_pt":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_pt")
+                ),
+            "jet_Width":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("Width")
+                ),
+            "jet_EMFrac":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("EMFrac")
+                ),
+            "jet_ActiveArea4vec_m":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("ActiveArea4vec_m")
+                ),
+            "jet_DFCommonJets_QGTagger_TracksWidth":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("DFCommonJets_QGTagger_TracksWidth")
+                ),
+            "jet_JVFCorr":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("JVFCorr")
+                ),
+            "jet_DFCommonJets_QGTagger_TracksC1":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("DFCommonJets_QGTagger_TracksC1")
+                ),
+            "jet_PSFrac":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("PSFrac")
+                ),
+            # TODO: Why does this fail?
+            # "jet_DFCommonJets_QGTagger_NTracks":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeInt("DFCommonJets_QGTagger_NTracks")
+            #     ),
+            "jet_DFCommonJets_fJvt":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("DFCommonJets_fJvt")
+                ),
+            # "jet_PartonTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeInt("PartonTruthLabelID")
+            #     ),
+            # "jet_HadronConeExclExtendedTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeInt("HadronConeExclExtendedTruthLabelID")
+            #     ),
+            # "jet_ConeTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeInt("ConeTruthLabelID")
+            #     ),
+            # "jet_HadronConeExclTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttributeInt("HadronConeExclTruthLabelID")
+            #     ),
+            "jet_ActiveArea4vec_pt":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttributeFloat("ActiveArea4vec_pt")
+                ),
         })
     )
-
-    # _counter += ak.count_nonzero(events.Jets.SumPtChargedPFOPt500)
-    # _counter += ak.count_nonzero(events.Jets.Timing)
-    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_eta)
-    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_eta)
-    # _counter += ak.count_nonzero(events.Jets.DetectorEta)
-    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_phi)
-    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_phi)
-    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_m)
-    # _counter += ak.count_nonzero(events.Jets.JetConstitScaleMomentum_pt)
-    # _counter += ak.count_nonzero(events.Jets.Width)
-    # _counter += ak.count_nonzero(events.Jets.EMFrac)
-    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_m)
-    # _counter += ak.count_nonzero(events.Jets.ActiveArea4vec_pt)
-    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_TracksWidth)
-    # _counter += ak.count_nonzero(events.Jets.JVFCorr)
-    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_TracksC1)
-    # _counter += ak.count_nonzero(events.Jets.PSFrac)
-    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_QGTagger_NTracks)
-    # _counter += ak.count_nonzero(events.Jets.DFCommonJets_fJvt)
-    # _counter += ak.count_nonzero(events.Jets.PartonTruthLabelID)
-    # _counter += ak.count_nonzero(events.Jets.HadronConeExclExtendedTruthLabelID)
-    # _counter += ak.count_nonzero(events.Jets.ConeTruthLabelID)
-    # _counter += ak.count_nonzero(events.Jets.HadronConeExclTruthLabelID)
 
     # fmt: on
 
@@ -118,7 +190,8 @@ def query_servicex(ignore_cache: bool) -> List[str]:
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request", as_signed_url=True)
+    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request",
+                                            as_signed_url=True)
     logging.info("Finished ServiceX query")
 
     return [str(f.url) for f in files]
