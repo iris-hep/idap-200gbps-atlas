@@ -14,6 +14,9 @@ ipywidgets
 # to add a few things by hand! :-(
 fsspec-xrootd
 
+# To access files out of minio for SX when on the cluster
+s3fs
+
 # To look at profiles
 snakeviz
 

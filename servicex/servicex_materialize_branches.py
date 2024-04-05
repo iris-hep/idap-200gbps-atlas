@@ -14,6 +14,7 @@ from servicex import ServiceXDataset
 
 # TODO: Update to use R22/23 or whatever.
 
+
 class ElapsedFormatter(logging.Formatter):
     """Logging formatter that adds an elapsed time record since it was
     first created. Error messages are printed relative to when the code
@@ -105,10 +106,10 @@ def query_servicex(ignore_cache: bool) -> List[str]:
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
+    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request")
     logging.info("Finished ServiceX query")
 
-    return [str(f) for f in files]
+    return [str(f.url) for f in files]
 
 
 def main(ignore_cache: bool = False):
@@ -120,6 +121,7 @@ def main(ignore_cache: bool = False):
 
     # Execute the query and get back the files.
     files = query_servicex(ignore_cache=ignore_cache)
+    print(files)
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")

@@ -45,5 +45,5 @@ This will write out a `sx_materialize_branches.pstats` file, which you can then 
 Using the image `AB-dev`
 
 1. `pip install 'func_adl_servicex_xaodr21>=2.0a1'`
-1. Get `servicex.yaml` installed
-1.
+1. `pip install s3fs`
+1. Get `servicex.yaml` copied somewhere it will be picked up.
