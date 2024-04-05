@@ -16,3 +16,6 @@ fsspec-xrootd
 
 # To look at profiles
 snakeviz
+
+# What was needed on UChicago jupyter
+# func_adl_servicex_xaodr21>=2.0a1

@@ -39,3 +39,11 @@ Use `none` and it will not set up any sort of distributed `dask` client, which l
 ### `--profile`
 
 This will write out a `sx_materialize_branches.pstats` file, which you can then run `snakeviz` on.
+
+## Running on UChicago JuppterLab
+
+Using the image `AB-dev`
+
+1. `pip install 'func_adl_servicex_xaodr21>=2.0a1'`
+1. Get `servicex.yaml` installed
+1.
