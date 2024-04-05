@@ -9,3 +9,4 @@ The default `servicex.yaml` file was used from the UChicago AF.
 | File | Description |
 |------|-------------|
 | 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be. |
+| servicex_materalize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
