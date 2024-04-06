@@ -2,6 +2,7 @@ jupyterlab
 servicex
 awkward
 hist[dask]
+dask[distributed]
 # Necessary due to bug in uproot/dask-awkward that prevents
 # ak.concat working.
 uproot
@@ -12,3 +13,9 @@ ipywidgets
 # To load from s3 the servicex outputs into uproot, we needed
 # to add a few things by hand! :-(
 fsspec-xrootd
+
+# To look at profiles
+snakeviz
+
+# What was needed on UChicago jupyter
+# func_adl_servicex_xaodr21>=2.0a1

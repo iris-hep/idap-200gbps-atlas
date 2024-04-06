@@ -166,3 +166,5 @@ cython_debug/
 .vscode/
 
 servicex.yaml
+*.pstats
+servicex/test.py
