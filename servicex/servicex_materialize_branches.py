@@ -1,7 +1,6 @@
 import argparse
 import cProfile
 import logging
-import multiprocessing
 import time
 from typing import List
 
