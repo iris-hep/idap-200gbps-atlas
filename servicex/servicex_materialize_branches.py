@@ -212,7 +212,8 @@ def main(ignore_cache: bool = False):
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
-    data = uproot.dask({f: "atlas_xaod_tree" for f in files})
+    # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
+    data = uproot.dask({f: "atlas_xaod_tree" for f in files}, open_files=False, steps_per_file=20)
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
@@ -278,8 +279,9 @@ if __name__ == "__main__":
 
     # Create the client dask worker
     if args.distributed_client == "local":
-        logging.debug("Creating local Dask cluster")
-        n_workers = multiprocessing.cpu_count()
+        # Do not know how to do it otherwise.
+        n_workers = 8
+        logging.debug("Creating local Dask cluster for {n_workers} workers")
         cluster = LocalCluster(
             n_workers=n_workers, processes=False, threads_per_worker=1
         )
