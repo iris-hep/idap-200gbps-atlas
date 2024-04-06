@@ -36,6 +36,8 @@ PS C:\Users\gordo\Code\iris-hep\idap-200gbps-atlas> python .\servicex\servicex_m
 
 Use `none` and it will not set up any sort of distributed `dask` client, which likely means it will run single threaded. If you use `local`, then it will create a local in-process distributed client, that will have the same number of workers as there are cores (as determined by python's `multiprocessing` package)
 
+When using `local`, it is hardcoded to use 8 cores. This works for a notebook allocated with 32 GB and 8 cores, and `steps_per_file=20`. There is hand tuning here, which I hope will eventually not be required!
+
 ### `--profile`
 
 This will write out a `sx_materialize_branches.pstats` file, which you can then run `snakeviz` on.
