@@ -204,6 +204,8 @@ def main(ignore_cache: bool = False):
     logging.info(f"Using release {atlas_release}")
 
     # Execute the query and get back the files.
+    # TODO: Everytime JuypterHub needs to be refreshed, we lose the
+    #       SX cache info - and so long queires have to be re-run.
     files = query_servicex(ignore_cache=ignore_cache)
     assert len(files) > 0
     for i, f in enumerate(files):
@@ -250,11 +252,18 @@ if __name__ == "__main__":
     # Add the flag to enable/disable local Dask cluster
     parser.add_argument(
         "--distributed-client",
-        choices=["local", "none"],
+        choices=["local", "none", "scheduler"],
         default="local",
-        help="Specify the type of Dask cluster to enable (default: local uses all cores "
+        help="Specify the type of Dask cluster to enable (default: local uses 8 cores "
         "in process, none doesn't use any)",
     )
+
+    # Add the flag to specify the Dask scheduler address
+    parser.add_argument(
+        "--dask-scheduler",
+        help="Specify the address of the Dask scheduler. Only valid when distributed-client "
+        "is 'scheduler'.",
+        default=None)
 
     # Parse the command line arguments
     args = parser.parse_args()
@@ -285,6 +294,10 @@ if __name__ == "__main__":
             n_workers=n_workers, processes=False, threads_per_worker=1
         )
         client = Client(cluster)
+    elif args.distributed_client == "scheduler":
+        logging.debug("Connecting to Dask scheduler at {scheduler_address}")
+        assert args.dask_scheduler is not None
+        client = Client(args.dask_scheduler)
 
     # Now run the main function
     if args.profile is False:
