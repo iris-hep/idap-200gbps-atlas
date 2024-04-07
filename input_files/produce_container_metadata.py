@@ -13,6 +13,9 @@ if __name__ == "__main__":
     total_nevts = 0
     for container in containers:
 
+        if "#" in container:
+            continue  # skip comments
+
         cmd = f"rucio list-files {container}"
         output = subprocess.check_output(cmd, shell=True)
 
