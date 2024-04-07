@@ -10,9 +10,9 @@ ATLAS does not have released OpenData, so there isn't an AGC we can copy and try
 
 ## Description of files
 
-- `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
-- `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
-- `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
+* `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
+* `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
+* `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
 
 ## Usage
 
@@ -21,6 +21,22 @@ When run on the UChicago AF Jupyter Notebook no package installs are required.
 There is a `requirements.txt` which should allow this to be run on a bare-bones machine (modulo location of files, etc.).
 
 If you are going to use the `servicex` version, you have to pin `dask_awkward==2024.2.0`. The future versions have a [bug](https://github.com/dask-contrib/dask-awkward/issues/456) which hasn't been fixed yet.
+
+## Input file details
+
+The folder `input_files` contains the list of input containers / files and related metadata plus scripts to produce these.
+
+In total:
+* number of files: 218,960
+* size: 191.022 TB
+* number of events: 23,344,277,104
+
+with additional files:
+
+* `input_files/find_containers.py`: query rucio for a list of containers, given a list of (hardcoded) DSIDs
+* `input_files/container_list.txt`: list of containers to run over
+* `input_files/produce_container_metadata.py`: query metadata for containers: number of files / events, size
+* `input_files/container_metadata.json`: output of `input_files/produce_container_metadata.py` with container metadata
 
 ## Acknowledgements
 
