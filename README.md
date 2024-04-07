@@ -10,8 +10,6 @@ ATLAS does not have released OpenData, so there isn't an AGC we can copy and try
 
 ## Description of files
 
-* `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
-* `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
 * `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
 
 ## Usage
@@ -37,6 +35,13 @@ with additional files:
 * `input_files/container_list.txt`: list of containers to run over
 * `input_files/produce_container_metadata.py`: query metadata for containers: number of files / events, size
 * `input_files/container_metadata.json`: output of `input_files/produce_container_metadata.py` with container metadata
+
+### Branch list determination
+
+Branches to be read are determined with a 2018 data file.
+
+* `input_files/size_per_branch.ipynb`: produce breakdown of branch sizes for given file
+* `input_files/branch_sizes.json`: output of notebook above
 
 ## Acknowledgements
 
