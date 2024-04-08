@@ -25,7 +25,7 @@ The following tests were used to run a performance test using the `servicex_mate
         * At the bottom click "create"
         * Copy the scheduler address that appears in the new cluster.
     3. Run the materialize bench mark:
-        * `python servicex/servicex_materialize_branches.py -v --distributed-client scheduler --dask-scheduler 'tcp://dask-gwatts-51a0bb30-c.af-jupyter:8786'`
+        * `python servicex/servicex_materialize_branches.py -v --distributed-client scheduler --dask-scheduler 'tcp://dask-gwatts-51a0bb30-c.af-jupyter:8786' --num-files 0`
         * The `-v` turns on a first level of verbosity which dumps out timings to `stdout`.
         * The second two are required to run with a full `dask` scheduler.
 
