@@ -12,6 +12,7 @@ if __name__ == "__main__":
     total_size_TB = 0
     total_nevts = 0
     for container in containers:
+        container = container.strip()
 
         if "#" in container:
             continue  # skip comments
@@ -37,7 +38,7 @@ if __name__ == "__main__":
         assert unit == "TB"
 
         nevts = int(re.findall("\d+", str(nevts))[0])
-        print(f"\n{container.strip()}")
+        print(f"\n{container}")
         print("  nfiles", nfiles)
         print("  size", size, unit)
         print("  nevts", nevts)
