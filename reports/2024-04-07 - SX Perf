@@ -1,0 +1,40 @@
+# SX Performance Run
+
+Summary:
+
+|What| Info|
+|-----------------|-----|
+|
+| Dataset | mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_-SingleLep.deriv.DAOD_PHYSLITE.e8514_s4162_r14622_p6026 |
+| Number of files | 383 |
+| Total Size | 940 GB |
+| Number of Events (from rucio) | 49970000 |
+| Size of SX S3 Bucket | xxx |
+| Fraction of files read | xxx |
+| Time For ServiceX To Complete | 3:41 |
+| Time for DASK to complete | xxx |
+| SX Rate / Total File Size | 34 Gbps |
+| SX Rate / S3 Output File Size | xxx |
+| DASK Rate / S3 Output File Size | xxx |
+
+## Notes
+
+* This dataset was not pinned to a local xcache server.
+* This is not the official dataset that @alexander-held has put together.
+
+## Run Log
+
+This is a log from a crash due to S3 terminating the run due to us hitting it too hard.
+
+```text
+[bash][gwatts]:idap-200gbps-atlas > python servicex/servicex_materialize_branches.py -v --distributed-client scheduler --dask-scheduler 'tcp://dask-gwatts-51a0bb30-c.af-jupyter:8786' --num-files 0
+0000.0294 - INFO - Using release 21.2.231
+0000.0297 - INFO - Building ServiceX query
+0000.0554 - WARNING - Fetched the default calibration configuration for a query. It should have been intentionally configured - using configuration for data format PHYS
+0000.0806 - INFO - Starting ServiceX query
+0223.2938 - INFO - Running servicex query for 5b027000-510f-4980-bc3f-53e9ea0586ad took 0:03:41.449613 (no files downloaded)                                                                                                                                              
+0223.3020 - INFO - Finished ServiceX query
+0223.3034 - INFO - Using `uproot.dask` to open files
+0223.6904 - INFO - Generating the dask compute graph for 27 fields
+0223.7712 - INFO - Computing the total count
+```
