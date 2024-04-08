@@ -1,2135 +1,2135 @@
 {
-    "data15_13TeV:data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026\n": {
+    "data15_13TeV:data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026": {
         "nevts": 1694555330,
         "nfiles": 10049,
         "size_TB": 10.277
     },
-    "data16_13TeV:data16_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp16_v01_p6026\n": {
+    "data16_13TeV:data16_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp16_v01_p6026": {
         "nevts": 5383448881,
         "nfiles": 45571,
         "size_TB": 38.9
     },
-    "data17_13TeV:data17_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp17_v01_p6026\n": {
+    "data17_13TeV:data17_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp17_v01_p6026": {
         "nevts": 5629171712,
         "nfiles": 55534,
         "size_TB": 43.827
     },
-    "data18_13TeV:data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026\n": {
+    "data18_13TeV:data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026": {
         "nevts": 6367686831,
         "nfiles": 64803,
         "size_TB": 49.632
     },
-    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026": {
         "nevts": 125000,
         "nfiles": 4,
         "size_TB": 0.0013720000000000002
     },
-    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026": {
         "nevts": 499000,
         "nfiles": 11,
         "size_TB": 0.005503
     },
-    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345705.Sherpa_222_NNPDF30NNLO_ggllll_0M4l130.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026": {
         "nevts": 100000,
         "nfiles": 5,
         "size_TB": 0.00102
     },
-    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026": {
         "nevts": 1498000,
         "nfiles": 27,
         "size_TB": 0.018686
     },
-    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026": {
         "nevts": 1658600,
         "nfiles": 33,
         "size_TB": 0.020829999999999998
     },
-    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345706.Sherpa_222_NNPDF30NNLO_ggllll_130M4l.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026": {
         "nevts": 989000,
         "nfiles": 15,
         "size_TB": 0.011516
     },
-    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13144_p6026": {
         "nevts": 1788000,
         "nfiles": 30,
         "size_TB": 0.020370000000000003
     },
-    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13145_p6026": {
         "nevts": 2448000,
         "nfiles": 29,
         "size_TB": 0.028057
     },
-    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.345723.Sherpa_222_NNPDF30NNLO_ggllvvZZ.deriv.DAOD_PHYSLITE.e6213_s3681_r13167_p6026": {
         "nevts": 1475000,
         "nfiles": 19,
         "size_TB": 0.015645
     },
-    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026": {
         "nevts": 5392000,
         "nfiles": 45,
         "size_TB": 0.055512
     },
-    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026": {
         "nevts": 8965000,
         "nfiles": 100,
         "size_TB": 0.09251999999999999
     },
-    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363355.Sherpa_221_NNPDF30NNLO_ZqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026": {
         "nevts": 5398000,
         "nfiles": 41,
         "size_TB": 0.051924
     },
-    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026": {
         "nevts": 5372000,
         "nfiles": 44,
         "size_TB": 0.066135
     },
-    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026": {
         "nevts": 8966000,
         "nfiles": 113,
         "size_TB": 0.110875
     },
-    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363356.Sherpa_221_NNPDF30NNLO_ZqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026": {
         "nevts": 5396000,
         "nfiles": 49,
         "size_TB": 0.061984000000000004
     },
-    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026": {
         "nevts": 5989000,
         "nfiles": 81,
         "size_TB": 0.060886
     },
-    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026": {
         "nevts": 9922000,
         "nfiles": 77,
         "size_TB": 0.102075
     },
-    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363357.Sherpa_221_NNPDF30NNLO_WqqZvv.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026": {
         "nevts": 5995000,
         "nfiles": 47,
         "size_TB": 0.057047
     },
-    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026": {
         "nevts": 21474000,
         "nfiles": 189,
         "size_TB": 0.259766
     },
-    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026": {
         "nevts": 8944000,
         "nfiles": 75,
         "size_TB": 0.10877500000000001
     },
-    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363358.Sherpa_221_NNPDF30NNLO_WqqZll.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026": {
         "nevts": 4228000,
         "nfiles": 30,
         "size_TB": 0.047742
     },
-    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13144_p6026": {
         "nevts": 28610000,
         "nfiles": 326,
         "size_TB": 0.31045100000000003
     },
-    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13145_p6026": {
         "nevts": 11946000,
         "nfiles": 93,
         "size_TB": 0.130107
     },
-    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13167_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.363359.Sherpa_221_NNPDF30NNLO_WpqqWmlv.deriv.DAOD_PHYSLITE.e5583_s3681_r13167_p5855": {
         "nevts": 7177000,
         "nfiles": 60,
         "size_TB": 0.071328
     },
-    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13144_p6026": {
         "nevts": 7174000,
         "nfiles": 95,
         "size_TB": 0.078169
     },
-    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13145_p6026": {
         "nevts": 11911000,
         "nfiles": 114,
         "size_TB": 0.130542
     },
-    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363360.Sherpa_221_NNPDF30NNLO_WplvWmqq.deriv.DAOD_PHYSLITE.e5983_s3681_r13167_p6026": {
         "nevts": 7185000,
         "nfiles": 65,
         "size_TB": 0.073046
     },
-    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13144_p6026": {
         "nevts": 7194000,
         "nfiles": 62,
         "size_TB": 0.082047
     },
-    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13145_p6026": {
         "nevts": 11945000,
         "nfiles": 124,
         "size_TB": 0.13697900000000002
     },
-    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.363489.Sherpa_221_NNPDF30NNLO_WlvZqq.deriv.DAOD_PHYSLITE.e5525_s3681_r13167_p6026": {
         "nevts": 5999000,
         "nfiles": 120,
         "size_TB": 0.06412000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 9919000,
         "nfiles": 78,
         "size_TB": 0.084618
     },
-    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 9951000,
         "nfiles": 74,
         "size_TB": 0.08829300000000001
     },
-    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364100.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 2660000,
         "nfiles": 22,
         "size_TB": 0.020572
     },
-    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 6201000,
         "nfiles": 50,
         "size_TB": 0.05802
     },
-    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 8283000,
         "nfiles": 78,
         "size_TB": 0.077432
     },
-    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364101.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1660000,
         "nfiles": 18,
         "size_TB": 0.014111
     },
-    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 9764000,
         "nfiles": 104,
         "size_TB": 0.096119
     },
-    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 9938500,
         "nfiles": 99,
         "size_TB": 0.098411
     },
-    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364102.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 2660000,
         "nfiles": 22,
         "size_TB": 0.024238
     },
-    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 1499000,
         "nfiles": 18,
         "size_TB": 0.015186999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 7373000,
         "nfiles": 68,
         "size_TB": 0.076561
     },
-    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364103.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1995000,
         "nfiles": 18,
         "size_TB": 0.018583
     },
-    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 499200,
         "nfiles": 12,
         "size_TB": 0.005394
     },
-    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 2483700,
         "nfiles": 35,
         "size_TB": 0.027164999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364104.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 665000,
         "nfiles": 12,
         "size_TB": 0.006613000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 1489400,
         "nfiles": 20,
         "size_TB": 0.016856000000000003
     },
-    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 8071200,
         "nfiles": 81,
         "size_TB": 0.091664
     },
-    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364105.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1995000,
         "nfiles": 21,
         "size_TB": 0.02093
     },
-    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 1250000,
         "nfiles": 19,
         "size_TB": 0.014324
     },
-    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 6198200,
         "nfiles": 64,
         "size_TB": 0.071726
     },
-    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364106.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1632000,
         "nfiles": 20,
         "size_TB": 0.017273
     },
-    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 750000,
         "nfiles": 13,
         "size_TB": 0.00912
     },
-    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 3747200,
         "nfiles": 52,
         "size_TB": 0.046549999999999994
     },
-    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364107.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 5746400,
         "nfiles": 57,
         "size_TB": 0.06523999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 7341000,
         "nfiles": 74,
         "size_TB": 0.09439499999999999
     },
-    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 20742900,
         "nfiles": 293,
         "size_TB": 0.266789
     },
-    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364108.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 4164000,
         "nfiles": 39,
         "size_TB": 0.050147
     },
-    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 499500,
         "nfiles": 13,
         "size_TB": 0.006647
     },
-    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 3321500,
         "nfiles": 50,
         "size_TB": 0.04441
     },
-    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364109.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1986000,
         "nfiles": 21,
         "size_TB": 0.024704999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 1249400,
         "nfiles": 24,
         "size_TB": 0.017654
     },
-    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 1250800,
         "nfiles": 26,
         "size_TB": 0.017765999999999997
     },
-    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364110.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 335000,
         "nfiles": 9,
         "size_TB": 0.004428
     },
-    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 2993700,
         "nfiles": 49,
         "size_TB": 0.044458
     },
-    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 4112400,
         "nfiles": 68,
         "size_TB": 0.061386
     },
-    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364111.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 1994000,
         "nfiles": 21,
         "size_TB": 0.028139
     },
-    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 749500,
         "nfiles": 12,
         "size_TB": 0.011989000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 5074500,
         "nfiles": 66,
         "size_TB": 0.08114700000000001
     },
-    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364112.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 2921000,
         "nfiles": 27,
         "size_TB": 0.043908
     },
-    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13144_p6026": {
         "nevts": 1250000,
         "nfiles": 28,
         "size_TB": 0.023239
     },
-    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13145_p6026": {
         "nevts": 400000,
         "nfiles": 13,
         "size_TB": 0.007473
     },
-    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364113.Sherpa_221_NNPDF30NNLO_Zmumu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5271_s3681_r13167_p6026": {
         "nevts": 2000,
         "nfiles": 1,
         "size_TB": 3.5382e-05
     },
-    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 9998000,
         "nfiles": 99,
         "size_TB": 0.089968
     },
-    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 9976000,
         "nfiles": 89,
         "size_TB": 0.09112
     },
-    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364114.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 2664000,
         "nfiles": 25,
         "size_TB": 0.0219
     },
-    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 4995000,
         "nfiles": 36,
         "size_TB": 0.049133
     },
-    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 6219600,
         "nfiles": 65,
         "size_TB": 0.06289399999999999
     },
-    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364115.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 1665000,
         "nfiles": 18,
         "size_TB": 0.015016999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 7995400,
         "nfiles": 75,
         "size_TB": 0.083143
     },
-    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 13280600,
         "nfiles": 136,
         "size_TB": 0.139074
     },
-    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364116.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 2665000,
         "nfiles": 21,
         "size_TB": 0.02583
     },
-    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 5948000,
         "nfiles": 48,
         "size_TB": 0.064291
     },
-    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 7491400,
         "nfiles": 58,
         "size_TB": 0.08302899999999999
     },
-    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364117.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 2000000,
         "nfiles": 18,
         "size_TB": 0.019939
     },
-    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 1900000,
         "nfiles": 28,
         "size_TB": 0.021618
     },
-    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 2499000,
         "nfiles": 32,
         "size_TB": 0.028907
     },
-    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364118.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 665000,
         "nfiles": 12,
         "size_TB": 0.0070220000000000005
     },
-    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 5994000,
         "nfiles": 85,
         "size_TB": 0.07108199999999999
     },
-    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 9349800,
         "nfiles": 80,
         "size_TB": 0.112432
     },
-    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364119.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 1990000,
         "nfiles": 28,
         "size_TB": 0.021782
     },
-    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 5000000,
         "nfiles": 62,
         "size_TB": 0.059579
     },
-    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 8356000,
         "nfiles": 81,
         "size_TB": 0.10054
     },
-    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364120.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 6992000,
         "nfiles": 84,
         "size_TB": 0.07798000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 2999000,
         "nfiles": 28,
         "size_TB": 0.038154
     },
-    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 4985800,
         "nfiles": 67,
         "size_TB": 0.06364800000000001
     },
-    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364121.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 1000000,
         "nfiles": 15,
         "size_TB": 0.011847
     },
-    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 4988000,
         "nfiles": 56,
         "size_TB": 0.06710200000000001
     },
-    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 15600900,
         "nfiles": 269,
         "size_TB": 0.210739
     },
-    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364122.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 4165000,
         "nfiles": 57,
         "size_TB": 0.052277000000000004
     },
-    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 1709800,
         "nfiles": 29,
         "size_TB": 0.023678
     },
-    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 3424000,
         "nfiles": 52,
         "size_TB": 0.047797
     },
-    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364123.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 665000,
         "nfiles": 12,
         "size_TB": 0.008664999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 1000000,
         "nfiles": 20,
         "size_TB": 0.014776
     },
-    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 1736900,
         "nfiles": 35,
         "size_TB": 0.025873
     },
-    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364124.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 333000,
         "nfiles": 10,
         "size_TB": 0.004626
     },
-    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 4490700,
         "nfiles": 61,
         "size_TB": 0.071577
     },
-    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 4118000,
         "nfiles": 49,
         "size_TB": 0.06643600000000001
     },
-    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364125.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 2002000,
         "nfiles": 27,
         "size_TB": 0.030285
     },
-    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 2963000,
         "nfiles": 45,
         "size_TB": 0.048748
     },
-    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 1234800,
         "nfiles": 56,
         "size_TB": 0.020541
     },
-    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 2901000,
         "nfiles": 33,
         "size_TB": 0.045353000000000004
     },
-    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13144_p6026": {
         "nevts": 999800,
         "nfiles": 30,
         "size_TB": 0.019071
     },
-    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026": {
         "nevts": 420000,
         "nfiles": 13,
         "size_TB": 0.008088
     },
-    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364127.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5299_s3681_r13167_p6026": {
         "nevts": 993000,
         "nfiles": 16,
         "size_TB": 0.018258
     },
-    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 7996000,
         "nfiles": 75,
         "size_TB": 0.071908
     },
-    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 9862250,
         "nfiles": 89,
         "size_TB": 0.089514
     },
-    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364128.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 7984000,
         "nfiles": 78,
         "size_TB": 0.065655
     },
-    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 1150000,
         "nfiles": 18,
         "size_TB": 0.011176
     },
-    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 6212450,
         "nfiles": 72,
         "size_TB": 0.060952
     },
-    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364129.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 4968000,
         "nfiles": 44,
         "size_TB": 0.04474
     },
-    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 1996000,
         "nfiles": 30,
         "size_TB": 0.020424
     },
-    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 9989000,
         "nfiles": 109,
         "size_TB": 0.103164
     },
-    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364130.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 7974000,
         "nfiles": 48,
         "size_TB": 0.07678499999999999
     },
-    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 4497000,
         "nfiles": 34,
         "size_TB": 0.048133
     },
-    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 9973500,
         "nfiles": 118,
         "size_TB": 0.10677800000000001
     },
-    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364131.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 5989000,
         "nfiles": 56,
         "size_TB": 0.059445
     },
-    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 498000,
         "nfiles": 12,
         "size_TB": 0.005587
     },
-    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 2500200,
         "nfiles": 38,
         "size_TB": 0.028343
     },
-    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364132.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 1995000,
         "nfiles": 23,
         "size_TB": 0.020884
     },
-    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 20000,
         "nfiles": 1,
         "size_TB": 0.000236746
     },
-    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 7056700,
         "nfiles": 61,
         "size_TB": 0.08893000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364133.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 5963000,
         "nfiles": 41,
         "size_TB": 0.072563
     },
-    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 3748000,
         "nfiles": 29,
         "size_TB": 0.045252
     },
-    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 8297000,
         "nfiles": 69,
         "size_TB": 0.10062600000000001
     },
-    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364134.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 3935000,
         "nfiles": 40,
         "size_TB": 0.044176
     },
-    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 749000,
         "nfiles": 14,
         "size_TB": 0.009493
     },
-    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 3630600,
         "nfiles": 50,
         "size_TB": 0.046488
     },
-    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364135.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 2997000,
         "nfiles": 25,
         "size_TB": 0.036226
     },
-    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 2947000,
         "nfiles": 32,
         "size_TB": 0.039802
     },
-    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 8295000,
         "nfiles": 103,
         "size_TB": 0.113881
     },
-    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364136.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 4978000,
         "nfiles": 30,
         "size_TB": 0.067854
     },
-    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 7490000,
         "nfiles": 68,
         "size_TB": 0.10326
     },
-    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 13200000,
         "nfiles": 150,
         "size_TB": 0.182668
     },
-    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364137.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 5976000,
         "nfiles": 51,
         "size_TB": 0.077824
     },
-    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13144_p6026": {
         "nevts": 240000,
         "nfiles": 8,
         "size_TB": 0.003476
     },
-    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13145_p6026": {
         "nevts": 1247900,
         "nfiles": 28,
         "size_TB": 0.01823
     },
-    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364138.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5313_s3681_r13167_p6026": {
         "nevts": 998000,
         "nfiles": 14,
         "size_TB": 0.013811
     },
-    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13144_p6026": {
         "nevts": 498000,
         "nfiles": 12,
         "size_TB": 0.007705
     },
-    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13145_p6026": {
         "nevts": 824950,
         "nfiles": 15,
         "size_TB": 0.012933
     },
-    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364139.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5313_s3681_r13167_p6026": {
         "nevts": 1979000,
         "nfiles": 26,
         "size_TB": 0.029401
     },
-    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 739000,
         "nfiles": 16,
         "size_TB": 0.011973000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 1236000,
         "nfiles": 15,
         "size_TB": 0.020073
     },
-    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364140.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 2992000,
         "nfiles": 34,
         "size_TB": 0.046122
     },
-    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13144_p6026": {
         "nevts": 250000,
         "nfiles": 11,
         "size_TB": 0.004672
     },
-    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13145_p6026": {
         "nevts": 419000,
         "nfiles": 13,
         "size_TB": 0.007868
     },
-    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364141.Sherpa_221_NNPDF30NNLO_Ztautau_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5307_s3681_r13167_p6026": {
         "nevts": 996000,
         "nfiles": 16,
         "size_TB": 0.017780999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 20966000,
         "nfiles": 242,
         "size_TB": 0.171053
     },
-    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 41329000,
         "nfiles": 362,
         "size_TB": 0.33855
     },
-    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364156.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 219000,
         "nfiles": 4,
         "size_TB": 0.0016120000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 32174800,
         "nfiles": 323,
         "size_TB": 0.289443
     },
-    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 136458000,
         "nfiles": 1211,
         "size_TB": 1.222
     },
-    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 74808000,
         "nfiles": 503,
         "size_TB": 0.61322
     },
-    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 84961000,
         "nfiles": 826,
         "size_TB": 0.806037
     },
-    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 58999800,
         "nfiles": 609,
         "size_TB": 0.559935
     },
-    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364158.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 64852800,
         "nfiles": 517,
         "size_TB": 0.566757
     },
-    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 18535000,
         "nfiles": 170,
         "size_TB": 0.181504
     },
-    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 24758900,
         "nfiles": 350,
         "size_TB": 0.243407
     },
-    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364159.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 14887000,
         "nfiles": 117,
         "size_TB": 0.134726
     },
-    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12415000,
         "nfiles": 114,
         "size_TB": 0.129029
     },
-    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 16538500,
         "nfiles": 124,
         "size_TB": 0.173966
     },
-    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364160.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9500000,
         "nfiles": 46,
         "size_TB": 0.09277500000000001
     },
-    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 5217000,
         "nfiles": 58,
         "size_TB": 0.057698
     },
-    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 32946200,
         "nfiles": 374,
         "size_TB": 0.364029
     },
-    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364161.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4971000,
         "nfiles": 49,
         "size_TB": 0.051302999999999994
     },
-    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12229000,
         "nfiles": 88,
         "size_TB": 0.134389
     },
-    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 16731000,
         "nfiles": 153,
         "size_TB": 0.184414
     },
-    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364162.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9966000,
         "nfiles": 77,
         "size_TB": 0.10174599999999999
     },
-    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 7466000,
         "nfiles": 69,
         "size_TB": 0.086825
     },
-    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 22436000,
         "nfiles": 231,
         "size_TB": 0.262464
     },
-    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364163.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 5821000,
         "nfiles": 45,
         "size_TB": 0.06363
     },
-    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 26388000,
         "nfiles": 256,
         "size_TB": 0.328096
     },
-    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 41491000,
         "nfiles": 435,
         "size_TB": 0.516147
     },
-    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364164.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4991000,
         "nfiles": 32,
         "size_TB": 0.059111
     },
-    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 6226000,
         "nfiles": 88,
         "size_TB": 0.080125
     },
-    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 6038400,
         "nfiles": 79,
         "size_TB": 0.078285
     },
-    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364165.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4982000,
         "nfiles": 34,
         "size_TB": 0.06085
     },
-    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3747000,
         "nfiles": 46,
         "size_TB": 0.051487000000000005
     },
-    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 3747550,
         "nfiles": 62,
         "size_TB": 0.051404000000000005
     },
-    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364166.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 2985000,
         "nfiles": 40,
         "size_TB": 0.038405999999999996
     },
-    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3795000,
         "nfiles": 41,
         "size_TB": 0.056548
     },
-    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 6194000,
         "nfiles": 81,
         "size_TB": 0.092065
     },
-    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364167.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 2996000,
         "nfiles": 27,
         "size_TB": 0.043061999999999996
     },
-    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 6502000,
         "nfiles": 93,
         "size_TB": 0.099057
     },
-    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 8192650,
         "nfiles": 97,
         "size_TB": 0.126105
     },
-    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364168.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 5992200,
         "nfiles": 48,
         "size_TB": 0.08708
     },
-    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 4988000,
         "nfiles": 92,
         "size_TB": 0.08911
     },
-    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 6645300,
         "nfiles": 96,
         "size_TB": 0.12064100000000001
     },
-    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364169.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 3992800,
         "nfiles": 58,
         "size_TB": 0.068218
     },
-    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 6242000,
         "nfiles": 68,
         "size_TB": 0.051681
     },
-    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 40660000,
         "nfiles": 385,
         "size_TB": 0.340862
     },
-    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364170.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 24964000,
         "nfiles": 187,
         "size_TB": 0.188558
     },
-    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 82082400,
         "nfiles": 566,
         "size_TB": 0.7482730000000001
     },
-    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 136188300,
         "nfiles": 1197,
         "size_TB": 1.241
     },
-    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 74613400,
         "nfiles": 564,
         "size_TB": 0.621058
     },
-    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 57547400,
         "nfiles": 561,
         "size_TB": 0.555304
     },
-    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 127532600,
         "nfiles": 1388,
         "size_TB": 1.232
     },
-    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 64774000,
         "nfiles": 493,
         "size_TB": 0.5768949999999999
     },
-    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3631000,
         "nfiles": 38,
         "size_TB": 0.036037999999999994
     },
-    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 24048700,
         "nfiles": 269,
         "size_TB": 0.243155
     },
-    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364173.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 175000,
         "nfiles": 6,
         "size_TB": 0.001596
     },
-    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 2466000,
         "nfiles": 24,
         "size_TB": 0.026643999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 16575300,
         "nfiles": 169,
         "size_TB": 0.178157
     },
-    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364174.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4963000,
         "nfiles": 31,
         "size_TB": 0.050385
     },
-    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12360200,
         "nfiles": 136,
         "size_TB": 0.142708
     },
-    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 30619150,
         "nfiles": 321,
         "size_TB": 0.359325
     },
-    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364175.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9905200,
         "nfiles": 77,
         "size_TB": 0.110436
     },
-    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12429000,
         "nfiles": 131,
         "size_TB": 0.137526
     },
-    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 16742000,
         "nfiles": 190,
         "size_TB": 0.186384
     },
-    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364176.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9767000,
         "nfiles": 138,
         "size_TB": 0.100787
     },
-    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 7498950,
         "nfiles": 72,
         "size_TB": 0.08824599999999999
     },
-    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 22427950,
         "nfiles": 244,
         "size_TB": 0.266583
     },
-    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364177.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 5910700,
         "nfiles": 46,
         "size_TB": 0.065399
     },
-    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3729000,
         "nfiles": 49,
         "size_TB": 0.046638
     },
-    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 40727000,
         "nfiles": 464,
         "size_TB": 0.512985
     },
-    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364178.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4989000,
         "nfiles": 29,
         "size_TB": 0.060378999999999995
     },
-    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 6002000,
         "nfiles": 61,
         "size_TB": 0.078007
     },
-    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 8304050,
         "nfiles": 102,
         "size_TB": 0.10978199999999999
     },
-    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364179.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4971000,
         "nfiles": 58,
         "size_TB": 0.060545
     },
-    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3734000,
         "nfiles": 49,
         "size_TB": 0.051753999999999994
     },
-    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 3719700,
         "nfiles": 52,
         "size_TB": 0.051801
     },
-    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364180.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 2988000,
         "nfiles": 44,
         "size_TB": 0.038892
     },
-    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3785000,
         "nfiles": 54,
         "size_TB": 0.056335
     },
-    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 9949450,
         "nfiles": 132,
         "size_TB": 0.149337
     },
-    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364181.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 2976000,
         "nfiles": 33,
         "size_TB": 0.042491
     },
-    "mc20_13TeV:mc20_13TeV.364182.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364182.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 7478000,
         "nfiles": 142,
         "size_TB": 0.115881
     },
-    "mc20_13TeV:mc20_13TeV.364182.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364182.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 9942050,
         "nfiles": 123,
         "size_TB": 0.155263
     },
-    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 1802000,
         "nfiles": 31,
         "size_TB": 0.032316000000000004
     },
-    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 6643950,
         "nfiles": 115,
         "size_TB": 0.11998600000000001
     },
-    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364183.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 3982000,
         "nfiles": 51,
         "size_TB": 0.06815900000000001
     },
-    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 6053000,
         "nfiles": 39,
         "size_TB": 0.050189
     },
-    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 41409000,
         "nfiles": 289,
         "size_TB": 0.345474
     },
-    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364184.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 24870000,
         "nfiles": 106,
         "size_TB": 0.189276
     },
-    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12361000,
         "nfiles": 127,
         "size_TB": 0.11266
     },
-    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 31821800,
         "nfiles": 249,
         "size_TB": 0.293694
     },
-    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364185.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9966000,
         "nfiles": 74,
         "size_TB": 0.084327
     },
-    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 21791000,
         "nfiles": 171,
         "size_TB": 0.21418199999999998
     },
-    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 28979700,
         "nfiles": 293,
         "size_TB": 0.283872
     },
-    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364186.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4989000,
         "nfiles": 49,
         "size_TB": 0.044878
     },
-    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 14993000,
         "nfiles": 150,
         "size_TB": 0.1482
     },
-    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 24871000,
         "nfiles": 214,
         "size_TB": 0.247442
     },
-    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364187.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 14982000,
         "nfiles": 83,
         "size_TB": 0.137461
     },
-    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 1977000,
         "nfiles": 28,
         "size_TB": 0.020914000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 16576000,
         "nfiles": 174,
         "size_TB": 0.1779
     },
-    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364188.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4992000,
         "nfiles": 41,
         "size_TB": 0.049930999999999996
     },
-    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12464000,
         "nfiles": 131,
         "size_TB": 0.146089
     },
-    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 24946250,
         "nfiles": 228,
         "size_TB": 0.294832
     },
-    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364189.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV70_140_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9990000,
         "nfiles": 88,
         "size_TB": 0.110196
     },
-    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 12495000,
         "nfiles": 87,
         "size_TB": 0.139529
     },
-    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 33225800,
         "nfiles": 317,
         "size_TB": 0.372045
     },
-    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364190.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 9942000,
         "nfiles": 59,
         "size_TB": 0.102895
     },
-    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 4697200,
         "nfiles": 75,
         "size_TB": 0.054686
     },
-    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 18023600,
         "nfiles": 171,
         "size_TB": 0.21244300000000002
     },
-    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364191.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 3799200,
         "nfiles": 38,
         "size_TB": 0.041561
     },
-    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 31772000,
         "nfiles": 416,
         "size_TB": 0.395041
     },
-    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 41582700,
         "nfiles": 463,
         "size_TB": 0.521113
     },
-    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4988000,
         "nfiles": 67,
         "size_TB": 0.05799
     },
-    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 3099200,
         "nfiles": 34,
         "size_TB": 0.040152
     },
-    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 12452150,
         "nfiles": 142,
         "size_TB": 0.162654
     },
-    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364193.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CVetoBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 2499000,
         "nfiles": 26,
         "size_TB": 0.030546
     },
-    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 1898000,
         "nfiles": 19,
         "size_TB": 0.025821
     },
-    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 7485000,
         "nfiles": 89,
         "size_TB": 0.102267
     },
-    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364194.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 1498600,
         "nfiles": 17,
         "size_TB": 0.019273
     },
-    "mc20_13TeV:mc20_13TeV.364195.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364195.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 1824000,
         "nfiles": 39,
         "size_TB": 0.026293
     },
-    "mc20_13TeV:mc20_13TeV.364195.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364195.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV280_500_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 4983000,
         "nfiles": 57,
         "size_TB": 0.07228100000000001
     },
-    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 7394000,
         "nfiles": 101,
         "size_TB": 0.114232
     },
-    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 9861750,
         "nfiles": 173,
         "size_TB": 0.152995
     },
-    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 5950400,
         "nfiles": 73,
         "size_TB": 0.087105
     },
-    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13144_p6026": {
         "nevts": 1911000,
         "nfiles": 35,
         "size_TB": 0.034178
     },
-    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
         "nevts": 6634000,
         "nfiles": 92,
         "size_TB": 0.119129
     },
-    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364197.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV1000_E_CMS.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 3984000,
         "nfiles": 49,
         "size_TB": 0.068134
     },
-    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 5740000,
         "nfiles": 76,
         "size_TB": 0.046488999999999996
     },
-    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 12369000,
         "nfiles": 115,
         "size_TB": 0.101098
     },
-    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364198.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 7481000,
         "nfiles": 38,
         "size_TB": 0.054813
     },
-    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 819000,
         "nfiles": 15,
         "size_TB": 0.007489
     },
-    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 2488500,
         "nfiles": 35,
         "size_TB": 0.022892
     },
-    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364199.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 25000,
         "nfiles": 1,
         "size_TB": 0.000209262
     },
-    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 1741000,
         "nfiles": 26,
         "size_TB": 0.018667000000000003
     },
-    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 3837000,
         "nfiles": 43,
         "size_TB": 0.041378
     },
-    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 83000,
         "nfiles": 2,
         "size_TB": 0.000817467
     },
-    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 1371000,
         "nfiles": 22,
         "size_TB": 0.016741
     },
-    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 1848000,
         "nfiles": 27,
         "size_TB": 0.022696
     },
-    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364201.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 1099000,
         "nfiles": 18,
         "size_TB": 0.012447
     },
-    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 748000,
         "nfiles": 15,
         "size_TB": 0.010595
     },
-    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 845000,
         "nfiles": 14,
         "size_TB": 0.012088
     },
-    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 598400,
         "nfiles": 12,
         "size_TB": 0.00795
     },
-    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 176000,
         "nfiles": 9,
         "size_TB": 0.002975
     },
-    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 417000,
         "nfiles": 11,
         "size_TB": 0.007745
     },
-    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364203.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 249810,
         "nfiles": 7,
         "size_TB": 0.004208
     },
-    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 11481000,
         "nfiles": 118,
         "size_TB": 0.09011799999999999
     },
-    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 12423000,
         "nfiles": 106,
         "size_TB": 0.09869199999999999
     },
-    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364204.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 7448000,
         "nfiles": 30,
         "size_TB": 0.053416
     },
-    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 1314000,
         "nfiles": 21,
         "size_TB": 0.011866
     },
-    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 2485000,
         "nfiles": 34,
         "size_TB": 0.022765999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364205.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 1498000,
         "nfiles": 19,
         "size_TB": 0.012515
     },
-    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 2068000,
         "nfiles": 38,
         "size_TB": 0.022286
     },
-    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 3994000,
         "nfiles": 40,
         "size_TB": 0.043656999999999994
     },
-    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364206.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 229000,
         "nfiles": 5,
         "size_TB": 0.0022879999999999997
     },
-    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 1097000,
         "nfiles": 19,
         "size_TB": 0.01486
     },
-    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 1829000,
         "nfiles": 30,
         "size_TB": 0.026066
     },
-    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364207.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 1097000,
         "nfiles": 15,
         "size_TB": 0.01453
     },
-    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 597000,
         "nfiles": 14,
         "size_TB": 0.008452999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 997000,
         "nfiles": 18,
         "size_TB": 0.014215
     },
-    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364208.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 600000,
         "nfiles": 12,
         "size_TB": 0.008013
     },
-    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 247000,
         "nfiles": 9,
         "size_TB": 0.004011
     },
-    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 419000,
         "nfiles": 12,
         "size_TB": 0.007038
     },
-    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364209.Sherpa_221_NN30NNLO_Zee_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 250000,
         "nfiles": 10,
         "size_TB": 0.0038740000000000003
     },
-    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 7456000,
         "nfiles": 65,
         "size_TB": 0.059118000000000004
     },
-    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 12387000,
         "nfiles": 101,
         "size_TB": 0.09933700000000001
     },
-    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364210.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 7116000,
         "nfiles": 47,
         "size_TB": 0.050887999999999996
     },
-    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 1495000,
         "nfiles": 20,
         "size_TB": 0.013461
     },
-    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 2496000,
         "nfiles": 28,
         "size_TB": 0.022600000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364211.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 1497600,
         "nfiles": 19,
         "size_TB": 0.012347
     },
-    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 2389000,
         "nfiles": 27,
         "size_TB": 0.025468
     },
-    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 3981000,
         "nfiles": 33,
         "size_TB": 0.043026
     },
-    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364212.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 2391400,
         "nfiles": 23,
         "size_TB": 0.023771999999999998
     },
-    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 989000,
         "nfiles": 13,
         "size_TB": 0.015298
     },
-    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 1826960,
         "nfiles": 29,
         "size_TB": 0.025566
     },
-    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364213.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV70_280_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 1098740,
         "nfiles": 14,
         "size_TB": 0.014626
     },
-    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 150000,
         "nfiles": 5,
         "size_TB": 0.0021230000000000003
     },
-    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 998000,
         "nfiles": 15,
         "size_TB": 0.014685
     },
-    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364214.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 598000,
         "nfiles": 13,
         "size_TB": 0.008156
     },
-    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13144_p6026": {
         "nevts": 61990,
         "nfiles": 2,
         "size_TB": 0.001067
     },
-    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
         "nevts": 418000,
         "nfiles": 12,
         "size_TB": 0.007444
     },
-    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364215.Sherpa_221_NN30NNLO_Ztt_Mll10_40_MAXHTPTV280_E_CMS_BFilter.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 245000,
         "nfiles": 11,
         "size_TB": 0.00391
     },
-    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13144_p6026": {
         "nevts": 35674000,
         "nfiles": 331,
         "size_TB": 0.424178
     },
-    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13145_p6026": {
         "nevts": 25673900,
         "nfiles": 194,
         "size_TB": 0.308832
     },
-    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364250.Sherpa_222_NNPDF30NNLO_llll.deriv.DAOD_PHYSLITE.e5894_s3681_r13167_p6026": {
         "nevts": 17943000,
         "nfiles": 105,
         "size_TB": 0.202058
     },
-    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026": {
         "nevts": 31966000,
         "nfiles": 237,
         "size_TB": 0.39146
     },
-    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026": {
         "nevts": 26669600,
         "nfiles": 206,
         "size_TB": 0.32913
     },
-    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364253.Sherpa_222_NNPDF30NNLO_lllv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026": {
         "nevts": 15494000,
         "nfiles": 84,
         "size_TB": 0.179917
     },
-    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026": {
         "nevts": 29948000,
         "nfiles": 280,
         "size_TB": 0.340089
     },
-    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026": {
         "nevts": 24869000,
         "nfiles": 198,
         "size_TB": 0.28389600000000004
     },
-    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364254.Sherpa_222_NNPDF30NNLO_llvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026": {
         "nevts": 14957000,
         "nfiles": 160,
         "size_TB": 0.157957
     },
-    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13144_p6026": {
         "nevts": 11975000,
         "nfiles": 100,
         "size_TB": 0.13346100000000002
     },
-    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13145_p6026": {
         "nevts": 9957000,
         "nfiles": 123,
         "size_TB": 0.111197
     },
-    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364255.Sherpa_222_NNPDF30NNLO_lvvv.deriv.DAOD_PHYSLITE.e5916_s3681_r13167_p6026": {
         "nevts": 5998200,
         "nfiles": 38,
         "size_TB": 0.062608
     },
-    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026": {
         "nevts": 380000,
         "nfiles": 11,
         "size_TB": 0.004954
     },
-    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026": {
         "nevts": 290000,
         "nfiles": 10,
         "size_TB": 0.003811
     },
-    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364283.Sherpa_222_NNPDF30NNLO_lllljj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026": {
         "nevts": 299900,
         "nfiles": 8,
         "size_TB": 0.003653
     },
-    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026": {
         "nevts": 1921000,
         "nfiles": 28,
         "size_TB": 0.025736000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026": {
         "nevts": 2494000,
         "nfiles": 41,
         "size_TB": 0.033449
     },
-    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364284.Sherpa_222_NNPDF30NNLO_lllvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026": {
         "nevts": 1498000,
         "nfiles": 18,
         "size_TB": 0.019063
     },
-    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026": {
         "nevts": 380000,
         "nfiles": 11,
         "size_TB": 0.004645
     },
-    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026": {
         "nevts": 600000,
         "nfiles": 15,
         "size_TB": 0.00738
     },
-    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364285.Sherpa_222_NNPDF30NNLO_llvvjj_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026": {
         "nevts": 299800,
         "nfiles": 10,
         "size_TB": 0.003422
     },
-    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13144_p6026": {
         "nevts": 125000,
         "nfiles": 4,
         "size_TB": 0.0015760000000000001
     },
-    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13145_p6026": {
         "nevts": 1000000,
         "nfiles": 17,
         "size_TB": 0.012846
     },
-    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364287.Sherpa_222_NNPDF30NNLO_llvvjj_ss_EW6.deriv.DAOD_PHYSLITE.e6055_s3681_r13167_p6026": {
         "nevts": 100000,
         "nfiles": 2,
         "size_TB": 0.0011819999999999999
     },
-    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13144_p6026": {
         "nevts": 249000,
         "nfiles": 9,
         "size_TB": 0.002675
     },
-    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13145_p6026": {
         "nevts": 333000,
         "nfiles": 9,
         "size_TB": 0.0035800000000000003
     },
-    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364288.Sherpa_222_NNPDF30NNLO_llll_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13167_p6026": {
         "nevts": 200000,
         "nfiles": 5,
         "size_TB": 0.0019850000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13144_p6026": {
         "nevts": 2197000,
         "nfiles": 22,
         "size_TB": 0.023817
     },
-    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13145_p6026": {
         "nevts": 3586000,
         "nfiles": 42,
         "size_TB": 0.039642000000000004
     },
-    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364289.Sherpa_222_NNPDF30NNLO_lllv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6133_s3681_r13167_p6026": {
         "nevts": 1798000,
         "nfiles": 19,
         "size_TB": 0.018111000000000002
     },
-    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13144_p6026": {
         "nevts": 40000,
         "nfiles": 1,
         "size_TB": 0.00040961700000000003
     },
-    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13145_p6026": {
         "nevts": 50000,
         "nfiles": 2,
         "size_TB": 0.0005170449999999999
     },
-    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.364290.Sherpa_222_NNPDF30NNLO_llvv_lowMllPtComplement.deriv.DAOD_PHYSLITE.e6096_s3681_r13167_p6026": {
         "nevts": 29800,
         "nfiles": 1,
         "size_TB": 0.00028386000000000004
     },
-    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 2000,
         "nfiles": 1,
         "size_TB": 3.7008e-05
     },
-    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 12042000,
         "nfiles": 157,
         "size_TB": 0.214095
     },
-    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410155.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttW.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 7481200,
         "nfiles": 96,
         "size_TB": 0.12642
     },
-    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 1496000,
         "nfiles": 25,
         "size_TB": 0.025508
     },
-    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 2001000,
         "nfiles": 22,
         "size_TB": 0.034225
     },
-    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410156.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZnunu.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 1488200,
         "nfiles": 24,
         "size_TB": 0.024297999999999997
     },
-    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 2994000,
         "nfiles": 31,
         "size_TB": 0.057741
     },
-    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 3587000,
         "nfiles": 35,
         "size_TB": 0.069105
     },
-    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410157.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttZqq.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 2995400,
         "nfiles": 28,
         "size_TB": 0.054872
     },
-    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 1335000,
         "nfiles": 22,
         "size_TB": 0.02524
     },
-    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 2156000,
         "nfiles": 24,
         "size_TB": 0.041065
     },
-    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410218.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 1407200,
         "nfiles": 28,
         "size_TB": 0.025403
     },
-    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 1339000,
         "nfiles": 19,
         "size_TB": 0.025171
     },
-    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 2103000,
         "nfiles": 29,
         "size_TB": 0.039705
     },
-    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 1408800,
         "nfiles": 20,
         "size_TB": 0.025224
     },
-    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13144_p6026": {
         "nevts": 900000,
         "nfiles": 15,
         "size_TB": 0.016665
     },
-    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
         "nevts": 958000,
         "nfiles": 23,
         "size_TB": 0.017858
     },
-    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410220.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 933200,
         "nfiles": 16,
         "size_TB": 0.016507
     },
-    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026": {
         "nevts": 349000,
         "nfiles": 12,
         "size_TB": 0.005986
     },
-    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026": {
         "nevts": 468000,
         "nfiles": 14,
         "size_TB": 0.008057
     },
-    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410276.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttee_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026": {
         "nevts": 349800,
         "nfiles": 11,
         "size_TB": 0.0057350000000000005
     },
-    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026": {
         "nevts": 350000,
         "nfiles": 13,
         "size_TB": 0.00613
     },
-    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026": {
         "nevts": 468000,
         "nfiles": 13,
         "size_TB": 0.008217
     },
-    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410277.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026": {
         "nevts": 350000,
         "nfiles": 11,
         "size_TB": 0.005831
     },
-    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13144_p6026": {
         "nevts": 289000,
         "nfiles": 11,
         "size_TB": 0.005006999999999999
     },
-    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13145_p6026": {
         "nevts": 443000,
         "nfiles": 15,
         "size_TB": 0.007744
     },
-    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410278.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_tttautau_mll_1_5.deriv.DAOD_PHYSLITE.e6087_s3681_r13167_p6026": {
         "nevts": 305000,
         "nfiles": 11,
         "size_TB": 0.005037
     },
-    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13144_p6026": {
         "nevts": 120000,
         "nfiles": 6,
         "size_TB": 0.0021669999999999997
     },
-    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13145_p6026": {
         "nevts": 158000,
         "nfiles": 8,
         "size_TB": 0.002868
     },
-    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410408.aMcAtNloPythia8EvtGen_tWZ_Ztoll_minDR1.deriv.DAOD_PHYSLITE.e6423_s3681_r13167_p6026": {
         "nevts": 90000,
         "nfiles": 3,
         "size_TB": 0.0015400000000000001
     },
-    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13144_p6026": {
         "nevts": 142337000,
         "nfiles": 2012,
         "size_TB": 2.189
     },
-    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13145_p6026": {
         "nevts": 185168000,
         "nfiles": 1706,
         "size_TB": 2.861
     },
-    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13167_p6026": {
         "nevts": 113584000,
         "nfiles": 1004,
         "size_TB": 1.654
     },
-    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13144_p6026": {
         "nevts": 993000,
         "nfiles": 14,
         "size_TB": 0.014189
     },
-    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13145_p6026": {
         "nevts": 1322000,
         "nfiles": 19,
         "size_TB": 0.018914999999999998
     },
-    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13167_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.410560.MadGraphPythia8EvtGen_A14_tZ_4fl_tchan_noAllHad.deriv.DAOD_PHYSLITE.e5803_s3681_r13167_p5855": {
         "nevts": 999200,
         "nfiles": 15,
         "size_TB": 0.013087999999999999
     },
-    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13144_p6026": {
         "nevts": 2508000,
         "nfiles": 48,
         "size_TB": 0.031146
     },
-    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13145_p6026": {
         "nevts": 3175000,
         "nfiles": 33,
         "size_TB": 0.0396
     },
-    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410644.PowhegPythia8EvtGen_A14_singletop_schan_lept_top.deriv.DAOD_PHYSLITE.e6527_s3681_r13167_p6026": {
         "nevts": 2000000,
         "nfiles": 20,
         "size_TB": 0.023226
     },
-    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13144_p6026": {
         "nevts": 2510000,
         "nfiles": 26,
         "size_TB": 0.03108
     },
-    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13145_p6026": {
         "nevts": 3317000,
         "nfiles": 36,
         "size_TB": 0.041192
     },
-    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410645.PowhegPythia8EvtGen_A14_singletop_schan_lept_antitop.deriv.DAOD_PHYSLITE.e6527_s3681_r13167_p6026": {
         "nevts": 2000000,
         "nfiles": 23,
         "size_TB": 0.02311
     },
-    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13144_p6026": {
         "nevts": 31110000,
         "nfiles": 343,
         "size_TB": 0.38173599999999996
     },
-    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13145_p6026": {
         "nevts": 41511900,
         "nfiles": 415,
         "size_TB": 0.5127670000000001
     },
-    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410658.PhPy8EG_A14_tchan_BW50_lept_top.deriv.DAOD_PHYSLITE.e6671_s3681_r13167_p6026": {
         "nevts": 24894500,
         "nfiles": 152,
         "size_TB": 0.287
     },
-    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13144_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13144_p6026": {
         "nevts": 31182000,
         "nfiles": 401,
         "size_TB": 0.38405700000000004
     },
-    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13145_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13145_p6026": {
         "nevts": 41584500,
         "nfiles": 341,
         "size_TB": 0.515573
     },
-    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13167_p6026\n": {
+    "mc20_13TeV:mc20_13TeV.410659.PhPy8EG_A14_tchan_BW50_lept_antitop.deriv.DAOD_PHYSLITE.e6671_s3681_r13167_p6026": {
         "nevts": 24952500,
         "nfiles": 182,
         "size_TB": 0.288333
     },
-    "mc20_13TeV:mc20_13TeV.412043.aMcAtNloPythia8EvtGen_A14NNPDF31_SM4topsNLO.deriv.DAOD_PHYSLITE.e7101_a907_r14859_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.412043.aMcAtNloPythia8EvtGen_A14NNPDF31_SM4topsNLO.deriv.DAOD_PHYSLITE.e7101_a907_r14859_p5855": {
         "nevts": 3990000,
         "nfiles": 42,
         "size_TB": 0.090916
     },
-    "mc20_13TeV:mc20_13TeV.412043.aMcAtNloPythia8EvtGen_A14NNPDF31_SM4topsNLO.deriv.DAOD_PHYSLITE.e7101_a907_r14861_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.412043.aMcAtNloPythia8EvtGen_A14NNPDF31_SM4topsNLO.deriv.DAOD_PHYSLITE.e7101_a907_r14861_p5855": {
         "nevts": 6000000,
         "nfiles": 77,
         "size_TB": 0.142264
     },
-    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13144_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13144_p5855": {
         "nevts": 12495000,
         "nfiles": 113,
         "size_TB": 0.17427099999999998
     },
-    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13145_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13145_p5855": {
         "nevts": 16598000,
         "nfiles": 552,
         "size_TB": 0.23488900000000001
     },
-    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13167_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601352.PhPy8EG_tW_dyn_DR_incl_antitop.deriv.DAOD_PHYSLITE.e8547_s4231_r13167_p5855": {
         "nevts": 9985000,
         "nfiles": 75,
         "size_TB": 0.13151
     },
-    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13144_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13144_p5855": {
         "nevts": 12486000,
         "nfiles": 133,
         "size_TB": 0.174651
     },
-    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13145_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13145_p5855": {
         "nevts": 16573000,
         "nfiles": 117,
         "size_TB": 0.234012
     },
-    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13167_p5855\n": {
+    "mc20_13TeV:mc20_13TeV.601355.PhPy8EG_tW_dyn_DR_incl_top.deriv.DAOD_PHYSLITE.e8547_s4231_r13167_p5855": {
         "nevts": 9976000,
         "nfiles": 89,
         "size_TB": 0.131692
