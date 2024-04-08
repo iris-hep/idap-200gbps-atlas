@@ -52,4 +52,4 @@ if __name__ == "__main__":
     print("  nevts", total_nevts)
 
     with open("container_metadata.json", "w") as f:
-        f.write(json.dumps(output_info))
+        f.write(json.dumps(output_info, sort_keys=True, indent=4))
