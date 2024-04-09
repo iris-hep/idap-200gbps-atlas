@@ -27,10 +27,12 @@ logger.info("DID Finder starting up.")
 did_client = DIDClient()
 replica_client = ReplicaClient()
 
-caches=['192.170.240.145','192.170.240.146','192.170.240.147','192.170.240.148']
+caches = ['192.170.240.141', '192.170.240.142', '192.170.240.143',
+          '192.170.240.144', '192.170.240.145', '192.170.240.146',
+          '192.170.240.147', '192.170.240.148']
 
 if len(sys.argv) > 1:
-    did = sys.argv[1]  
+    did = sys.argv[1]
 else:
     print("Please provide a dataset name.")
     sys.exit(1)
@@ -57,6 +59,7 @@ def parse_did(did):
 
     logger.error(f"Scope of the dataset {did} could not be determined.")
     return None
+
 
 parsed_did = parse_did(did)
 if not parsed_did:
@@ -107,39 +110,39 @@ for ds in datasets:
                 logger.error(f"File {f['identity']} has no replicas.")
                 no_replica_files += 1
                 continue
-            
+
             if isinstance(f['url'], dict):
                 path = f['url']['#text']
             else:
                 path = f['url'][0]['#text']
-                
+
             total_size += int(f['size'], 10)
             files.append(path)
 
-logger.info(f"{did} is a dataset with {len(files)} files. Total dataset size is {total_size/1024/1024/1024} GB")
+logger.info(
+    f"{did} is a dataset with {len(files)} files. Total dataset size is {total_size/1024/1024/1024} GB")
 
 for f in files:
-    if f.count("root://")>1:
-        f=f[f.index("root://",2):]
+    if f.count("root://") > 1:
+        f = f[f.index("root://", 2):]
 
-def hash_string_with_seed(input_string, seed):
-    # Combine the seed and input_string
-    seed_string = str(seed) + input_string
-    
+
+def hash_string(input_string):
     # Create a SHA-256 hash object
-    hash_object = hashlib.sha256(seed_string.encode())
-    
+    hash_object = hashlib.sha256(input_string.encode())
+
     # Get the hexadecimal digest
     hex_digest = hash_object.hexdigest()
-    
+
     # Convert the hexadecimal digest to an integer
     int_value = int(hex_digest, 16)
-    
+
     return int_value
 
-cf=[]
+
+cf = []
 for f in files:
-    c = hash_string_with_seed(f, 123)%len(caches)
+    c = hash_string(f) % len(caches)
     cf.append(f'root://{caches[c]}//{f}')
     print(f)
 

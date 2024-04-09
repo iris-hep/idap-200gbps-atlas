@@ -27,6 +27,7 @@ If you are going to use the `servicex` version, you have to pin `dask_awkward==2
 The folder `input_files` contains the list of input containers / files and related metadata plus scripts to produce these.
 
 In total:
+
 * number of files: 218,960
 * size: 191.022 TB
 * number of events: 23,344,277,104
@@ -37,6 +38,12 @@ with additional files:
 * `input_files/container_list.txt`: list of containers to run over
 * `input_files/produce_container_metadata.py`: query metadata for containers: number of files / events, size
 * `input_files/container_metadata.json`: output of `input_files/produce_container_metadata.py` with container metadata
+* `input_files/get_file_list.py`: for a given dataset creates a txt file listing file access paths that include apropriate xcache. The same kind of output can be obtained by doing:
+
+    ```
+    export SITE_NAME=AF_200
+    rucio list-file-replicas mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026 --protocol root  --pfns --rses MWT2_UC_LOCALGROUPDISK
+    ```
 
 ## Acknowledgements
 
