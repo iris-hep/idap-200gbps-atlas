@@ -10,8 +10,6 @@ ATLAS does not have released OpenData, so there isn't an AGC we can copy and try
 
 ## Description of files
 
-* `size_per_branch.ipynb`: produce breakdown of branch sizes for given file
-* `branch_sizes.json`: output of , produced by `size_per_branch.ipynb`
 * `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
 
 ## Usage
@@ -44,6 +42,13 @@ with additional files:
     export SITE_NAME=AF_200
     rucio list-file-replicas mc20_13TeV:mc20_13TeV.364126.Sherpa_221_NNPDF30NNLO_Zee_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5299_s3681_r13145_p6026 --protocol root  --pfns --rses MWT2_UC_LOCALGROUPDISK
     ```
+
+### Branch list determination
+
+Branches to be read are determined with a 2018 data file.
+
+* `input_files/size_per_branch.ipynb`: produce breakdown of branch sizes for given file
+* `input_files/branch_sizes.json`: output of notebook above
 
 ## Acknowledgements
 
