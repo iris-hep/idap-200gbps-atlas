@@ -1,0 +1,15 @@
+root://192.170.240.148//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/53/44/DAOD_PHYSLITE.37229915._000001.pool.root.1
+root://192.170.240.147//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/5b/73/DAOD_PHYSLITE.37229915._000002.pool.root.1
+root://192.170.240.142//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/23/5b/DAOD_PHYSLITE.37229915._000003.pool.root.1
+root://192.170.240.144//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/43/e7/DAOD_PHYSLITE.37229915._000004.pool.root.1
+root://192.170.240.145//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/1c/b2/DAOD_PHYSLITE.37229915._000005.pool.root.1
+root://192.170.240.141//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/24/10/DAOD_PHYSLITE.37229915._000006.pool.root.1
+root://192.170.240.144//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/02/35/DAOD_PHYSLITE.37229915._000007.pool.root.1
+root://192.170.240.142//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/77/f4/DAOD_PHYSLITE.37229915._000008.pool.root.1
+root://192.170.240.148//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/c8/6e/DAOD_PHYSLITE.37229915._000009.pool.root.1
+root://192.170.240.148//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/2e/84/DAOD_PHYSLITE.37229915._000010.pool.root.1
+root://192.170.240.141//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/08/67/DAOD_PHYSLITE.37229915._000011.pool.root.1
+root://192.170.240.148//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/03/10/DAOD_PHYSLITE.37229915._000012.pool.root.1
+root://192.170.240.147//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/92/40/DAOD_PHYSLITE.37229915._000013.pool.root.1
+root://192.170.240.142//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/f5/d2/DAOD_PHYSLITE.37229915._000014.pool.root.1
+root://192.170.240.146//root://atlas.dcache.nikhef.nl:1094//pnfs/nikhef.nl/data/atlas/atlasdatadisk/rucio/mc20_13TeV/63/dc/DAOD_PHYSLITE.37229915._000015.pool.root.1

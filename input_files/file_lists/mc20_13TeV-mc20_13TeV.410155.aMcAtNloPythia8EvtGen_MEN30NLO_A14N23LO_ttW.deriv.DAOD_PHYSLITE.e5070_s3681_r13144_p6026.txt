@@ -1,0 +1,1 @@
+root://192.170.240.148//root://grid-se.physik.uni-wuppertal.de:1094//pnfs/physik.uni-wuppertal.de/data/atlas/atlasdatadisk/rucio/mc20_13TeV/64/1e/DAOD_PHYSLITE.37229852._000001.pool.root.1

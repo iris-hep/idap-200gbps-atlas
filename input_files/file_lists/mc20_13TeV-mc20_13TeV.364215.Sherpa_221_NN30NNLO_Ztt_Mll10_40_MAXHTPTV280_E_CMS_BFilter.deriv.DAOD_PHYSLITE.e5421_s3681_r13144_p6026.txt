@@ -1,0 +1,2 @@
+root://192.170.240.141//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/11/66/DAOD_PHYSLITE.37226097._000002.pool.root.1
+root://192.170.240.142//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/66/d8/DAOD_PHYSLITE.37226097._000003.pool.root.1

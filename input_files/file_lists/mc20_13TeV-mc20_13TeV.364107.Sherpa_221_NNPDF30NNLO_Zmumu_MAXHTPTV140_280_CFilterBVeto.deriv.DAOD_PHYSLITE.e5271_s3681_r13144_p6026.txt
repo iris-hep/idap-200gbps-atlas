@@ -1,0 +1,13 @@
+root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/0b/90/DAOD_PHYSLITE.37224152._000001.pool.root.1
+root://192.170.240.148//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/ef/d1/DAOD_PHYSLITE.37224152._000002.pool.root.1
+root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/56/e7/DAOD_PHYSLITE.37224152._000003.pool.root.1
+root://192.170.240.143//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/0f/cd/DAOD_PHYSLITE.37224152._000004.pool.root.1
+root://192.170.240.143//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/4f/d1/DAOD_PHYSLITE.37224152._000005.pool.root.1
+root://192.170.240.145//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/1a/02/DAOD_PHYSLITE.37224152._000006.pool.root.1
+root://192.170.240.142//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/cf/da/DAOD_PHYSLITE.37224152._000007.pool.root.1
+root://192.170.240.142//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/40/10/DAOD_PHYSLITE.37224152._000008.pool.root.1
+root://192.170.240.148//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/b0/24/DAOD_PHYSLITE.37224152._000009.pool.root.1
+root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/42/54/DAOD_PHYSLITE.37224152._000010.pool.root.1
+root://192.170.240.143//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/1d/fa/DAOD_PHYSLITE.37224152._000011.pool.root.1
+root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/60/6e/DAOD_PHYSLITE.37224152._000012.pool.root.1
+root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/4b/c6/DAOD_PHYSLITE.37224152._000013.pool.root.1

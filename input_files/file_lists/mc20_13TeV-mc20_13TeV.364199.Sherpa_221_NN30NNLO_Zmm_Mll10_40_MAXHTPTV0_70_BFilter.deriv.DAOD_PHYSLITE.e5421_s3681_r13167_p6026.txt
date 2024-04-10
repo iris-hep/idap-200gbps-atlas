@@ -1,0 +1,1 @@
+root://192.170.240.145//root://xrootd01.esc.qmul.ac.uk:1094//atlas/atlasdatadisk/rucio/mc20_13TeV/80/cf/DAOD_PHYSLITE.37622236._000001.pool.root.1

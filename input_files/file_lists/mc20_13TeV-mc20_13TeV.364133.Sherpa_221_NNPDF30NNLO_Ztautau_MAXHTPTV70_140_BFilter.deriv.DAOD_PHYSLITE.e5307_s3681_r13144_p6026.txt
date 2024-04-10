@@ -1,0 +1,1 @@
+root://192.170.240.142//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/71/19/DAOD_PHYSLITE.37224560._000001.pool.root.1

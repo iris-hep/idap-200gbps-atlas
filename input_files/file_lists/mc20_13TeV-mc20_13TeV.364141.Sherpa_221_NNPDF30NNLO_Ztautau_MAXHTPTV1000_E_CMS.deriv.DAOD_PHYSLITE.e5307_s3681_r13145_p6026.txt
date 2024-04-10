@@ -1,0 +1,13 @@
+root://192.170.240.144//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/53/d7/DAOD_PHYSLITE.37225844._000001.pool.root.1
+root://192.170.240.145//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/91/01/DAOD_PHYSLITE.37225844._000002.pool.root.1
+root://192.170.240.141//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/84/94/DAOD_PHYSLITE.37225844._000003.pool.root.1
+root://192.170.240.141//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/2d/2d/DAOD_PHYSLITE.37225844._000004.pool.root.1
+root://192.170.240.146//root://clrlcgse01.in2p3.fr:1094//dpm/in2p3.fr/home/atlas/atlasdatadisk/rucio/mc20_13TeV/be/d2/DAOD_PHYSLITE.37225844._000005.pool.root.1
+root://192.170.240.145//root://clrlcgse01.in2p3.fr:1094//dpm/in2p3.fr/home/atlas/atlasdatadisk/rucio/mc20_13TeV/f0/7d/DAOD_PHYSLITE.37225844._000006.pool.root.1
+root://192.170.240.143//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/70/dc/DAOD_PHYSLITE.37225844._000007.pool.root.1
+root://192.170.240.148//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/33/f6/DAOD_PHYSLITE.37225844._000008.pool.root.1
+root://192.170.240.148//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/ad/a6/DAOD_PHYSLITE.37225844._000009.pool.root.1
+root://192.170.240.141//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/6c/41/DAOD_PHYSLITE.37225844._000010.pool.root.1
+root://192.170.240.148//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/f3/27/DAOD_PHYSLITE.37225844._000011.pool.root.1
+root://192.170.240.148//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/45/41/DAOD_PHYSLITE.37225844._000012.pool.root.1
+root://192.170.240.142//root://ccxrdatlastpc.in2p3.fr:1094//pnfs/in2p3.fr/data/atlas/atlasdatadisk/rucio/mc20_13TeV/d1/34/DAOD_PHYSLITE.37225844._000013.pool.root.1

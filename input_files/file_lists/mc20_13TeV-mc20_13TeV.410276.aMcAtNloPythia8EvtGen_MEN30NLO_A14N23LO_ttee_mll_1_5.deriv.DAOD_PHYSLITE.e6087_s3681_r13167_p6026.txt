@@ -1,0 +1,11 @@
+root://192.170.240.141//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/96/cc/DAOD_PHYSLITE.37620515._000001.pool.root.1
+root://192.170.240.142//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/83/7b/DAOD_PHYSLITE.37620515._000002.pool.root.1
+root://192.170.240.141//root://lcg-dp04.uw.computecanada.ca:1094//atlas/atlasdatadisk/rucio/mc20_13TeV/e8/bc/DAOD_PHYSLITE.37620515._000005.pool.root.1
+root://192.170.240.148//root://lcg-dp04.uw.computecanada.ca:1094//atlas/atlasdatadisk/rucio/mc20_13TeV/af/84/DAOD_PHYSLITE.37620515._000006.pool.root.1
+root://192.170.240.142//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/7f/19/DAOD_PHYSLITE.37620515._000009.pool.root.1
+root://192.170.240.145//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/87/7d/DAOD_PHYSLITE.37620515._000010.pool.root.1
+root://192.170.240.147//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/b1/21/DAOD_PHYSLITE.37620515._000013.pool.root.1
+root://192.170.240.148//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/97/ab/DAOD_PHYSLITE.37620515._000016.pool.root.1
+root://192.170.240.145//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/57/26/DAOD_PHYSLITE.37620515._000017.pool.root.1
+root://192.170.240.141//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/ec/c6/DAOD_PHYSLITE.37620515._000018.pool.root.1
+root://192.170.240.143//root://lcg-lrz-rootd.grid.lrz.de:1094/pnfs/lrz-muenchen.de/data/atlas/dq2/atlasdatadisk/rucio/mc20_13TeV/9d/4d/DAOD_PHYSLITE.37620515._000020.pool.root.1

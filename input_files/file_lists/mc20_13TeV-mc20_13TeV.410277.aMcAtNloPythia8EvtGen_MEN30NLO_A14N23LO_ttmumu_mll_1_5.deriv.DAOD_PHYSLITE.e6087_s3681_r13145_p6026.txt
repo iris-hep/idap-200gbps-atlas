@@ -1,0 +1,13 @@
+root://192.170.240.141//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/87/74/DAOD_PHYSLITE.37231794._000001.pool.root.1
+root://192.170.240.146//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/a6/30/DAOD_PHYSLITE.37231794._000002.pool.root.1
+root://192.170.240.144//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/33/04/DAOD_PHYSLITE.37231794._000003.pool.root.1
+root://192.170.240.146//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/75/c1/DAOD_PHYSLITE.37231794._000004.pool.root.1
+root://192.170.240.144//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/cb/be/DAOD_PHYSLITE.37231794._000005.pool.root.1
+root://192.170.240.147//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/8a/c8/DAOD_PHYSLITE.37231794._000006.pool.root.1
+root://192.170.240.144//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/88/06/DAOD_PHYSLITE.37231794._000007.pool.root.1
+root://192.170.240.141//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/5a/e1/DAOD_PHYSLITE.37231794._000008.pool.root.1
+root://192.170.240.144//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/4c/9e/DAOD_PHYSLITE.37231794._000009.pool.root.1
+root://192.170.240.146//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/22/ff/DAOD_PHYSLITE.37231794._000010.pool.root.1
+root://192.170.240.144//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/dd/7e/DAOD_PHYSLITE.37231794._000014.pool.root.1
+root://192.170.240.141//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/47/96/DAOD_PHYSLITE.37231794._000015.pool.root.1
+root://192.170.240.146//root://xrootd.data.net2.mghpcc.org:1094//USATLAS/atlasdatadisk/rucio/mc20_13TeV/aa/ae/DAOD_PHYSLITE.37231794._000016.pool.root.1

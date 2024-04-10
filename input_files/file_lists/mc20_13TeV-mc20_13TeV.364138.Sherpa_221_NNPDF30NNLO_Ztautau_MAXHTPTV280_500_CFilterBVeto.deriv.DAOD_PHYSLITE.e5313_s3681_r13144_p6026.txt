@@ -1,0 +1,8 @@
+root://192.170.240.142//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/7c/9e/DAOD_PHYSLITE.37224627._000001.pool.root.1
+root://192.170.240.144//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/a6/d4/DAOD_PHYSLITE.37224627._000002.pool.root.1
+root://192.170.240.142//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/7f/c4/DAOD_PHYSLITE.37224627._000003.pool.root.1
+root://192.170.240.147//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/5c/28/DAOD_PHYSLITE.37224627._000004.pool.root.1
+root://192.170.240.141//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/cb/43/DAOD_PHYSLITE.37224627._000005.pool.root.1
+root://192.170.240.146//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/92/1c/DAOD_PHYSLITE.37224627._000006.pool.root.1
+root://192.170.240.145//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/2a/3c/DAOD_PHYSLITE.37224627._000007.pool.root.1
+root://192.170.240.141//root://lapp-dccentral01.in2p3.fr:1094//data/atlas/atlasdatadisk/rucio/mc20_13TeV/81/92/DAOD_PHYSLITE.37224627._000008.pool.root.1
