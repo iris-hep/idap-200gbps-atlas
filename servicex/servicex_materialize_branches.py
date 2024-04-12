@@ -6,7 +6,7 @@ from typing import List
 
 import awkward as ak
 import uproot
-from dask.distributed import Client, LocalCluster
+from dask.distributed import Client, LocalCluster, performance_report
 from func_adl_servicex_xaodr21 import SXDSAtlasxAODR21, atlas_release
 
 from servicex import ServiceXDataset
@@ -197,7 +197,7 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
     return [str(f.url) for f in files]
 
 
-def main(ignore_cache: bool = False, num_files: int = 10):
+def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = False):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
@@ -221,7 +221,12 @@ def main(ignore_cache: bool = False, num_files: int = 10):
     )
     total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
     logging.info("Computing the total count")
-    r = total_count.compute()  # type: ignore
+    if dask_report:
+        with performance_report(filename="dask-report.html"):
+            r = total_count.compute()  # type: ignore
+    else:
+        r = total_count.compute()  # type: ignore
+
     logging.info(f"Done: result = {r:,}")
 
 
@@ -248,6 +253,13 @@ if __name__ == "__main__":
         action="store_true",
         help="Enable profiling of the code. This will output a file "
         "called `sx_materialize_branches.pstats`.",
+    )
+
+    parser.add_argument(
+        "--dask-profile",
+        action="store_true",
+        help="Enable profiling of the Dask execution. This will output a file "
+        "called `dask-report.html`.",
     )
 
     # Add the flag to enable/disable local Dask cluster
@@ -310,10 +322,12 @@ if __name__ == "__main__":
 
     # Now run the main function
     if args.profile is False:
-        main(ignore_cache=args.ignore_cache, num_files=args.num_files)
+        main(ignore_cache=args.ignore_cache, num_files=args.num_files,
+             dask_report=args.dask_profile)
     else:
         cProfile.run(
-            "main(ignore_cache=args.ignore_cache, num_files=args.num_files)",
+            "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
+            "dask_report=args.dask_profile)",
             "sx_materialize_branches.pstats"
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
