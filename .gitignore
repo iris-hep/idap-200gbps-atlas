@@ -169,3 +169,4 @@ servicex.yaml
 *.pstats
 servicex/test.py
 *.html
+.DS_Store
