@@ -11,6 +11,25 @@ The default `servicex.yaml` file was used from the UChicago AF.
 | 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be. |
 | servicex_materialize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
 
+## Running a `materialize` test
+
+The following tests were used to run a performance test using the `servicex_materialize_branches.py`:
+
+1. Create a JupyterHub cluster on UChicago:
+    1. Create the j-lab instance
+        * Use the `AB-dev` image
+        * 32 GB of memory
+        * 8 cores
+        * From the command line inside the instance, issue the command `pip install 'func_adl_servicex_xaodr21>=2.0a1'`
+    2. Once started create a DASK cluster
+        * Use the `dask` web page
+        * At the bottom click "create"
+        * Copy the scheduler address that appears in the new cluster.
+    3. Run the materialize bench mark:
+        * `python servicex/servicex_materialize_branches.py -v --distributed-client scheduler --dask-scheduler 'tcp://dask-gwatts-51a0bb30-c.af-jupyter:8786' --num-files 0`
+        * The `-v` turns on a first level of verbosity which dumps out timings to `stdout`.
+        * The second two are required to run with a full `dask` scheduler.
+
 ## Notes on using `servicex_materialize_branches.py
 
 This script is basic and mostly hard-coded. There are a few command line options that are useful:

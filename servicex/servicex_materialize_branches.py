@@ -6,7 +6,7 @@ from typing import List
 
 import awkward as ak
 import uproot
-from dask.distributed import Client, LocalCluster
+from dask.distributed import Client, LocalCluster, performance_report
 from func_adl_servicex_xaodr21 import SXDSAtlasxAODR21, atlas_release
 
 from servicex import ServiceXDataset
@@ -29,7 +29,7 @@ class ElapsedFormatter(logging.Formatter):
         return super().format(record)
 
 
-def query_servicex(ignore_cache: bool) -> List[str]:
+def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
@@ -40,7 +40,8 @@ def query_servicex(ignore_cache: bool) -> List[str]:
     )
 
     # Build the data query for SX
-    rucio_ds = f"rucio://{ds_name}?files=10"
+    files_postfix = "" if num_files == 0 else f"?files={num_files}"
+    rucio_ds = f"rucio://{ds_name}{files_postfix}"
 
     # Because we are going to do a specialized query, we'll alter the return type here.
     ds = SXDSAtlasxAODR21(rucio_ds, backend="atlasr22")
@@ -196,7 +197,7 @@ def query_servicex(ignore_cache: bool) -> List[str]:
     return [str(f.url) for f in files]
 
 
-def main(ignore_cache: bool = False):
+def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = False):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
@@ -204,7 +205,9 @@ def main(ignore_cache: bool = False):
     logging.info(f"Using release {atlas_release}")
 
     # Execute the query and get back the files.
-    files = query_servicex(ignore_cache=ignore_cache)
+    # TODO: every time JuypterHub needs to be refreshed, we lose the
+    #       SX cache info - and so long queries have to be re-run.
+    files = query_servicex(ignore_cache=ignore_cache, num_files=num_files)
     assert len(files) > 0
     for i, f in enumerate(files):
         logging.debug(f"{i:00}: {f}")
@@ -218,7 +221,12 @@ def main(ignore_cache: bool = False):
     )
     total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
     logging.info("Computing the total count")
-    r = total_count.compute()  # type: ignore
+    if dask_report:
+        with performance_report(filename="dask-report.html"):
+            r = total_count.compute()  # type: ignore
+    else:
+        r = total_count.compute()  # type: ignore
+
     logging.info(f"Done: result = {r:,}")
 
 
@@ -247,13 +255,35 @@ if __name__ == "__main__":
         "called `sx_materialize_branches.pstats`.",
     )
 
+    parser.add_argument(
+        "--dask-profile",
+        action="store_true",
+        help="Enable profiling of the Dask execution. This will output a file "
+        "called `dask-report.html`.",
+    )
+
     # Add the flag to enable/disable local Dask cluster
     parser.add_argument(
         "--distributed-client",
-        choices=["local", "none"],
+        choices=["local", "none", "scheduler"],
         default="local",
-        help="Specify the type of Dask cluster to enable (default: local uses all cores "
+        help="Specify the type of Dask cluster to enable (default: local uses 8 cores "
         "in process, none doesn't use any)",
+    )
+
+    # Add the flag to specify the Dask scheduler address
+    parser.add_argument(
+        "--dask-scheduler",
+        help="Specify the address of the Dask scheduler. Only valid when distributed-client "
+        "is 'scheduler'.",
+        default=None)
+
+    # Number of files in the dataset to run on. Default to 10. Specify 0 to run on full.
+    parser.add_argument(
+        "--num-files",
+        type=int,
+        default=10,
+        help="Number of files in the dataset to run on. Default to 10. Specify 0 to run on full.",
     )
 
     # Parse the command line arguments
@@ -285,12 +315,19 @@ if __name__ == "__main__":
             n_workers=n_workers, processes=False, threads_per_worker=1
         )
         client = Client(cluster)
+    elif args.distributed_client == "scheduler":
+        logging.debug("Connecting to Dask scheduler at {scheduler_address}")
+        assert args.dask_scheduler is not None
+        client = Client(args.dask_scheduler)
 
     # Now run the main function
     if args.profile is False:
-        main(ignore_cache=args.ignore_cache)
+        main(ignore_cache=args.ignore_cache, num_files=args.num_files,
+             dask_report=args.dask_profile)
     else:
         cProfile.run(
-            "main(ignore_cache=args.ignore_cache)", "sx_materialize_branches.pstats"
+            "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
+            "dask_report=args.dask_profile)",
+            "sx_materialize_branches.pstats"
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
