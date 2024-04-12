@@ -13,6 +13,7 @@ import sys
 import logging
 import xmltodict
 import hashlib
+import os
 
 from rucio.common.exception import DataIdentifierNotFound
 from rucio.client.scopeclient import ScopeClient
@@ -140,12 +141,16 @@ def hash_string(input_string):
     return int_value
 
 
+output_directory = "file_lists"
+if not os.path.exists(output_directory):
+    os.mkdir(output_directory)
+
 cf = []
 for f in files:
     c = hash_string(f) % len(caches)
     cf.append(f'root://{caches[c]}//{f}')
     print(f)
 
-with open(f'{did}.txt', 'w') as file:
+with open(f'{output_directory}/{did.replace(":", "-")}.txt', 'w') as file:
     for f in cf:
         file.write(f + '\n')
