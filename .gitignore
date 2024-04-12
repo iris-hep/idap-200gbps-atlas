@@ -170,3 +170,4 @@ servicex.yaml
 servicex/test.py
 *.html
 .DS_Store
+figures/
