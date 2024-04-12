@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: xcache-test
+  namespace: xcache-test
+  labels:
+    k8s-app: xcache-test
+spec:
+  replicas: 200
+  selector:
+    matchLabels:
+      k8s-app: xcache-test
+  template:
+    metadata:
+      labels:
+        k8s-app: xcache-test
+    spec:
+      containers:
+        - name: xcache-test
+          image: ivukotic/xcache-200:latest
+          command: ["./runme.sh"]
+          # args: ["8xcaches.txt"]
+          args: ["dcache.txt"]
+          env:
+            - name: X509_USER_PROXY
+              value: /x509_proxy
+          resources:
+            requests:
+              memory: "512Mi"
+              cpu: "250m"
+            limits:
+              memory: "1Gi"
+              cpu: "2000m"
