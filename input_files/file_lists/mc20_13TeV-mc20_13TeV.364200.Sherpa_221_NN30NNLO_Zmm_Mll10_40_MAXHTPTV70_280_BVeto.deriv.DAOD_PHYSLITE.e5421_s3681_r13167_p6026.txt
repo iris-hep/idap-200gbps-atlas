@@ -1,2 +1,0 @@
-root://192.170.240.142//root://clrlcgse01.in2p3.fr:1094//dpm/in2p3.fr/home/atlas/atlasdatadisk/rucio/mc20_13TeV/e1/af/DAOD_PHYSLITE.37622238._000001.pool.root.1
-root://192.170.240.147//root://clrlcgse01.in2p3.fr:1094//dpm/in2p3.fr/home/atlas/atlasdatadisk/rucio/mc20_13TeV/29/88/DAOD_PHYSLITE.37622238._000002.pool.root.1

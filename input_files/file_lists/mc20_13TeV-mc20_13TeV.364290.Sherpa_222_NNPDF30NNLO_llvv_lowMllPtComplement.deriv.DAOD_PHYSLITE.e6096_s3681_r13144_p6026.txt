@@ -1,1 +1,0 @@
-root://192.170.240.143//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/5e/53/DAOD_PHYSLITE.37227124._000001.pool.root.1

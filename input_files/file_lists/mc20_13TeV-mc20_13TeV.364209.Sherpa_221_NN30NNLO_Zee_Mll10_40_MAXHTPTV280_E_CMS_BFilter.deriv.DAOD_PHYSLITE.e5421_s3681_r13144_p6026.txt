@@ -1,9 +1,0 @@
-root://192.170.240.147//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/8a/b8/DAOD_PHYSLITE.37226016._000001.pool.root.1
-root://192.170.240.146//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/3e/d7/DAOD_PHYSLITE.37226016._000002.pool.root.1
-root://192.170.240.143//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/37/51/DAOD_PHYSLITE.37226016._000003.pool.root.1
-root://192.170.240.141//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/27/43/DAOD_PHYSLITE.37226016._000004.pool.root.1
-root://192.170.240.147//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/b0/e7/DAOD_PHYSLITE.37226016._000005.pool.root.1
-root://192.170.240.145//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/c6/f9/DAOD_PHYSLITE.37226016._000006.pool.root.1
-root://192.170.240.144//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/50/e2/DAOD_PHYSLITE.37226016._000007.pool.root.1
-root://192.170.240.143//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/c5/f2/DAOD_PHYSLITE.37226016._000008.pool.root.1
-root://192.170.240.148//root://xrootd.echo.stfc.ac.uk:1094/atlas:datadisk/rucio/mc20_13TeV/cd/09/DAOD_PHYSLITE.37226016._000009.pool.root.1

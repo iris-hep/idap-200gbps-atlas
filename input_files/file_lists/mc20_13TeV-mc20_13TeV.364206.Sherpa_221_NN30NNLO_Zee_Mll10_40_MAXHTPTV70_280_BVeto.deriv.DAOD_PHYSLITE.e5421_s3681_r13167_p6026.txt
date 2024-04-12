@@ -1,5 +1,0 @@
-root://192.170.240.143//root://t2-dcache-01.na.infn.it:1094//dpm/na.infn.it/home/atlas/atlasdatadisk/rucio/mc20_13TeV/91/c2/DAOD_PHYSLITE.37622263._000001.pool.root.1
-root://192.170.240.148//root://t2-dcache-01.na.infn.it:1094//dpm/na.infn.it/home/atlas/atlasdatadisk/rucio/mc20_13TeV/d3/50/DAOD_PHYSLITE.37622263._000002.pool.root.1
-root://192.170.240.148//root://t2-dcache-01.na.infn.it:1094//dpm/na.infn.it/home/atlas/atlasdatadisk/rucio/mc20_13TeV/9e/eb/DAOD_PHYSLITE.37622263._000003.pool.root.1
-root://192.170.240.148//root://t2-dcache-01.na.infn.it:1094//dpm/na.infn.it/home/atlas/atlasdatadisk/rucio/mc20_13TeV/4c/b4/DAOD_PHYSLITE.37622263._000004.pool.root.1
-root://192.170.240.146//root://t2-dcache-01.na.infn.it:1094//dpm/na.infn.it/home/atlas/atlasdatadisk/rucio/mc20_13TeV/b1/43/DAOD_PHYSLITE.37622263._000005.pool.root.1

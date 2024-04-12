@@ -1,7 +1,0 @@
-root://192.170.240.147//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/40/77/DAOD_PHYSLITE.37622251._000001.pool.root.1
-root://192.170.240.147//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/74/c8/DAOD_PHYSLITE.37622251._000002.pool.root.1
-root://192.170.240.141//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/b7/92/DAOD_PHYSLITE.37622251._000003.pool.root.1
-root://192.170.240.143//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/ba/b4/DAOD_PHYSLITE.37622251._000004.pool.root.1
-root://192.170.240.148//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/f0/d6/DAOD_PHYSLITE.37622251._000005.pool.root.1
-root://192.170.240.146//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/26/bf/DAOD_PHYSLITE.37622251._000006.pool.root.1
-root://192.170.240.144//root://gridftp.atlas-swt2.org:1094//xrd/datadisk/rucio/mc20_13TeV/19/c6/DAOD_PHYSLITE.37622251._000007.pool.root.1

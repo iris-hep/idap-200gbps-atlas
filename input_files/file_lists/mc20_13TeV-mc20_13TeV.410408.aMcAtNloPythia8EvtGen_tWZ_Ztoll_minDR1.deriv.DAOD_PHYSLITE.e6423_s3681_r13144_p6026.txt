@@ -1,6 +1,0 @@
-root://192.170.240.148//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/b5/5a/DAOD_PHYSLITE.37229983._000013.pool.root.1
-root://192.170.240.144//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/0f/f9/DAOD_PHYSLITE.37229983._000014.pool.root.1
-root://192.170.240.146//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/72/ca/DAOD_PHYSLITE.37229983._000015.pool.root.1
-root://192.170.240.141//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/db/3d/DAOD_PHYSLITE.37229983._000016.pool.root.1
-root://192.170.240.144//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/f6/7b/DAOD_PHYSLITE.37229983._000017.pool.root.1
-root://192.170.240.147//root://dcgftp.usatlas.bnl.gov:1094//pnfs/usatlas.bnl.gov/BNLT0D1/rucio/mc20_13TeV/e3/d6/DAOD_PHYSLITE.37229983._000018.pool.root.1

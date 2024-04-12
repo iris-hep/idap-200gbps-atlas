@@ -1,5 +1,0 @@
-root://192.170.240.141//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/a4/2d/DAOD_PHYSLITE.37622463._000001.pool.root.1
-root://192.170.240.148//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/a5/78/DAOD_PHYSLITE.37622463._000002.pool.root.1
-root://192.170.240.145//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/d9/00/DAOD_PHYSLITE.37622463._000003.pool.root.1
-root://192.170.240.147//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/13/73/DAOD_PHYSLITE.37622463._000004.pool.root.1
-root://192.170.240.141//root://fax.mwt2.org:1094//pnfs/uchicago.edu/atlaslocalgroupdisk/rucio/mc20_13TeV/d1/5a/DAOD_PHYSLITE.37622463._000005.pool.root.1
