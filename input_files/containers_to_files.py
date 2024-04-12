@@ -7,6 +7,7 @@
 # (assuming setupATLAS / lsetup rucio + proxy present)
 
 import os
+import shutil
 
 if __name__ == "__main__":
     with open("container_list.txt") as f:
@@ -21,3 +22,9 @@ if __name__ == "__main__":
         cmd = f"python get_file_list.py {container}"
         print(cmd)
         os.system(cmd)  # produce file list
+
+    # create zipped version of folder with file lists
+    shutil.make_archive("file_lists", "zip", "file_lists")
+
+    # cleanup: delete non-zipped version
+    shutil.rmtree("file_lists")
