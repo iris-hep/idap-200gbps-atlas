@@ -8,6 +8,8 @@ ATLAS does not have released OpenData, so there isn't an AGC we can copy and try
 * Load 200 Gbps off of the PHYSLITE samples
 * Push all that data downstream to DASK (or similar) workers.
 
+We have a [losely tracked set of lessons learned](https://github.com/iris-hep/idap-200gbps-atlas/issues/13).
+
 ## Description of files
 
 * `materialize_branches.ipynb`: read list of branches, distributable with Dask (use for benchmarking)
