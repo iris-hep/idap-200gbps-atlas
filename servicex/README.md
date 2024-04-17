@@ -20,7 +20,7 @@ The following tests were used to run a performance test using the `servicex_mate
         * Use the `AB-dev` image
         * 32 GB of memory
         * 8 cores
-        * From the command line inside the instance, issue the command `pip install 'func_adl_servicex_xaodr21>=2.0a1'`
+        * From the command line inside the instance, issue the command `pip install 'func_adl_servicex_xaodr22>=2.0a1'`
     2. Once started create a DASK cluster
         * Use the `dask` web page
         * At the bottom click "create"
@@ -65,5 +65,5 @@ This will write out a `sx_materialize_branches.pstats` file, which you can then 
 
 Using the image `AB-dev`
 
-1. `pip install 'func_adl_servicex_xaodr21>=2.0a1'`
+1. `pip install 'func_adl_servicex_xaodr22>=2.0a1'`
 1. Get `servicex.yaml` copied somewhere it will be picked up.
