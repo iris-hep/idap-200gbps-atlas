@@ -15,7 +15,7 @@ def get_dsids(process):
         return [process]
 
 
-def get_fileset(processes_to_use, max_files_per_container=None):
+def get_fileset(processes_to_use, max_files_per_container=None, max_containers_per_dsid=None, max_dsid_per_process=None):
     with open(DIR / "container_metadata.json") as f:
         container_metadata = json.load(f)  # name -> metadata
 
@@ -40,10 +40,20 @@ def get_fileset(processes_to_use, max_files_per_container=None):
     total_nevts = 0
     for process in processes_to_use:
         dsids = get_dsids(process)
+
+        # limit amount of DSIDs per process
+        if max_dsid_per_process is not None:
+                dsids = dsids[:max_dsid_per_process]
+
         for dsid in dsids:
             # find matching containers
             matching_containers = [c for c in list(container_to_file_list.keys()) if str(dsid) in c]
-            # for each container, add full list of files
+
+            # limit amount of containers per DSID
+            if max_containers_per_dsid is not None:
+                matching_containers = matching_containers[:max_containers_per_dsid]
+
+            # for each container, add list of files
             for container in matching_containers:
                 file_list = container_to_file_list[container]
                 total_nfiles += len(file_list)

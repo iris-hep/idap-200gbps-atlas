@@ -95,7 +95,7 @@ for ds in datasets:
         schemes=['root', 'http', 'https'],
         metalink=True,
         sort='geoip',
-        rse_expression='istape=False\\type=SPECIAL',
+        rse_expression='MWT2_UC_LOCALGROUPDISK|MWT2_UC_SCRATCHDISK|MWT2_DATADISK',
         ignore_availability=False
     )
     d = xmltodict.parse(reps)
