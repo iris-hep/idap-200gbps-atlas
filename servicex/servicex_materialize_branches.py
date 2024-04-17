@@ -7,7 +7,7 @@ from typing import List
 import awkward as ak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
-from func_adl_servicex_xaodr21 import SXDSAtlasxAODR21, atlas_release
+from func_adl_servicex_xaodr22 import SXDSAtlasxAODR22PHYSLITE, atlas_release
 
 from servicex import ServiceXDataset
 
@@ -44,7 +44,7 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
     rucio_ds = f"rucio://{ds_name}{files_postfix}"
 
     # Because we are going to do a specialized query, we'll alter the return type here.
-    ds = SXDSAtlasxAODR21(rucio_ds, backend="atlasr22")
+    ds = SXDSAtlasxAODR22PHYSLITE(rucio_ds, backend="atlasr22")
     ds.return_qastle = True
 
     # Build the query
@@ -55,7 +55,7 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
     # fmt: off
     query = (ds.Select(lambda e: {
             "evt": e.EventInfo("EventInfo"),
-            "jet": e.Jets("AnalysisJets", calibrate=False),
+            "jet": e.Jets(),
         })
         .Select(lambda ei: {
             "event_number": ei.evt.eventNumber(),  # type: ignore
@@ -190,8 +190,9 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles_uri(query.value(), title="First Request",
-                                            as_signed_url=True)
+    files = ds_prime.get_data_rootfiles_uri(
+        query.value(), title="First Request", as_signed_url=True
+    )
     logging.info("Finished ServiceX query")
 
     return [str(f.url) for f in files]
@@ -215,7 +216,9 @@ def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = Fa
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
-    data = uproot.dask({f: "atlas_xaod_tree" for f in files}, open_files=False, steps_per_file=20)
+    data = uproot.dask(
+        {f: "atlas_xaod_tree" for f in files}, open_files=False, steps_per_file=20
+    )
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
@@ -276,7 +279,8 @@ if __name__ == "__main__":
         "--dask-scheduler",
         help="Specify the address of the Dask scheduler. Only valid when distributed-client "
         "is 'scheduler'.",
-        default=None)
+        default=None,
+    )
 
     # Number of files in the dataset to run on. Default to 10. Specify 0 to run on full.
     parser.add_argument(
@@ -322,12 +326,15 @@ if __name__ == "__main__":
 
     # Now run the main function
     if args.profile is False:
-        main(ignore_cache=args.ignore_cache, num_files=args.num_files,
-             dask_report=args.dask_profile)
+        main(
+            ignore_cache=args.ignore_cache,
+            num_files=args.num_files,
+            dask_report=args.dask_profile,
+        )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
             "dask_report=args.dask_profile)",
-            "sx_materialize_branches.pstats"
+            "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")

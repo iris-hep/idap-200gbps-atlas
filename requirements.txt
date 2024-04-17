@@ -7,7 +7,7 @@ dask[distributed]
 # ak.concat working.
 uproot
 # Get the version with PHYSLITE support sort-of built it
-func_adl_servicex_xaodr21>=2.0a1
+func_adl_servicex_xaodr22>=2.0a1
 ipywidgets
 
 # To load from s3 the servicex outputs into uproot, we needed
@@ -17,5 +17,8 @@ fsspec-xrootd
 # To look at profiles
 snakeviz
 
+# developer tools
+jupytext
+
 # What was needed on UChicago jupyter
-# func_adl_servicex_xaodr21>=2.0a1
+# func_adl_servicex_xaodr22>=2.0a1
