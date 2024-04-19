@@ -2,7 +2,7 @@ import argparse
 import cProfile
 import logging
 import time
-from typing import List
+from typing import List, Optional
 
 import awkward as ak
 import uproot
@@ -29,15 +29,12 @@ class ElapsedFormatter(logging.Formatter):
         return super().format(record)
 
 
-def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
+def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
     logging.info("Building ServiceX query")
-    ds_name = (
-        "mc23_13p6TeV.601229.PhPy8EG_A14_ttbar_hdamp258p75_SingleLep"
-        ".deriv.DAOD_PHYSLITE.e8514_s4162_r14622_p6026"
-    )
+    logging.info(f"Using dataset {ds_name}.")
 
     # Build the data query for SX
     files_postfix = "" if num_files == 0 else f"?files={num_files}"
@@ -198,7 +195,12 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
     return [str(f.url) for f in files]
 
 
-def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = False):
+def main(
+    ignore_cache: bool = False,
+    num_files: int = 10,
+    dask_report: bool = False,
+    ds_name: Optional[str] = None,
+):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
@@ -208,7 +210,10 @@ def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = Fa
     # Execute the query and get back the files.
     # TODO: every time JuypterHub needs to be refreshed, we lose the
     #       SX cache info - and so long queries have to be re-run.
-    files = query_servicex(ignore_cache=ignore_cache, num_files=num_files)
+    assert ds_name is not None
+    files = query_servicex(
+        ignore_cache=ignore_cache, num_files=num_files, ds_name=ds_name
+    )
     assert len(files) > 0
     for i, f in enumerate(files):
         logging.debug(f"{i:00}: {f}")
@@ -238,7 +243,14 @@ if __name__ == "__main__":
 
     # Create the argument parser
     parser = argparse.ArgumentParser(
-        description="Run simple ServiceX query and processing"
+        description="Run simple ServiceX query and processing",
+        epilog="""
+Note on the dataset argument: \n
+\n
+  data_50TB - 50 TB of data from dta18. 64803 files.\n
+  mc_1TB - 1.2 TB of data from mc20. 232 files.\n
+  data_10TB - 10 TB of data from data15. 10049 files.\n
+""",
     )
 
     # Add the verbosity flag
@@ -272,6 +284,14 @@ if __name__ == "__main__":
         default="local",
         help="Specify the type of Dask cluster to enable (default: local uses 8 cores "
         "in process, none doesn't use any)",
+    )
+
+    # Add a flag for different datasets
+    parser.add_argument(
+        "--dataset",
+        choices=["data_50TB", "mc_1TB", "data_10TB"],
+        default="mc_1TB",
+        help="Specify the dataset to use",
     )
 
     # Add the flag to specify the Dask scheduler address
@@ -324,17 +344,35 @@ if __name__ == "__main__":
         assert args.dask_scheduler is not None
         client = Client(args.dask_scheduler)
 
+    # Determine the dataset
+    ds_name = (
+        "data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
+        if args.dataset == "mc_10TB"
+        else (
+            "data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026"
+            if args.dataset == "data_50TB"
+            else (
+                "mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto"
+                ".deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
+                if args.dataset == "mc_1TB"
+                else None
+            )
+        )
+    )
+    assert ds_name is not None, "Invalid/unknown dataset specified"
+
     # Now run the main function
     if args.profile is False:
         main(
             ignore_cache=args.ignore_cache,
             num_files=args.num_files,
             dask_report=args.dask_profile,
+            ds_name=ds_name,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
-            "dask_report=args.dask_profile)",
+            "dask_report=args.dask_profile, ds_name = ds_name)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
