@@ -7,7 +7,13 @@ from typing import List
 import awkward as ak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
-from func_adl_servicex_xaodr22 import SXDSAtlasxAODR22PHYSLITE, atlas_release
+from func_adl_servicex_xaodr22 import (
+    SXDSAtlasxAODR22PHYSLITE,
+    atlas_release,
+    cpp_vfloat,
+    cpp_float,
+    cpp_int,
+)
 
 from servicex import ServiceXDataset
 
@@ -68,15 +74,15 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
             # because nothing is strongly typed here. Can we do better?
             "jet_EnergyPerSampling":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeVectorFloat("EnergyPerSampling")
+                    lambda j: j.getAttribute[cpp_vfloat]("EnergyPerSampling")
                 ),
             "jet_SumPtTrkPt500":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeVectorFloat("SumPtTrkPt500")
+                    lambda j: j.getAttribute[cpp_vfloat]("SumPtTrkPt500")
                 ),
             "jet_TrackWidthPt1000":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeVectorFloat("TrackWidthPt1000")
+                    lambda j: j.getAttribute[cpp_vfloat]("TrackWidthPt1000")
                 ),
             # TODO: Make sure int is supported (thought it was, skipping for now)
             # "jet_NumTrkPt500":
@@ -89,96 +95,95 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
             #     ),
             "jet_SumPtChargedPFOPt500":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeVectorFloat("SumPtChargedPFOPt500")
+                    lambda j: j.getAttribute[cpp_vfloat]("SumPtChargedPFOPt500")
                 ),
             "jet_Timing":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("Timing")
+                    lambda j: j.getAttribute[cpp_float]("Timing")
                 ),
             "jet_JetConstitScaleMomentum_eta":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_eta")
+                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_eta")
                 ),
             "jet_ActiveArea4vec_eta":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("ActiveArea4vec_eta")
+                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_eta")
                 ),
             "jet_DetectorEta":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("DetectorEta")
+                    lambda j: j.getAttribute[cpp_float]("DetectorEta")
                 ),
             "jet_JetConstitScaleMomentum_phi":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_phi")
+                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_phi")
                 ),
             "jet_ActiveArea4vec_phi":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("ActiveArea4vec_phi")
+                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_phi")
                 ),
             "jet_JetConstitScaleMomentum_m":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_m")
+                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_m")
                 ),
             "jet_JetConstitScaleMomentum_pt":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("JetConstitScaleMomentum_pt")
+                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_pt")
                 ),
             "jet_Width":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("Width")
+                    lambda j: j.getAttribute[cpp_float]("Width")
                 ),
             "jet_EMFrac":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("EMFrac")
+                    lambda j: j.getAttribute[cpp_float]("EMFrac")
                 ),
             "jet_ActiveArea4vec_m":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("ActiveArea4vec_m")
+                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_m")
                 ),
             "jet_DFCommonJets_QGTagger_TracksWidth":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("DFCommonJets_QGTagger_TracksWidth")
+                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksWidth")
                 ),
             "jet_JVFCorr":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("JVFCorr")
+                    lambda j: j.getAttribute[cpp_float]("JVFCorr")
                 ),
             "jet_DFCommonJets_QGTagger_TracksC1":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("DFCommonJets_QGTagger_TracksC1")
+                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksC1")
                 ),
             "jet_PSFrac":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("PSFrac")
+                    lambda j: j.getAttribute[cpp_float]("PSFrac")
                 ),
-            # TODO: Int just doesn't seem to be working right
-            # "jet_DFCommonJets_QGTagger_NTracks":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeInt("DFCommonJets_QGTagger_NTracks")
-            #     ),
+            "jet_DFCommonJets_QGTagger_NTracks":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_int]("DFCommonJets_QGTagger_NTracks")
+                ),
             "jet_DFCommonJets_fJvt":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("DFCommonJets_fJvt")
+                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
                 ),
-            # "jet_PartonTruthLabelID":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeInt("PartonTruthLabelID")
-            #     ),
-            # "jet_HadronConeExclExtendedTruthLabelID":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeInt("HadronConeExclExtendedTruthLabelID")
-            #     ),
-            # "jet_ConeTruthLabelID":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeInt("ConeTruthLabelID")
-            #     ),
-            # "jet_HadronConeExclTruthLabelID":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeInt("HadronConeExclTruthLabelID")
-            #     ),
+            "jet_PartonTruthLabelID":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
+                ),
+            "jet_HadronConeExclExtendedTruthLabelID":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
+                ),
+            "jet_ConeTruthLabelID":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
+                ),
+            "jet_HadronConeExclTruthLabelID":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
+                ),
             "jet_ActiveArea4vec_pt":
                 ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttributeFloat("ActiveArea4vec_pt")
+                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
                 ),
         })
     )
