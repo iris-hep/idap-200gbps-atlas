@@ -1,6 +1,7 @@
 import argparse
 import cProfile
 import logging
+from pathlib import Path
 import time
 from typing import List
 
@@ -17,8 +18,6 @@ from func_adl_servicex_xaodr22 import (
 )
 
 from servicex import ServiceXDataset
-
-# TODO: Update to use R22/23 or whatever.
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -71,8 +70,6 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
             "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
             "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
             "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
-            # TODO: this stuff is hard to code - mistakes, only find out at run time crash,
-            # because nothing is strongly typed here. Can we do better?
             "jet_EnergyPerSampling":
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttribute[cpp_vfloat]("EnergyPerSampling")
@@ -210,9 +207,13 @@ def main(ignore_cache: bool = False, num_files: int = 10, dask_report: bool = Fa
     """
     logging.info(f"Using release {atlas_release}")
 
-    # Execute the query and get back the files.
-    # TODO: every time JuypterHub needs to be refreshed, we lose the
-    #       SX cache info - and so long queries have to be re-run.
+    # Make sure there is a file here to save the SX query ID's to
+    # improve performance!
+    sx_query_ids = Path("./servicex_query_cache.json")
+    if not sx_query_ids.exists():
+        sx_query_ids.touch()
+
+    # Get the list of files to process from the SX query.
     files = query_servicex(ignore_cache=ignore_cache, num_files=num_files)
     assert len(files) > 0
     for i, f in enumerate(files):
