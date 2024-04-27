@@ -13,6 +13,7 @@ from func_adl_servicex_xaodr22 import (
     cpp_vfloat,
     cpp_float,
     cpp_int,
+    cpp_vint,
 )
 
 from servicex import ServiceXDataset
@@ -84,15 +85,14 @@ def query_servicex(ignore_cache: bool, num_files: int) -> List[str]:
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttribute[cpp_vfloat]("TrackWidthPt1000")
                 ),
-            # TODO: Make sure int is supported (thought it was, skipping for now)
-            # "jet_NumTrkPt500":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeVectorInt("NumTrkPt500")
-            #     ),
-            # "jet_NumTrkPt1000":
-            #     ei.jet.Select(  # type: ignore
-            #         lambda j: j.getAttributeVectorInt("NumTrkPt1000")
-            #     ),
+            "jet_NumTrkPt500":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_vint]("NumTrkPt500")
+                ),
+            "jet_NumTrkPt1000":
+                ei.jet.Select(  # type: ignore
+                    lambda j: j.getAttribute[cpp_vint]("NumTrkPt1000")
+                ),
             "jet_SumPtChargedPFOPt500":
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttribute[cpp_vfloat]("SumPtChargedPFOPt500")
