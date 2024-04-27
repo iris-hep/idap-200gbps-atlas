@@ -28,9 +28,9 @@ The folder `input_files` contains the list of input containers / files and relat
 
 In total:
 
-* number of files: 218,960
-* size: 191.022 TB
-* number of events: 23,344,277,104
+* number of files: 219,029
+* size: 191.073 TB
+* number of events: 23,347,787,104
 
 with additional files:
 

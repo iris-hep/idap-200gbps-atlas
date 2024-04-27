@@ -1030,9 +1030,9 @@
         "size_TB": 0.7482730000000001
     },
     "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
-        "nevts": 136188300,
-        "nfiles": 1197,
-        "size_TB": 1.241
+        "nevts": 136828300,
+        "nfiles": 1202,
+        "size_TB": 1.247
     },
     "mc20_13TeV:mc20_13TeV.364171.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_CFilterBVeto.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 74613400,
@@ -1045,9 +1045,9 @@
         "size_TB": 0.555304
     },
     "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
-        "nevts": 127532600,
-        "nfiles": 1388,
-        "size_TB": 1.232
+        "nevts": 127562600,
+        "nfiles": 1389,
+        "size_TB": 1.233
     },
     "mc20_13TeV:mc20_13TeV.364172.Sherpa_221_NNPDF30NNLO_Wenu_MAXHTPTV0_70_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 64774000,
@@ -1340,9 +1340,9 @@
         "size_TB": 0.395041
     },
     "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
-        "nevts": 41582700,
-        "nfiles": 463,
-        "size_TB": 0.521113
+        "nevts": 41642700,
+        "nfiles": 464,
+        "size_TB": 0.521857
     },
     "mc20_13TeV:mc20_13TeV.364192.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV140_280_BFilter.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 4988000,
@@ -1395,9 +1395,9 @@
         "size_TB": 0.114232
     },
     "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026": {
-        "nevts": 9861750,
-        "nfiles": 173,
-        "size_TB": 0.152995
+        "nevts": 9961750,
+        "nfiles": 175,
+        "size_TB": 0.154546
     },
     "mc20_13TeV:mc20_13TeV.364196.Sherpa_221_NNPDF30NNLO_Wtaunu_MAXHTPTV500_1000.deriv.DAOD_PHYSLITE.e5340_s3681_r13167_p6026": {
         "nevts": 5950400,
@@ -1455,9 +1455,9 @@
         "size_TB": 0.018667000000000003
     },
     "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
-        "nevts": 3837000,
-        "nfiles": 43,
-        "size_TB": 0.041378
+        "nevts": 3867000,
+        "nfiles": 44,
+        "size_TB": 0.041701
     },
     "mc20_13TeV:mc20_13TeV.364200.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV70_280_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 83000,
@@ -1485,9 +1485,9 @@
         "size_TB": 0.010595
     },
     "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13145_p6026": {
-        "nevts": 845000,
-        "nfiles": 14,
-        "size_TB": 0.012088
+        "nevts": 875000,
+        "nfiles": 15,
+        "size_TB": 0.012515
     },
     "mc20_13TeV:mc20_13TeV.364202.Sherpa_221_NN30NNLO_Zmm_Mll10_40_MAXHTPTV280_E_CMS_BVeto.deriv.DAOD_PHYSLITE.e5421_s3681_r13167_p6026": {
         "nevts": 598400,
@@ -1920,9 +1920,9 @@
         "size_TB": 0.025171
     },
     "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13145_p6026": {
-        "nevts": 2103000,
-        "nfiles": 29,
-        "size_TB": 0.039705
+        "nevts": 2173000,
+        "nfiles": 30,
+        "size_TB": 0.041026
     },
     "mc20_13TeV:mc20_13TeV.410219.aMcAtNloPythia8EvtGen_MEN30NLO_A14N23LO_ttmumu.deriv.DAOD_PHYSLITE.e5070_s3681_r13167_p6026": {
         "nevts": 1408800,
@@ -2005,14 +2005,14 @@
         "size_TB": 0.0015400000000000001
     },
     "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13144_p6026": {
-        "nevts": 142337000,
-        "nfiles": 2012,
-        "size_TB": 2.189
+        "nevts": 142697000,
+        "nfiles": 2027,
+        "size_TB": 2.195
     },
     "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13145_p6026": {
-        "nevts": 185168000,
-        "nfiles": 1706,
-        "size_TB": 2.861
+        "nevts": 187358000,
+        "nfiles": 1748,
+        "size_TB": 2.894
     },
     "mc20_13TeV:mc20_13TeV.410470.PhPy8EG_A14_ttbar_hdamp258p75_nonallhad.deriv.DAOD_PHYSLITE.e6337_s3681_r13167_p6026": {
         "nevts": 113584000,
