@@ -35,7 +35,9 @@ class ElapsedFormatter(logging.Formatter):
         return super().format(record)
 
 
-def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str]:
+def query_servicex(
+    ignore_cache: bool, num_files: int, ds_name: str, download: bool
+) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
@@ -188,13 +190,16 @@ def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    # files = ds_prime.get_data_rootfiles_uri(
-    #     query.value(), title="First Request", as_signed_url=True
-    # )
-    # return [str(f.url) for f in files]
-    files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
-    logging.info("Finished ServiceX query")
-    return [str(f) for f in files]
+    if download:
+        files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
+        logging.info("Finished ServiceX query")
+        return [str(f) for f in files]
+    else:
+        files = ds_prime.get_data_rootfiles_uri(
+            query.value(), title="First Request", as_signed_url=True
+        )
+        logging.info("Finished ServiceX query")
+        return [str(f.url) for f in files]
 
 
 def main(
@@ -202,6 +207,7 @@ def main(
     num_files: int = 10,
     dask_report: bool = False,
     ds_name: Optional[str] = None,
+    download_sx_result: bool = False,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
@@ -217,7 +223,10 @@ def main(
 
     assert ds_name is not None
     files = query_servicex(
-        ignore_cache=ignore_cache, num_files=num_files, ds_name=ds_name
+        ignore_cache=ignore_cache,
+        num_files=num_files,
+        ds_name=ds_name,
+        download=download_sx_result,
     )
 
     assert len(files) > 0, "No files found in the dataset"
@@ -293,6 +302,13 @@ Note on the dataset argument: \n
         action="store_true",
         help="Enable profiling of the Dask execution. This will output a file "
         "called `dask-report.html`.",
+    )
+
+    parser.add_argument(
+        "--download-sx-result",
+        action="store_true",
+        help="Download the result from ServiceX. If not specified, the result will be "
+        "read directly from SX's S3 instance.",
     )
 
     # Add the flag to enable/disable local Dask cluster
@@ -386,11 +402,13 @@ Note on the dataset argument: \n
             num_files=args.num_files,
             dask_report=args.dask_profile,
             ds_name=ds_name,
+            download_sx_result=args.download_sx_result,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
-            "dask_report=args.dask_profile, ds_name = ds_name)",
+            "dask_report=args.dask_profile, ds_name = ds_name, "
+            "download_sx_result=args.download_sx_result)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
