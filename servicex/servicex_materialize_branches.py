@@ -1,19 +1,20 @@
 import argparse
 import cProfile
 import logging
-from pathlib import Path
 import time
+from pathlib import Path
 from typing import List, Optional
 
 import awkward as ak
+import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
 from func_adl_servicex_xaodr22 import (
     SXDSAtlasxAODR22PHYSLITE,
     atlas_release,
-    cpp_vfloat,
     cpp_float,
     cpp_int,
+    cpp_vfloat,
     cpp_vint,
 )
 
@@ -233,7 +234,29 @@ def main(
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
-    total_count = sum(ak.count_nonzero(data[field]) for field in data.fields)  # type: ignore
+
+    # The straight forward way to do this leads to a very large dask graph. We can
+    # do a little prep work here and make it more clean.
+    total_count = 0
+    assert isinstance(data, dak.Array)  # type: ignore
+    for field in data.fields:
+        logging.debug(f"Counting field {field}")
+        if str(data[field].type.content).startswith("var"):
+            count = ak.count_nonzero(data[field], axis=-1)
+            for _ in range(count.ndim - 1):  # type: ignore
+                count = ak.count_nonzero(count)
+
+            total_count = total_count + count  # type: ignore
+        else:
+            # We get a not implemented error when we try to do this
+            # on leaves like run-number or event-number (e.g. scalars)
+            # Maybe we should just be adding a 1. :-)
+            logging.info(f"Field {field} is not a scalar field. Skipping count.")
+
+    total_count = ak.count_nonzero(total_count, axis=0)
+
+    # Do the calc now.
+    logging.info(f"Number of tasks in the dask graph: {len(total_count.dask)}")  # type: ignore
     logging.info("Computing the total count")
     if dask_report:
         with performance_report(filename="dask-report.html"):
