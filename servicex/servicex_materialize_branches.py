@@ -271,6 +271,7 @@ def main(
 
     # Do the calc now.
     logging.info(f"Number of tasks in the dask graph: {len(total_count.dask)}")  # type: ignore
+    total_count.visualize(optimize_graph=True)  # type: ignore
     logging.info("Computing the total count")
     if dask_report:
         with performance_report(filename="dask-report.html"):
