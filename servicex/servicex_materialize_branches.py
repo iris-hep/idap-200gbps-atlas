@@ -308,7 +308,7 @@ Note on the dataset argument: \n
         "--download-sx-result",
         action="store_true",
         help="Download the result from ServiceX. If not specified, the result will be "
-        "read directly from SX's S3 instance.",
+        "read directly from SX's S3 instance. Likely only used during remote debugging.",
     )
 
     # Add the flag to enable/disable local Dask cluster
