@@ -181,7 +181,6 @@ def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str
                 ),
         })
     )
-
     # fmt: on
 
     # Do the query.
@@ -189,12 +188,13 @@ def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles_uri(
-        query.value(), title="First Request", as_signed_url=True
-    )
+    # files = ds_prime.get_data_rootfiles_uri(
+    #     query.value(), title="First Request", as_signed_url=True
+    # )
+    # return [str(f.url) for f in files]
+    files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
     logging.info("Finished ServiceX query")
-
-    return [str(f.url) for f in files]
+    return [str(f) for f in files]
 
 
 def main(
@@ -207,7 +207,7 @@ def main(
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
     """
-    logging.info(f"Using release {atlas_release}")
+    logging.info(f"Using release {atlas_release} for type information.")
 
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
@@ -220,16 +220,21 @@ def main(
         ignore_cache=ignore_cache, num_files=num_files, ds_name=ds_name
     )
 
-    assert len(files) > 0
+    assert len(files) > 0, "No files found in the dataset"
     for i, f in enumerate(files):
         logging.debug(f"{i:00}: {f}")
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
-    data = uproot.dask(
-        {f: "atlas_xaod_tree" for f in files}, open_files=False, steps_per_file=20
+    data, report_to_be = uproot.dask(
+        {f: "atlas_xaod_tree" for f in files},
+        open_files=False,
+        steps_per_file=20,
+        allow_read_errors_with_report=True,
     )
+
+    # Now, do the counting.
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
@@ -242,6 +247,13 @@ def main(
         r = total_count.compute()  # type: ignore
 
     logging.info(f"Done: result = {r:,}")
+
+    report_list = report_to_be.compute()
+    for process in report_list:
+        if process.exception is not None:
+            logging.error(
+                f"Exception in process '{process.message}' on file {process.args[0]}"
+            )
 
 
 if __name__ == "__main__":
