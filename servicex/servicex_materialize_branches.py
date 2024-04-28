@@ -35,7 +35,9 @@ class ElapsedFormatter(logging.Formatter):
         return super().format(record)
 
 
-def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str]:
+def query_servicex(
+    ignore_cache: bool, num_files: int, ds_name: str, download: bool
+) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
@@ -181,7 +183,6 @@ def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str
                 ),
         })
     )
-
     # fmt: on
 
     # Do the query.
@@ -189,12 +190,16 @@ def query_servicex(ignore_cache: bool, num_files: int, ds_name: str) -> List[str
         rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
     )
     logging.info("Starting ServiceX query")
-    files = ds_prime.get_data_rootfiles_uri(
-        query.value(), title="First Request", as_signed_url=True
-    )
-    logging.info("Finished ServiceX query")
-
-    return [str(f.url) for f in files]
+    if download:
+        files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
+        logging.info("Finished ServiceX query")
+        return [str(f) for f in files]
+    else:
+        files = ds_prime.get_data_rootfiles_uri(
+            query.value(), title="First Request", as_signed_url=True
+        )
+        logging.info("Finished ServiceX query")
+        return [str(f.url) for f in files]
 
 
 def main(
@@ -202,12 +207,13 @@ def main(
     num_files: int = 10,
     dask_report: bool = False,
     ds_name: Optional[str] = None,
+    download_sx_result: bool = False,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
     """
-    logging.info(f"Using release {atlas_release}")
+    logging.info(f"Using release {atlas_release} for type information.")
 
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
@@ -217,19 +223,27 @@ def main(
 
     assert ds_name is not None
     files = query_servicex(
-        ignore_cache=ignore_cache, num_files=num_files, ds_name=ds_name
+        ignore_cache=ignore_cache,
+        num_files=num_files,
+        ds_name=ds_name,
+        download=download_sx_result,
     )
 
-    assert len(files) > 0
+    assert len(files) > 0, "No files found in the dataset"
     for i, f in enumerate(files):
         logging.debug(f"{i:00}: {f}")
 
     # now materialize everything.
     logging.info("Using `uproot.dask` to open files")
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
-    data = uproot.dask(
-        {f: "atlas_xaod_tree" for f in files}, open_files=False, steps_per_file=20
+    data, report_to_be = uproot.dask(
+        {f: "atlas_xaod_tree" for f in files},
+        open_files=False,
+        steps_per_file=20,
+        allow_read_errors_with_report=True,
     )
+
+    # Now, do the counting.
     logging.info(
         f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
     )
@@ -242,6 +256,14 @@ def main(
         r = total_count.compute()  # type: ignore
 
     logging.info(f"Done: result = {r:,}")
+
+    # Scan through for any exceptions that happened during the dask processing.
+    report_list = report_to_be.compute()
+    for process in report_list:
+        if process.exception is not None:
+            logging.error(
+                f"Exception in process '{process.message}' on file {process.args[0]}"
+            )
 
 
 if __name__ == "__main__":
@@ -281,6 +303,13 @@ Note on the dataset argument: \n
         action="store_true",
         help="Enable profiling of the Dask execution. This will output a file "
         "called `dask-report.html`.",
+    )
+
+    parser.add_argument(
+        "--download-sx-result",
+        action="store_true",
+        help="Download the result from ServiceX. If not specified, the result will be "
+        "read directly from SX's S3 instance. Likely only used during remote debugging.",
     )
 
     # Add the flag to enable/disable local Dask cluster
@@ -374,11 +403,13 @@ Note on the dataset argument: \n
             num_files=args.num_files,
             dask_report=args.dask_profile,
             ds_name=ds_name,
+            download_sx_result=args.download_sx_result,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
-            "dask_report=args.dask_profile, ds_name = ds_name)",
+            "dask_report=args.dask_profile, ds_name = ds_name, "
+            "download_sx_result=args.download_sx_result)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
