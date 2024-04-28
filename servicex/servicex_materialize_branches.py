@@ -257,6 +257,7 @@ def main(
 
     logging.info(f"Done: result = {r:,}")
 
+    # Scan through for any exceptions that happened during the dask processing.
     report_list = report_to_be.compute()
     for process in report_list:
         if process.exception is not None:
