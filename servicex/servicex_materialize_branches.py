@@ -209,6 +209,7 @@ def main(
     dask_report: bool = False,
     ds_name: Optional[str] = None,
     download_sx_result: bool = False,
+    steps_per_file: int = 3,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
@@ -240,7 +241,7 @@ def main(
     data, report_to_be = uproot.dask(
         {f: "atlas_xaod_tree" for f in files},
         open_files=False,
-        steps_per_file=20,
+        steps_per_file=steps_per_file,
         allow_read_errors_with_report=True,
     )
 
@@ -390,6 +391,7 @@ Note on the dataset argument: \n
     root_logger.addHandler(handler)
 
     # Create the client dask worker
+    steps_per_file = 1
     if args.distributed_client == "local":
         # Do not know how to do it otherwise.
         n_workers = 8
@@ -398,10 +400,12 @@ Note on the dataset argument: \n
             n_workers=n_workers, processes=False, threads_per_worker=1
         )
         client = Client(cluster)
+        steps_per_file = 20
     elif args.distributed_client == "scheduler":
         logging.debug("Connecting to Dask scheduler at {scheduler_address}")
         assert args.dask_scheduler is not None
         client = Client(args.dask_scheduler)
+        steps_per_file = 2
 
     # Determine the dataset
     ds_name = (
@@ -428,12 +432,13 @@ Note on the dataset argument: \n
             dask_report=args.dask_profile,
             ds_name=ds_name,
             download_sx_result=args.download_sx_result,
+            steps_per_file=steps_per_file,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
             "dask_report=args.dask_profile, ds_name = ds_name, "
-            "download_sx_result=args.download_sx_result)",
+            "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
