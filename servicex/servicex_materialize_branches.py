@@ -167,22 +167,22 @@ def query_servicex(
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
                 ),
-            "jet_PartonTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
-                ),
-            "jet_HadronConeExclExtendedTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
-                ),
-            "jet_ConeTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
-                ),
-            "jet_HadronConeExclTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
-                ),
+            # "jet_PartonTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
+            #     ),
+            # "jet_HadronConeExclExtendedTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
+            #     ),
+            # "jet_ConeTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
+            #     ),
+            # "jet_HadronConeExclTruthLabelID":
+            #     ei.jet.Select(  # type: ignore
+            #         lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
+            #     ),
             "jet_ActiveArea4vec_pt":
                 ei.jet.Select(  # type: ignore
                     lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
