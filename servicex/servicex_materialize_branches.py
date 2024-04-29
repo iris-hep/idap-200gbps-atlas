@@ -280,8 +280,8 @@ def main(
     # Do the calc now.
     logging.info(
         "Number of tasks in the dask graph: optimized: "
-        f"{len(dask.optimize(total_count.dask)[0])} "  # type: ignore
-        f"unoptimized {len(total_count.dask)}"  # type: ignore
+        f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
+        f"unoptimized {len(total_count.dask):,}"  # type: ignore
     )
     # total_count.visualize(optimize_graph=True)  # type: ignore
     logging.info("Computing the total count")
