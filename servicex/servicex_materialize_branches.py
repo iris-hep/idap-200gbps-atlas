@@ -44,6 +44,10 @@ def query_servicex(
     """
     logging.info("Building ServiceX query")
     logging.info(f"Using dataset {ds_name}.")
+    if num_files == 0:
+        logging.info("Running on the full dataset.")
+    else:
+        logging.info(f"Running on {num_files} files of dataset.")
 
     # Build the data query for SX
     files_postfix = "" if num_files == 0 else f"?files={num_files}"
@@ -236,7 +240,9 @@ def main(
         logging.debug(f"{i:00}: {f}")
 
     # now materialize everything.
-    logging.info("Using `uproot.dask` to open files")
+    logging.info(
+        f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
+    )
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
     data, report_to_be = uproot.dask(
         {f: "atlas_xaod_tree" for f in files},
