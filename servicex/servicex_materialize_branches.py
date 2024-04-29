@@ -355,7 +355,7 @@ Note on the dataset argument: \n
     # Add a flag for different datasets
     parser.add_argument(
         "--dataset",
-        choices=["data_50TB", "mc_1TB", "data_10TB"],
+        choices=["data_50TB", "mc_1TB", "data_10TB", "data_special"],
         default="mc_1TB",
         help="Specify the dataset to use",
     )
@@ -424,7 +424,12 @@ Note on the dataset argument: \n
                 "mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto"
                 ".deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
                 if args.dataset == "mc_1TB"
-                else None
+                else (
+                    "data15_13TeV-data15_13TeV.periodAllYear."
+                    "physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
+                    if args.dataset == "data_special"
+                    else None
+                )
             )
         )
     )
