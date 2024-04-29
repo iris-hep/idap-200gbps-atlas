@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List, Optional
 
 import awkward as ak
+import dask
 import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
@@ -277,7 +278,11 @@ def main(
     total_count = ak.count_nonzero(total_count, axis=0)
 
     # Do the calc now.
-    logging.info(f"Number of tasks in the dask graph: {len(total_count.dask)}")  # type: ignore
+    logging.info(
+        "Number of tasks in the dask graph: optimized: "
+        f"{len(dask.optimize(total_count.dask)[0])} "  # type: ignore
+        f"unoptimized {len(total_count.dask)}"  # type: ignore
+    )
     # total_count.visualize(optimize_graph=True)  # type: ignore
     logging.info("Computing the total count")
     if dask_report:
