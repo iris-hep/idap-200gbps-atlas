@@ -13,7 +13,7 @@ from dask.distributed import Client, LocalCluster, performance_report
 
 import servicex as sx
 
-from query_library import query_all
+from query_library import build_query
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -32,7 +32,11 @@ class ElapsedFormatter(logging.Formatter):
 
 
 def query_servicex(
-    ignore_cache: bool, num_files: int, ds_name: str, download: bool
+    ignore_cache: bool,
+    num_files: int,
+    ds_name: str,
+    download: bool,
+    query: sx.FuncADLQuery,
 ) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
@@ -43,9 +47,6 @@ def query_servicex(
         logging.info("Running on the full dataset.")
     else:
         logging.info(f"Running on {num_files} files of dataset.")
-
-    # Build the query
-    query = query_all()
 
     # Do the query.
     # TODO: Where is the enum that does DeliveryEnum come from?
@@ -85,11 +86,14 @@ def main(
     ds_name: Optional[str] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
+    query: Optional[sx.FuncADLQuery] = None,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
     """
+    assert query is not None, "No query provided to run."
+
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
     sx_query_ids = Path("./servicex_query_cache.json")
@@ -102,6 +106,7 @@ def main(
         num_files=num_files,
         ds_name=ds_name,
         download=download_sx_result,
+        query=query,
     )
 
     assert len(files) > 0, "No files found in the dataset"
@@ -233,6 +238,14 @@ Note on the dataset argument: \n
         help="Specify the dataset to use",
     )
 
+    # Add a flag for three queries - xaod_all, xald_medium, xaod_small:
+    parser.add_argument(
+        "--query",
+        choices=["xaod_all", "xaod_medium", "xaod_small"],
+        default="xaod_all",
+        help="Specify the query to use. Defaults to xao_all.",
+    )
+
     # Add the flag to specify the Dask scheduler address
     parser.add_argument(
         "--dask-scheduler",
@@ -303,6 +316,9 @@ Note on the dataset argument: \n
     )
     assert ds_name is not None, "Invalid/unknown dataset specified"
 
+    # Build the query
+    query = build_query(args.query)
+
     # Now run the main function
     if args.profile is False:
         main(
@@ -312,12 +328,14 @@ Note on the dataset argument: \n
             ds_name=ds_name,
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
+            query=query,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
             "dask_report=args.dask_profile, ds_name = ds_name, "
-            "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file)",
+            "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file"
+            "query=query)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")

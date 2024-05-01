@@ -10,7 +10,30 @@ from func_adl_servicex_xaodr22 import (
 from servicex import FuncADLQuery
 
 
-def query_all() -> FuncADLQuery:
+def build_query(name: str) -> FuncADLQuery:
+    if name == "xaod_all":
+        return query_xaod_all()
+    elif name == "xaod_medium":
+        return query_xaod_medium()
+    elif name == "xaod_small":
+        return query_xaod_small()
+    else:
+        raise ValueError(f"Unknown query type {name}")
+
+
+def query_xaod_all() -> FuncADLQuery:
+    return build_xaod_query("all")
+
+
+def query_xaod_medium() -> FuncADLQuery:
+    return build_xaod_query("medium")
+
+
+def query_xaod_small() -> FuncADLQuery:
+    return build_xaod_query("small")
+
+
+def build_xaod_query(q_type: str) -> FuncADLQuery:
     # Because we are going to do a specialized query, we'll alter the return type here.
     logging.info(f"Using release {atlas_release} for type information.")
 
