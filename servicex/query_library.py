@@ -76,7 +76,7 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
         event_model = skim_jets(event_model, 25.0)
 
     if q_type == "small":
-        event_model = skim_jets(event_model, 50.0)
+        event_model = skim_jets(event_model, 150.0)
 
     if q_type == "small" or q_type == "medium":
         event_model = count_jets(event_model, 4)
@@ -159,18 +159,18 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "jet_DFCommonJets_fJvt": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
             ),
-            "jet_PartonTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
-            ),
-            "jet_HadronConeExclExtendedTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
-            ),
-            "jet_ConeTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
-            ),
-            "jet_HadronConeExclTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
-            ),
+            # "jet_PartonTruthLabelID": ei.jet.Select(  # type: ignore
+            #     lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
+            # ),
+            # "jet_HadronConeExclExtendedTruthLabelID": ei.jet.Select(  # type: ignore
+            #     lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
+            # ),
+            # "jet_ConeTruthLabelID": ei.jet.Select(  # type: ignore
+            #     lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
+            # ),
+            # "jet_HadronConeExclTruthLabelID": ei.jet.Select(  # type: ignore
+            #     lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
+            # ),
             "jet_ActiveArea4vec_pt": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
             ),
