@@ -3,7 +3,7 @@ import cProfile
 import logging
 import time
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import awkward as ak
 import dask
@@ -36,7 +36,7 @@ def query_servicex(
     num_files: int,
     ds_name: str,
     download: bool,
-    query: sx.FuncADLQuery,
+    query: Tuple[sx.FuncADLQuery, str],
 ) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
@@ -58,7 +58,7 @@ def query_servicex(
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
-            Codegen="atlasr22",
+            Codegen=query[1],
             OutputFormat=sx.ResultFormat.root,
             Delivery=("LocalCache" if download else "SignedURLs"),
         ),
@@ -66,7 +66,7 @@ def query_servicex(
             sx.Sample(
                 Name=f"speed_test_{ds_name}",
                 RucioDID=ds_name,
-                Query=query,
+                Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
             )  # type: ignore
@@ -86,7 +86,7 @@ def main(
     ds_name: Optional[str] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
-    query: Optional[sx.FuncADLQuery] = None,
+    query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened

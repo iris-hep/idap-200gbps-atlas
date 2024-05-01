@@ -1,4 +1,5 @@
 import logging
+from typing import Tuple
 from func_adl_servicex_xaodr22 import (
     FuncADLQueryPHYSLITE,
     cpp_float,
@@ -10,13 +11,13 @@ from func_adl_servicex_xaodr22 import (
 from servicex import FuncADLQuery
 
 
-def build_query(name: str) -> FuncADLQuery:
+def build_query(name: str) -> Tuple[FuncADLQuery, str]:
     if name == "xaod_all":
-        return query_xaod_all()
+        return (query_xaod_all(), "atlasr22")
     elif name == "xaod_medium":
-        return query_xaod_medium()
+        return (query_xaod_medium(), "atlasr22")
     elif name == "xaod_small":
-        return query_xaod_small()
+        return (query_xaod_small(), "atlasr22")
     else:
         raise ValueError(f"Unknown query type {name}")
 
