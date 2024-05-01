@@ -3,23 +3,17 @@ import cProfile
 import logging
 import time
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Tuple
 
 import awkward as ak
 import dask
 import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
-from func_adl_servicex_xaodr22 import (
-    FuncADLQueryPHYSLITE,
-    atlas_release,
-    cpp_float,
-    cpp_int,
-    cpp_vfloat,
-    cpp_vint,
-)
 
 import servicex as sx
+
+from query_library import build_query
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -38,7 +32,11 @@ class ElapsedFormatter(logging.Formatter):
 
 
 def query_servicex(
-    ignore_cache: bool, num_files: int, ds_name: str, download: bool
+    ignore_cache: bool,
+    num_files: int,
+    ds_name: str,
+    download: bool,
+    query: Tuple[sx.FuncADLQuery, str],
 ) -> List[str]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
@@ -50,142 +48,6 @@ def query_servicex(
     else:
         logging.info(f"Running on {num_files} files of dataset.")
 
-    # Because we are going to do a specialized query, we'll alter the return type here.
-    ds = FuncADLQueryPHYSLITE()
-
-    # Build the query
-    # TODO: The EventInfo argument should default correctly
-    #       (that may just be a matter of using func_adl xaod r22)
-    # TODO: dataclass should be supported so as not to lose type-following!
-    # TODO: once https://github.com/iris-hep/func_adl/issues/136 fixed, turn off fmt off.
-    # fmt: off
-    query = (ds.Select(lambda e: {
-            "evt": e.EventInfo("EventInfo"),
-            "jet": e.Jets(),
-        })
-        .Select(lambda ei: {
-            "event_number": ei.evt.eventNumber(),  # type: ignore
-            "run_number": ei.evt.runNumber(),  # type: ignore
-            "jet_pt": ei.jet.Select(lambda j: j.pt() / 1000),  # type: ignore
-            "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
-            "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
-            "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
-            "jet_EnergyPerSampling":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vfloat]("EnergyPerSampling")
-                ),
-            "jet_SumPtTrkPt500":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vfloat]("SumPtTrkPt500")
-                ),
-            "jet_TrackWidthPt1000":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vfloat]("TrackWidthPt1000")
-                ),
-            "jet_NumTrkPt500":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vint]("NumTrkPt500")
-                ),
-            "jet_NumTrkPt1000":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vint]("NumTrkPt1000")
-                ),
-            "jet_SumPtChargedPFOPt500":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_vfloat]("SumPtChargedPFOPt500")
-                ),
-            "jet_Timing":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("Timing")
-                ),
-            "jet_JetConstitScaleMomentum_eta":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_eta")
-                ),
-            "jet_ActiveArea4vec_eta":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_eta")
-                ),
-            "jet_DetectorEta":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("DetectorEta")
-                ),
-            "jet_JetConstitScaleMomentum_phi":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_phi")
-                ),
-            "jet_ActiveArea4vec_phi":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_phi")
-                ),
-            "jet_JetConstitScaleMomentum_m":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_m")
-                ),
-            "jet_JetConstitScaleMomentum_pt":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_pt")
-                ),
-            "jet_Width":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("Width")
-                ),
-            "jet_EMFrac":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("EMFrac")
-                ),
-            "jet_ActiveArea4vec_m":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_m")
-                ),
-            "jet_DFCommonJets_QGTagger_TracksWidth":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksWidth")
-                ),
-            "jet_JVFCorr":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("JVFCorr")
-                ),
-            "jet_DFCommonJets_QGTagger_TracksC1":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksC1")
-                ),
-            "jet_PSFrac":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("PSFrac")
-                ),
-            "jet_DFCommonJets_QGTagger_NTracks":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("DFCommonJets_QGTagger_NTracks")
-                ),
-            "jet_DFCommonJets_fJvt":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
-                ),
-            "jet_PartonTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
-                ),
-            "jet_HadronConeExclExtendedTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
-                ),
-            "jet_ConeTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
-                ),
-            "jet_HadronConeExclTruthLabelID":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
-                ),
-            "jet_ActiveArea4vec_pt":
-                ei.jet.Select(  # type: ignore
-                    lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
-                ),
-        })
-    )
-    # fmt: on
-
     # Do the query.
     # TODO: Where is the enum that does DeliveryEnum come from?
     # TODO: Why does `Sample` fail type checking - that type ignore has already hidden one bug!
@@ -196,7 +58,7 @@ def query_servicex(
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
-            Codegen="atlasr22",
+            Codegen=query[1],
             OutputFormat=sx.ResultFormat.root,
             Delivery=("LocalCache" if download else "SignedURLs"),
         ),
@@ -204,7 +66,7 @@ def query_servicex(
             sx.Sample(
                 Name=f"speed_test_{ds_name}",
                 RucioDID=ds_name,
-                Query=query,
+                Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
             )  # type: ignore
@@ -212,9 +74,12 @@ def query_servicex(
     )
 
     logging.info("Starting ServiceX query")
+    # TODO: An info message on the 0001.4961 - INFO - HTTP Request:
+    #       POST https://servicex.af.uchicago.edu//servicex/transformation
+    #       "HTTP/1.1 200 OK"
+    #       Turn that into a debug message perhaps?
     results = sx.deliver(spec)
     assert results is not None
-    print(results.keys())
     return results[f"speed_test_{ds_name}"]
 
 
@@ -225,12 +90,13 @@ def main(
     ds_name: Optional[str] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
+    query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
     number of items, and, finally, print them out.
     """
-    logging.info(f"Using release {atlas_release} for type information.")
+    assert query is not None, "No query provided to run."
 
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
@@ -244,6 +110,7 @@ def main(
         num_files=num_files,
         ds_name=ds_name,
         download=download_sx_result,
+        query=query,
     )
 
     assert len(files) > 0, "No files found in the dataset"
@@ -375,6 +242,14 @@ Note on the dataset argument: \n
         help="Specify the dataset to use",
     )
 
+    # Add a flag for three queries - xaod_all, xald_medium, xaod_small:
+    parser.add_argument(
+        "--query",
+        choices=["xaod_all", "xaod_medium", "xaod_small"],
+        default="xaod_all",
+        help="Specify the query to use. Defaults to xao_all.",
+    )
+
     # Add the flag to specify the Dask scheduler address
     parser.add_argument(
         "--dask-scheduler",
@@ -445,6 +320,9 @@ Note on the dataset argument: \n
     )
     assert ds_name is not None, "Invalid/unknown dataset specified"
 
+    # Build the query
+    query = build_query(args.query)
+
     # Now run the main function
     if args.profile is False:
         main(
@@ -454,12 +332,14 @@ Note on the dataset argument: \n
             ds_name=ds_name,
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
+            query=query,
         )
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
             "dask_report=args.dask_profile, ds_name = ds_name, "
-            "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file)",
+            "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file"
+            "query=query)",
             "sx_materialize_branches.pstats",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
