@@ -11,7 +11,7 @@ import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
 from func_adl_servicex_xaodr22 import (
-    SXDSAtlasxAODR22PHYSLITE,
+    FuncADLQueryPHYSLITE,
     atlas_release,
     cpp_float,
     cpp_int,
@@ -19,7 +19,7 @@ from func_adl_servicex_xaodr22 import (
     cpp_vint,
 )
 
-from servicex import ServiceXDataset
+import servicex as sx
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -50,13 +50,8 @@ def query_servicex(
     else:
         logging.info(f"Running on {num_files} files of dataset.")
 
-    # Build the data query for SX
-    files_postfix = "" if num_files == 0 else f"?files={num_files}"
-    rucio_ds = f"rucio://{ds_name}{files_postfix}"
-
     # Because we are going to do a specialized query, we'll alter the return type here.
-    ds = SXDSAtlasxAODR22PHYSLITE(rucio_ds, backend="atlasr22")
-    ds.return_qastle = True
+    ds = FuncADLQueryPHYSLITE()
 
     # Build the query
     # TODO: The EventInfo argument should default correctly
@@ -192,20 +187,35 @@ def query_servicex(
     # fmt: on
 
     # Do the query.
-    ds_prime = ServiceXDataset(
-        rucio_ds, backend_name="atlasr22", ignore_cache=ignore_cache
+    # TODO: Where is the enum that does DeliveryEnum come from?
+    # TODO: Why does `Sample` fail type checking - that type ignore has already hidden one bug!
+    # TODO: If I change Name after running, cache seems to fail (name doesn't track).
+    # TODO: If you change the name of the item you'll get a multiple cache hit!
+    # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
+    # TODO: servicex_query_cache.json is being ignored (feature?)
+    spec = sx.ServiceXSpec(
+        General=sx.General(
+            ServiceX="atlasr22",
+            Codegen="atlasr22",
+            OutputFormat=sx.ResultFormat.root,
+            Delivery=("LocalCache" if download else "SignedURLs"),
+        ),
+        Sample=[
+            sx.Sample(
+                Name=f"speed_test_{ds_name}",
+                RucioDID=ds_name,
+                Query=query,
+                NFiles=num_files,
+                IgnoreLocalCache=ignore_cache,
+            )  # type: ignore
+        ],
     )
+
     logging.info("Starting ServiceX query")
-    if download:
-        files = ds_prime.get_data_rootfiles(query.value(), title="First Request")
-        logging.info("Finished ServiceX query")
-        return [str(f) for f in files]
-    else:
-        files = ds_prime.get_data_rootfiles_uri(
-            query.value(), title="First Request", as_signed_url=True
-        )
-        logging.info("Finished ServiceX query")
-        return [str(f.url) for f in files]
+    results = sx.deliver(spec)
+    assert results is not None
+    print(results.keys())
+    return results[f"speed_test_{ds_name}"]
 
 
 def main(
