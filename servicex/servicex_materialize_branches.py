@@ -75,7 +75,6 @@ def query_servicex(
     logging.info("Starting ServiceX query")
     results = sx.deliver(spec)
     assert results is not None
-    print(results.keys())
     return results[f"speed_test_{ds_name}"]
 
 
