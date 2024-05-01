@@ -10,6 +10,7 @@ The default `servicex.yaml` file was used from the UChicago AF.
 |------|-------------|
 | 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be.  |
 | 01-test_servicex_client_v3.ipynb | Similar to 00, but uses the 3.0 interface. |
+| materalize_branches-servicex-3.ipynb | Work in progress running many different types of queries with different backend options |
 | servicex_materialize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
 
 ## Running a `materialize` test
