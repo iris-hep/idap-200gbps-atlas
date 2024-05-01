@@ -7,9 +7,10 @@ from func_adl_servicex_xaodr22 import (
     cpp_vint,
     atlas_release,
 )
+from servicex import FuncADLQuery
 
 
-def query_all() -> FuncADLQueryPHYSLITE:
+def query_all() -> FuncADLQuery:
     # Because we are going to do a specialized query, we'll alter the return type here.
     logging.info(f"Using release {atlas_release} for type information.")
 
