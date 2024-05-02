@@ -67,7 +67,6 @@ This will write out a `sx_materialize_branches.pstats` file, which you can then 
 
 Using the image `AB-dev`
 
-1. `pip install 'func_adl_servicex_xaodr22>=2.0a1'`
 1. `pip install 'git+https://github.com/ssl-hep/ServiceX_frontend@fe6a938e75d4c85d6d0f2e0178969a81fd2ab727'`
 1. Get `servicex.yaml` copied somewhere it will be picked up.
 
