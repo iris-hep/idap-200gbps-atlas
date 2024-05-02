@@ -22,7 +22,7 @@ class ElapsedFormatter(logging.Formatter):
     started - which makes it easier to understand how long operations took.
     """
 
-    def __init__(self, fmt="%(elapsed)s - %(levelname)s - %(message)s"):
+    def __init__(self, fmt="%(elapsed)s - %(levelname)s - %(module)s - %(message)s"):
         super().__init__(fmt)
         self._start_time = time.time()
 
