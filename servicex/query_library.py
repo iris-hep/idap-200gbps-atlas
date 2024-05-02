@@ -11,6 +11,9 @@ from func_adl_servicex_xaodr22 import (
 from servicex import FuncADLQuery
 
 
+# TODO: Seems crazy to return the `codegen` here when it is so connected.
+# TODO: This should return a ObjectStream, not a func adl
+#       thing!
 def build_query(name: str) -> Tuple[FuncADLQuery, str]:
     if name == "xaod_all":
         return (query_xaod_all(), "atlasr22")
