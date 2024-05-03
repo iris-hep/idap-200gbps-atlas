@@ -201,6 +201,8 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             # "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink",
             # "AnalysisMuonsAuxDyn.inDetTrackParticleLink",
             # "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink",
+            # TODO: Many of these are accessed with the `parameterFloat` method, which
+            #       takes an enum as an argument. So need the muon backend to access this.
             # "AnalysisMuonsAuxDyn.momentumBalanceSignificance",
             # "AnalysisMuonsAuxDyn.topoetcone20_CloseByCorr",
             # "AnalysisMuonsAuxDyn.scatteringCurvatureSignificance",
@@ -232,6 +234,7 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "pv_x": ei.pv.Select(lambda p: p.x() / 1000),  # type: ignore
             "pv_y": ei.pv.Select(lambda p: p.y() / 1000),  # type: ignore
             "pv_z": ei.pv.Select(lambda p: p.z() / 1000),  # type: ignore
+            # TODO: Get the enum backend code in AF for this to work (returns an enum).
             # "PrimaryVerticesAuxDyn.vertexType",
         }
     )
