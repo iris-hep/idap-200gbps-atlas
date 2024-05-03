@@ -272,7 +272,7 @@ Note on the dataset argument: \n
     # Create a handler, set the formatter to it, and add this handler to the logger
     handler = logging.StreamHandler()
     handler.setFormatter(ElapsedFormatter())
-    root_logger = logging.getLogger("root")
+    root_logger = logging.getLogger()
 
     # Set the logging level based on the verbosity flag.
     # make sure the time comes out so people can "track" what is going on.
