@@ -171,3 +171,4 @@ servicex/test.py
 *.html
 .DS_Store
 figures/
+num_workers.txt

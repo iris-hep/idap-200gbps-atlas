@@ -8,7 +8,9 @@ The default `servicex.yaml` file was used from the UChicago AF.
 
 | File | Description |
 |------|-------------|
-| 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be. |
+| 00-exploring-the-data | Outlines the raw ServiceX code that we can use. We'll need to develop libraries which will obscure this code quite a bit given how many branches we'll need to load. Working around [this bug](https://github.com/dask-contrib/dask-awkward/issues/456) makes the code a little more complex than it needs to be.  |
+| 01-test_servicex_client_v3.ipynb | Similar to 00, but uses the 3.0 interface. |
+| materalize_branches-servicex-3.ipynb | Work in progress running many different types of queries with different backend options |
 | servicex_materialize_branches.py | Command line script that will load and spin through in a simple way branches from a PHYSLITE dataset. Use `--help` to see options |
 
 ## Running a `materialize` test
@@ -20,7 +22,7 @@ The following tests were used to run a performance test using the `servicex_mate
         * Use the `AB-dev` image
         * 32 GB of memory
         * 8 cores
-        * From the command line inside the instance, issue the command `pip install 'func_adl_servicex_xaodr22>=2.0a1'`
+        * Follow the instructions below to install what you need.
     2. Once started create a DASK cluster
         * Use the `dask` web page
         * At the bottom click "create"
@@ -65,5 +67,7 @@ This will write out a `sx_materialize_branches.pstats` file, which you can then 
 
 Using the image `AB-dev`
 
-1. `pip install 'func_adl_servicex_xaodr22>=2.0a1'`
+1. `pip install 'git+https://github.com/ssl-hep/ServiceX_frontend@fe6a938e75d4c85d6d0f2e0178969a81fd2ab727'`
 1. Get `servicex.yaml` copied somewhere it will be picked up.
+
+Note that the `servicex` install will downgrade `pydantic` to version two. Nominally, this is ok, as only `correctionlib` needs it, and none of the SX things use that.

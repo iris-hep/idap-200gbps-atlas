@@ -1,13 +1,11 @@
 jupyterlab
-servicex
 awkward
+coffea
 hist[dask]
 dask[distributed]
 # Necessary due to bug in uproot/dask-awkward that prevents
 # ak.concat working.
 uproot
-# Get the version with PHYSLITE support sort-of built it
-func_adl_servicex_xaodr22>=2.0a1
 ipywidgets
 
 # To load from s3 the servicex outputs into uproot, we needed
@@ -20,5 +18,6 @@ snakeviz
 # developer tools
 jupytext
 
-# What was needed on UChicago jupyter
-# func_adl_servicex_xaodr22>=2.0a1
+# Needed for the AB-dev as of 20224-04-30
+git+https://github.com/ssl-hep/ServiceX_frontend@fe6a938e75d4c85d6d0f2e0178969a81fd2ab727
+func_adl_servicex_xaodr22>=2.0.0.22.2.107a12
