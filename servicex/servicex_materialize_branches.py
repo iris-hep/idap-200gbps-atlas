@@ -312,7 +312,7 @@ Note on the dataset argument: \n
                 ".deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
                 if args.dataset == "mc_1TB"
                 else (
-                    "data15_13TeV-data15_13TeV.periodAllYear."
+                    "data15_13TeV.periodAllYear."
                     "physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
                     if args.dataset == "data_special"
                     else None
