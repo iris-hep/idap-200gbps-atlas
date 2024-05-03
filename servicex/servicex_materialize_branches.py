@@ -22,7 +22,7 @@ class ElapsedFormatter(logging.Formatter):
     started - which makes it easier to understand how long operations took.
     """
 
-    def __init__(self, fmt="%(elapsed)s - %(levelname)s - %(module)s - %(message)s"):
+    def __init__(self, fmt="%(elapsed)s - %(levelname)s - %(name)s - %(message)s"):
         super().__init__(fmt)
         self._start_time = time.time()
 
@@ -276,8 +276,6 @@ Note on the dataset argument: \n
 
     # Set the logging level based on the verbosity flag.
     # make sure the time comes out so people can "track" what is going on.
-    format = "%(levelname)s - %(message)s"
-    # format = "%(elapsed)s - %(levelname)s - %(message)s"
     if args.verbose == 1:
         root_logger.setLevel(level=logging.INFO)
     elif args.verbose >= 2:
@@ -285,6 +283,9 @@ Note on the dataset argument: \n
     else:
         root_logger.setLevel(level=logging.WARNING)
     root_logger.addHandler(handler)
+
+    # Keep the log quiet when we want it to be.
+    logging.getLogger("httpx").setLevel(logging.WARNING)
 
     # Create the client dask worker
     steps_per_file = 1
