@@ -74,10 +74,6 @@ def query_servicex(
     )
 
     logging.info("Starting ServiceX query")
-    # TODO: An info message on the 0001.4961 - INFO - HTTP Request:
-    #       POST https://servicex.af.uchicago.edu//servicex/transformation
-    #       "HTTP/1.1 200 OK"
-    #       Turn that into a debug message perhaps?
     results = sx.deliver(spec)
     assert results is not None
     return results[f"speed_test_{ds_name}"]
