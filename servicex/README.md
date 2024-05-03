@@ -32,7 +32,7 @@ The following tests were used to run a performance test using the `servicex_mate
         * The `-v` turns on a first level of verbosity which dumps out timings to `stdout`.
         * The second two are required to run with a full `dask` scheduler.
 
-## Notes on using `servicex_materialize_branches.py
+## Notes on using `servicex_materialize_branches.py`
 
 This script is basic and mostly hard-coded. There are a few command line options that are useful:
 
@@ -41,7 +41,7 @@ This script is basic and mostly hard-coded. There are a few command line options
 Gives you a nice high level dump:
 
 ```text
-PS C:\Users\gordo\Code\iris-hep\idap-200gbps-atlas> python .\servicex\servicex_materialize_branches.py -v     
+PS C:\Users\gordo\Code\iris-hep\idap-200gbps-atlas> python .\servicex\servicex_materialize_branches.py -v
 0000.0000 - INFO - Using release 21.2.231
 0000.0010 - INFO - Building ServiceX query
 0000.0471 - WARNING - Fetched the default calibration configuration for a query. It should have been intentionally configured - using configuration for data format PHYS
@@ -63,11 +63,19 @@ When using `local`, it is hardcoded to use 8 cores. This works for a notebook al
 
 This will write out a `sx_materialize_branches.pstats` file, which you can then run `snakeviz` on.
 
-## Running on UChicago JuppterLab
+## Running on UChicago JupyterLab
 
-Using the image `AB-dev`
+Using the image `AB-dev`:
 
-1. `pip install 'git+https://github.com/ssl-hep/ServiceX_frontend@fe6a938e75d4c85d6d0f2e0178969a81fd2ab727'`
 1. Get `servicex.yaml` copied somewhere it will be picked up.
+2. If you need a newer version of the serviceX client than what
 
-Note that the `servicex` install will downgrade `pydantic` to version two. Nominally, this is ok, as only `correctionlib` needs it, and none of the SX things use that.
+```
+servicex --version
+```
+
+shows, install a development version from GitHub directly with
+
+```
+python -m pip install --upgrade 'git+https://github.com/ssl-hep/ServiceX_frontend@3.0_develop'
+```
