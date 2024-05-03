@@ -85,6 +85,101 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
         event_model = count_jets(event_model, 4)
 
     # Get out the data we need
+    # query = event_model.Select(
+    #     lambda ei: {
+    #         "event_number": ei.evt.eventNumber(),  # type: ignore
+    #         "run_number": ei.evt.runNumber(),  # type: ignore
+    #         "jet_pt": ei.jet.Select(lambda j: j.pt() / 1000),  # type: ignore
+    #         "jet_eta": ei.jet.Select(lambda j: j.eta()),  # type: ignore
+    #         "jet_phi": ei.jet.Select(lambda j: j.phi()),  # type: ignore
+    #         "jet_m": ei.jet.Select(lambda j: j.m()),  # type: ignore
+    #         "jet_EnergyPerSampling": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vfloat]("EnergyPerSampling")
+    #         ),
+    #         "jet_SumPtTrkPt500": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vfloat]("SumPtTrkPt500")
+    #         ),
+    #         "jet_TrackWidthPt1000": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vfloat]("TrackWidthPt1000")
+    #         ),
+    #         "jet_NumTrkPt500": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vint]("NumTrkPt500")
+    #         ),
+    #         "jet_NumTrkPt1000": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vint]("NumTrkPt1000")
+    #         ),
+    #         "jet_SumPtChargedPFOPt500": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_vfloat]("SumPtChargedPFOPt500")
+    #         ),
+    #         "jet_Timing": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("Timing")
+    #         ),
+    #         "jet_JetConstitScaleMomentum_eta": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_eta")
+    #         ),
+    #         "jet_ActiveArea4vec_eta": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_eta")
+    #         ),
+    #         "jet_DetectorEta": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("DetectorEta")
+    #         ),
+    #         "jet_JetConstitScaleMomentum_phi": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_phi")
+    #         ),
+    #         "jet_ActiveArea4vec_phi": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_phi")
+    #         ),
+    #         "jet_JetConstitScaleMomentum_m": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_m")
+    #         ),
+    #         "jet_JetConstitScaleMomentum_pt": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_pt")
+    #         ),
+    #         "jet_Width": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("Width")
+    #         ),
+    #         "jet_EMFrac": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("EMFrac")
+    #         ),
+    #         "jet_ActiveArea4vec_m": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_m")
+    #         ),
+    #         "jet_DFCommonJets_QGTagger_TracksWidth": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksWidth")
+    #         ),
+    #         "jet_JVFCorr": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("JVFCorr")
+    #         ),
+    #         "jet_DFCommonJets_QGTagger_TracksC1": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksC1")
+    #         ),
+    #         "jet_PSFrac": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("PSFrac")
+    #         ),
+    #         "jet_DFCommonJets_QGTagger_NTracks": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_int]("DFCommonJets_QGTagger_NTracks")
+    #         ),
+    #         "jet_DFCommonJets_fJvt": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
+    #         ),
+    #         "jet_PartonTruthLabelID": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
+    #         ),
+    #         "jet_HadronConeExclExtendedTruthLabelID": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
+    #         ),
+    #         "jet_ConeTruthLabelID": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
+    #         ),
+    #         "jet_HadronConeExclTruthLabelID": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
+    #         ),
+    #         "jet_ActiveArea4vec_pt": ei.jet.Select(  # type: ignore
+    #             lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
+    #         ),
+    #     }
+    # )
+
     query = event_model.Select(
         lambda ei: {
             "event_number": ei.evt.eventNumber(),  # type: ignore
@@ -117,23 +212,29 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "jet_JetConstitScaleMomentum_eta": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_eta")
             ),
-            "jet_ActiveArea4vec_eta": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_eta")
-            ),
-            "jet_DetectorEta": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("DetectorEta")
-            ),
-            "jet_JetConstitScaleMomentum_phi": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_phi")
-            ),
-            "jet_ActiveArea4vec_phi": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_phi")
-            ),
             "jet_JetConstitScaleMomentum_m": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_m")
             ),
             "jet_JetConstitScaleMomentum_pt": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_pt")
+            ),
+            "jet_JetConstitScaleMomentum_phi": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("JetConstitScaleMomentum_phi")
+            ),
+            "jet_ActiveArea4vec_eta": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_eta")
+            ),
+            "jet_ActiveArea4vec_phi": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_phi")
+            ),
+            "jet_ActiveArea4vec_m": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_m")
+            ),
+            "jet_ActiveArea4vec_pt": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
+            ),
+            "jet_DetectorEta": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("DetectorEta")
             ),
             "jet_Width": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("Width")
@@ -141,20 +242,11 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "jet_EMFrac": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("EMFrac")
             ),
-            "jet_ActiveArea4vec_m": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_m")
-            ),
             "jet_DFCommonJets_QGTagger_TracksWidth": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksWidth")
             ),
-            "jet_JVFCorr": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("JVFCorr")
-            ),
             "jet_DFCommonJets_QGTagger_TracksC1": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("DFCommonJets_QGTagger_TracksC1")
-            ),
-            "jet_PSFrac": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("PSFrac")
             ),
             "jet_DFCommonJets_QGTagger_NTracks": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_int]("DFCommonJets_QGTagger_NTracks")
@@ -162,22 +254,76 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "jet_DFCommonJets_fJvt": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("DFCommonJets_fJvt")
             ),
-            "jet_PartonTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("PartonTruthLabelID")
+            "jet_PSFrac": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("PSFrac")
             ),
-            "jet_HadronConeExclExtendedTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("HadronConeExclExtendedTruthLabelID")
+            "jet_JVFCorr": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_float]("JVFCorr")
             ),
-            "jet_ConeTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("ConeTruthLabelID")
-            ),
-            "jet_HadronConeExclTruthLabelID": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_int]("HadronConeExclTruthLabelID")
-            ),
-            "jet_ActiveArea4vec_pt": ei.jet.Select(  # type: ignore
-                lambda j: j.getAttribute[cpp_float]("ActiveArea4vec_pt")
+            # TODO: Get cpp_char defined
+            # "jet_NNJvtPass": ei.jet.Select(  # type: ignore
+            #     lambda j: j.getAttribute[cpp_char]("NNJvtPass")
+            # ),
+            "jet_GhostMuonSegmentCount": ei.jet.Select(  # type: ignore
+                lambda j: j.getAttribute[cpp_int]("GhostMuonSegmentCount")
             ),
         }
     )
 
     return query
+
+
+BRANCH_LIST = [
+    "AnalysisElectronsAuxDyn.ambiguityLink",
+    "AnalysisElectronsAuxDyn.pt",
+    "AnalysisElectronsAuxDyn.eta",
+    "AnalysisElectronsAuxDyn.phi",
+    "AnalysisElectronsAuxDyn.m",
+    "AnalysisElectronsAuxDyn.topoetcone20_CloseByCorr",
+    "AnalysisElectronsAuxDyn.topoetcone20ptCorrection",
+    "AnalysisElectronsAuxDyn.topoetcone20",
+    "AnalysisElectronsAuxDyn.DFCommonElectronsECIDSResult",
+    "AnalysisElectronsAuxDyn.neflowisol20",
+    "AnalysisElectronsAuxDyn.f1",
+    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt500",
+    "AnalysisMuonsAuxDyn.pt",
+    "AnalysisMuonsAuxDyn.eta",
+    "AnalysisMuonsAuxDyn.phi",
+    "AnalysisMuonsAuxDyn.muonSegmentLinks",
+    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink",
+    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink",
+    "AnalysisMuonsAuxDyn.inDetTrackParticleLink",
+    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink",
+    "AnalysisMuonsAuxDyn.momentumBalanceSignificance",
+    "AnalysisMuonsAuxDyn.topoetcone20_CloseByCorr",
+    "AnalysisMuonsAuxDyn.scatteringCurvatureSignificance",
+    "AnalysisMuonsAuxDyn.scatteringNeighbourSignificance",
+    "AnalysisMuonsAuxDyn.neflowisol20_CloseByCorr",
+    "AnalysisMuonsAuxDyn.topoetcone20",
+    "AnalysisMuonsAuxDyn.topoetcone30",
+    "AnalysisMuonsAuxDyn.topoetcone40",
+    "AnalysisMuonsAuxDyn.neflowisol20",
+    "AnalysisMuonsAuxDyn.segmentDeltaEta",
+    "AnalysisMuonsAuxDyn.DFCommonJetDr",
+    "AnalysisMuonsAuxDyn.combinedTrackParticleLink",
+    "AnalysisMuonsAuxDyn.InnerDetectorPt",
+    "AnalysisMuonsAuxDyn.MuonSpectrometerPt",
+    "AnalysisMuonsAuxDyn.clusterLink",
+    "AnalysisMuonsAuxDyn.spectrometerFieldIntegral",
+    "AnalysisMuonsAuxDyn.EnergyLoss",
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500_CloseByCorr",
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500",
+    "AnalysisMuonsAuxDyn.ptcone40",
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000_CloseByCorr",
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000",
+    "AnalysisMuonsAuxDyn.ptvarcone40",
+    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt500",
+    "AnalysisMuonsAuxDyn.ptvarcone30",
+    "AnalysisMuonsAuxDyn.ptcone30",
+    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt1000",
+    "AnalysisMuonsAuxDyn.CaloLRLikelihood",
+    "PrimaryVerticesAuxDyn.z",
+    "PrimaryVerticesAuxDyn.x",
+    "PrimaryVerticesAuxDyn.y",
+    "PrimaryVerticesAuxDyn.vertexType",
+]
