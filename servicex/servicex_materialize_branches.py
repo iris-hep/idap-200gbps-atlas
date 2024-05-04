@@ -55,12 +55,14 @@ def query_servicex(
     # TODO: If you change the name of the item you'll get a multiple cache hit!
     # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
     # TODO: servicex_query_cache.json is being ignored (feature?)
+    # TODO: Why does outputformat and delivery not work as enums? And fail typechecking with
+    #       strings?
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
             Codegen=query[1],
-            OutputFormat=sx.ResultFormat.root,
-            Delivery=("LocalCache" if download else "SignedURLs"),
+            OutputFormat=sx.ResultFormat.root,  # type: ignore
+            Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
         ),
         Sample=[
             sx.Sample(
@@ -298,6 +300,13 @@ Note on the dataset argument: \n
         logging.debug("Connecting to Dask scheduler at {scheduler_address}")
         assert args.dask_scheduler is not None
         client = Client(args.dask_scheduler)
+        steps_per_file = 2
+
+    # The steps per file needs to be adjusted for uproot 5.3.3 because of a small
+    # bug - also because things start to get inefficient.
+    if args.query == "xaod_small":
+        steps_per_file = 1
+    elif args.query == "xaod_medium":
         steps_per_file = 2
 
     # Determine the dataset
