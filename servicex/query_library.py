@@ -80,6 +80,7 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
         )
 
     def count_jets(events, n_jets: int):
+        # TODO: The `len` has an unknown type warning in `func_adl`.
         return events.Where(lambda e: len(e.jet) >= n_jets)
 
     if q_type == "medium":
