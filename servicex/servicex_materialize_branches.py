@@ -55,7 +55,7 @@ def query_servicex(
     # TODO: If you change the name of the item you'll get a multiple cache hit!
     # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
     # TODO: servicex_query_cache.json is being ignored (feature?)
-    # TODO: Why does outputformat and delivery not work as enums? And fail typechecking with
+    # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
     #       strings?
     spec = sx.ServiceXSpec(
         General=sx.General(
