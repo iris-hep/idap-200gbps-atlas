@@ -158,7 +158,13 @@ def main(
         f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
         f"unoptimized {len(total_count.dask):,}"  # type: ignore
     )
+
     # total_count.visualize(optimize_graph=True)  # type: ignore
+    # opt = Path("mydask.png")
+    # opt.replace("dask-optimized.png")
+    # total_count.visualize(optimize_graph=False)  # type: ignore
+    # opt.replace("dask-unoptimized.png")
+
     logging.info("Computing the total count")
     if dask_report:
         with performance_report(filename="dask-report.html"):
