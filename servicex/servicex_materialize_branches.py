@@ -240,7 +240,7 @@ Note on the dataset argument: \n
         help="Specify the dataset to use",
     )
 
-    # Add a flag for three queries - xaod_all, xald_medium, xaod_small:
+    # Add a flag for three queries - xaod_all, xaod_medium, xaod_small:
     parser.add_argument(
         "--query",
         choices=["xaod_all", "xaod_medium", "xaod_small"],
