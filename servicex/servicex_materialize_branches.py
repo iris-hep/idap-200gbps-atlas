@@ -149,11 +149,10 @@ def main(
     all_tasks = {k: v[1] for k, v in all_dask_data.items()}
     if dask_report:
         with performance_report(filename="dask-report.html"):
-            results = dask.compute(*all_tasks.values())
+            results = dask.compute(*all_tasks.values())  # type: ignore
             result_dict = dict(zip(all_tasks.keys(), results))
-            # r = total_count.compute()  # type: ignore
     else:
-        results = dask.compute(*all_tasks.values())
+        results = dask.compute(*all_tasks.values())  # type: ignore
         result_dict = dict(zip(all_tasks.keys(), results))
 
     for k, r in result_dict.items():
