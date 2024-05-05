@@ -3,7 +3,7 @@ import cProfile
 import logging
 import time
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import awkward as ak
 import dask
@@ -37,7 +37,7 @@ def query_servicex(
     ds_names: List[str],
     download: bool,
     query: Tuple[sx.FuncADLQuery, str],
-) -> List[str]:
+) -> Dict[str, List[str]]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
@@ -85,7 +85,7 @@ def query_servicex(
     logging.info("Starting ServiceX query")
     results = sx.deliver(spec)
     assert results is not None
-    return results[f"speed_test_{ds_names[0]}"[0:128]]
+    return results
 
 
 def main(
@@ -110,7 +110,7 @@ def main(
         sx_query_ids.touch()
 
     assert ds_names is not None
-    files = query_servicex(
+    dataset_files = query_servicex(
         ignore_cache=ignore_cache,
         num_files=num_files,
         ds_names=ds_names,
@@ -118,15 +118,66 @@ def main(
         query=query,
     )
 
-    assert len(files) > 0, "No files found in the dataset"
-    for i, f in enumerate(files):
-        logging.debug(f"{i:00}: {f}")
+    for ds, files in dataset_files.items():
+        logging.info(f"Dataset {ds} has {len(files)} files")
+        assert len(files) > 0, "No files found in the dataset"
 
     # now materialize everything.
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
+    all_dask_data = {
+        k: calculate_total_count(steps_per_file, files)
+        for k, files in dataset_files.items()
+    }
+
+    # Do the calc now.
+    # logging.info(
+    #     "Number of tasks in the dask graph: optimized: "
+    #     f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
+    #     f"unoptimized: {len(total_count.dask):,}"  # type: ignore
+    # )
+
+    # total_count.visualize(optimize_graph=True)  # type: ignore
+    # opt = Path("mydask.png")
+    # opt.replace("dask-optimized.png")
+    # total_count.visualize(optimize_graph=False)  # type: ignore
+    # opt.replace("dask-unoptimized.png")
+
+    logging.info("Computing the total count")
+    all_tasks = {k: v[1] for k, v in all_dask_data.items()}
+    if dask_report:
+        with performance_report(filename="dask-report.html"):
+            results = dask.compute(*all_tasks.values())
+            result_dict = dict(zip(all_tasks.keys(), results))
+            # r = total_count.compute()  # type: ignore
+    else:
+        results = dask.compute(*all_tasks.values())
+        result_dict = dict(zip(all_tasks.keys(), results))
+
+    for k, r in result_dict.items():
+        logging.info(f"{k}: result = {r:,}")
+
+    # Scan through for any exceptions that happened during the dask processing.
+    # report_list = report_to_be.compute()
+    # for process in report_list:
+    #     if process.exception is not None:
+    #         logging.error(
+    #             f"Exception in process '{process.message}' on file {process.args[0]}"
+    #         )
+
+
+def calculate_total_count(steps_per_file: int, files: List[str]) -> Tuple[Any, Any]:
+    """Calculate the non zero fields in the files.
+
+    Args:
+        steps_per_file (int): The number of steps to split the file into.
+        files (List[str]): The list of files in which to count the fields.
+
+    Returns:
+        _: DASK graph for the total count.
+    """
     data, report_to_be = uproot.dask(
         {f: "atlas_xaod_tree" for f in files},
         open_files=False,
@@ -135,16 +186,16 @@ def main(
     )
 
     # Now, do the counting.
-    logging.info(
-        f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
-    )
+    # logging.info(
+    #     f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
+    # )
 
     # The straight forward way to do this leads to a very large dask graph. We can
     # do a little prep work here and make it more clean.
     total_count = 0
     assert isinstance(data, dak.Array)  # type: ignore
     for field in data.fields:
-        logging.debug(f"Counting field {field}")
+        # logging.debug(f"Counting field {field}")
         if str(data[field].type.content).startswith("var"):
             count = ak.count_nonzero(data[field], axis=-1)
             for _ in range(count.ndim - 1):  # type: ignore
@@ -158,36 +209,7 @@ def main(
             logging.info(f"Field {field} is not a scalar field. Skipping count.")
 
     total_count = ak.count_nonzero(total_count, axis=0)
-
-    # Do the calc now.
-    logging.info(
-        "Number of tasks in the dask graph: optimized: "
-        f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
-        f"unoptimized: {len(total_count.dask):,}"  # type: ignore
-    )
-
-    # total_count.visualize(optimize_graph=True)  # type: ignore
-    # opt = Path("mydask.png")
-    # opt.replace("dask-optimized.png")
-    # total_count.visualize(optimize_graph=False)  # type: ignore
-    # opt.replace("dask-unoptimized.png")
-
-    logging.info("Computing the total count")
-    if dask_report:
-        with performance_report(filename="dask-report.html"):
-            r = total_count.compute()  # type: ignore
-    else:
-        r = total_count.compute()  # type: ignore
-
-    logging.info(f"Done: result = {r:,}")
-
-    # Scan through for any exceptions that happened during the dask processing.
-    report_list = report_to_be.compute()
-    for process in report_list:
-        if process.exception is not None:
-            logging.error(
-                f"Exception in process '{process.message}' on file {process.args[0]}"
-            )
+    return report_to_be, total_count
 
 
 if __name__ == "__main__":
