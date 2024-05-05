@@ -52,6 +52,11 @@ def query_servicex(
     # TODO: servicex_query_cache.json is being ignored (feature?)
     # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
     #       strings?
+    # TODO: If some of these submissions work and others do not, we lose the ability to track the
+    #       ones we fired off.
+    #       an example is a title that is longer than 128 characters causes an immediate crash -
+    #       but other queries
+    #       already worked. Cache recovery @ the server would mean this wasn't important.
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
@@ -61,7 +66,7 @@ def query_servicex(
         ),
         Sample=[
             sx.Sample(
-                Name=f"speed_test_{ds_name}",
+                Name=f"speed_test_{ds_name}"[0:128],
                 RucioDID=ds_name,
                 Query=query[0],
                 NFiles=num_files,
@@ -80,7 +85,7 @@ def query_servicex(
     logging.info("Starting ServiceX query")
     results = sx.deliver(spec)
     assert results is not None
-    return results[f"speed_test_{ds_name}"]
+    return results[f"speed_test_{ds_names[0]}"[0:128]]
 
 
 def main(
@@ -197,6 +202,10 @@ Note on the dataset argument: \n
   data_50TB - 50 TB of data from dta18. 64803 files.\n
   mc_1TB - 1.2 TB of data from mc20. 232 files.\n
   data_10TB - 10 TB of data from data15. 10049 files.\n
+  multi_1TB - All datasets between 1 and 2 TB.\n
+  multi_small_10 - 10 small datasets (0.1 TB).\n
+  multi_small_20 - 10 small datasets (0.1 TB).\n
+  all - All the datasets.\n
 """,
     )
 
@@ -243,7 +252,15 @@ Note on the dataset argument: \n
     # Add a flag for different datasets
     parser.add_argument(
         "--dataset",
-        choices=["data_50TB", "mc_1TB", "data_10TB"],
+        choices=[
+            "data_50TB",
+            "mc_1TB",
+            "data_10TB",
+            "multi_1TB",
+            "all",
+            "multi_small_10",
+            "multi_small_20",
+        ],
         default="mc_1TB",
         help="Specify the dataset to use",
     )
