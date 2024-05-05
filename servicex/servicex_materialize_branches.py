@@ -159,12 +159,15 @@ def main(
         logging.info(f"{k}: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    # report_list = report_to_be.compute()
-    # for process in report_list:
-    #     if process.exception is not None:
-    #         logging.error(
-    #             f"Exception in process '{process.message}' on file {process.args[0]}"
-    #         )
+    all_report_tasks = {k: v[0] for k, v in all_dask_data.items()}
+    all_reports = dask.compute(*all_report_tasks.values())  # type: ignore
+    for k, report_list in zip(all_report_tasks.keys(), all_reports):
+        for process in report_list:
+            if process.exception is not None:
+                logging.error(
+                    f"Exception in process '{process.message}' on file {process.args[0]} "
+                    "for ds {k}"
+                )
 
 
 def calculate_total_count(steps_per_file: int, files: List[str]) -> Tuple[Any, Any]:
