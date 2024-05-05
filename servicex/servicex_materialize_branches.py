@@ -10,10 +10,10 @@ import dask
 import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
+from datasets import determine_dataset
+from query_library import build_query
 
 import servicex as sx
-
-from query_library import build_query
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -34,7 +34,7 @@ class ElapsedFormatter(logging.Formatter):
 def query_servicex(
     ignore_cache: bool,
     num_files: int,
-    ds_name: str,
+    ds_names: List[str],
     download: bool,
     query: Tuple[sx.FuncADLQuery, str],
 ) -> List[str]:
@@ -42,11 +42,6 @@ def query_servicex(
     (be they local or url's) for the root or parquet files.
     """
     logging.info("Building ServiceX query")
-    logging.info(f"Using dataset {ds_name}.")
-    if num_files == 0:
-        logging.info("Running on the full dataset.")
-    else:
-        logging.info(f"Running on {num_files} files of dataset.")
 
     # Do the query.
     # TODO: Where is the enum that does DeliveryEnum come from?
@@ -72,8 +67,15 @@ def query_servicex(
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
             )  # type: ignore
+            for ds_name in ds_names
         ],
     )
+    for ds_name in ds_names:
+        logging.info(f"Querying dataset {ds_name}")
+    if num_files == 0:
+        logging.info("Running on the full dataset.")
+    else:
+        logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
     results = sx.deliver(spec)
@@ -85,7 +87,7 @@ def main(
     ignore_cache: bool = False,
     num_files: int = 10,
     dask_report: bool = False,
-    ds_name: Optional[str] = None,
+    ds_names: Optional[List[str]] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
     query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
@@ -102,11 +104,11 @@ def main(
     if not sx_query_ids.exists():
         sx_query_ids.touch()
 
-    assert ds_name is not None
+    assert ds_names is not None
     files = query_servicex(
         ignore_cache=ignore_cache,
         num_files=num_files,
-        ds_name=ds_name,
+        ds_names=ds_names,
         download=download_sx_result,
         query=query,
     )
@@ -156,7 +158,7 @@ def main(
     logging.info(
         "Number of tasks in the dask graph: optimized: "
         f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
-        f"unoptimized {len(total_count.dask):,}"  # type: ignore
+        f"unoptimized: {len(total_count.dask):,}"  # type: ignore
     )
 
     # total_count.visualize(optimize_graph=True)  # type: ignore
@@ -315,22 +317,7 @@ Note on the dataset argument: \n
     elif args.query == "xaod_medium":
         steps_per_file = 2
 
-    # Determine the dataset
-    ds_name = (
-        "data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
-        if args.dataset == "mc_10TB"
-        else (
-            "data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026"
-            if args.dataset == "data_50TB"
-            else (
-                "mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto"
-                ".deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
-                if args.dataset == "mc_1TB"
-                else None
-            )
-        )
-    )
-    assert ds_name is not None, "Invalid/unknown dataset specified"
+    ds_names = determine_dataset(args.dataset)
 
     # Build the query
     query = build_query(args.query)
@@ -341,7 +328,7 @@ Note on the dataset argument: \n
             ignore_cache=args.ignore_cache,
             num_files=args.num_files,
             dask_report=args.dask_profile,
-            ds_name=ds_name,
+            ds_names=ds_names,
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
             query=query,
