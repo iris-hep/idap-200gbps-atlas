@@ -127,24 +127,14 @@ def main(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
+    logging.info("Starting build of DASK graphs")
     all_dask_data = {
-        k: calculate_total_count(steps_per_file, files)
+        k: calculate_total_count(k, steps_per_file, files)
         for k, files in dataset_files.items()
     }
+    logging.info("Done building DASK graphs.")
 
     # Do the calc now.
-    # logging.info(
-    #     "Number of tasks in the dask graph: optimized: "
-    #     f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
-    #     f"unoptimized: {len(total_count.dask):,}"  # type: ignore
-    # )
-
-    # total_count.visualize(optimize_graph=True)  # type: ignore
-    # opt = Path("mydask.png")
-    # opt.replace("dask-optimized.png")
-    # total_count.visualize(optimize_graph=False)  # type: ignore
-    # opt.replace("dask-unoptimized.png")
-
     logging.info("Computing the total count")
     all_tasks = {k: v[1] for k, v in all_dask_data.items()}
     if dask_report:
@@ -170,7 +160,9 @@ def main(
                 )
 
 
-def calculate_total_count(steps_per_file: int, files: List[str]) -> Tuple[Any, Any]:
+def calculate_total_count(
+    ds_name: str, steps_per_file: int, files: List[str]
+) -> Tuple[Any, Any]:
     """Calculate the non zero fields in the files.
 
     Args:
@@ -188,16 +180,17 @@ def calculate_total_count(steps_per_file: int, files: List[str]) -> Tuple[Any, A
     )
 
     # Now, do the counting.
-    # logging.info(
-    #     f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
-    # )
-
     # The straight forward way to do this leads to a very large dask graph. We can
     # do a little prep work here and make it more clean.
+    logging.debug(
+        f"{ds_name}: Generating the dask compute graph for"
+        f" {len(data.fields)} fields"  # type: ignore
+    )
+
     total_count = 0
     assert isinstance(data, dak.Array)  # type: ignore
     for field in data.fields:
-        # logging.debug(f"Counting field {field}")
+        logging.debug(f"{ds_name}: Counting field {field}")
         if str(data[field].type.content).startswith("var"):
             count = ak.count_nonzero(data[field], axis=-1)
             for _ in range(count.ndim - 1):  # type: ignore
@@ -208,9 +201,24 @@ def calculate_total_count(steps_per_file: int, files: List[str]) -> Tuple[Any, A
             # We get a not implemented error when we try to do this
             # on leaves like run-number or event-number (e.g. scalars)
             # Maybe we should just be adding a 1. :-)
-            logging.info(f"Field {field} is not a scalar field. Skipping count.")
+            logging.debug(
+                f"{ds_name}: Field {field} is not a scalar field. Skipping count."
+            )
 
     total_count = ak.count_nonzero(total_count, axis=0)
+
+    logging.info(
+        f"{ds_name}: Number of tasks in the dask graph: optimized: "
+        f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
+        f"unoptimized: {len(total_count.dask):,}"  # type: ignore
+    )
+
+    # total_count.visualize(optimize_graph=True)  # type: ignore
+    # opt = Path("mydask.png")
+    # opt.replace("dask-optimized.png")
+    # total_count.visualize(optimize_graph=False)  # type: ignore
+    # opt.replace("dask-unoptimized.png")
+
     return report_to_be, total_count
 
 
