@@ -207,10 +207,12 @@ def calculate_total_count(
 
     total_count = ak.count_nonzero(total_count, axis=0)
 
-    logging.info(
+    n_optimized_tasks = len(dask.optimize(total_count)[0].dask)  # type: ignore
+    logging.log(
+        logging.INFO if n_optimized_tasks > 2 else logging.DEBUG,
         f"{ds_name}: Number of tasks in the dask graph: optimized: "
         f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
-        f"unoptimized: {len(total_count.dask):,}"  # type: ignore
+        f"unoptimized: {len(total_count.dask):,}",  # type: ignore
     )
 
     # total_count.visualize(optimize_graph=True)  # type: ignore
