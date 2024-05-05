@@ -141,7 +141,7 @@ def main(
         if str(data[field].type.content).startswith("var"):
             count = ak.count_nonzero(data[field], axis=-1)
             for _ in range(count.ndim - 1):  # type: ignore
-                count = ak.count_nonzero(count)
+                count = ak.count_nonzero(count, axis=-1)
 
             total_count = total_count + count  # type: ignore
         else:
