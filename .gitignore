@@ -172,3 +172,4 @@ servicex/test.py
 .DS_Store
 figures/
 num_workers.txt
+dask*.png
