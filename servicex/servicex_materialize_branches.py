@@ -57,6 +57,8 @@ def query_servicex(
     # TODO: servicex_query_cache.json is being ignored (feature?)
     # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
     #       strings?
+    # TODO: Would be nice if you didn't have to specify codegen at the top level, but just at
+    #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
@@ -65,9 +67,11 @@ def query_servicex(
             Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
         ),
         Sample=[
+            # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
                 Name=f"speed_test_{ds_name}",
                 RucioDID=ds_name,
+                Codegen=query[1],
                 Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
@@ -76,6 +80,14 @@ def query_servicex(
     )
 
     logging.info("Starting ServiceX query")
+    # TODO: When SX is queried for status, it always sends back the full
+    #       qastle. This is way too much information for a long query
+    #       like this.
+    # TODO: async def get_transform_status(self, request_id: str) -> TransformStatus:
+    #       needs to have a retry/backoff for when there is a timeout.
+    # TODO: we should make servicex-app deployment scale based on time it takes
+    #       to get response to a rest request.
+    # TODO: Silent mode to suppress the marching ants progress.
     results = sx.deliver(spec)
     assert results is not None
     return results[f"speed_test_{ds_name}"]
@@ -168,14 +180,13 @@ def main(
     logging.info("Computing the total count")
     if dask_report:
         with performance_report(filename="dask-report.html"):
-            r = total_count.compute()  # type: ignore
+            r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
     else:
-        r = total_count.compute()  # type: ignore
+        r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
 
     logging.info(f"Done: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    report_list = report_to_be.compute()
     for process in report_list:
         if process.exception is not None:
             logging.error(
