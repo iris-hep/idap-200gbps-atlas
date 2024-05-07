@@ -180,14 +180,13 @@ def main(
     logging.info("Computing the total count")
     if dask_report:
         with performance_report(filename="dask-report.html"):
-            r = total_count.compute()  # type: ignore
+            r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
     else:
-        r = total_count.compute()  # type: ignore
+        r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
 
     logging.info(f"Done: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    report_list = report_to_be.compute()
     for process in report_list:
         if process.exception is not None:
             logging.error(
