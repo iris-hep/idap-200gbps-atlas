@@ -77,6 +77,9 @@ def query_servicex(
     )
 
     logging.info("Starting ServiceX query")
+    # TODO: When SX is queried for status, it always sends back the full
+    #       qastle. This is way too much information for a long query
+    #       like this.
     results = sx.deliver(spec)
     assert results is not None
     return results[f"speed_test_{ds_name}"]
