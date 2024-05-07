@@ -65,6 +65,7 @@ def query_servicex(
             Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
         ),
         Sample=[
+            # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
                 Name=f"speed_test_{ds_name}",
                 RucioDID=ds_name,
