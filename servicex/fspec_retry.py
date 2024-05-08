@@ -1,3 +1,4 @@
+import logging
 import fsspec
 from fsspec.implementations.http import (
     HTTPFile,
@@ -22,10 +23,16 @@ def register_retry_http_filesystem(client):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
 
+            def log_retry(state):
+                logging.warning(
+                    f"Retry for {state.fn} - attempt {state.attempt_number}"
+                )
+
             def wrap(f):
                 new_r = tenacity.retry(
                     wait=tenacity.wait_random_exponential(multiplier=1, max=60),
                     stop=tenacity.stop_after_attempt(30),
+                    after=log_retry,
                 )(f)
                 return new_r
 
@@ -91,6 +98,8 @@ def register_retry_http_filesystem(client):
                     session=session,
                     **kw,
                 )
+
+    return
 
     def do_register_retry_http_filesystem():
         fsspec.register_implementation("http", RetryHTTPFileSystem, clobber=True)
