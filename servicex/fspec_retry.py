@@ -31,17 +31,16 @@ def register_retry_http_filesystem(client):
                 return new_r
 
             self.async_fetch_range = wrap(self.async_fetch_range)
+            self._fetch_range = sync_wrapper(self.async_fetch_range)
             self.read = wrap(self.read)
 
-        def async_fetch_range(self, start, end):
-            logging.debug(f"retry async_fetch_range: {start} {end}")
-            return super().async_fetch_range(start, end)
+        # def async_fetch_range(self, start, end):
+        #     logging.debug(f"retry async_fetch_range: {start} {end}")
+        #     return super().async_fetch_range(start, end)
 
-        _fetch_range = sync_wrapper(async_fetch_range)
-
-        def read(self, length=-1):
-            logging.debug(f"retry read: {length}")
-            return super().read(length)
+        # def read(self, length=-1):
+        #     logging.debug(f"retry read: {length}")
+        #     return super().read(length)
 
     class RetryHTTPFileSystem(HTTPFileSystem):
         """Retry version of HTTPFileSystem."""
