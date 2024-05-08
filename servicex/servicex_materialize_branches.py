@@ -322,10 +322,7 @@ Note on the dataset argument: \n
         steps_per_file = 2
 
     # Register fsspec special http retry filesystem
-    if client is None:
-        register_retry_http_filesystem()
-    else:
-        client.run(register_retry_http_filesystem)
+    register_retry_http_filesystem(client)
 
     # The steps per file needs to be adjusted for uproot 5.3.3 because of a small
     # bug - also because things start to get inefficient.
