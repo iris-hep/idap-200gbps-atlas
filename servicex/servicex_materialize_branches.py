@@ -8,14 +8,13 @@ from typing import List, Optional, Tuple
 import awkward as ak
 import dask
 import dask_awkward as dak
-import fsspec
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
 
 import servicex as sx
 
 from query_library import build_query
-from fspec_retry import RetryHTTPFileSystem, register_retry_http_filesystem
+from fspec_retry import register_retry_http_filesystem
 
 
 class ElapsedFormatter(logging.Formatter):
