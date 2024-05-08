@@ -8,12 +8,14 @@ from typing import List, Optional, Tuple
 import awkward as ak
 import dask
 import dask_awkward as dak
+import fsspec
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
 
 import servicex as sx
 
 from query_library import build_query
+from fspec_retry import RetryHTTPFileSystem, register_retry_http_filesystem
 
 
 class ElapsedFormatter(logging.Formatter):
@@ -304,6 +306,7 @@ Note on the dataset argument: \n
 
     # Create the client dask worker
     steps_per_file = 1
+    client = None
     if args.distributed_client == "local":
         # Do not know how to do it otherwise.
         n_workers = 8
@@ -318,6 +321,12 @@ Note on the dataset argument: \n
         assert args.dask_scheduler is not None
         client = Client(args.dask_scheduler)
         steps_per_file = 2
+
+    # Register fsspec special http retry filesystem
+    if client is None:
+        register_retry_http_filesystem()
+    else:
+        client.run(register_retry_http_filesystem)
 
     # The steps per file needs to be adjusted for uproot 5.3.3 because of a small
     # bug - also because things start to get inefficient.
