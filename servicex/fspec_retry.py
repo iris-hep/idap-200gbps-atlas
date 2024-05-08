@@ -1,6 +1,4 @@
-import asyncio
 import logging
-from aiohttp import ClientError
 import fsspec
 from fsspec.implementations.http import (
     HTTPFile,
@@ -25,20 +23,25 @@ def register_retry_http_filesystem(client):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
 
-            new_r = tenacity.retry(
-                wait=tenacity.wait_random_exponential(multiplier=1, max=60),
-                retry=tenacity.retry_if_exception_type(
-                    (ClientError, TimeoutError, asyncio.exceptions.TimeoutError)
-                ),
-                stop=tenacity.stop_after_attempt(30),
-            )(self.async_fetch_range)
-            self.async_fetch_range = new_r
+            def wrap(f):
+                new_r = tenacity.retry(
+                    wait=tenacity.wait_random_exponential(multiplier=1, max=60),
+                    stop=tenacity.stop_after_attempt(30),
+                )(f)
+                return new_r
+
+            self.async_fetch_range = wrap(self.async_fetch_range)
+            self.read = wrap(self.read)
 
         def async_fetch_range(self, start, end):
             logging.debug(f"retry async_fetch_range: {start} {end}")
             return super().async_fetch_range(start, end)
 
         _fetch_range = sync_wrapper(async_fetch_range)
+
+        def read(self, length=-1):
+            logging.debug(f"retry read: {length}")
+            return super().read(length)
 
     class RetryHTTPFileSystem(HTTPFileSystem):
         """Retry version of HTTPFileSystem."""
