@@ -3,19 +3,20 @@ import cProfile
 import logging
 import time
 from pathlib import Path
-from typing import List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import awkward as ak
 import dask
 import dask_awkward as dak
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
+from datasets import determine_dataset
+from query_library import build_query
 
 import servicex as sx
 
 from query_library import build_query
 from fspec_retry import register_retry_http_filesystem
-
 
 class ElapsedFormatter(logging.Formatter):
     """Logging formatter that adds an elapsed time record since it was
@@ -35,19 +36,14 @@ class ElapsedFormatter(logging.Formatter):
 def query_servicex(
     ignore_cache: bool,
     num_files: int,
-    ds_name: str,
+    ds_names: List[str],
     download: bool,
     query: Tuple[sx.FuncADLQuery, str],
-) -> List[str]:
+) -> Dict[str, List[str]]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
     """
     logging.info("Building ServiceX query")
-    logging.info(f"Using dataset {ds_name}.")
-    if num_files == 0:
-        logging.info("Running on the full dataset.")
-    else:
-        logging.info(f"Running on {num_files} files of dataset.")
 
     # Do the query.
     # TODO: Where is the enum that does DeliveryEnum come from?
@@ -58,6 +54,11 @@ def query_servicex(
     # TODO: servicex_query_cache.json is being ignored (feature?)
     # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
     #       strings?
+    # TODO: If some of these submissions work and others do not, we lose the ability to track the
+    #       ones we fired off.
+    #       an example is a title that is longer than 128 characters causes an immediate crash -
+    #       but other queries
+    #       already worked. Cache recovery @ the server would mean this wasn't important.
     # TODO: Would be nice if you didn't have to specify codegen at the top level, but just at
     #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
@@ -70,15 +71,22 @@ def query_servicex(
         Sample=[
             # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
-                Name=f"speed_test_{ds_name}",
+                Name=f"speed_test_{ds_name}"[0:128],
                 RucioDID=ds_name,
                 Codegen=query[1],
                 Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
             )  # type: ignore
+            for ds_name in ds_names
         ],
     )
+    for ds_name in ds_names:
+        logging.info(f"Querying dataset {ds_name}")
+    if num_files == 0:
+        logging.info("Running on the full dataset.")
+    else:
+        logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
     # TODO: When SX is queried for status, it always sends back the full
@@ -91,14 +99,14 @@ def query_servicex(
     # TODO: Silent mode to suppress the marching ants progress.
     results = sx.deliver(spec)
     assert results is not None
-    return results[f"speed_test_{ds_name}"]
+    return results
 
 
 def main(
     ignore_cache: bool = False,
     num_files: int = 10,
     dask_report: bool = False,
-    ds_name: Optional[str] = None,
+    ds_names: Optional[List[str]] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
     query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
@@ -115,24 +123,69 @@ def main(
     if not sx_query_ids.exists():
         sx_query_ids.touch()
 
-    assert ds_name is not None
-    files = query_servicex(
+    assert ds_names is not None
+    dataset_files = query_servicex(
         ignore_cache=ignore_cache,
         num_files=num_files,
-        ds_name=ds_name,
+        ds_names=ds_names,
         download=download_sx_result,
         query=query,
     )
 
-    assert len(files) > 0, "No files found in the dataset"
-    for i, f in enumerate(files):
-        logging.debug(f"{i:00}: {f}")
+    for ds, files in dataset_files.items():
+        logging.info(f"Dataset {ds} has {len(files)} files")
+        assert len(files) > 0, "No files found in the dataset"
 
     # now materialize everything.
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
+    logging.info("Starting build of DASK graphs")
+    all_dask_data = {
+        k: calculate_total_count(k, steps_per_file, files)
+        for k, files in dataset_files.items()
+    }
+    logging.info("Done building DASK graphs.")
+
+    # Do the calc now.
+    logging.info("Computing the total count")
+    all_tasks = {k: v[1] for k, v in all_dask_data.items()}
+    if dask_report:
+        with performance_report(filename="dask-report.html"):
+            results = dask.compute(*all_tasks.values())  # type: ignore
+            result_dict = dict(zip(all_tasks.keys(), results))
+    else:
+        results = dask.compute(*all_tasks.values())  # type: ignore
+        result_dict = dict(zip(all_tasks.keys(), results))
+
+    for k, r in result_dict.items():
+        logging.info(f"{k}: result = {r:,}")
+
+    # Scan through for any exceptions that happened during the dask processing.
+    all_report_tasks = {k: v[0] for k, v in all_dask_data.items()}
+    all_reports = dask.compute(*all_report_tasks.values())  # type: ignore
+    for k, report_list in zip(all_report_tasks.keys(), all_reports):
+        for process in report_list:
+            if process.exception is not None:
+                logging.error(
+                    f"Exception in process '{process.message}' on file {process.args[0]} "
+                    "for ds {k}"
+                )
+
+
+def calculate_total_count(
+    ds_name: str, steps_per_file: int, files: List[str]
+) -> Tuple[Any, Any]:
+    """Calculate the non zero fields in the files.
+
+    Args:
+        steps_per_file (int): The number of steps to split the file into.
+        files (List[str]): The list of files in which to count the fields.
+
+    Returns:
+        _: DASK graph for the total count.
+    """
     data, report_to_be = uproot.dask(
         {f: "atlas_xaod_tree" for f in files},
         open_files=False,
@@ -141,16 +194,17 @@ def main(
     )
 
     # Now, do the counting.
-    logging.info(
-        f"Generating the dask compute graph for {len(data.fields)} fields"  # type: ignore
-    )
-
     # The straight forward way to do this leads to a very large dask graph. We can
     # do a little prep work here and make it more clean.
+    logging.debug(
+        f"{ds_name}: Generating the dask compute graph for"
+        f" {len(data.fields)} fields"  # type: ignore
+    )
+
     total_count = 0
     assert isinstance(data, dak.Array)  # type: ignore
     for field in data.fields:
-        logging.debug(f"Counting field {field}")
+        logging.debug(f"{ds_name}: Counting field {field}")
         if str(data[field].type.content).startswith("var"):
             count = ak.count_nonzero(data[field], axis=-1)
             for _ in range(count.ndim - 1):  # type: ignore
@@ -161,15 +215,18 @@ def main(
             # We get a not implemented error when we try to do this
             # on leaves like run-number or event-number (e.g. scalars)
             # Maybe we should just be adding a 1. :-)
-            logging.info(f"Field {field} is not a scalar field. Skipping count.")
+            logging.debug(
+                f"{ds_name}: Field {field} is not a scalar field. Skipping count."
+            )
 
     total_count = ak.count_nonzero(total_count, axis=0)
 
-    # Do the calc now.
-    logging.info(
-        "Number of tasks in the dask graph: optimized: "
-        f"{len(dask.optimize(total_count)[0].dask):,} "  # type: ignore
-        f"unoptimized {len(total_count.dask):,}"  # type: ignore
+    n_optimized_tasks = len(dask.optimize(total_count)[0].dask)  # type: ignore
+    logging.log(
+        logging.INFO,
+        f"{ds_name}: Number of tasks in the dask graph: optimized: "
+        f"{n_optimized_tasks:,} "  # type: ignore
+        f"unoptimized: {len(total_count.dask):,}",  # type: ignore
     )
 
     # total_count.visualize(optimize_graph=True)  # type: ignore
@@ -178,21 +235,22 @@ def main(
     # total_count.visualize(optimize_graph=False)  # type: ignore
     # opt.replace("dask-unoptimized.png")
 
-    logging.info("Computing the total count")
-    if dask_report:
-        with performance_report(filename="dask-report.html"):
-            r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
-    else:
-        r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+    return report_to_be, total_count
+#     logging.info("Computing the total count")
+#     if dask_report:
+#         with performance_report(filename="dask-report.html"):
+#             r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+#     else:
+#         r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
 
-    logging.info(f"Done: result = {r:,}")
+#     logging.info(f"Done: result = {r:,}")
 
-    # Scan through for any exceptions that happened during the dask processing.
-    for process in report_list:
-        if process.exception is not None:
-            logging.error(
-                f"Exception in process '{process.message}' on file {process.args[0]}"
-            )
+#     # Scan through for any exceptions that happened during the dask processing.
+#     for process in report_list:
+#         if process.exception is not None:
+#             logging.error(
+#                 f"Exception in process '{process.message}' on file {process.args[0]}"
+#             )
 
 
 if __name__ == "__main__":
@@ -207,6 +265,10 @@ Note on the dataset argument: \n
   data_50TB - 50 TB of data from dta18. 64803 files.\n
   mc_1TB - 1.2 TB of data from mc20. 232 files.\n
   data_10TB - 10 TB of data from data15. 10049 files.\n
+  multi_1TB - All datasets between 1 and 2 TB.\n
+  multi_small_10 - 10 small datasets (0.1 TB).\n
+  multi_small_20 - 10 small datasets (0.1 TB).\n
+  all - All the datasets.\n
 """,
     )
 
@@ -253,7 +315,15 @@ Note on the dataset argument: \n
     # Add a flag for different datasets
     parser.add_argument(
         "--dataset",
-        choices=["data_50TB", "mc_1TB", "data_10TB"],
+        choices=[
+            "data_50TB",
+            "mc_1TB",
+            "data_10TB",
+            "multi_1TB",
+            "all",
+            "multi_small_10",
+            "multi_small_20",
+        ],
         default="mc_1TB",
         help="Specify the dataset to use",
     )
@@ -331,22 +401,7 @@ Note on the dataset argument: \n
     elif args.query == "xaod_medium":
         steps_per_file = 2
 
-    # Determine the dataset
-    ds_name = (
-        "data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
-        if args.dataset == "mc_10TB"
-        else (
-            "data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026"
-            if args.dataset == "data_50TB"
-            else (
-                "mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto"
-                ".deriv.DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
-                if args.dataset == "mc_1TB"
-                else None
-            )
-        )
-    )
-    assert ds_name is not None, "Invalid/unknown dataset specified"
+    ds_names = determine_dataset(args.dataset)
 
     # Build the query
     query = build_query(args.query)
@@ -357,7 +412,7 @@ Note on the dataset argument: \n
             ignore_cache=args.ignore_cache,
             num_files=args.num_files,
             dask_report=args.dask_profile,
-            ds_name=ds_name,
+            ds_names=ds_names,
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
             query=query,
