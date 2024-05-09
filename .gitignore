@@ -173,3 +173,5 @@ servicex/test.py
 figures/
 num_workers.txt
 dask*.png
+preprocessed_files.json
+measurements/
