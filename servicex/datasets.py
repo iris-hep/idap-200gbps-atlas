@@ -1,7 +1,7 @@
 from pathlib import Path
 from typing import Dict, List
 
-from pydantic import BaseModel
+from pydantic import BaseModel, RootModel
 import json
 
 
@@ -13,7 +13,7 @@ class Data(BaseModel):
     size_TB: float
 
 
-class ContainerMetadata(BaseModel):
+class ContainerMetadata(RootModel):
     """Container metadata class."""
 
     root: Dict[str, Data]
@@ -30,8 +30,7 @@ def load_containers() -> Dict[str, Data]:
     )
     with metadata_path.open("r") as f:
         metadata = json.load(f)
-    # return ContainerMetadata.model_validate(metadata).root
-    return metadata
+    return ContainerMetadata.model_validate(metadata).root
 
 
 def determine_dataset(ds_option: str) -> List[str]:
@@ -59,7 +58,7 @@ def determine_dataset(ds_option: str) -> List[str]:
         ]
     elif ds_option == "multi_1TB":
         all = load_containers()
-        return [k for k, v in all.items() if v["size_TB"] >= 1.0 and v["size_TB"] < 2.0]
+        return [k for k, v in all.items() if v.size_TB >= 1.0 and v.size_TB < 2.0]
     elif ds_option == "multi_small_10":
         all = load_containers()
         return [k for k, v in all.items() if v.size_TB < 1.0][0:10]
