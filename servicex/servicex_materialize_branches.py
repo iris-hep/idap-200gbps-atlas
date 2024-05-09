@@ -15,6 +15,8 @@ from query_library import build_query
 
 import servicex as sx
 
+from query_library import build_query
+from fspec_retry import register_retry_http_filesystem
 
 class ElapsedFormatter(logging.Formatter):
     """Logging formatter that adds an elapsed time record since it was
@@ -57,6 +59,8 @@ def query_servicex(
     #       an example is a title that is longer than 128 characters causes an immediate crash -
     #       but other queries
     #       already worked. Cache recovery @ the server would mean this wasn't important.
+    # TODO: Would be nice if you didn't have to specify codegen at the top level, but just at
+    #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
@@ -65,9 +69,11 @@ def query_servicex(
             Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
         ),
         Sample=[
+            # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
                 Name=f"speed_test_{ds_name}"[0:128],
                 RucioDID=ds_name,
+                Codegen=query[1],
                 Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
@@ -83,6 +89,14 @@ def query_servicex(
         logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
+    # TODO: When SX is queried for status, it always sends back the full
+    #       qastle. This is way too much information for a long query
+    #       like this.
+    # TODO: async def get_transform_status(self, request_id: str) -> TransformStatus:
+    #       needs to have a retry/backoff for when there is a timeout.
+    # TODO: we should make servicex-app deployment scale based on time it takes
+    #       to get response to a rest request.
+    # TODO: Silent mode to suppress the marching ants progress.
     results = sx.deliver(spec)
     assert results is not None
     return results
@@ -222,6 +236,21 @@ def calculate_total_count(
     # opt.replace("dask-unoptimized.png")
 
     return report_to_be, total_count
+#     logging.info("Computing the total count")
+#     if dask_report:
+#         with performance_report(filename="dask-report.html"):
+#             r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+#     else:
+#         r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+
+#     logging.info(f"Done: result = {r:,}")
+
+#     # Scan through for any exceptions that happened during the dask processing.
+#     for process in report_list:
+#         if process.exception is not None:
+#             logging.error(
+#                 f"Exception in process '{process.message}' on file {process.args[0]}"
+#             )
 
 
 if __name__ == "__main__":
@@ -346,6 +375,7 @@ Note on the dataset argument: \n
 
     # Create the client dask worker
     steps_per_file = 1
+    client = None
     if args.distributed_client == "local":
         # Do not know how to do it otherwise.
         n_workers = 8
@@ -360,6 +390,9 @@ Note on the dataset argument: \n
         assert args.dask_scheduler is not None
         client = Client(args.dask_scheduler)
         steps_per_file = 2
+
+    # Register fsspec special http retry filesystem
+    register_retry_http_filesystem(client)
 
     # The steps per file needs to be adjusted for uproot 5.3.3 because of a small
     # bug - also because things start to get inefficient.
