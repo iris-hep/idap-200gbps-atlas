@@ -8,6 +8,7 @@ from typing import Any, Dict, List, Optional, Tuple
 import awkward as ak
 import dask
 import dask_awkward as dak
+from fspec_retry import register_retry_http_filesystem
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
 from datasets import determine_dataset
@@ -15,8 +16,6 @@ from query_library import build_query
 
 import servicex as sx
 
-from query_library import build_query
-from fspec_retry import register_retry_http_filesystem
 
 class ElapsedFormatter(logging.Formatter):
     """Logging formatter that adds an elapsed time record since it was
@@ -236,6 +235,8 @@ def calculate_total_count(
     # opt.replace("dask-unoptimized.png")
 
     return report_to_be, total_count
+
+
 #     logging.info("Computing the total count")
 #     if dask_report:
 #         with performance_report(filename="dask-report.html"):
