@@ -83,7 +83,7 @@ def query_servicex(
     for ds_name in ds_names:
         logging.info(f"Querying dataset {ds_name}")
     if num_files == 0:
-        logging.info("Running on the full dataset.")
+        logging.info("Running on the full dataset(s).")
     else:
         logging.info(f"Running on {num_files} files of dataset.")
 
@@ -269,6 +269,7 @@ Note on the dataset argument: \n
   multi_1TB - All datasets between 1 and 2 TB.\n
   multi_small_10 - 10 small datasets (0.1 TB).\n
   multi_small_20 - 10 small datasets (0.1 TB).\n
+  multi_data - All 4 large datasets.\n
   all - All the datasets.\n
 """,
     )
@@ -324,6 +325,7 @@ Note on the dataset argument: \n
             "all",
             "multi_small_10",
             "multi_small_20",
+            "multi_data",
         ],
         default="mc_1TB",
         help="Specify the dataset to use",
