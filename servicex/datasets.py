@@ -64,7 +64,10 @@ def determine_dataset(ds_option: str) -> List[str]:
         return [k for k, v in all.items() if v.size_TB < 1.0][0:10]
     elif ds_option == "multi_small_20":
         all = load_containers()
-        return [k for k, v in all.items() if v.size_TB < 1.0][0:10]
+        return [k for k, v in all.items() if v.size_TB < 1.0][0:20]
+    elif ds_option == "multi_data":
+        all = load_containers()
+        return [k for k, v in all.items() if "data" in str(k)]
     elif ds_option == "all":
         all = load_containers()
         return list(all.keys())
