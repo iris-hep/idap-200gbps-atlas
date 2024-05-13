@@ -214,7 +214,7 @@ def main(
         logging.info(f"{k}: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    all_reports = results[len(all_tasks) :]  # type: ignore
+    all_reports = results[len(all_tasks) :]  # noqa type: ignore
     for k, report_list in zip(all_report_tasks.keys(), all_reports):
         for process in report_list:
             if process.exception is not None:
