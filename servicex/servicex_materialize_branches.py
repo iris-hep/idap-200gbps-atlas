@@ -58,10 +58,10 @@ class RateMeasurement:
         return n_events / elapsed_time / 1000.0
 
     def data_rate(self) -> float:
-        "Calculate the data rate in TB/s"
+        "Calculate the data rate in GBits/s"
         elapsed_time = self.elapsed_time()
         data_size = self.ds_info.total_size_TB
-        return data_size / elapsed_time
+        return data_size / elapsed_time * 1000 * 8
 
     def log_rates(self):
         "Log the event and data rates"
@@ -72,7 +72,7 @@ class RateMeasurement:
         logging.info(
             f"Event rate for {self.name}: {hours:02d}:{minutes:02d}:{seconds:02d} time, "
             f"{self.event_rate():.2f} kHz, "
-            f"Data rate: {self.data_rate():.2f} TB/s"
+            f"Data rate: {self.data_rate():.2f} Gbits/s"
         )
 
 
