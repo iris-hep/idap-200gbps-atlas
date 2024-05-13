@@ -11,7 +11,7 @@ import dask_awkward as dak
 from fspec_retry import register_retry_http_filesystem
 import uproot
 from dask.distributed import Client, LocalCluster, performance_report
-from datasets import determine_dataset
+from datasets import data_info, determine_dataset
 from query_library import build_query
 
 import servicex as sx
@@ -30,6 +30,55 @@ class ElapsedFormatter(logging.Formatter):
     def format(self, record):
         record.elapsed = f"{time.time() - self._start_time:0>9.4f}"
         return super().format(record)
+
+
+class RateMeasurement:
+    def __init__(self, name: str, ds_info: data_info):
+        self.name = name
+        self.start_time = None
+        self.end_time = None
+        self.ds_info = ds_info
+
+    def __enter__(self):
+        self.start_time = time.time()
+        return self
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.end_time = time.time()
+
+    def elapsed_time(self) -> float:
+        "return elapsed time in seconds"
+        assert self.end_time is not None and self.start_time is not None
+        return self.end_time - self.start_time
+
+    def event_rate(self, n_events: Optional[int] = None) -> float:
+        "Calculate the event rate in kHz"
+        elapsed_time = self.elapsed_time()
+        n_events = n_events if n_events is not None else self.ds_info.total_events
+        return n_events / elapsed_time / 1000.0
+
+    def data_rate(self) -> float:
+        "Calculate the data rate in GBits/s"
+        elapsed_time = self.elapsed_time()
+        data_size = self.ds_info.total_size_TB
+        return data_size / elapsed_time * 1000 * 8
+
+    def log_rates(self):
+        "Log the event and data rates"
+        elapsed_time = self.elapsed_time()
+        if elapsed_time < 1.0:
+            logging.info(
+                f"Event rate for {self.name} not calculated since cached result was used"
+            )
+        else:
+            hours = int(elapsed_time // 3600)
+            minutes = int((elapsed_time % 3600) // 60)
+            seconds = int(elapsed_time % 60)
+            logging.info(
+                f"Event rate for {self.name}: {hours:02d}:{minutes:02d}:{seconds:02d} time, "
+                f"{self.event_rate():.2f} kHz, "
+                f"Data rate: {self.data_rate():.2f} Gbits/s"
+            )
 
 
 def query_servicex(
@@ -105,7 +154,7 @@ def main(
     ignore_cache: bool = False,
     num_files: int = 10,
     dask_report: bool = False,
-    ds_names: Optional[List[str]] = None,
+    ds_info: Optional[data_info] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
     query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
@@ -116,61 +165,89 @@ def main(
     """
     assert query is not None, "No query provided to run."
 
+    assert ds_info is not None
+    logging.info(
+        f"Running over {len(ds_info.samples)} datasets, {ds_info.total_size_TB} TB "
+        f"and {ds_info.total_events:,} events."
+    )
+
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
     sx_query_ids = Path("./servicex_query_cache.json")
     if not sx_query_ids.exists():
         sx_query_ids.touch()
 
-    assert ds_names is not None
-    dataset_files = query_servicex(
-        ignore_cache=ignore_cache,
-        num_files=num_files,
-        ds_names=ds_names,
-        download=download_sx_result,
-        query=query,
-    )
+    with RateMeasurement("ServiceX", ds_info) as sx_rm:
+        dataset_files = query_servicex(
+            ignore_cache=ignore_cache,
+            num_files=num_files,
+            ds_names=ds_info.samples,
+            download=download_sx_result,
+            query=query,
+        )
+    sx_rm.log_rates()
 
     for ds, files in dataset_files.items():
         logging.info(f"Dataset {ds} has {len(files)} files")
         assert len(files) > 0, "No files found in the dataset"
 
+    # We need to figure out how many events there are in the
+    # skimmed dataset (often different from the full dataset)
+    report, n_events = dask.compute(*calculate_n_events(dataset_files, steps_per_file))
+    logging.info(
+        f"Number of skimmed events: {n_events} "
+        f"(skim percent: {n_events/ds_info.total_events*100:.4f}%)"
+    )
+    dump_dask_report(report)
+
     # now materialize everything.
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
+
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
     logging.info("Starting build of DASK graphs")
     all_dask_data = {
         k: calculate_total_count(k, steps_per_file, files)
         for k, files in dataset_files.items()
     }
-    logging.info("Done building DASK graphs.")
 
     # Do the calc now.
     logging.info("Computing the total count")
     all_tasks = {k: v[1] for k, v in all_dask_data.items()}
-    if dask_report:
-        with performance_report(filename="dask-report.html"):
-            results = dask.compute(*all_tasks.values())  # type: ignore
-            result_dict = dict(zip(all_tasks.keys(), results))
-    else:
-        results = dask.compute(*all_tasks.values())  # type: ignore
-        result_dict = dict(zip(all_tasks.keys(), results))
+    all_report_tasks = {k: v[0] for k, v in all_dask_data.items()}
 
+    all_tasks_to_run = list(all_tasks.values()) + list(all_report_tasks.values())
+
+    with RateMeasurement("DASK Calculation", ds_info) as dask_rm:
+        if dask_report:
+            with performance_report(filename="dask-report.html"):
+                results = dask.compute(*all_tasks_to_run)  # type: ignore
+        else:
+            results = dask.compute(*all_tasks_to_run)  # type: ignore
+    dask_rm.log_rates()
+    logging.info(
+        f"DASK event rate over actual events: {dask_rm.event_rate(n_events):.2f} kHz"
+    )
+
+    # First, dump out the actual results:
+    result_dict = dict(zip(all_tasks.keys(), results[: len(all_tasks)]))
     for k, r in result_dict.items():
         logging.info(f"{k}: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    all_report_tasks = {k: v[0] for k, v in all_dask_data.items()}
-    all_reports = dask.compute(*all_report_tasks.values())  # type: ignore
+    all_reports = results[len(all_tasks) :]  # noqa type: ignore
     for k, report_list in zip(all_report_tasks.keys(), all_reports):
-        for process in report_list:
-            if process.exception is not None:
-                logging.error(
-                    f"Exception in process '{process.message}' on file {process.args[0]} "
-                    "for ds {k}"
-                )
+        dump_dask_report(report_list)
+
+
+def dump_dask_report(report_list):
+    for process in report_list:
+        if process.exception is not None:
+            logging.error(
+                f"Exception in process '{process.message}' on file {process.args[0]} "
+                "for ds {k}"
+            )
 
 
 def calculate_total_count(
@@ -222,7 +299,7 @@ def calculate_total_count(
 
     n_optimized_tasks = len(dask.optimize(total_count)[0].dask)  # type: ignore
     logging.log(
-        logging.INFO,
+        logging.DEBUG,
         f"{ds_name}: Number of tasks in the dask graph: optimized: "
         f"{n_optimized_tasks:,} "  # type: ignore
         f"unoptimized: {len(total_count.dask):,}",  # type: ignore
@@ -237,21 +314,38 @@ def calculate_total_count(
     return report_to_be, total_count
 
 
-#     logging.info("Computing the total count")
-#     if dask_report:
-#         with performance_report(filename="dask-report.html"):
-#             r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
-#     else:
-#         r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+def calculate_n_events(
+    ds_files: Dict[str, List[str]], steps_per_file: int
+) -> Tuple[Any, Any]:
+    """How many events are there, total?
 
-#     logging.info(f"Done: result = {r:,}")
+    Args:
+        steps_per_file (int): The number of steps to split the file into.
+        files (List[str]): The list of files in which to count the fields.
 
-#     # Scan through for any exceptions that happened during the dask processing.
-#     for process in report_list:
-#         if process.exception is not None:
-#             logging.error(
-#                 f"Exception in process '{process.message}' on file {process.args[0]}"
-#             )
+    Returns:
+        _: DASK graph for the number of events.
+    """
+    total_count = 0
+    for _, files in ds_files.items():
+        data, report_to_be = uproot.dask(
+            {f: "atlas_xaod_tree" for f in files},
+            open_files=False,
+            steps_per_file=steps_per_file,
+            allow_read_errors_with_report=True,
+        )
+
+        assert isinstance(data, dak.Array)
+        data, report_to_be = uproot.dask(
+            {f: "atlas_xaod_tree" for f in files},
+            open_files=False,
+            steps_per_file=steps_per_file,
+            allow_read_errors_with_report=True,
+        )
+
+        total_count += dak.count(data.run_number)
+
+    return report_to_be, total_count
 
 
 if __name__ == "__main__":
@@ -404,7 +498,7 @@ Note on the dataset argument: \n
     elif args.query == "xaod_medium":
         steps_per_file = 2
 
-    ds_names = determine_dataset(args.dataset)
+    ds_info = determine_dataset(args.dataset)
 
     # Build the query
     query = build_query(args.query)
@@ -415,7 +509,7 @@ Note on the dataset argument: \n
             ignore_cache=args.ignore_cache,
             num_files=args.num_files,
             dask_report=args.dask_profile,
-            ds_names=ds_names,
+            ds_info=ds_info,
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
             query=query,
@@ -423,7 +517,7 @@ Note on the dataset argument: \n
     else:
         cProfile.run(
             "main(ignore_cache=args.ignore_cache, num_files=args.num_files, "
-            "dask_report=args.dask_profile, ds_name = ds_name, "
+            "dask_report=args.dask_profile, ds_info = ds_info, "
             "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file"
             "query=query)",
             "sx_materialize_branches.pstats",
