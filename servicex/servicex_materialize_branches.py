@@ -181,6 +181,12 @@ def main(
         logging.info(f"Dataset {ds} has {len(files)} files")
         assert len(files) > 0, "No files found in the dataset"
 
+    # We need to figure out how many events there are in the
+    # skimmed dataset (often different from the full dataset)
+    report, n_events = dask.compute(*calculate_n_events(dataset_files, steps_per_file))
+    logging.info(f"Number of skimmed events: {n_events}")
+    dump_dask_report(report)
+
     # now materialize everything.
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
@@ -216,12 +222,16 @@ def main(
     # Scan through for any exceptions that happened during the dask processing.
     all_reports = results[len(all_tasks) :]  # noqa type: ignore
     for k, report_list in zip(all_report_tasks.keys(), all_reports):
-        for process in report_list:
-            if process.exception is not None:
-                logging.error(
-                    f"Exception in process '{process.message}' on file {process.args[0]} "
-                    "for ds {k}"
-                )
+        dump_dask_report(report_list)
+
+
+def dump_dask_report(report_list):
+    for process in report_list:
+        if process.exception is not None:
+            logging.error(
+                f"Exception in process '{process.message}' on file {process.args[0]} "
+                "for ds {k}"
+            )
 
 
 def calculate_total_count(
@@ -288,21 +298,38 @@ def calculate_total_count(
     return report_to_be, total_count
 
 
-#     logging.info("Computing the total count")
-#     if dask_report:
-#         with performance_report(filename="dask-report.html"):
-#             r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
-#     else:
-#         r, report_list = dask.compute(total_count, report_to_be)  # type: ignore
+def calculate_n_events(
+    ds_files: Dict[str, List[str]], steps_per_file: int
+) -> Tuple[Any, Any]:
+    """How many events are there, total?
 
-#     logging.info(f"Done: result = {r:,}")
+    Args:
+        steps_per_file (int): The number of steps to split the file into.
+        files (List[str]): The list of files in which to count the fields.
 
-#     # Scan through for any exceptions that happened during the dask processing.
-#     for process in report_list:
-#         if process.exception is not None:
-#             logging.error(
-#                 f"Exception in process '{process.message}' on file {process.args[0]}"
-#             )
+    Returns:
+        _: DASK graph for the number of events.
+    """
+    total_count = 0
+    for _, files in ds_files.items():
+        data, report_to_be = uproot.dask(
+            {f: "atlas_xaod_tree" for f in files},
+            open_files=False,
+            steps_per_file=steps_per_file,
+            allow_read_errors_with_report=True,
+        )
+
+        assert isinstance(data, dak.Array)
+        data, report_to_be = uproot.dask(
+            {f: "atlas_xaod_tree" for f in files},
+            open_files=False,
+            steps_per_file=steps_per_file,
+            allow_read_errors_with_report=True,
+        )
+
+        total_count += dak.count(data.run_number)
+
+    return report_to_be, total_count
 
 
 if __name__ == "__main__":
