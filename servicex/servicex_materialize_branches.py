@@ -185,15 +185,13 @@ def main(
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
+
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
     logging.info("Starting build of DASK graphs")
-    with RateMeasurement("Building DASK", ds_info) as bdask_rm:
-        all_dask_data = {
-            k: calculate_total_count(k, steps_per_file, files)
-            for k, files in dataset_files.items()
-        }
-    logging.info("Done building DASK graphs.")
-    bdask_rm.log_rates()
+    all_dask_data = {
+        k: calculate_total_count(k, steps_per_file, files)
+        for k, files in dataset_files.items()
+    }
 
     # Do the calc now.
     logging.info("Computing the total count")
@@ -211,12 +209,12 @@ def main(
     dask_rm.log_rates()
 
     # First, dump out the actual results:
-    result_dict = dict(zip(all_tasks.keys(), results[:len(all_tasks)]))
+    result_dict = dict(zip(all_tasks.keys(), results[: len(all_tasks)]))
     for k, r in result_dict.items():
         logging.info(f"{k}: result = {r:,}")
 
     # Scan through for any exceptions that happened during the dask processing.
-    all_reports = results[len(all_tasks):]  # type: ignore
+    all_reports = results[len(all_tasks) :]  # type: ignore
     for k, report_list in zip(all_report_tasks.keys(), all_reports):
         for process in report_list:
             if process.exception is not None:
