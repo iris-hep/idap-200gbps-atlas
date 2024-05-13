@@ -51,10 +51,10 @@ class RateMeasurement:
         assert self.end_time is not None and self.start_time is not None
         return self.end_time - self.start_time
 
-    def event_rate(self) -> float:
+    def event_rate(self, n_events: Optional[int] = None) -> float:
         "Calculate the event rate in kHz"
         elapsed_time = self.elapsed_time()
-        n_events = self.ds_info.total_events
+        n_events = n_events if n_events is not None else self.ds_info.total_events
         return n_events / elapsed_time / 1000.0
 
     def data_rate(self) -> float:
@@ -168,7 +168,7 @@ def main(
     assert ds_info is not None
     logging.info(
         f"Running over {len(ds_info.samples)} datasets, {ds_info.total_size_TB} TB "
-        f"and {ds_info.total_events} events."
+        f"and {ds_info.total_events:,} events."
     )
 
     # Make sure there is a file here to save the SX query ID's to
@@ -226,6 +226,9 @@ def main(
         else:
             results = dask.compute(*all_tasks_to_run)  # type: ignore
     dask_rm.log_rates()
+    logging.info(
+        f"DASK event rate over actual events: {dask_rm.event_rate(n_events):.2f} kHz"
+    )
 
     # First, dump out the actual results:
     result_dict = dict(zip(all_tasks.keys(), results[: len(all_tasks)]))
