@@ -55,6 +55,9 @@ def get_fileset(processes_to_use, max_files_per_container=None, max_containers_p
 
             # for each container, add list of files
             for container in matching_containers:
+                if "p5855" in container:
+                    print(f"skipping container with p5855: {container}")
+                    continue  # some branches do not exist in those p-tags, skip for simplicity
                 file_list = container_to_file_list[container]
                 total_nfiles += len(file_list)
                 if max_files_per_container is None:

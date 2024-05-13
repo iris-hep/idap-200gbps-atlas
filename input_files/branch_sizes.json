@@ -1,967 +1,3859 @@
 {
-    "AnalysisElectrons": 0.0,
-    "AnalysisElectronsAux.": 0.35713499999999954,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsECIDS": 0.4582240000000013,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsECIDSResult": 0.6867959999999869,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLoose": 0.45622399999999175,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseBL": 0.45911499999999705,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseBLIsEMValue": 0.46797200000000316,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseIsEMValue": 0.45996500000001106,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHMedium": 0.4599019999999996,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHMediumIsEMValue": 0.4713509999999985,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHTight": 0.458627000000007,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHTightIsEMValue": 0.477532999999994,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHVeryLoose": 0.45833500000000527,
-    "AnalysisElectronsAuxDyn.DFCommonElectronsLHVeryLooseIsEMValue": 0.4617580000000032,
-    "AnalysisElectronsAuxDyn.OQ": 0.5008250000000203,
-    "AnalysisElectronsAuxDyn.ambiguityLink": 0.7189320000000237,
-    "AnalysisElectronsAuxDyn.ambiguityLink/AnalysisElectronsAuxDyn.ambiguityLink.m_persIndex": 0.2004829999999913,
-    "AnalysisElectronsAuxDyn.ambiguityLink/AnalysisElectronsAuxDyn.ambiguityLink.m_persKey": 0.18902299999999173,
-    "AnalysisElectronsAuxDyn.ambiguityType": 0.4559359999999799,
-    "AnalysisElectronsAuxDyn.author": 0.44162000000000035,
-    "AnalysisElectronsAuxDyn.caloClusterLinks": 0.4878870000000006,
-    "AnalysisElectronsAuxDyn.charge": 0.45858200000000693,
-    "AnalysisElectronsAuxDyn.eta": 0.6771479999999883,
-    "AnalysisElectronsAuxDyn.f1": 0.649799999999999,
-    "AnalysisElectronsAuxDyn.m": 0.43083200000000943,
-    "AnalysisElectronsAuxDyn.neflowisol20": 0.6847640000000013,
-    "AnalysisElectronsAuxDyn.phi": 0.6776720000000012,
-    "AnalysisElectronsAuxDyn.pt": 0.6677290000000085,
-    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt1000": 0.5642610000000161,
-    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": 0.5701390000000117,
-    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt500": 0.586309,
-    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000": 0.5864139999999907,
-    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": 0.5922939999999812,
-    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt500": 0.6131579999999985,
-    "AnalysisElectronsAuxDyn.topoetcone20": 0.6878409999999917,
-    "AnalysisElectronsAuxDyn.topoetcone20_CloseByCorr": 0.6939749999999947,
-    "AnalysisElectronsAuxDyn.topoetcone20ptCorrection": 0.6884009999999989,
-    "AnalysisElectronsAuxDyn.trackParticleLinks": 0.5719739999999831,
-    "AnalysisJets": 0.0,
-    "AnalysisJetsAux.": 0.357128000000003,
-    "AnalysisJetsAuxDyn.ActiveArea4vec_eta": 5.2519220000000075,
-    "AnalysisJetsAuxDyn.ActiveArea4vec_m": 4.901681999999994,
-    "AnalysisJetsAuxDyn.ActiveArea4vec_phi": 5.243949999999984,
-    "AnalysisJetsAuxDyn.ActiveArea4vec_pt": 4.850033000000025,
-    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_NTracks": 1.5019589999999994,
-    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksC1": 3.3944329999999923,
-    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksWidth": 3.7835100000000352,
-    "AnalysisJetsAuxDyn.DFCommonJets_fJvt": 1.6738129999999956,
-    "AnalysisJetsAuxDyn.DetectorEta": 5.250982999999991,
-    "AnalysisJetsAuxDyn.EMFrac": 5.038467999999995,
-    "AnalysisJetsAuxDyn.EnergyPerSampling": 38.82544200000001,
-    "AnalysisJetsAuxDyn.GhostMuonSegmentCount": 1.2392999999999574,
-    "AnalysisJetsAuxDyn.GhostTrack": 9.475653000000023,
-    "AnalysisJetsAuxDyn.JVFCorr": 3.491510000000005,
-    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_eta": 5.255919000000006,
-    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_m": 5.126147000000003,
-    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_phi": 5.246425999999985,
-    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_pt": 5.072474,
-    "AnalysisJetsAuxDyn.NNJvtPass": 0.7018330000000219,
-    "AnalysisJetsAuxDyn.NumTrkPt1000": 7.6345699999999965,
-    "AnalysisJetsAuxDyn.NumTrkPt500": 10.363173000000018,
-    "AnalysisJetsAuxDyn.PSFrac": 3.669385000000034,
-    "AnalysisJetsAuxDyn.SumPtChargedPFOPt500": 5.962918000000002,
-    "AnalysisJetsAuxDyn.SumPtTrkPt500": 30.517493,
-    "AnalysisJetsAuxDyn.Timing": 5.3079899999999895,
-    "AnalysisJetsAuxDyn.TrackWidthPt1000": 16.995447999999953,
-    "AnalysisJetsAuxDyn.Width": 5.013805999999988,
-    "AnalysisJetsAuxDyn.btaggingLink": 1.381887000000006,
-    "AnalysisJetsAuxDyn.btaggingLink/AnalysisJetsAuxDyn.btaggingLink.m_persIndex": 0.5898840000000121,
-    "AnalysisJetsAuxDyn.btaggingLink/AnalysisJetsAuxDyn.btaggingLink.m_persKey": 0.3805439999999862,
-    "AnalysisJetsAuxDyn.eta": 5.248647000000005,
-    "AnalysisJetsAuxDyn.m": 5.054322000000013,
-    "AnalysisJetsAuxDyn.phi": 5.239125999999999,
-    "AnalysisJetsAuxDyn.pt": 5.026771999999994,
-    "AnalysisLargeRJets": 0.0,
-    "AnalysisLargeRJetsAux.": 0.3586639999999903,
-    "AnalysisLargeRJetsAuxDyn.C2": 0.9356199999999717,
-    "AnalysisLargeRJetsAuxDyn.D2": 0.9287000000000489,
-    "AnalysisLargeRJetsAuxDyn.DetectorEta": 0.9652699999999186,
-    "AnalysisLargeRJetsAuxDyn.ECF1": 0.929318999999964,
-    "AnalysisLargeRJetsAuxDyn.ECF2": 0.949512000000027,
-    "AnalysisLargeRJetsAuxDyn.ECF3": 0.9623159999999871,
-    "AnalysisLargeRJetsAuxDyn.GN2Xv01_phbb": 0.9494700000000194,
-    "AnalysisLargeRJetsAuxDyn.GN2Xv01_phcc": 0.9428279999999631,
-    "AnalysisLargeRJetsAuxDyn.GN2Xv01_pqcd": 0.9304250000000138,
-    "AnalysisLargeRJetsAuxDyn.GN2Xv01_ptop": 0.936994000000027,
-    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_eta": 0.9738600000000588,
-    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_m": 0.9553509999999505,
-    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_phi": 0.9725019999999631,
-    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_pt": 0.9410950000000184,
-    "AnalysisLargeRJetsAuxDyn.Parent": 0.79682600000001,
-    "AnalysisLargeRJetsAuxDyn.Parent/AnalysisLargeRJetsAuxDyn.Parent.m_persIndex": 0.24899299999992763,
-    "AnalysisLargeRJetsAuxDyn.Parent/AnalysisLargeRJetsAuxDyn.Parent.m_persKey": 0.20126200000004246,
-    "AnalysisLargeRJetsAuxDyn.Qw": 0.9367879999999786,
-    "AnalysisLargeRJetsAuxDyn.Split12": 0.9483569999999872,
-    "AnalysisLargeRJetsAuxDyn.Split23": 0.941188000000011,
-    "AnalysisLargeRJetsAuxDyn.Tau1_wta": 0.9467940000000681,
-    "AnalysisLargeRJetsAuxDyn.Tau2_wta": 0.943881000000033,
-    "AnalysisLargeRJetsAuxDyn.Tau3_wta": 0.9402489999999943,
-    "AnalysisLargeRJetsAuxDyn.constituentLinks": 5.000247999999942,
-    "AnalysisLargeRJetsAuxDyn.eta": 0.9611129999999548,
-    "AnalysisLargeRJetsAuxDyn.m": 0.9428080000000136,
-    "AnalysisLargeRJetsAuxDyn.phi": 0.9597740000000385,
-    "AnalysisLargeRJetsAuxDyn.pt": 0.9265530000000126,
-    "AnalysisMuons": 0.0,
-    "AnalysisMuonsAux.": 0.3566100000000034,
-    "AnalysisMuonsAuxDyn.CaloLRLikelihood": 0.6112009999999941,
-    "AnalysisMuonsAuxDyn.CaloMuonIDTag": 0.4859569999999849,
-    "AnalysisMuonsAuxDyn.CaloMuonScore": 0.5434000000000196,
-    "AnalysisMuonsAuxDyn.DFCommonJetDr": 0.7493580000000293,
-    "AnalysisMuonsAuxDyn.DFCommonMuonPassIDCuts": 0.45192700000001196,
-    "AnalysisMuonsAuxDyn.DFCommonMuonPassPreselection": 0.45499399999999923,
-    "AnalysisMuonsAuxDyn.EnergyLoss": 0.7175730000000158,
-    "AnalysisMuonsAuxDyn.InnerDetectorPt": 0.7439789999999675,
-    "AnalysisMuonsAuxDyn.MuonSpectrometerPt": 0.7387850000000071,
-    "AnalysisMuonsAuxDyn.allAuthors": 0.49118500000002996,
-    "AnalysisMuonsAuxDyn.author": 0.44247500000000173,
-    "AnalysisMuonsAuxDyn.charge": 0.47096299999998337,
-    "AnalysisMuonsAuxDyn.clusterLink": 0.7247830000000022,
-    "AnalysisMuonsAuxDyn.clusterLink/AnalysisMuonsAuxDyn.clusterLink.m_persIndex": 0.2089990000000057,
-    "AnalysisMuonsAuxDyn.clusterLink/AnalysisMuonsAuxDyn.clusterLink.m_persKey": 0.18108899999998584,
-    "AnalysisMuonsAuxDyn.combinedTrackOutBoundsPrecisionHits": 0.45676400000002104,
-    "AnalysisMuonsAuxDyn.combinedTrackParticleLink": 0.7446980000000281,
-    "AnalysisMuonsAuxDyn.combinedTrackParticleLink/AnalysisMuonsAuxDyn.combinedTrackParticleLink.m_persIndex": 0.2160470000000032,
-    "AnalysisMuonsAuxDyn.combinedTrackParticleLink/AnalysisMuonsAuxDyn.combinedTrackParticleLink.m_persKey": 0.1912669999999821,
-    "AnalysisMuonsAuxDyn.cscEtaHits": 0.4556670000000054,
-    "AnalysisMuonsAuxDyn.cscUnspoiledEtaHits": 0.4613459999999918,
-    "AnalysisMuonsAuxDyn.energyLossType": 0.4634009999999762,
-    "AnalysisMuonsAuxDyn.eta": 0.7473360000000184,
-    "AnalysisMuonsAuxDyn.extendedClosePrecisionHits": 0.4665409999999497,
-    "AnalysisMuonsAuxDyn.extendedLargeHits": 0.455934999999954,
-    "AnalysisMuonsAuxDyn.extendedLargeHoles": 0.44894900000002735,
-    "AnalysisMuonsAuxDyn.extendedOutBoundsPrecisionHits": 0.4540420000000154,
-    "AnalysisMuonsAuxDyn.extendedSmallHits": 0.456621000000041,
-    "AnalysisMuonsAuxDyn.extendedSmallHoles": 0.44851499999998623,
-    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink": 0.7810470000000009,
-    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink.m_persIndex": 0.2288180000000466,
-    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink.m_persKey": 0.20865299999996978,
-    "AnalysisMuonsAuxDyn.inDetTrackParticleLink": 0.7800280000000157,
-    "AnalysisMuonsAuxDyn.inDetTrackParticleLink/AnalysisMuonsAuxDyn.inDetTrackParticleLink.m_persIndex": 0.25426399999997784,
-    "AnalysisMuonsAuxDyn.inDetTrackParticleLink/AnalysisMuonsAuxDyn.inDetTrackParticleLink.m_persKey": 0.1893309999999815,
-    "AnalysisMuonsAuxDyn.innerClosePrecisionHits": 0.5180460000000267,
-    "AnalysisMuonsAuxDyn.innerLargeHits": 0.49865699999998014,
-    "AnalysisMuonsAuxDyn.innerLargeHoles": 0.45946700000001783,
-    "AnalysisMuonsAuxDyn.innerOutBoundsPrecisionHits": 0.45246499999996104,
-    "AnalysisMuonsAuxDyn.innerSmallHits": 0.4846350000000257,
-    "AnalysisMuonsAuxDyn.innerSmallHoles": 0.4546139999999923,
-    "AnalysisMuonsAuxDyn.isEndcapGoodLayers": 0.4667910000000006,
-    "AnalysisMuonsAuxDyn.isSmallGoodSectors": 0.4661720000000287,
-    "AnalysisMuonsAuxDyn.middleClosePrecisionHits": 0.5079529999999863,
-    "AnalysisMuonsAuxDyn.middleLargeHits": 0.4913999999999987,
-    "AnalysisMuonsAuxDyn.middleLargeHoles": 0.4558600000000297,
-    "AnalysisMuonsAuxDyn.middleOutBoundsPrecisionHits": 0.452871000000016,
-    "AnalysisMuonsAuxDyn.middleSmallHits": 0.4779310000000123,
-    "AnalysisMuonsAuxDyn.middleSmallHoles": 0.45202399999999443,
-    "AnalysisMuonsAuxDyn.momentumBalanceSignificance": 0.7667069999999967,
-    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink": 0.804320999999959,
-    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink.m_persIndex": 0.2348039999999969,
-    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink.m_persKey": 0.22277500000001282,
-    "AnalysisMuonsAuxDyn.muonSegmentLinks": 0.810401000000013,
-    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink": 0.779845000000023,
-    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink.m_persIndex": 0.23020600000000968,
-    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink.m_persKey": 0.20965699999999288,
-    "AnalysisMuonsAuxDyn.muonType": 0.4349809999999934,
-    "AnalysisMuonsAuxDyn.neflowisol20": 0.7531270000000063,
-    "AnalysisMuonsAuxDyn.neflowisol20_CloseByCorr": 0.7582879999999932,
-    "AnalysisMuonsAuxDyn.numberOfGoodPrecisionLayers": 0.47904099999999517,
-    "AnalysisMuonsAuxDyn.numberOfPrecisionHoleLayers": 0.4622259999999869,
-    "AnalysisMuonsAuxDyn.numberOfPrecisionLayers": 0.47850199999999177,
-    "AnalysisMuonsAuxDyn.outerClosePrecisionHits": 0.4969869999999901,
-    "AnalysisMuonsAuxDyn.outerLargeHits": 0.4864460000000008,
-    "AnalysisMuonsAuxDyn.outerLargeHoles": 0.45336800000001176,
-    "AnalysisMuonsAuxDyn.outerOutBoundsPrecisionHits": 0.45248400000002675,
-    "AnalysisMuonsAuxDyn.outerSmallHits": 0.4738469999999779,
-    "AnalysisMuonsAuxDyn.outerSmallHoles": 0.4499619999999709,
-    "AnalysisMuonsAuxDyn.phi": 0.7497299999999996,
-    "AnalysisMuonsAuxDyn.pt": 0.7358529999999632,
-    "AnalysisMuonsAuxDyn.ptcone20": 0.608731999999975,
-    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt1000": 0.6286359999999718,
-    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt500": 0.6495030000000384,
-    "AnalysisMuonsAuxDyn.ptcone30": 0.6353859999999827,
-    "AnalysisMuonsAuxDyn.ptcone40": 0.6569739999999911,
-    "AnalysisMuonsAuxDyn.ptvarcone20": 0.6111880000000269,
-    "AnalysisMuonsAuxDyn.ptvarcone30": 0.6355420000000436,
-    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000": 0.6536060000000248,
-    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000_CloseByCorr": 0.6564040000000091,
-    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500": 0.6829639999999699,
-    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500_CloseByCorr": 0.6869370000000004,
-    "AnalysisMuonsAuxDyn.ptvarcone40": 0.6514080000000035,
-    "AnalysisMuonsAuxDyn.quality": 0.4626480000000015,
-    "AnalysisMuonsAuxDyn.scatteringCurvatureSignificance": 0.7607120000000123,
-    "AnalysisMuonsAuxDyn.scatteringNeighbourSignificance": 0.7596050000000218,
-    "AnalysisMuonsAuxDyn.segmentDeltaEta": 0.7516449999999963,
-    "AnalysisMuonsAuxDyn.spectrometerFieldIntegral": 0.7218530000000101,
-    "AnalysisMuonsAuxDyn.topoetcone20": 0.7579829999999674,
-    "AnalysisMuonsAuxDyn.topoetcone20_CloseByCorr": 0.7638539999999807,
-    "AnalysisMuonsAuxDyn.topoetcone30": 0.7571309999999585,
-    "AnalysisMuonsAuxDyn.topoetcone40": 0.7564649999999915,
-    "AnalysisPhotons": 0.0,
-    "AnalysisPhotonsAux.": 0.3573820000000012,
-    "AnalysisPhotonsAuxDyn.DFCommonPhotonsCleaning": 0.5501109999999585,
-    "AnalysisPhotonsAuxDyn.DFCommonPhotonsCleaningNoTime": 0.5531300000000101,
-    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMLoose": 0.5818840000000023,
-    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMTight": 0.633972999999969,
-    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMTightIsEMValue": 1.1618119999999976,
-    "AnalysisPhotonsAuxDyn.OQ": 1.1145399999999768,
-    "AnalysisPhotonsAuxDyn.ambiguityLink": 1.380980999999963,
-    "AnalysisPhotonsAuxDyn.ambiguityLink/AnalysisPhotonsAuxDyn.ambiguityLink.m_persIndex": 0.541924999999992,
-    "AnalysisPhotonsAuxDyn.ambiguityLink/AnalysisPhotonsAuxDyn.ambiguityLink.m_persKey": 0.46076700000003257,
-    "AnalysisPhotonsAuxDyn.author": 0.6299129999999877,
-    "AnalysisPhotonsAuxDyn.caloClusterLinks": 0.6888150000000337,
-    "AnalysisPhotonsAuxDyn.eta": 2.4752060000000142,
-    "AnalysisPhotonsAuxDyn.f1": 2.3881620000000225,
-    "AnalysisPhotonsAuxDyn.m": 0.5669640000000413,
-    "AnalysisPhotonsAuxDyn.phi": 2.469799999999964,
-    "AnalysisPhotonsAuxDyn.pt": 2.3747510000000034,
-    "AnalysisPhotonsAuxDyn.ptcone20": 1.0911099999999578,
-    "AnalysisPhotonsAuxDyn.ptcone20_CloseByCorr": 1.0933160000000157,
-    "AnalysisPhotonsAuxDyn.topoetcone20": 2.4817820000000097,
-    "AnalysisPhotonsAuxDyn.topoetcone20_CloseByCorr": 2.494327999999996,
-    "AnalysisPhotonsAuxDyn.topoetcone20ptCorrection": 2.333330999999987,
-    "AnalysisPhotonsAuxDyn.topoetcone40": 2.485791000000006,
-    "AnalysisPhotonsAuxDyn.topoetcone40_CloseByCorr": 2.4859200000000214,
-    "AnalysisPhotonsAuxDyn.topoetcone40ptCorrection": 2.3259499999999775,
-    "AnalysisPhotonsAuxDyn.vertexLinks": 0.6709330000000477,
-    "AnalysisSiHitElectrons": 0.0,
-    "AnalysisSiHitElectronsAux.": 0.3596900000000005,
-    "AnalysisSiHitElectronsAuxDyn.DFCommonElectronsLHVeryLoose": 0.47907700000001796,
-    "AnalysisSiHitElectronsAuxDyn.OQ": 0.6787579999999593,
-    "AnalysisSiHitElectronsAuxDyn.author": 0.5170190000000048,
-    "AnalysisSiHitElectronsAuxDyn.charge": 0.5373389999999745,
-    "AnalysisSiHitElectronsAuxDyn.clEta": 1.2025820000000067,
-    "AnalysisSiHitElectronsAuxDyn.clPhi": 1.2008710000000065,
-    "AnalysisSiHitElectronsAuxDyn.d0Normalized": 1.1892619999999852,
-    "AnalysisSiHitElectronsAuxDyn.eta": 1.1925400000000081,
-    "AnalysisSiHitElectronsAuxDyn.m": 0.47140900000005104,
-    "AnalysisSiHitElectronsAuxDyn.nInnerExpPix": 0.5116199999999935,
-    "AnalysisSiHitElectronsAuxDyn.phi": 1.191176999999982,
-    "AnalysisSiHitElectronsAuxDyn.pt": 1.1732529999999883,
-    "AnalysisSiHitElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": 0.9595679999999902,
-    "AnalysisSiHitElectronsAuxDyn.topoetcone20_CloseByCorr": 1.2171010000000138,
-    "AnalysisSiHitElectronsAuxDyn.z0stheta": 1.215976000000012,
-    "AnalysisTauJets": 0.0,
-    "AnalysisTauJetsAux.": 0.3573820000000012,
-    "AnalysisTauJetsAuxDyn.EleRNNLoose_v1": 0.48216899999999896,
-    "AnalysisTauJetsAuxDyn.EleRNNMedium_v1": 0.4860530000000267,
-    "AnalysisTauJetsAuxDyn.EleRNNTight_v1": 0.4862630000000081,
-    "AnalysisTauJetsAuxDyn.JetDeepSetLoose": 0.47813500000000886,
-    "AnalysisTauJetsAuxDyn.JetDeepSetMedium": 0.4752480000000219,
-    "AnalysisTauJetsAuxDyn.JetDeepSetScore": 0.922347000000002,
-    "AnalysisTauJetsAuxDyn.JetDeepSetScoreTrans": 0.8974929999999972,
-    "AnalysisTauJetsAuxDyn.JetDeepSetTight": 0.47086000000001604,
-    "AnalysisTauJetsAuxDyn.JetDeepSetVeryLoose": 0.48684199999996736,
-    "AnalysisTauJetsAuxDyn.NNDecayMode": 0.521995000000004,
-    "AnalysisTauJetsAuxDyn.PanTau_DecayMode": 0.5262899999999604,
-    "AnalysisTauJetsAuxDyn.RNNEleScore": 0.8565740000000233,
-    "AnalysisTauJetsAuxDyn.RNNEleScoreSigTrans_v1": 0.9024489999999901,
-    "AnalysisTauJetsAuxDyn.RNNJetScore": 0.9180840000000217,
-    "AnalysisTauJetsAuxDyn.RNNJetScoreSigTrans": 0.8987549999999942,
-    "AnalysisTauJetsAuxDyn.charge": 0.4988499999999476,
-    "AnalysisTauJetsAuxDyn.eta": 0.9093379999999911,
-    "AnalysisTauJetsAuxDyn.etaFinalCalib": 0.9149289999999723,
-    "AnalysisTauJetsAuxDyn.etaTauEnergyScale": 0.9169790000000262,
-    "AnalysisTauJetsAuxDyn.isTauFlags": 0.5187660000000278,
-    "AnalysisTauJetsAuxDyn.m": 0.4507520000000227,
-    "AnalysisTauJetsAuxDyn.phi": 0.9096829999999727,
-    "AnalysisTauJetsAuxDyn.pt": 0.8829860000000167,
-    "AnalysisTauJetsAuxDyn.ptFinalCalib": 0.8883739999999989,
-    "AnalysisTauJetsAuxDyn.ptTauEnergyScale": 0.895973999999967,
-    "AnalysisTauJetsAuxDyn.tauTrackLinks": 1.2614680000000362,
-    "AnalysisTauJetsAuxDyn.vertexLink": 0.8359040000000277,
-    "AnalysisTauJetsAuxDyn.vertexLink/AnalysisTauJetsAuxDyn.vertexLink.m_persIndex": 0.2672640000000115,
-    "AnalysisTauJetsAuxDyn.vertexLink/AnalysisTauJetsAuxDyn.vertexLink.m_persKey": 0.2277059999999551,
-    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10": 0.0,
-    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10Aux.": 0.36532599999999604,
-    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10AuxDyn.TrigMatchedObjects": 0.38153699999998025,
-    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0Aux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHI": 0.0,
-    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHIAux.": 0.3660909999999973,
-    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHIAuxDyn.TrigMatchedObjects": 0.4031049999999823,
-    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0Aux.": 0.36455499999999574,
-    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3961420000000544,
-    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHI": 0.0,
-    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHIAux.": 0.36787900000000207,
-    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHIAuxDyn.TrigMatchedObjects": 0.3971950000000106,
-    "AnalysisTrigMatch_HLT_2g22_tight": 0.0,
-    "AnalysisTrigMatch_HLT_2g22_tightAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHI": 0.0,
-    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHIAux.": 0.36429199999999184,
-    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHIAuxDyn.TrigMatchedObjects": 0.3914159999999356,
-    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_EMPTYAux.": 0.36532600000001025,
-    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_UNPAIRED_ISO": 0.0,
-    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_UNPAIRED_ISOAux.": 0.3660909999999973,
-    "AnalysisTrigMatch_HLT_2g22_tight_icalovloose": 0.0,
-    "AnalysisTrigMatch_HLT_2g22_tight_icalovlooseAux.": 0.36532599999999604,
-    "AnalysisTrigMatch_HLT_2g25_loose_g15_loose": 0.0,
-    "AnalysisTrigMatch_HLT_2g25_loose_g15_looseAux.": 0.36506199999999467,
-    "AnalysisTrigMatch_HLT_2g25_loose_g15_looseAuxDyn.TrigMatchedObjects": 0.3786920000000009,
-    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VH": 0.0,
-    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VHAux.": 0.3650620000000089,
-    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VHAuxDyn.TrigMatchedObjects": 0.3902769999999691,
-    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VH": 0.0,
-    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VHAux.": 0.36506199999999467,
-    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VHAuxDyn.TrigMatchedObjects": 0.3860069999998359,
-    "AnalysisTrigMatch_HLT_2mu14": 0.0,
-    "AnalysisTrigMatch_HLT_2mu14Aux.": 0.3599449999999962,
-    "AnalysisTrigMatch_HLT_2mu14AuxDyn.TrigMatchedObjects": 0.3973200000000361,
-    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAY": 0.0,
-    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAYAux.": 0.36429200000000606,
-    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAYAuxDyn.TrigMatchedObjects": 0.3920140000000174,
-    "AnalysisTrigMatch_HLT_2mu4_bJpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_2mu4_bJpsimumuAux.": 0.36377600000000143,
-    "AnalysisTrigMatch_HLT_2mu4_bUpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_2mu4_bUpsimumuAux.": 0.36377600000000143,
-    "AnalysisTrigMatch_HLT_2mu6_bJpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_2mu6_bJpsimumuAux.": 0.36377600000000143,
-    "AnalysisTrigMatch_HLT_2mu6_bUpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_2mu6_bUpsimumuAux.": 0.36377600000000143,
-    "AnalysisTrigMatch_HLT_3g20_loose": 0.0,
-    "AnalysisTrigMatch_HLT_3g20_looseAux.": 0.3622559999999879,
-    "AnalysisTrigMatch_HLT_3mu3_mu3noL1_L13MU4": 0.0,
-    "AnalysisTrigMatch_HLT_3mu3_mu3noL1_L13MU4Aux.": 0.36378000000000554,
-    "AnalysisTrigMatch_HLT_3mu4": 0.0,
-    "AnalysisTrigMatch_HLT_3mu4Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_3mu4_mu2noL1": 0.0,
-    "AnalysisTrigMatch_HLT_3mu4_mu2noL1Aux.": 0.36277200000000676,
-    "AnalysisTrigMatch_HLT_3mu6": 0.0,
-    "AnalysisTrigMatch_HLT_3mu6Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_3mu6AuxDyn.TrigMatchedObjects": 0.3766889999999421,
-    "AnalysisTrigMatch_HLT_3mu6_msonly": 0.0,
-    "AnalysisTrigMatch_HLT_3mu6_msonlyAux.": 0.36173300000000097,
-    "AnalysisTrigMatch_HLT_3mu6_msonlyAuxDyn.TrigMatchedObjects": 0.3836319999999205,
-    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU4_UNPAIRED_ISO": 0.0,
-    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU4_UNPAIRED_ISOAux.": 0.3676280000000105,
-    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU6_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU6_EMPTYAux.": 0.3648029999999949,
-    "AnalysisTrigMatch_HLT_4mu4": 0.0,
-    "AnalysisTrigMatch_HLT_4mu4Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_4mu4AuxDyn.TrigMatchedObjects": 0.36958899999990535,
-    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0Aux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3875319999999647,
-    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7": 0.0,
-    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7Aux.": 0.3648029999999949,
-    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7AuxDyn.TrigMatchedObjects": 0.44990699999999606,
-    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0Aux.": 0.36455499999999574,
-    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3844460000000254,
-    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10": 0.0,
-    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10Aux.": 0.36532600000001025,
-    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10AuxDyn.TrigMatchedObjects": 0.3816460000000461,
-    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VH": 0.0,
-    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VHAux.": 0.36736799999999903,
-    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VHAuxDyn.TrigMatchedObjects": 0.45076399999993555,
-    "AnalysisTrigMatch_HLT_e140_lhloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e140_lhloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e140_lhloose_nod0AuxDyn.TrigMatchedObjects": 0.3824680000000171,
-    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0Aux.": 0.36455499999999574,
-    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3799059999998917,
-    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7": 0.0,
-    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7Aux.": 0.3648029999999949,
-    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7AuxDyn.TrigMatchedObjects": 0.44882800000004863,
-    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0Aux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.37936900000022433,
-    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_2e12_lhloose_nod0_L1EM15VH_3EM10VH": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_2e12_lhloose_nod0_L1EM15VH_3EM10VHAux.": 0.3722269999999952,
-    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14Aux.": 0.36429199999999184,
-    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14AuxDyn.TrigMatchedObjects": 0.3887159999999312,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoAux.": 0.3729950000000031,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoAuxDyn.TrigMatchedObjects": 0.4215110000000095,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEFAux.": 0.37350899999999854,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": 0.4245189999999184,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25Aux.": 0.37837900000000957,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": 0.4306920000001355,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12Aux.": 0.38067099999999243,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": 0.42097800000010466,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25Aux.": 0.37836699999999723,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": 0.4280579999999645,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12Aux.": 0.37914700000000323,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": 0.41928699999994024,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVAAux.": 0.3730040000000088,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": 0.42579399999999623,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25Aux.": 0.37787199999999643,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": 0.4319479999999203,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12Aux.": 0.37914599999999155,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": 0.4241099999999278,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_tau80_medium1_tracktwo": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_tau80_medium1_tracktwoAux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.4438319999999294,
-    "AnalysisTrigMatch_HLT_e200_etcut": 0.0,
-    "AnalysisTrigMatch_HLT_e200_etcutAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_e200_etcutAuxDyn.TrigMatchedObjects": 0.37507499999992433,
-    "AnalysisTrigMatch_HLT_e20_lhvloose": 0.0,
-    "AnalysisTrigMatch_HLT_e20_lhvlooseAux.": 0.36277200000000676,
-    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.44339400000001206,
-    "AnalysisTrigMatch_HLT_e22_lhvloose_nod0_e12_lhvloose_nod0_e10_lhvloose_nod0_L1EM20VH_2EM10VH_3EM8VH": 0.0,
-    "AnalysisTrigMatch_HLT_e22_lhvloose_nod0_e12_lhvloose_nod0_e10_lhvloose_nod0_L1EM20VH_2EM10VH_3EM8VHAux.": 0.37863299999999356,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwo": 0.0,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoAux.": 0.3729950000000031,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoAuxDyn.TrigMatchedObjects": 0.4085440000001199,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEF": 0.0,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEFAux.": 0.37350899999999854,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": 0.4117670000000544,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVA": 0.0,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVAAux.": 0.37300399999999456,
-    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": 0.4127779999998893,
-    "AnalysisTrigMatch_HLT_e24_lhtight_nod0_ivarloose": 0.0,
-    "AnalysisTrigMatch_HLT_e24_lhtight_nod0_ivarlooseAux.": 0.36736799999999903,
-    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VH": 0.0,
-    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VHAux.": 0.3732450000000114,
-    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VHAuxDyn.TrigMatchedObjects": 0.39797599999997146,
-    "AnalysisTrigMatch_HLT_e26_lhloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e26_lhloose_nod0Aux.": 0.3640359999999987,
-    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1": 0.0,
-    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1Aux.": 0.3650650000000013,
-    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1AuxDyn.TrigMatchedObjects": 0.3788170000000264,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0Aux.": 0.3640359999999987,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0AuxDyn.TrigMatchedObjects": 0.4372839999999769,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_Zee": 0.0,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_ZeeAux.": 0.36915899999999624,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_ZeeAuxDyn.TrigMatchedObjects": 0.4117039999999861,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarloose": 0.0,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarlooseAux.": 0.36736799999999903,
-    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarlooseAuxDyn.TrigMatchedObjects": 0.4397480000000087,
-    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_L1EM22VHI": 0.0,
-    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_L1EM22VHIAux.": 0.36736799999999903,
-    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_noringer_ivarloose": 0.0,
-    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_noringer_ivarlooseAux.": 0.3678770000000071,
-    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VH": 0.0,
-    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VHAux.": 0.36736799999999903,
-    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VHAuxDyn.TrigMatchedObjects": 0.38427599999999984,
-    "AnalysisTrigMatch_HLT_e300_etcut": 0.0,
-    "AnalysisTrigMatch_HLT_e300_etcutAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_e300_etcutAuxDyn.TrigMatchedObjects": 0.37891899999999623,
-    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0Aux.": 0.3640359999999987,
-    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.4498829999999998,
-    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0AuxDyn.TrigMatchedObjects": 0.39715499999988424,
-    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3801770000000033,
-    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.39544999999998254,
-    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24": 0.0,
-    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24Aux.": 0.36429199999999184,
-    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24AuxDyn.TrigMatchedObjects": 0.3895689999999945,
-    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0": 0.0,
-    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0Aux.": 0.36327,
-    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0AuxDyn.TrigMatchedObjects": 0.3922050000001036,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1": 0.0,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1Aux.": 0.3660909999999973,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1AuxDyn.TrigMatchedObjects": 0.3850649999999405,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20": 0.0,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20Aux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20AuxDyn.TrigMatchedObjects": 0.39186399999994137,
-    "AnalysisTrigMatch_HLT_g120_loose": 0.0,
-    "AnalysisTrigMatch_HLT_g120_looseAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_g120_looseAuxDyn.TrigMatchedObjects": 0.40107399999999416,
-    "AnalysisTrigMatch_HLT_g140_loose": 0.0,
-    "AnalysisTrigMatch_HLT_g140_looseAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_g140_looseAuxDyn.TrigMatchedObjects": 0.3986010000000988,
-    "AnalysisTrigMatch_HLT_g200_etcut": 0.0,
-    "AnalysisTrigMatch_HLT_g200_etcutAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_g200_etcutAuxDyn.TrigMatchedObjects": 0.37477400000000216,
-    "AnalysisTrigMatch_HLT_g300_etcut": 0.0,
-    "AnalysisTrigMatch_HLT_g300_etcutAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_g300_etcutAuxDyn.TrigMatchedObjects": 0.37875000000008185,
-    "AnalysisTrigMatch_HLT_g35_loose_g25_loose": 0.0,
-    "AnalysisTrigMatch_HLT_g35_loose_g25_looseAux.": 0.36377999999999133,
-    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VH": 0.0,
-    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VHAux.": 0.3660910000000115,
-    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VHAuxDyn.TrigMatchedObjects": 0.38603999999986627,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VH": 0.0,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VHAux.": 0.36684899999998777,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VHAuxDyn.TrigMatchedObjects": 0.3982699999999113,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_EMPTYAux.": 0.36787900000000207,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_UNPAIRED_ISO": 0.0,
-    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_UNPAIRED_ISOAux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240": 0.0,
-    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240Aux.": 0.36532599999999604,
-    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240AuxDyn.TrigMatchedObjects": 0.3850590000000693,
-    "AnalysisTrigMatch_HLT_id_cosmicid_L1MU11_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_id_cosmicid_L1MU11_EMPTYAux.": 0.3658410000000032,
-    "AnalysisTrigMatch_HLT_mu10": 0.0,
-    "AnalysisTrigMatch_HLT_mu10Aux.": 0.3609700000000089,
-    "AnalysisTrigMatch_HLT_mu10AuxDyn.TrigMatchedObjects": 0.46555899999998474,
-    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEBAux.": 0.36327,
-    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": 0.3789990000000216,
-    "AnalysisTrigMatch_HLT_mu10_bJpsi_Trkloose": 0.0,
-    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrklooseAux.": 0.36377999999999133,
-    "AnalysisTrigMatch_HLT_mu11_bJpsi_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu11_bJpsi_TrkPEBAux.": 0.36327,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumuAux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumuAuxDyn.TrigMatchedObjects": 0.38053400000012516,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumuAux.": 0.36455499999999574,
-    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumuAuxDyn.TrigMatchedObjects": 0.3862920000001395,
-    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_Zmumu": 0.0,
-    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_ZmumuAux.": 0.36532599999999604,
-    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_ZmumuAuxDyn.TrigMatchedObjects": 0.4008699999999408,
-    "AnalysisTrigMatch_HLT_mu14": 0.0,
-    "AnalysisTrigMatch_HLT_mu14Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_mu14AuxDyn.TrigMatchedObjects": 0.46431100000000924,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IM": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IMAux.": 0.37478800000000945,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": 0.42076299999996536,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IM": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IMAux.": 0.3740219999999965,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": 0.4182630000000245,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IM": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IMAux.": 0.3760910000000024,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": 0.41905099999996764,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoAux.": 0.36838799999999594,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoAuxDyn.TrigMatchedObjects": 0.40701799999999366,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEFAux.": 0.36889999999999645,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": 0.40816000000006625,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25Aux.": 0.3770930000000021,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": 0.42108199999995577,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12Aux.": 0.37402200000001073,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": 0.41131099999995513,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25Aux.": 0.3760909999999882,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": 0.41924600000004375,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12Aux.": 0.3735140000000001,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": 0.4102810000000545,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVAAux.": 0.3706949999999978,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": 0.4109019999999646,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25Aux.": 0.37683400000000233,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": 0.4235589999999547,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12Aux.": 0.37632500000000846,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": 0.4130720000000565,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwo": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoAux.": 0.36838799999999594,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoAuxDyn.TrigMatchedObjects": 0.4072159999999485,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEF": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEFAux.": 0.36889999999999645,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": 0.40850700000009965,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVA": 0.0,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVAAux.": 0.3706949999999978,
-    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": 0.41005299999994804,
-    "AnalysisTrigMatch_HLT_mu18": 0.0,
-    "AnalysisTrigMatch_HLT_mu18Aux.": 0.3609700000000089,
-    "AnalysisTrigMatch_HLT_mu20": 0.0,
-    "AnalysisTrigMatch_HLT_mu20Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_mu20AuxDyn.TrigMatchedObjects": 0.44889999999998054,
-    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFS": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFSAux.": 0.3658410000000032,
-    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFSAuxDyn.TrigMatchedObjects": 0.38121399999999994,
-    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2Aux.": 0.36506199999999467,
-    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2AuxDyn.TrigMatchedObjects": 0.39028800000005504,
-    "AnalysisTrigMatch_HLT_mu20_2mu4noL1": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_2mu4noL1Aux.": 0.36275500000000704,
-    "AnalysisTrigMatch_HLT_mu20_2mu4noL1AuxDyn.TrigMatchedObjects": 0.3799450000001343,
-    "AnalysisTrigMatch_HLT_mu20_bJpsi_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_bJpsi_TrkPEBAux.": 0.36327,
-    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1Aux.": 0.3648029999999949,
-    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1AuxDyn.TrigMatchedObjects": 0.38629100000002836,
-    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU4_UNPAIRED_ISO": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU4_UNPAIRED_ISOAux.": 0.37632500000000846,
-    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU6_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU6_EMPTYAux.": 0.37300399999999456,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noCombAux.": 0.3706949999999978,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU4_UNPAIRED_ISO": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU4_UNPAIRED_ISOAux.": 0.37478799999999524,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU6_EMPTY": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU6_EMPTYAux.": 0.37402600000000064,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05": 0.0,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05Aux.": 0.3686490000000049,
-    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05AuxDyn.TrigMatchedObjects": 0.3857550000000174,
-    "AnalysisTrigMatch_HLT_mu22": 0.0,
-    "AnalysisTrigMatch_HLT_mu22Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_mu22AuxDyn.TrigMatchedObjects": 0.4463370000000282,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1": 0.0,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1Aux.": 0.36277200000000676,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1AuxDyn.TrigMatchedObjects": 0.38983299999995324,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbe": 0.0,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbeAux.": 0.3658410000000032,
-    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbeAuxDyn.TrigMatchedObjects": 0.41443900000001577,
-    "AnalysisTrigMatch_HLT_mu24": 0.0,
-    "AnalysisTrigMatch_HLT_mu24Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_mu24AuxDyn.TrigMatchedObjects": 0.44421199999999317,
-    "AnalysisTrigMatch_HLT_mu24_ivarmedium": 0.0,
-    "AnalysisTrigMatch_HLT_mu24_ivarmediumAux.": 0.36275500000000704,
-    "AnalysisTrigMatch_HLT_mu26_ivarmedium": 0.0,
-    "AnalysisTrigMatch_HLT_mu26_ivarmediumAux.": 0.36275499999999283,
-    "AnalysisTrigMatch_HLT_mu26_ivarmediumAuxDyn.TrigMatchedObjects": 0.43786099999999806,
-    "AnalysisTrigMatch_HLT_mu4": 0.0,
-    "AnalysisTrigMatch_HLT_mu4Aux.": 0.3604389999999995,
-    "AnalysisTrigMatch_HLT_mu4AuxDyn.TrigMatchedObjects": 0.4956369999999879,
-    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEBAux.": 0.3640359999999987,
-    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": 0.37680999999997766,
-    "AnalysisTrigMatch_HLT_mu4_bJpsi_Trkloose": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrklooseAux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02Aux.": 0.36813799999998764,
-    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.38717700000006516,
-    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02Aux.": 0.36813800000000185,
-    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.3868840000000091,
-    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02Aux.": 0.36813800000000185,
-    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.38675599999987753,
-    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02Aux.": 0.36992100000000505,
-    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.38960500000007414,
-    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noid": 0.0,
-    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noidAux.": 0.3660909999999973,
-    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noidAuxDyn.TrigMatchedObjects": 0.3883009999999558,
-    "AnalysisTrigMatch_HLT_mu50": 0.0,
-    "AnalysisTrigMatch_HLT_mu50Aux.": 0.3609699999999947,
-    "AnalysisTrigMatch_HLT_mu50AuxDyn.TrigMatchedObjects": 0.40455100000008315,
-    "AnalysisTrigMatch_HLT_mu6": 0.0,
-    "AnalysisTrigMatch_HLT_mu60_0eta105_msonly": 0.0,
-    "AnalysisTrigMatch_HLT_mu60_0eta105_msonlyAux.": 0.36378000000000554,
-    "AnalysisTrigMatch_HLT_mu60_0eta105_msonlyAuxDyn.TrigMatchedObjects": 0.39643599999999424,
-    "AnalysisTrigMatch_HLT_mu6Aux.": 0.3604389999999995,
-    "AnalysisTrigMatch_HLT_mu6AuxDyn.TrigMatchedObjects": 0.4898560000000316,
-    "AnalysisTrigMatch_HLT_mu6_2mu4": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_2mu4Aux.": 0.36199299999999823,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEBAux.": 0.3640359999999987,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": 0.3766359999999622,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_Trkloose": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrklooseAux.": 0.36455500000000995,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEB": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEBAux.": 0.36532599999999604,
-    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEBAuxDyn.TrigMatchedObjects": 0.38137800000004063,
-    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonly": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonlyAux.": 0.37121299999999735,
-    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonlyAuxDyn.TrigMatchedObjects": 0.41203700000005483,
-    "AnalysisTrigMatch_HLT_mu6_idperf": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_idperfAux.": 0.36225600000000213,
-    "AnalysisTrigMatch_HLT_mu6_idperfAuxDyn.TrigMatchedObjects": 0.49114299999996547,
-    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02Aux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.3933569999999236,
-    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02Aux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.3939050000001316,
-    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02Aux.": 0.3701870000000014,
-    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.39373699999987366,
-    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02Aux.": 0.36992099999999084,
-    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.39123300000005656,
-    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02Aux.": 0.36889999999999645,
-    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": 0.3930310000000645,
-    "AnalysisTrigMatch_HLT_mu6_mu4_bJpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_mu4_bJpsimumuAux.": 0.36327,
-    "AnalysisTrigMatch_HLT_mu6_mu4_bUpsimumu": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_mu4_bUpsimumuAux.": 0.36327,
-    "AnalysisTrigMatch_HLT_mu6_nomucomb_2mu4_nomucomb_L1MU6_3MU4": 0.0,
-    "AnalysisTrigMatch_HLT_mu6_nomucomb_2mu4_nomucomb_L1MU6_3MU4Aux.": 0.36838800000001015,
-    "AnalysisTrigMatch_HLT_mu80_msonly_3layersEC": 0.0,
-    "AnalysisTrigMatch_HLT_mu80_msonly_3layersECAux.": 0.36429199999999184,
-    "AnalysisTrigMatch_HLT_mu80_msonly_3layersECAuxDyn.TrigMatchedObjects": 0.394608000000062,
-    "AntiKt10UFOCSSKJets": 0.0,
-    "AntiKt10UFOCSSKJetsAux.": 0.0,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.constituentLinks": 8.484683999999987,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.constituentWeights": 1.2705559999999991,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.eta": 1.3720329999999876,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.m": 1.3244250000000193,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.phi": 1.369168000000002,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.pt": 1.3192549999999983,
-    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.xAOD::AuxContainerBase": 0.0,
-    "AntiKt10UFOCSSKJetsAuxDyn.GhostAntiKtVR30Rmax4Rmin02PV0TrackJets": 1.0363069999999652,
-    "BTagging_AntiKt4EMPFlow": 0.0,
-    "BTagging_AntiKt4EMPFlowAux.": 0.35866700000001117,
-    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pb": 5.125852000000009,
-    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pc": 5.052650000000085,
-    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pu": 5.002200000000016,
-    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pb": 3.9650300000000698,
-    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pc": 3.9427049999999326,
-    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pu": 3.8678469999999834,
-    "BTagging_AntiKtVR30Rmax4Rmin02Track": 0.0,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAux.": 0.36275499999999283,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pb": 3.4465240000000676,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pc": 3.3643389999999727,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pu": 3.4135689999999386,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pb": 3.477056999999945,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pc": 3.410665999999992,
-    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pu": 3.421132000000057,
-    "CombinedMuonTrackParticles": 0.0,
-    "CombinedMuonTrackParticlesAux.": 0.3609699999999947,
-    "CombinedMuonTrackParticlesAuxDyn.chiSquared": 1.078106000000048,
-    "CombinedMuonTrackParticlesAuxDyn.d0": 1.1095719999999574,
-    "CombinedMuonTrackParticlesAuxDyn.definingParametersCovMatrixDiag": 3.2848000000000184,
-    "CombinedMuonTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": 5.838675999999964,
-    "CombinedMuonTrackParticlesAuxDyn.numberDoF": 0.7333879999999908,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelDeadSensors": 0.5110339999999951,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelHits": 0.5653780000000097,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelHoles": 0.49611300000003666,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTDeadSensors": 0.5022920000000113,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTHits": 0.5844189999999116,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTHoles": 0.5166350000000648,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfTRTHits": 0.6257630000000063,
-    "CombinedMuonTrackParticlesAuxDyn.numberOfTRTOutliers": 0.5811410000000024,
-    "CombinedMuonTrackParticlesAuxDyn.phi": 1.0919039999999995,
-    "CombinedMuonTrackParticlesAuxDyn.qOverP": 1.0999009999999316,
-    "CombinedMuonTrackParticlesAuxDyn.theta": 1.0691430000000537,
-    "CombinedMuonTrackParticlesAuxDyn.vz": 0.4836369999999306,
-    "CombinedMuonTrackParticlesAuxDyn.z0": 1.09675900000002,
-    "EventInfo": 0.3491260000000125,
-    "EventInfoAux.": 0.35558300000000287,
-    "EventInfoAuxDyn.DFCommonJets_BCIDDistanceFromFront": 0.23336300000005394,
-    "EventInfoAuxDyn.DFCommonJets_BCIDDistanceTail": 0.2307019999999511,
-    "EventInfoAuxDyn.DFCommonJets_BCIDGapAfterTrain": 0.13790899999992234,
-    "EventInfoAuxDyn.DFCommonJets_BCIDGapAfterTrainMinus12": 0.15953200000001289,
-    "EventInfoAuxDyn.DFCommonJets_BCIDGapBeforeTrain": 0.13919700000008106,
-    "EventInfoAuxDyn.DFCommonJets_BCIDGapBeforeTrainMinus12": 0.16239099999995688,
-    "EventInfoAuxDyn.DFCommonJets_BCIDType": 0.14518600000008064,
-    "EventInfoAuxDyn.DFCommonJets_BCIDTypeMinus12": 0.15802499999995234,
-    "EventInfoAuxDyn.DFCommonJets_eventClean_LooseBad": 0.04393300000003819,
-    "EventInfoAuxDyn.DFCommonJets_eventClean_LooseBadLLP": 0.06808000000000902,
-    "EventInfoAuxDyn.DFCommonJets_isBadBatman": 0.037127999999938766,
-    "EventInfoAuxDyn.actualInteractionsPerCrossing": 0.5150169999999434,
-    "EventInfoAuxDyn.averageInteractionsPerCrossing": 0.07836799999995492,
-    "EventInfoAuxDyn.bcid": 0.3623099999999795,
-    "EventInfoAuxDyn.beamPosSigmaX": 0.06961599999999635,
-    "EventInfoAuxDyn.beamPosSigmaXY": 0.07012800000006791,
-    "EventInfoAuxDyn.beamPosSigmaY": 0.06961599999999635,
-    "EventInfoAuxDyn.beamPosSigmaZ": 0.06961599999999635,
-    "EventInfoAuxDyn.beamPosX": 0.06744900000001053,
-    "EventInfoAuxDyn.beamPosY": 0.06744900000001053,
-    "EventInfoAuxDyn.beamPosZ": 0.06744899999989684,
-    "EventInfoAuxDyn.beamStatus": 0.06834600000001956,
-    "EventInfoAuxDyn.beamTiltXZ": 0.06834600000001956,
-    "EventInfoAuxDyn.beamTiltYZ": 0.06834600000001956,
-    "EventInfoAuxDyn.coreFlags": 0.06680400000004738,
-    "EventInfoAuxDyn.detDescrTags": 0.9687199999999621,
-    "EventInfoAuxDyn.detDescrTags/EventInfoAuxDyn.detDescrTags.first": 0.3442320000000336,
-    "EventInfoAuxDyn.detDescrTags/EventInfoAuxDyn.detDescrTags.second": 0.34443899999996574,
-    "EventInfoAuxDyn.eventNumber": 0.534671000000003,
-    "EventInfoAuxDyn.eventTypeBitmask": 0.07012800000006791,
-    "EventInfoAuxDyn.forwardDetFlags": 0.06961599999999635,
-    "EventInfoAuxDyn.hardScatterVertexLink": 0.0,
-    "EventInfoAuxDyn.hardScatterVertexLink/EventInfoAuxDyn.hardScatterVertexLink": 0.0,
-    "EventInfoAuxDyn.larFlags": 0.06770299999993767,
-    "EventInfoAuxDyn.lumiBlock": 0.06786399999998594,
-    "EventInfoAuxDyn.lumiFlags": 0.0668039999999337,
-    "EventInfoAuxDyn.mcChannelNumber": 0.06961599999999635,
-    "EventInfoAuxDyn.mcEventNumber": 0.13451500000007854,
-    "EventInfoAuxDyn.mcEventWeights": 0.36770000000001346,
-    "EventInfoAuxDyn.muonFlags": 0.06680400000004738,
-    "EventInfoAuxDyn.pixelFlags": 0.06731800000000021,
-    "EventInfoAuxDyn.runNumber": 0.06783200000006673,
-    "EventInfoAuxDyn.sctFlags": 0.06641899999999623,
-    "EventInfoAuxDyn.tileFlags": 0.09934899999996105,
-    "EventInfoAuxDyn.timeStamp": 0.16909799999996267,
-    "EventInfoAuxDyn.timeStampNSOffset": 0.5662480000000869,
-    "EventInfoAuxDyn.trtFlags": 0.06641899999999623,
-    "ExtrapolatedMuonTrackParticles": 0.0,
-    "ExtrapolatedMuonTrackParticlesAux.": 0.36199300000001244,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.d0": 1.1354370000000245,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.definingParametersCovMatrixDiag": 3.3463779999999588,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": 5.915569000000005,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.phi": 1.1075100000000475,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.qOverP": 1.1148259999999937,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.theta": 1.0839130000000523,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.vz": 0.48981499999990774,
-    "ExtrapolatedMuonTrackParticlesAuxDyn.z0": 1.1228609999999435,
-    "FourLeptonVertices": 0.0,
-    "FourLeptonVerticesAux.": 0.3586639999999903,
-    "FourLeptonVerticesAuxDyn.chiSquared": 0.36099699999999757,
-    "FourLeptonVerticesAuxDyn.numberDoF": 0.3617790000000696,
-    "FourLeptonVerticesAuxDyn.trackParticleLinks": 0.3675799999998617,
-    "FourLeptonVerticesAuxDyn.vertexType": 0.3609639999999672,
-    "FourLeptonVerticesAuxDyn.x": 0.3571750000000975,
-    "FourLeptonVerticesAuxDyn.y": 0.3571829999998499,
-    "FourLeptonVerticesAuxDyn.z": 0.3571630000001278,
-    "GSFConversionVertices": 0.0,
-    "GSFConversionVerticesAux.": 0.3586559999999963,
-    "GSFConversionVerticesAuxDyn.minRfirstHit": 0.46002499999997326,
-    "GSFConversionVerticesAuxDyn.neutralParticleLinks": 0.40941800000007333,
-    "GSFConversionVerticesAuxDyn.pt1": 0.4589780000000019,
-    "GSFConversionVerticesAuxDyn.pt2": 0.458917999999926,
-    "GSFConversionVerticesAuxDyn.px": 0.4922639999999774,
-    "GSFConversionVerticesAuxDyn.py": 0.49221699999998236,
-    "GSFConversionVerticesAuxDyn.pz": 0.49335400000006757,
-    "GSFConversionVerticesAuxDyn.trackParticleLinks": 0.46154200000000856,
-    "GSFConversionVerticesAuxDyn.x": 0.49177499999996144,
-    "GSFConversionVerticesAuxDyn.y": 0.4918390000000272,
-    "GSFConversionVerticesAuxDyn.z": 0.4915770000000066,
-    "GSFTrackParticles": 0.0,
-    "GSFTrackParticlesAux.": 0.35713500000001375,
-    "GSFTrackParticlesAuxDyn.chiSquared": 0.786028999999985,
-    "GSFTrackParticlesAuxDyn.d0": 0.8160950000000184,
-    "GSFTrackParticlesAuxDyn.definingParametersCovMatrixDiag": 2.0749739999999974,
-    "GSFTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": 3.4804620000001023,
-    "GSFTrackParticlesAuxDyn.expectInnermostPixelLayerHit": 0.4732970000000023,
-    "GSFTrackParticlesAuxDyn.expectNextToInnermostPixelLayerHit": 0.47913200000004963,
-    "GSFTrackParticlesAuxDyn.numberOfInnermostPixelLayerHits": 0.4854890000000296,
-    "GSFTrackParticlesAuxDyn.numberOfNextToInnermostPixelLayerHits": 0.4905719999999292,
-    "GSFTrackParticlesAuxDyn.numberOfPixelHits": 0.5066140000000132,
-    "GSFTrackParticlesAuxDyn.numberOfSCTHits": 0.511141000000066,
-    "GSFTrackParticlesAuxDyn.originalTrackParticle": 0.823528999999894,
-    "GSFTrackParticlesAuxDyn.originalTrackParticle/GSFTrackParticlesAuxDyn.originalTrackParticle.m_persIndex": 0.2536450000000059,
-    "GSFTrackParticlesAuxDyn.originalTrackParticle/GSFTrackParticlesAuxDyn.originalTrackParticle.m_persKey": 0.2284750000000031,
-    "GSFTrackParticlesAuxDyn.phi": 0.8058350000000019,
-    "GSFTrackParticlesAuxDyn.qOverP": 0.8131369999999833,
-    "GSFTrackParticlesAuxDyn.theta": 0.7926539999999704,
-    "GSFTrackParticlesAuxDyn.vz": 0.4500260000000935,
-    "GSFTrackParticlesAuxDyn.z0": 0.8059899999999516,
-    "InDetTrackParticles": 0.0,
-    "InDetTrackParticlesAux.": 0.3586509999999947,
-    "InDetTrackParticlesAuxDyn.TTVA_AMVFVertices": 2.497392999999988,
-    "InDetTrackParticlesAuxDyn.TTVA_AMVFWeights": 8.155802999999992,
-    "InDetTrackParticlesAuxDyn.chiSquared": 8.625685999999973,
-    "InDetTrackParticlesAuxDyn.d0": 9.078319999999962,
-    "InDetTrackParticlesAuxDyn.definingParametersCovMatrixDiag": 43.05193099999997,
-    "InDetTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": 84.81019800000001,
-    "InDetTrackParticlesAuxDyn.numberDoF": 3.141336000000024,
-    "InDetTrackParticlesAuxDyn.numberOfInnermostPixelLayerHits": 1.0427950000000692,
-    "InDetTrackParticlesAuxDyn.numberOfPixelDeadSensors": 1.1062289999999848,
-    "InDetTrackParticlesAuxDyn.numberOfPixelHits": 1.4446550000000116,
-    "InDetTrackParticlesAuxDyn.numberOfPixelHoles": 0.8530890000000682,
-    "InDetTrackParticlesAuxDyn.numberOfPixelSharedHits": 0.8822659999999587,
-    "InDetTrackParticlesAuxDyn.numberOfSCTDeadSensors": 0.9825260000000071,
-    "InDetTrackParticlesAuxDyn.numberOfSCTHits": 1.6589040000000068,
-    "InDetTrackParticlesAuxDyn.numberOfSCTHoles": 1.0695440000000644,
-    "InDetTrackParticlesAuxDyn.numberOfSCTSharedHits": 1.111945999999989,
-    "InDetTrackParticlesAuxDyn.numberOfTRTHits": 2.0806029999999964,
-    "InDetTrackParticlesAuxDyn.numberOfTRTOutliers": 1.8969200000000228,
-    "InDetTrackParticlesAuxDyn.phi": 8.909705999999915,
-    "InDetTrackParticlesAuxDyn.qOverP": 8.986341999999922,
-    "InDetTrackParticlesAuxDyn.theta": 8.658135000000016,
-    "InDetTrackParticlesAuxDyn.vz": 0.7645999999999731,
-    "InDetTrackParticlesAuxDyn.z0": 8.93887600000005,
-    "Kt4EMPFlowEventShape": 0.35423000000000116,
-    "Kt4EMPFlowEventShapeAux.": 0.3591789999999975,
-    "Kt4EMPFlowEventShapeAuxDyn.Density": 0.5368519999999535,
-    "METAssoc_AnalysisMET": 0.0,
-    "METAssoc_AnalysisMETAux.": 0.0,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.cale": 2.329567000000001,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calkey": 1.1912599999999998,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpx": 2.371383999999999,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpy": 2.3710109999999993,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpz": 2.3758820000000007,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calsumpt": 2.3245799999999974,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.isMisc": 0.6342849999999984,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jetLink": 0.6725860000000026,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrke": 3.5265489999999957,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpx": 3.6206539999999947,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpy": 3.619995000000003,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpz": 3.6265920000000023,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrksumpt": 3.5175040000000024,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.objectLinks": 1.4048879999999997,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.overlapIndices": 1.1689450000000008,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.overlapTypes": 1.1429800000000014,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trke": 1.1790340000000015,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkkey": 0.8486110000000053,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpx": 1.1921999999999997,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpy": 1.1920320000000046,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpz": 1.194359999999996,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trksumpt": 1.177076999999997,
-    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.xAOD::AuxContainerBase": 0.0,
-    "MET_Core_AnalysisMET": 0.0,
-    "MET_Core_AnalysisMETAux.": 0.3591789999999975,
-    "MET_Core_AnalysisMETAuxDyn.mpx": 1.4399590000000444,
-    "MET_Core_AnalysisMETAuxDyn.mpy": 1.4399999999999409,
-    "MET_Core_AnalysisMETAuxDyn.name": 0.41659900000001926,
-    "MET_Core_AnalysisMETAuxDyn.source": 0.38709300000004987,
-    "MET_Core_AnalysisMETAuxDyn.sumet": 1.3561899999999696,
-    "MuonSpectrometerTrackParticles": 0.0,
-    "MuonSpectrometerTrackParticlesAux.": 0.36199299999999823,
-    "MuonSpectrometerTrackParticlesAuxDyn.d0": 1.0252919999999222,
-    "MuonSpectrometerTrackParticlesAuxDyn.definingParametersCovMatrixDiag": 5.247232000000054,
-    "MuonSpectrometerTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": 8.881402999999978,
-    "MuonSpectrometerTrackParticlesAuxDyn.phi": 1.5735639999999194,
-    "MuonSpectrometerTrackParticlesAuxDyn.qOverP": 1.3085880000000998,
-    "MuonSpectrometerTrackParticlesAuxDyn.theta": 1.534552000000076,
-    "MuonSpectrometerTrackParticlesAuxDyn.vz": 1.240842999999927,
-    "MuonSpectrometerTrackParticlesAuxDyn.z0": 1.0233230000000049,
-    "PrimaryVertices": 0.0,
-    "PrimaryVerticesAux.": 0.3573820000000012,
-    "PrimaryVerticesAuxDyn.neutralParticleLinks": 0.6652390000000423,
-    "PrimaryVerticesAuxDyn.trackParticleLinks": 20.933671000000004,
-    "PrimaryVerticesAuxDyn.vertexType": 0.6355569999999489,
-    "PrimaryVerticesAuxDyn.x": 10.820353000000068,
-    "PrimaryVerticesAuxDyn.y": 10.53288699999996,
-    "PrimaryVerticesAuxDyn.z": 13.108659999999986,
-    "TauTracks": 0.0,
-    "TauTracksAux.": 0.35558300000001,
-    "TauTracksAuxDyn.eta": 6.0792829999999185,
-    "TauTracksAuxDyn.flagSet": 0.9514639999999872,
-    "TauTracksAuxDyn.phi": 6.074325000000044,
-    "TauTracksAuxDyn.pt": 5.927622000000042,
-    "TauTracksAuxDyn.trackLinks": 2.7908240000000433,
-    "TrigConfKeys": 0.33365499999999315,
+    "AnalysisElectrons": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisElectronsAux.": {
+        "size": 0.35713499999999954,
+        "time": 0
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsECIDS": {
+        "size": 0.4582240000000013,
+        "time": 0.09307419881224632
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsECIDSResult": {
+        "size": 0.6867960000000153,
+        "time": 0.10021000728011131
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLoose": {
+        "size": 0.45622399999999175,
+        "time": 0.29069915041327477
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseBL": {
+        "size": 0.45911499999999705,
+        "time": 0.09433126822113991
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseBLIsEMValue": {
+        "size": 0.46797200000000316,
+        "time": 0.09611479192972183
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHLooseIsEMValue": {
+        "size": 0.45996500000001106,
+        "time": 0.1016310416162014
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHMedium": {
+        "size": 0.4599019999999996,
+        "time": 0.09222336858510971
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHMediumIsEMValue": {
+        "size": 0.4713509999999985,
+        "time": 0.09505349397659302
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHTight": {
+        "size": 0.458627000000007,
+        "time": 0.09347326308488846
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHTightIsEMValue": {
+        "size": 0.477532999999994,
+        "time": 0.09514259919524193
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHVeryLoose": {
+        "size": 0.45833500000000527,
+        "time": 0.09539766237139702
+    },
+    "AnalysisElectronsAuxDyn.DFCommonElectronsLHVeryLooseIsEMValue": {
+        "size": 0.4617579999999748,
+        "time": 0.09561964124441147
+    },
+    "AnalysisElectronsAuxDyn.OQ": {
+        "size": 0.5008249999999919,
+        "time": 0.09660636633634567
+    },
+    "AnalysisElectronsAuxDyn.ambiguityLink": {
+        "size": 0.38950600000001145,
+        "time": 0.14871923252940178
+    },
+    "AnalysisElectronsAuxDyn.ambiguityLink/AnalysisElectronsAuxDyn.ambiguityLink.m_persIndex": {
+        "size": 0.20048300000001973,
+        "time": 0.06855852901935577
+    },
+    "AnalysisElectronsAuxDyn.ambiguityLink/AnalysisElectronsAuxDyn.ambiguityLink.m_persKey": {
+        "size": 0.18902299999999173,
+        "time": 0.0714794173836708
+    },
+    "AnalysisElectronsAuxDyn.ambiguityType": {
+        "size": 0.45593600000000833,
+        "time": 0.09272195771336555
+    },
+    "AnalysisElectronsAuxDyn.author": {
+        "size": 0.44162000000000035,
+        "time": 0.09547731280326843
+    },
+    "AnalysisElectronsAuxDyn.caloClusterLinks": {
+        "size": 0.4878870000000006,
+        "time": 0.38494136556982994
+    },
+    "AnalysisElectronsAuxDyn.charge": {
+        "size": 0.45858200000000693,
+        "time": 0.09770936518907547
+    },
+    "AnalysisElectronsAuxDyn.eta": {
+        "size": 0.6771480000000167,
+        "time": 0.10258880257606506
+    },
+    "AnalysisElectronsAuxDyn.f1": {
+        "size": 0.649799999999999,
+        "time": 0.0996209867298603
+    },
+    "AnalysisElectronsAuxDyn.m": {
+        "size": 0.430831999999981,
+        "time": 0.0970563217997551
+    },
+    "AnalysisElectronsAuxDyn.neflowisol20": {
+        "size": 0.6847640000000013,
+        "time": 0.09824695438146591
+    },
+    "AnalysisElectronsAuxDyn.phi": {
+        "size": 0.6776720000000012,
+        "time": 0.23546896502375603
+    },
+    "AnalysisElectronsAuxDyn.pt": {
+        "size": 0.66772899999998,
+        "time": 0.10340901464223862
+    },
+    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt1000": {
+        "size": 0.5642609999999877,
+        "time": 0.09603418782353401
+    },
+    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": {
+        "size": 0.5701390000000117,
+        "time": 0.09834948554635048
+    },
+    "AnalysisElectronsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVALooseCone_pt500": {
+        "size": 0.586309,
+        "time": 0.09604127332568169
+    },
+    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000": {
+        "size": 0.5864140000000191,
+        "time": 0.0975901335477829
+    },
+    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": {
+        "size": 0.5922940000000096,
+        "time": 0.09541769698262215
+    },
+    "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt500": {
+        "size": 0.6131579999999985,
+        "time": 0.0975332222878933
+    },
+    "AnalysisElectronsAuxDyn.topoetcone20": {
+        "size": 0.6878409999999917,
+        "time": 0.09598683193325996
+    },
+    "AnalysisElectronsAuxDyn.topoetcone20_CloseByCorr": {
+        "size": 0.6939749999999947,
+        "time": 0.10070082172751427
+    },
+    "AnalysisElectronsAuxDyn.topoetcone20ptCorrection": {
+        "size": 0.6884009999999989,
+        "time": 0.2755383364856243
+    },
+    "AnalysisElectronsAuxDyn.trackParticleLinks": {
+        "size": 0.5719739999999831,
+        "time": 0.3713713511824608
+    },
+    "AnalysisJets": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisJetsAux.": {
+        "size": 0.357128000000003,
+        "time": 0
+    },
+    "AnalysisJetsAuxDyn.ActiveArea4vec_eta": {
+        "size": 5.251921999999979,
+        "time": 0.08259689807891846
+    },
+    "AnalysisJetsAuxDyn.ActiveArea4vec_m": {
+        "size": 4.901682000000022,
+        "time": 0.08163880929350853
+    },
+    "AnalysisJetsAuxDyn.ActiveArea4vec_phi": {
+        "size": 5.243949999999984,
+        "time": 0.08515213429927826
+    },
+    "AnalysisJetsAuxDyn.ActiveArea4vec_pt": {
+        "size": 4.850032999999996,
+        "time": 0.0827445425093174
+    },
+    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_NTracks": {
+        "size": 1.5019589999999994,
+        "time": 0.07674464583396912
+    },
+    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksC1": {
+        "size": 3.3944329999999923,
+        "time": 0.0805383138358593
+    },
+    "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksWidth": {
+        "size": 3.7835100000000352,
+        "time": 0.2087993249297142
+    },
+    "AnalysisJetsAuxDyn.DFCommonJets_fJvt": {
+        "size": 1.6738129999999956,
+        "time": 0.07632794976234436
+    },
+    "AnalysisJetsAuxDyn.DetectorEta": {
+        "size": 5.250983000000019,
+        "time": 0.08242461457848549
+    },
+    "AnalysisJetsAuxDyn.EMFrac": {
+        "size": 5.038467999999995,
+        "time": 0.08540203049778938
+    },
+    "AnalysisJetsAuxDyn.EnergyPerSampling": {
+        "size": 38.82544200000001,
+        "time": 1.2375820577144623
+    },
+    "AnalysisJetsAuxDyn.GhostMuonSegmentCount": {
+        "size": 1.2392999999999574,
+        "time": 0.07558449357748032
+    },
+    "AnalysisJetsAuxDyn.GhostTrack": {
+        "size": 9.475653000000023,
+        "time": 3.534659493714571
+    },
+    "AnalysisJetsAuxDyn.JVFCorr": {
+        "size": 3.491510000000005,
+        "time": 0.07841956615447998
+    },
+    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_eta": {
+        "size": 5.255919000000006,
+        "time": 0.08348500728607178
+    },
+    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_m": {
+        "size": 5.126146999999975,
+        "time": 0.0845809280872345
+    },
+    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_phi": {
+        "size": 5.246426000000014,
+        "time": 0.08190732076764107
+    },
+    "AnalysisJetsAuxDyn.JetConstitScaleMomentum_pt": {
+        "size": 5.072474,
+        "time": 0.08220301568508148
+    },
+    "AnalysisJetsAuxDyn.NNJvtPass": {
+        "size": 0.7018329999999651,
+        "time": 0.09881598129868507
+    },
+    "AnalysisJetsAuxDyn.NumTrkPt1000": {
+        "size": 7.6345699999999965,
+        "time": 1.1709581054747105
+    },
+    "AnalysisJetsAuxDyn.NumTrkPt500": {
+        "size": 10.363173000000018,
+        "time": 1.1337424591183662
+    },
+    "AnalysisJetsAuxDyn.PSFrac": {
+        "size": 3.669385000000034,
+        "time": 0.08157047256827354
+    },
+    "AnalysisJetsAuxDyn.SumPtChargedPFOPt500": {
+        "size": 5.962918000000002,
+        "time": 1.0333342775702477
+    },
+    "AnalysisJetsAuxDyn.SumPtTrkPt500": {
+        "size": 30.517492999999945,
+        "time": 1.2196380943059921
+    },
+    "AnalysisJetsAuxDyn.Timing": {
+        "size": 5.3079899999999895,
+        "time": 0.08003094047307968
+    },
+    "AnalysisJetsAuxDyn.TrackWidthPt1000": {
+        "size": 16.99544800000001,
+        "time": 1.0840586237609386
+    },
+    "AnalysisJetsAuxDyn.Width": {
+        "size": 5.013805999999988,
+        "time": 0.08393139764666557
+    },
+    "AnalysisJetsAuxDyn.btaggingLink": {
+        "size": 0.9704280000000267,
+        "time": 0.17075979709625244
+    },
+    "AnalysisJetsAuxDyn.btaggingLink/AnalysisJetsAuxDyn.btaggingLink.m_persIndex": {
+        "size": 0.5898840000000121,
+        "time": 0.0819743312895298
+    },
+    "AnalysisJetsAuxDyn.btaggingLink/AnalysisJetsAuxDyn.btaggingLink.m_persKey": {
+        "size": 0.3805439999999862,
+        "time": 0.08515002205967903
+    },
+    "AnalysisJetsAuxDyn.eta": {
+        "size": 5.248647000000005,
+        "time": 0.2039148434996605
+    },
+    "AnalysisJetsAuxDyn.m": {
+        "size": 5.054321999999985,
+        "time": 0.08170629292726517
+    },
+    "AnalysisJetsAuxDyn.phi": {
+        "size": 5.239125999999999,
+        "time": 0.08334208279848099
+    },
+    "AnalysisJetsAuxDyn.pt": {
+        "size": 5.026771999999994,
+        "time": 0.08390481397509575
+    },
+    "AnalysisLargeRJets": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisLargeRJetsAux.": {
+        "size": 0.3586639999999903,
+        "time": 0
+    },
+    "AnalysisLargeRJetsAuxDyn.C2": {
+        "size": 0.9356199999999717,
+        "time": 0.10039930418133736
+    },
+    "AnalysisLargeRJetsAuxDyn.D2": {
+        "size": 0.9287000000000489,
+        "time": 0.1038217842578888
+    },
+    "AnalysisLargeRJetsAuxDyn.DetectorEta": {
+        "size": 0.9652700000000323,
+        "time": 0.10123215988278389
+    },
+    "AnalysisLargeRJetsAuxDyn.ECF1": {
+        "size": 0.929318999999964,
+        "time": 0.10239844769239426
+    },
+    "AnalysisLargeRJetsAuxDyn.ECF2": {
+        "size": 0.949512000000027,
+        "time": 0.09833987057209015
+    },
+    "AnalysisLargeRJetsAuxDyn.ECF3": {
+        "size": 0.9623159999999871,
+        "time": 0.09989357739686966
+    },
+    "AnalysisLargeRJetsAuxDyn.GN2Xv01_phbb": {
+        "size": 0.9494700000000194,
+        "time": 0.09750976786017418
+    },
+    "AnalysisLargeRJetsAuxDyn.GN2Xv01_phcc": {
+        "size": 0.9428279999999631,
+        "time": 0.099689070135355
+    },
+    "AnalysisLargeRJetsAuxDyn.GN2Xv01_pqcd": {
+        "size": 0.9304249999999001,
+        "time": 0.0986790880560875
+    },
+    "AnalysisLargeRJetsAuxDyn.GN2Xv01_ptop": {
+        "size": 0.936994000000027,
+        "time": 0.09975308179855347
+    },
+    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_eta": {
+        "size": 0.9738599999999451,
+        "time": 0.09874280914664268
+    },
+    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_m": {
+        "size": 0.9553510000000642,
+        "time": 0.0994439609348774
+    },
+    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_phi": {
+        "size": 0.9725019999999631,
+        "time": 0.09995846450328827
+    },
+    "AnalysisLargeRJetsAuxDyn.JetConstitScaleMomentum_pt": {
+        "size": 0.9410950000000184,
+        "time": 0.10358267650008202
+    },
+    "AnalysisLargeRJetsAuxDyn.Parent": {
+        "size": 0.4502549999999701,
+        "time": 0.14876900613307953
+    },
+    "AnalysisLargeRJetsAuxDyn.Parent/AnalysisLargeRJetsAuxDyn.Parent.m_persIndex": {
+        "size": 0.24899299999992763,
+        "time": 0.06918539106845856
+    },
+    "AnalysisLargeRJetsAuxDyn.Parent/AnalysisLargeRJetsAuxDyn.Parent.m_persKey": {
+        "size": 0.20126200000004246,
+        "time": 0.07131088897585869
+    },
+    "AnalysisLargeRJetsAuxDyn.Qw": {
+        "size": 0.9367879999999786,
+        "time": 0.09730358049273491
+    },
+    "AnalysisLargeRJetsAuxDyn.Split12": {
+        "size": 0.9483569999999872,
+        "time": 0.10372001305222511
+    },
+    "AnalysisLargeRJetsAuxDyn.Split23": {
+        "size": 0.941188000000011,
+        "time": 0.10388072207570076
+    },
+    "AnalysisLargeRJetsAuxDyn.Tau1_wta": {
+        "size": 0.9467940000000681,
+        "time": 0.10001471266150475
+    },
+    "AnalysisLargeRJetsAuxDyn.Tau2_wta": {
+        "size": 0.943881000000033,
+        "time": 0.09859253093600273
+    },
+    "AnalysisLargeRJetsAuxDyn.Tau3_wta": {
+        "size": 0.9402489999999943,
+        "time": 0.09970660135149956
+    },
+    "AnalysisLargeRJetsAuxDyn.constituentLinks": {
+        "size": 5.000248000000056,
+        "time": 243.16674640402198
+    },
+    "AnalysisLargeRJetsAuxDyn.eta": {
+        "size": 0.9611130000000685,
+        "time": 0.1011791042983532
+    },
+    "AnalysisLargeRJetsAuxDyn.m": {
+        "size": 0.9428080000000136,
+        "time": 0.10055039823055267
+    },
+    "AnalysisLargeRJetsAuxDyn.phi": {
+        "size": 0.9597739999999249,
+        "time": 0.0972265899181366
+    },
+    "AnalysisLargeRJetsAuxDyn.pt": {
+        "size": 0.9265529999998989,
+        "time": 0.09692157059907913
+    },
+    "AnalysisMuons": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisMuonsAux.": {
+        "size": 0.3566100000000034,
+        "time": 0
+    },
+    "AnalysisMuonsAuxDyn.CaloLRLikelihood": {
+        "size": 0.6112009999999941,
+        "time": 0.09874840825796127
+    },
+    "AnalysisMuonsAuxDyn.CaloMuonIDTag": {
+        "size": 0.4859569999999849,
+        "time": 0.09523552656173706
+    },
+    "AnalysisMuonsAuxDyn.CaloMuonScore": {
+        "size": 0.5434000000000196,
+        "time": 0.09922396764159203
+    },
+    "AnalysisMuonsAuxDyn.DFCommonJetDr": {
+        "size": 0.7493580000000293,
+        "time": 0.1663333773612976
+    },
+    "AnalysisMuonsAuxDyn.DFCommonMuonPassIDCuts": {
+        "size": 0.45192700000001196,
+        "time": 0.09641207382082939
+    },
+    "AnalysisMuonsAuxDyn.DFCommonMuonPassPreselection": {
+        "size": 0.45499399999999923,
+        "time": 0.09164849668741226
+    },
+    "AnalysisMuonsAuxDyn.EnergyLoss": {
+        "size": 0.7175730000000158,
+        "time": 0.09770749881863594
+    },
+    "AnalysisMuonsAuxDyn.InnerDetectorPt": {
+        "size": 0.7439789999999675,
+        "time": 0.09839804843068123
+    },
+    "AnalysisMuonsAuxDyn.MuonSpectrometerPt": {
+        "size": 0.7387850000000071,
+        "time": 0.10145718231797218
+    },
+    "AnalysisMuonsAuxDyn.allAuthors": {
+        "size": 0.49118500000002996,
+        "time": 0.21552085876464844
+    },
+    "AnalysisMuonsAuxDyn.author": {
+        "size": 0.44247500000000173,
+        "time": 0.09883736446499825
+    },
+    "AnalysisMuonsAuxDyn.charge": {
+        "size": 0.47096299999998337,
+        "time": 0.0978657566010952
+    },
+    "AnalysisMuonsAuxDyn.clusterLink": {
+        "size": 0.39008799999999155,
+        "time": 0.14131516218185425
+    },
+    "AnalysisMuonsAuxDyn.clusterLink/AnalysisMuonsAuxDyn.clusterLink.m_persIndex": {
+        "size": 0.2089990000000057,
+        "time": 0.06909607350826263
+    },
+    "AnalysisMuonsAuxDyn.clusterLink/AnalysisMuonsAuxDyn.clusterLink.m_persKey": {
+        "size": 0.18108899999998584,
+        "time": 0.06898261979222298
+    },
+    "AnalysisMuonsAuxDyn.combinedTrackOutBoundsPrecisionHits": {
+        "size": 0.45676400000002104,
+        "time": 0.1012253649532795
+    },
+    "AnalysisMuonsAuxDyn.combinedTrackParticleLink": {
+        "size": 0.4073139999999853,
+        "time": 0.14116504043340683
+    },
+    "AnalysisMuonsAuxDyn.combinedTrackParticleLink/AnalysisMuonsAuxDyn.combinedTrackParticleLink.m_persIndex": {
+        "size": 0.2160470000000032,
+        "time": 0.07021789252758026
+    },
+    "AnalysisMuonsAuxDyn.combinedTrackParticleLink/AnalysisMuonsAuxDyn.combinedTrackParticleLink.m_persKey": {
+        "size": 0.19126700000003893,
+        "time": 0.06750570610165596
+    },
+    "AnalysisMuonsAuxDyn.cscEtaHits": {
+        "size": 0.4556670000000054,
+        "time": 0.09415530413389206
+    },
+    "AnalysisMuonsAuxDyn.cscUnspoiledEtaHits": {
+        "size": 0.4613459999999918,
+        "time": 0.09453361853957176
+    },
+    "AnalysisMuonsAuxDyn.energyLossType": {
+        "size": 0.4634009999999762,
+        "time": 0.09728224948048592
+    },
+    "AnalysisMuonsAuxDyn.eta": {
+        "size": 0.7473360000000184,
+        "time": 0.0961969904601574
+    },
+    "AnalysisMuonsAuxDyn.extendedClosePrecisionHits": {
+        "size": 0.4665409999999497,
+        "time": 0.0953257754445076
+    },
+    "AnalysisMuonsAuxDyn.extendedLargeHits": {
+        "size": 0.45593500000001086,
+        "time": 0.19636845961213112
+    },
+    "AnalysisMuonsAuxDyn.extendedLargeHoles": {
+        "size": 0.44894900000002735,
+        "time": 0.09503863006830215
+    },
+    "AnalysisMuonsAuxDyn.extendedOutBoundsPrecisionHits": {
+        "size": 0.4540420000000154,
+        "time": 0.09400342032313347
+    },
+    "AnalysisMuonsAuxDyn.extendedSmallHits": {
+        "size": 0.4566209999999842,
+        "time": 0.09596280753612518
+    },
+    "AnalysisMuonsAuxDyn.extendedSmallHoles": {
+        "size": 0.44851499999998623,
+        "time": 0.09376653283834457
+    },
+    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink": {
+        "size": 0.4374710000000164,
+        "time": 0.1456778608262539
+    },
+    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink.m_persIndex": {
+        "size": 0.22881799999998975,
+        "time": 0.07049386575818062
+    },
+    "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink.m_persKey": {
+        "size": 0.20865299999996978,
+        "time": 0.06721513345837593
+    },
+    "AnalysisMuonsAuxDyn.inDetTrackParticleLink": {
+        "size": 0.4435949999999593,
+        "time": 0.24083957821130753
+    },
+    "AnalysisMuonsAuxDyn.inDetTrackParticleLink/AnalysisMuonsAuxDyn.inDetTrackParticleLink.m_persIndex": {
+        "size": 0.25426399999997784,
+        "time": 0.07117214798927307
+    },
+    "AnalysisMuonsAuxDyn.inDetTrackParticleLink/AnalysisMuonsAuxDyn.inDetTrackParticleLink.m_persKey": {
+        "size": 0.18933100000003833,
+        "time": 0.06651012971997261
+    },
+    "AnalysisMuonsAuxDyn.innerClosePrecisionHits": {
+        "size": 0.5180460000000267,
+        "time": 0.09569794684648514
+    },
+    "AnalysisMuonsAuxDyn.innerLargeHits": {
+        "size": 0.49865699999998014,
+        "time": 0.09543366730213165
+    },
+    "AnalysisMuonsAuxDyn.innerLargeHoles": {
+        "size": 0.45946700000001783,
+        "time": 0.09586357325315475
+    },
+    "AnalysisMuonsAuxDyn.innerOutBoundsPrecisionHits": {
+        "size": 0.45246499999996104,
+        "time": 0.09539507701992989
+    },
+    "AnalysisMuonsAuxDyn.innerSmallHits": {
+        "size": 0.4846350000000257,
+        "time": 0.09786971658468246
+    },
+    "AnalysisMuonsAuxDyn.innerSmallHoles": {
+        "size": 0.4546139999999923,
+        "time": 0.0949949249625206
+    },
+    "AnalysisMuonsAuxDyn.isEndcapGoodLayers": {
+        "size": 0.4667910000000006,
+        "time": 0.09220951423048973
+    },
+    "AnalysisMuonsAuxDyn.isSmallGoodSectors": {
+        "size": 0.4661720000000287,
+        "time": 0.09347476437687874
+    },
+    "AnalysisMuonsAuxDyn.middleClosePrecisionHits": {
+        "size": 0.5079529999999863,
+        "time": 0.09411788731813431
+    },
+    "AnalysisMuonsAuxDyn.middleLargeHits": {
+        "size": 0.4913999999999987,
+        "time": 0.09623908624053001
+    },
+    "AnalysisMuonsAuxDyn.middleLargeHoles": {
+        "size": 0.4558600000000297,
+        "time": 0.09475957229733467
+    },
+    "AnalysisMuonsAuxDyn.middleOutBoundsPrecisionHits": {
+        "size": 0.452871000000016,
+        "time": 0.16826245561242104
+    },
+    "AnalysisMuonsAuxDyn.middleSmallHits": {
+        "size": 0.4779310000000123,
+        "time": 0.09535085037350655
+    },
+    "AnalysisMuonsAuxDyn.middleSmallHoles": {
+        "size": 0.45202399999999443,
+        "time": 0.09354022890329361
+    },
+    "AnalysisMuonsAuxDyn.momentumBalanceSignificance": {
+        "size": 0.7667069999999967,
+        "time": 0.09801391512155533
+    },
+    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink": {
+        "size": 0.45757900000000973,
+        "time": 0.2777395397424698
+    },
+    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink.m_persIndex": {
+        "size": 0.2348039999999969,
+        "time": 0.07049453258514404
+    },
+    "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink.m_persKey": {
+        "size": 0.22277500000001282,
+        "time": 0.06755739077925682
+    },
+    "AnalysisMuonsAuxDyn.muonSegmentLinks": {
+        "size": 0.810401000000013,
+        "time": 0.23779237642884254
+    },
+    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink": {
+        "size": 0.43986300000000256,
+        "time": 0.14781108498573303
+    },
+    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink.m_persIndex": {
+        "size": 0.23020600000000968,
+        "time": 0.07147246599197388
+    },
+    "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink/AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink.m_persKey": {
+        "size": 0.20965699999999288,
+        "time": 0.06966530159115791
+    },
+    "AnalysisMuonsAuxDyn.muonType": {
+        "size": 0.4349809999999934,
+        "time": 0.094682727009058
+    },
+    "AnalysisMuonsAuxDyn.neflowisol20": {
+        "size": 0.7531270000000063,
+        "time": 0.09677561745047569
+    },
+    "AnalysisMuonsAuxDyn.neflowisol20_CloseByCorr": {
+        "size": 0.7582879999999932,
+        "time": 0.09751569852232933
+    },
+    "AnalysisMuonsAuxDyn.numberOfGoodPrecisionLayers": {
+        "size": 0.47904099999999517,
+        "time": 0.09262824058532715
+    },
+    "AnalysisMuonsAuxDyn.numberOfPrecisionHoleLayers": {
+        "size": 0.4622259999999869,
+        "time": 0.0923301987349987
+    },
+    "AnalysisMuonsAuxDyn.numberOfPrecisionLayers": {
+        "size": 0.47850199999999177,
+        "time": 0.09426618367433548
+    },
+    "AnalysisMuonsAuxDyn.outerClosePrecisionHits": {
+        "size": 0.4969869999999901,
+        "time": 0.0947343148291111
+    },
+    "AnalysisMuonsAuxDyn.outerLargeHits": {
+        "size": 0.4864460000000008,
+        "time": 0.09441851451992989
+    },
+    "AnalysisMuonsAuxDyn.outerLargeHoles": {
+        "size": 0.45336800000001176,
+        "time": 0.09310173988342285
+    },
+    "AnalysisMuonsAuxDyn.outerOutBoundsPrecisionHits": {
+        "size": 0.45248400000002675,
+        "time": 0.09390782564878464
+    },
+    "AnalysisMuonsAuxDyn.outerSmallHits": {
+        "size": 0.4738469999999779,
+        "time": 0.0943780355155468
+    },
+    "AnalysisMuonsAuxDyn.outerSmallHoles": {
+        "size": 0.4499619999999709,
+        "time": 0.09576873108744621
+    },
+    "AnalysisMuonsAuxDyn.phi": {
+        "size": 0.7497299999999996,
+        "time": 0.09561584889888763
+    },
+    "AnalysisMuonsAuxDyn.pt": {
+        "size": 0.7358530000000201,
+        "time": 0.09699179232120514
+    },
+    "AnalysisMuonsAuxDyn.ptcone20": {
+        "size": 0.608731999999975,
+        "time": 0.0988149531185627
+    },
+    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt1000": {
+        "size": 0.6286359999999718,
+        "time": 0.09770415723323822
+    },
+    "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt500": {
+        "size": 0.6495030000000384,
+        "time": 0.09865538403391838
+    },
+    "AnalysisMuonsAuxDyn.ptcone30": {
+        "size": 0.6353859999999827,
+        "time": 0.09733982384204865
+    },
+    "AnalysisMuonsAuxDyn.ptcone40": {
+        "size": 0.6569739999999911,
+        "time": 0.0968339592218399
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone20": {
+        "size": 0.6111880000000269,
+        "time": 0.09616603329777718
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone30": {
+        "size": 0.6355419999999867,
+        "time": 0.16242964938282967
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000": {
+        "size": 0.6536060000000248,
+        "time": 0.09573836997151375
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000_CloseByCorr": {
+        "size": 0.6564040000000091,
+        "time": 0.09555899351835251
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500": {
+        "size": 0.6829639999999699,
+        "time": 0.1657877415418625
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500_CloseByCorr": {
+        "size": 0.6869370000000004,
+        "time": 0.09717588126659393
+    },
+    "AnalysisMuonsAuxDyn.ptvarcone40": {
+        "size": 0.6514080000000035,
+        "time": 0.09710103273391724
+    },
+    "AnalysisMuonsAuxDyn.quality": {
+        "size": 0.4626480000000015,
+        "time": 0.09791992232203484
+    },
+    "AnalysisMuonsAuxDyn.scatteringCurvatureSignificance": {
+        "size": 0.7607120000000123,
+        "time": 0.23293717205524445
+    },
+    "AnalysisMuonsAuxDyn.scatteringNeighbourSignificance": {
+        "size": 0.7596050000000218,
+        "time": 0.0978124737739563
+    },
+    "AnalysisMuonsAuxDyn.segmentDeltaEta": {
+        "size": 0.7516449999999963,
+        "time": 0.09567797183990479
+    },
+    "AnalysisMuonsAuxDyn.spectrometerFieldIntegral": {
+        "size": 0.7218530000000101,
+        "time": 0.0974646508693695
+    },
+    "AnalysisMuonsAuxDyn.topoetcone20": {
+        "size": 0.7579830000000243,
+        "time": 0.09638888388872147
+    },
+    "AnalysisMuonsAuxDyn.topoetcone20_CloseByCorr": {
+        "size": 0.7638539999999807,
+        "time": 0.09661181643605232
+    },
+    "AnalysisMuonsAuxDyn.topoetcone30": {
+        "size": 0.7571309999999585,
+        "time": 0.09700009971857071
+    },
+    "AnalysisMuonsAuxDyn.topoetcone40": {
+        "size": 0.7564649999999915,
+        "time": 0.09613629058003426
+    },
+    "AnalysisPhotons": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisPhotonsAux.": {
+        "size": 0.3573820000000012,
+        "time": 0
+    },
+    "AnalysisPhotonsAuxDyn.DFCommonPhotonsCleaning": {
+        "size": 0.5501110000000153,
+        "time": 0.10525031760334969
+    },
+    "AnalysisPhotonsAuxDyn.DFCommonPhotonsCleaningNoTime": {
+        "size": 0.5531300000000101,
+        "time": 0.09779943898320198
+    },
+    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMLoose": {
+        "size": 0.5818840000000023,
+        "time": 0.10028070211410522
+    },
+    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMTight": {
+        "size": 0.633972999999969,
+        "time": 0.09847594425082207
+    },
+    "AnalysisPhotonsAuxDyn.DFCommonPhotonsIsEMTightIsEMValue": {
+        "size": 1.1618119999999976,
+        "time": 0.10462922230362892
+    },
+    "AnalysisPhotonsAuxDyn.OQ": {
+        "size": 1.1145399999999768,
+        "time": 0.10593821853399277
+    },
+    "AnalysisPhotonsAuxDyn.ambiguityLink": {
+        "size": 1.0026919999999677,
+        "time": 0.16951733082532883
+    },
+    "AnalysisPhotonsAuxDyn.ambiguityLink/AnalysisPhotonsAuxDyn.ambiguityLink.m_persIndex": {
+        "size": 0.541924999999992,
+        "time": 0.07657298073172569
+    },
+    "AnalysisPhotonsAuxDyn.ambiguityLink/AnalysisPhotonsAuxDyn.ambiguityLink.m_persKey": {
+        "size": 0.46076700000003257,
+        "time": 0.07641110941767693
+    },
+    "AnalysisPhotonsAuxDyn.author": {
+        "size": 0.6299129999999877,
+        "time": 0.10094339400529861
+    },
+    "AnalysisPhotonsAuxDyn.caloClusterLinks": {
+        "size": 0.6888150000000337,
+        "time": 0.31958745419979095
+    },
+    "AnalysisPhotonsAuxDyn.eta": {
+        "size": 2.4752060000000142,
+        "time": 0.11277133226394653
+    },
+    "AnalysisPhotonsAuxDyn.f1": {
+        "size": 2.3881620000000225,
+        "time": 0.17199690267443657
+    },
+    "AnalysisPhotonsAuxDyn.m": {
+        "size": 0.5669640000000413,
+        "time": 0.1015998013317585
+    },
+    "AnalysisPhotonsAuxDyn.phi": {
+        "size": 2.469799999999964,
+        "time": 0.11265990510582924
+    },
+    "AnalysisPhotonsAuxDyn.pt": {
+        "size": 2.3747510000000034,
+        "time": 0.11429110914468765
+    },
+    "AnalysisPhotonsAuxDyn.ptcone20": {
+        "size": 1.0911099999999578,
+        "time": 0.10424570366740227
+    },
+    "AnalysisPhotonsAuxDyn.ptcone20_CloseByCorr": {
+        "size": 1.0933160000000157,
+        "time": 0.10353536531329155
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone20": {
+        "size": 2.4817820000000097,
+        "time": 0.17253615334630013
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone20_CloseByCorr": {
+        "size": 2.494327999999996,
+        "time": 0.11479898914694786
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone20ptCorrection": {
+        "size": 2.333330999999987,
+        "time": 0.10889838635921478
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone40": {
+        "size": 2.485791000000006,
+        "time": 0.10885108634829521
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone40_CloseByCorr": {
+        "size": 2.4859199999999646,
+        "time": 0.10483366623520851
+    },
+    "AnalysisPhotonsAuxDyn.topoetcone40ptCorrection": {
+        "size": 2.3259499999999775,
+        "time": 0.10724193975329399
+    },
+    "AnalysisPhotonsAuxDyn.vertexLinks": {
+        "size": 0.6709330000000477,
+        "time": 0.3788975030183792
+    },
+    "AnalysisSiHitElectrons": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisSiHitElectronsAux.": {
+        "size": 0.3596900000000005,
+        "time": 0
+    },
+    "AnalysisSiHitElectronsAuxDyn.DFCommonElectronsLHVeryLoose": {
+        "size": 0.47907700000001796,
+        "time": 0.09575103595852852
+    },
+    "AnalysisSiHitElectronsAuxDyn.OQ": {
+        "size": 0.6787579999999593,
+        "time": 0.1581583023071289
+    },
+    "AnalysisSiHitElectronsAuxDyn.author": {
+        "size": 0.5170190000000048,
+        "time": 0.10106111690402031
+    },
+    "AnalysisSiHitElectronsAuxDyn.charge": {
+        "size": 0.5373390000000313,
+        "time": 0.10178885608911514
+    },
+    "AnalysisSiHitElectronsAuxDyn.clEta": {
+        "size": 1.2025820000000067,
+        "time": 0.10144191607832909
+    },
+    "AnalysisSiHitElectronsAuxDyn.clPhi": {
+        "size": 1.2008710000000065,
+        "time": 0.10126055032014847
+    },
+    "AnalysisSiHitElectronsAuxDyn.d0Normalized": {
+        "size": 1.1892619999999852,
+        "time": 0.102513387799263
+    },
+    "AnalysisSiHitElectronsAuxDyn.eta": {
+        "size": 1.1925400000000081,
+        "time": 0.1042594164609909
+    },
+    "AnalysisSiHitElectronsAuxDyn.m": {
+        "size": 0.4714089999999942,
+        "time": 0.10052058473229408
+    },
+    "AnalysisSiHitElectronsAuxDyn.nInnerExpPix": {
+        "size": 0.5116199999999935,
+        "time": 0.0981777273118496
+    },
+    "AnalysisSiHitElectronsAuxDyn.phi": {
+        "size": 1.191176999999982,
+        "time": 0.16197621077299118
+    },
+    "AnalysisSiHitElectronsAuxDyn.pt": {
+        "size": 1.1732529999999883,
+        "time": 0.10720308497548103
+    },
+    "AnalysisSiHitElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt1000_CloseByCorr": {
+        "size": 0.9595679999999902,
+        "time": 0.1040973924100399
+    },
+    "AnalysisSiHitElectronsAuxDyn.topoetcone20_CloseByCorr": {
+        "size": 1.2171010000000138,
+        "time": 0.10201483592391014
+    },
+    "AnalysisSiHitElectronsAuxDyn.z0stheta": {
+        "size": 1.215976000000012,
+        "time": 0.10323040187358856
+    },
+    "AnalysisTauJets": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTauJetsAux.": {
+        "size": 0.3573820000000012,
+        "time": 0
+    },
+    "AnalysisTauJetsAuxDyn.EleRNNLoose_v1": {
+        "size": 0.48216899999999896,
+        "time": 0.09841518104076385
+    },
+    "AnalysisTauJetsAuxDyn.EleRNNMedium_v1": {
+        "size": 0.4860530000000267,
+        "time": 0.09615132212638855
+    },
+    "AnalysisTauJetsAuxDyn.EleRNNTight_v1": {
+        "size": 0.4862630000000081,
+        "time": 0.09305711090564728
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetLoose": {
+        "size": 0.47813500000000886,
+        "time": 0.09798233583569527
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetMedium": {
+        "size": 0.4752480000000219,
+        "time": 0.09357348829507828
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetScore": {
+        "size": 0.922347000000002,
+        "time": 0.09853751957416534
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetScoreTrans": {
+        "size": 0.8974929999999972,
+        "time": 0.09879639372229576
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetTight": {
+        "size": 0.47086000000001604,
+        "time": 0.09426765516400337
+    },
+    "AnalysisTauJetsAuxDyn.JetDeepSetVeryLoose": {
+        "size": 0.48684199999996736,
+        "time": 0.09964673966169357
+    },
+    "AnalysisTauJetsAuxDyn.NNDecayMode": {
+        "size": 0.521995000000004,
+        "time": 0.09847624599933624
+    },
+    "AnalysisTauJetsAuxDyn.PanTau_DecayMode": {
+        "size": 0.5262899999999604,
+        "time": 0.09712865948677063
+    },
+    "AnalysisTauJetsAuxDyn.RNNEleScore": {
+        "size": 0.8565740000000233,
+        "time": 0.0984809435904026
+    },
+    "AnalysisTauJetsAuxDyn.RNNEleScoreSigTrans_v1": {
+        "size": 0.9024489999999901,
+        "time": 0.0992150641977787
+    },
+    "AnalysisTauJetsAuxDyn.RNNJetScore": {
+        "size": 0.9180840000000217,
+        "time": 0.09782768413424492
+    },
+    "AnalysisTauJetsAuxDyn.RNNJetScoreSigTrans": {
+        "size": 0.8987549999999942,
+        "time": 0.10032046213746071
+    },
+    "AnalysisTauJetsAuxDyn.charge": {
+        "size": 0.4988499999999476,
+        "time": 0.0996202602982521
+    },
+    "AnalysisTauJetsAuxDyn.eta": {
+        "size": 0.9093379999999911,
+        "time": 0.1043938398361206
+    },
+    "AnalysisTauJetsAuxDyn.etaFinalCalib": {
+        "size": 0.9149289999999723,
+        "time": 0.09923075884580612
+    },
+    "AnalysisTauJetsAuxDyn.etaTauEnergyScale": {
+        "size": 0.9169790000000262,
+        "time": 0.0985541120171547
+    },
+    "AnalysisTauJetsAuxDyn.isTauFlags": {
+        "size": 0.5187660000000278,
+        "time": 0.09679492190480232
+    },
+    "AnalysisTauJetsAuxDyn.m": {
+        "size": 0.4507520000000227,
+        "time": 0.09874563291668892
+    },
+    "AnalysisTauJetsAuxDyn.phi": {
+        "size": 0.9096829999999727,
+        "time": 0.10415070131421089
+    },
+    "AnalysisTauJetsAuxDyn.pt": {
+        "size": 0.8829860000000167,
+        "time": 0.10704174265265465
+    },
+    "AnalysisTauJetsAuxDyn.ptFinalCalib": {
+        "size": 0.8883739999999989,
+        "time": 0.16232133656740189
+    },
+    "AnalysisTauJetsAuxDyn.ptTauEnergyScale": {
+        "size": 0.895973999999967,
+        "time": 0.10379054397344589
+    },
+    "AnalysisTauJetsAuxDyn.tauTrackLinks": {
+        "size": 1.2614680000000362,
+        "time": 0.6998999677598476
+    },
+    "AnalysisTauJetsAuxDyn.vertexLink": {
+        "size": 0.49497000000002345,
+        "time": 0.14707738161087036
+    },
+    "AnalysisTauJetsAuxDyn.vertexLink/AnalysisTauJetsAuxDyn.vertexLink.m_persIndex": {
+        "size": 0.2672640000000115,
+        "time": 0.07000045850872993
+    },
+    "AnalysisTauJetsAuxDyn.vertexLink/AnalysisTauJetsAuxDyn.vertexLink.m_persKey": {
+        "size": 0.2277059999999551,
+        "time": 0.0699368417263031
+    },
+    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10Aux.": {
+        "size": 0.36532599999999604,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e12_lhloose_nod0_mu10AuxDyn.TrigMatchedObjects": {
+        "size": 0.38153699999998025,
+        "time": 9.804885145276785
+    },
+    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0Aux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHI": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHIAux.": {
+        "size": 0.3660909999999973,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e17_lhvloose_nod0_L12EM15VHIAuxDyn.TrigMatchedObjects": {
+        "size": 0.4031049999999823,
+        "time": 7.267113771289587
+    },
+    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0Aux.": {
+        "size": 0.36455499999999574,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2e24_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3961420000000544,
+        "time": 7.413520608097315
+    },
+    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHI": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHIAux.": {
+        "size": 0.36787900000000207,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g20_tight_icalovloose_L12EM15VHIAuxDyn.TrigMatchedObjects": {
+        "size": 0.3971950000000106,
+        "time": 7.137856192886829
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tightAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHI": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHIAux.": {
+        "size": 0.36429199999999184,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L12EM15VHIAuxDyn.TrigMatchedObjects": {
+        "size": 0.3914159999999356,
+        "time": 7.106440108269453
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_EMPTYAux.": {
+        "size": 0.36532600000001025,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_UNPAIRED_ISO": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_L1EM7_UNPAIRED_ISOAux.": {
+        "size": 0.3660909999999973,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_icalovloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g22_tight_icalovlooseAux.": {
+        "size": 0.36532599999999604,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g25_loose_g15_loose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g25_loose_g15_looseAux.": {
+        "size": 0.36506199999999467,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g25_loose_g15_looseAuxDyn.TrigMatchedObjects": {
+        "size": 0.3786920000000009,
+        "time": 10.857768766582012
+    },
+    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VHAux.": {
+        "size": 0.3650620000000089,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g25_tight_L12EM20VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.3902769999999691,
+        "time": 7.24920317530632
+    },
+    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VHAux.": {
+        "size": 0.36506199999999467,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2g50_loose_L12EM20VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.38600700000006327,
+        "time": 7.232563264667988
+    },
+    "AnalysisTrigMatch_HLT_2mu14": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu14Aux.": {
+        "size": 0.3599449999999962,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu14AuxDyn.TrigMatchedObjects": {
+        "size": 0.3973200000000361,
+        "time": 7.42086049541831
+    },
+    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAYAux.": {
+        "size": 0.36429200000000606,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu20_L12MU20_OVERLAYAuxDyn.TrigMatchedObjects": {
+        "size": 0.3920140000000174,
+        "time": 7.149842884391546
+    },
+    "AnalysisTrigMatch_HLT_2mu4_bJpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu4_bJpsimumuAux.": {
+        "size": 0.36377600000000143,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu4_bUpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu4_bUpsimumuAux.": {
+        "size": 0.36377600000000143,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu6_bJpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu6_bJpsimumuAux.": {
+        "size": 0.36377600000000143,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu6_bUpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_2mu6_bUpsimumuAux.": {
+        "size": 0.36377600000000143,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3g20_loose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3g20_looseAux.": {
+        "size": 0.3622559999999879,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu3_mu3noL1_L13MU4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu3_mu3noL1_L13MU4Aux.": {
+        "size": 0.36378000000000554,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu4Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu4_mu2noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu4_mu2noL1Aux.": {
+        "size": 0.36277200000000676,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6AuxDyn.TrigMatchedObjects": {
+        "size": 0.3766889999999421,
+        "time": 7.1161641255021095
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonly": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonlyAux.": {
+        "size": 0.36173300000000097,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonlyAuxDyn.TrigMatchedObjects": {
+        "size": 0.3836319999999205,
+        "time": 7.197270516306162
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU4_UNPAIRED_ISO": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU4_UNPAIRED_ISOAux.": {
+        "size": 0.3676280000000105,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU6_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_3mu6_msonly_L1MU6_EMPTYAux.": {
+        "size": 0.3648029999999949,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_4mu4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_4mu4Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_4mu4AuxDyn.TrigMatchedObjects": {
+        "size": 0.36958899999990535,
+        "time": 7.309001859277487
+    },
+    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0Aux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e100_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3875319999999647,
+        "time": 7.110179461538792
+    },
+    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7Aux.": {
+        "size": 0.3648029999999949,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e10_lhvloose_nod0_L1EM7AuxDyn.TrigMatchedObjects": {
+        "size": 0.44990699999999606,
+        "time": 0.38973816856741905
+    },
+    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0Aux.": {
+        "size": 0.36455499999999574,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e120_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3844460000000254,
+        "time": 7.324932377785444
+    },
+    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10Aux.": {
+        "size": 0.36532600000001025,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e12_lhloose_nod0_2mu10AuxDyn.TrigMatchedObjects": {
+        "size": 0.3816460000000461,
+        "time": 8.944157298654318
+    },
+    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VHAux.": {
+        "size": 0.36736799999999903,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e12_lhvloose_nod0_L1EM10VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.45076399999993555,
+        "time": 10.452104341238737
+    },
+    "AnalysisTrigMatch_HLT_e140_lhloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e140_lhloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e140_lhloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3824680000000171,
+        "time": 7.140758220106363
+    },
+    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0Aux.": {
+        "size": 0.36455499999999574,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e140_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3799059999998917,
+        "time": 7.909656286239624
+    },
+    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7Aux.": {
+        "size": 0.3648029999999949,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e15_lhvloose_nod0_L1EM7AuxDyn.TrigMatchedObjects": {
+        "size": 0.44882800000004863,
+        "time": 10.246011134237051
+    },
+    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0Aux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e160_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.37936899999999696,
+        "time": 7.821621160954237
+    },
+    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_2e12_lhloose_nod0_L1EM15VH_3EM10VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_2e12_lhloose_nod0_L1EM15VH_3EM10VHAux.": {
+        "size": 0.3722269999999952,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14Aux.": {
+        "size": 0.36429199999999184,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhloose_nod0_mu14AuxDyn.TrigMatchedObjects": {
+        "size": 0.3887160000000449,
+        "time": 7.115300428122282
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoAux.": {
+        "size": 0.3729950000000031,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoAuxDyn.TrigMatchedObjects": {
+        "size": 0.4215110000000095,
+        "time": 7.534260533750057
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEFAux.": {
+        "size": 0.37350899999999854,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": {
+        "size": 0.42451900000014575,
+        "time": 7.543782718479633
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25Aux.": {
+        "size": 0.37837900000000957,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.43069199999990815,
+        "time": 7.369635589420795
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12Aux.": {
+        "size": 0.38067099999999243,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwoEF_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.4209779999998773,
+        "time": 7.298865526914597
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25Aux.": {
+        "size": 0.37836699999999723,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.4280579999999645,
+        "time": 7.453600432723761
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12Aux.": {
+        "size": 0.37914700000000323,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_medium1_tracktwo_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.41928699999994024,
+        "time": 7.22483417019248
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVAAux.": {
+        "size": 0.3730040000000088,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": {
+        "size": 0.42579399999999623,
+        "time": 7.497514698654413
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25Aux.": {
+        "size": 0.37787199999999643,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-EM15TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.43194800000014766,
+        "time": 7.420630343258381
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12Aux.": {
+        "size": 0.37914599999999155,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_ivarloose_tau25_mediumRNN_tracktwoMVA_L1EM15VHI_2TAU12IM_4J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.4241100000001552,
+        "time": 7.254647567868233
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_tau80_medium1_tracktwo": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhmedium_nod0_tau80_medium1_tracktwoAux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e17_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.4438319999999294,
+        "time": 10.161849521100521
+    },
+    "AnalysisTrigMatch_HLT_e200_etcut": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e200_etcutAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e200_etcutAuxDyn.TrigMatchedObjects": {
+        "size": 0.37507499999992433,
+        "time": 8.325690004974604
+    },
+    "AnalysisTrigMatch_HLT_e20_lhvloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e20_lhvlooseAux.": {
+        "size": 0.36277200000000676,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e20_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.44339400000001206,
+        "time": 10.179729472845793
+    },
+    "AnalysisTrigMatch_HLT_e22_lhvloose_nod0_e12_lhvloose_nod0_e10_lhvloose_nod0_L1EM20VH_2EM10VH_3EM8VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e22_lhvloose_nod0_e12_lhvloose_nod0_e10_lhvloose_nod0_L1EM20VH_2EM10VH_3EM8VHAux.": {
+        "size": 0.37863299999999356,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwo": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoAux.": {
+        "size": 0.3729950000000031,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoAuxDyn.TrigMatchedObjects": {
+        "size": 0.40854399999989255,
+        "time": 7.304869998246431
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEF": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEFAux.": {
+        "size": 0.37350899999999854,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": {
+        "size": 0.4117670000000544,
+        "time": 7.3321141712367535
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVA": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVAAux.": {
+        "size": 0.37300399999999456,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhmedium_nod0_ivarloose_tau35_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": {
+        "size": 0.41277800000011666,
+        "time": 7.335975099354982
+    },
+    "AnalysisTrigMatch_HLT_e24_lhtight_nod0_ivarloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhtight_nod0_ivarlooseAux.": {
+        "size": 0.36736799999999903,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VHAux.": {
+        "size": 0.3732450000000114,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e24_lhvloose_nod0_2e12_lhvloose_nod0_L1EM20VH_3EM10VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.39797600000019884,
+        "time": 7.702215064316988
+    },
+    "AnalysisTrigMatch_HLT_e26_lhloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhloose_nod0Aux.": {
+        "size": 0.3640359999999987,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1Aux.": {
+        "size": 0.3650650000000013,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhmedium_nod0_mu8noL1AuxDyn.TrigMatchedObjects": {
+        "size": 0.3788170000000264,
+        "time": 19.39366514980793
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0Aux.": {
+        "size": 0.3640359999999987,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.4372839999999769,
+        "time": 9.636407475918531
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_Zee": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_ZeeAux.": {
+        "size": 0.36915899999999624,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_e15_etcut_L1EM7_ZeeAuxDyn.TrigMatchedObjects": {
+        "size": 0.4117039999999861,
+        "time": 7.291164889931679
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarlooseAux.": {
+        "size": 0.36736799999999903,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e26_lhtight_nod0_ivarlooseAuxDyn.TrigMatchedObjects": {
+        "size": 0.4397480000000087,
+        "time": 9.367748741060495
+    },
+    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_L1EM22VHI": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_L1EM22VHIAux.": {
+        "size": 0.36736799999999903,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_noringer_ivarloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhtight_nod0_noringer_ivarlooseAux.": {
+        "size": 0.3678770000000071,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VHAux.": {
+        "size": 0.36736799999999903,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e28_lhvloose_nod0_L1EM22VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.38427599999999984,
+        "time": 7.002423822879791
+    },
+    "AnalysisTrigMatch_HLT_e300_etcut": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e300_etcutAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e300_etcutAuxDyn.TrigMatchedObjects": {
+        "size": 0.37891899999999623,
+        "time": 7.152369990944862
+    },
+    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0Aux.": {
+        "size": 0.3640359999999987,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e5_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.4498829999999998,
+        "time": 0.33556316047906876
+    },
+    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e60_lhmedium_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3971549999999979,
+        "time": 7.2759043499827385
+    },
+    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e60_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3801770000000033,
+        "time": 7.358068998903036
+    },
+    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e70_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.39544999999998254,
+        "time": 7.208823785185814
+    },
+    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24Aux.": {
+        "size": 0.36429199999999184,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e7_lhmedium_nod0_mu24AuxDyn.TrigMatchedObjects": {
+        "size": 0.3895689999999945,
+        "time": 0.32854723185300827
+    },
+    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0Aux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e80_lhvloose_nod0AuxDyn.TrigMatchedObjects": {
+        "size": 0.3922050000001036,
+        "time": 7.27287358418107
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1Aux.": {
+        "size": 0.3660909999999973,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1AuxDyn.TrigMatchedObjects": {
+        "size": 0.38506500000016786,
+        "time": 9.583526723086834
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20Aux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_e9_lhvloose_nod0_mu20_mu8noL1_L1EM7_MU20AuxDyn.TrigMatchedObjects": {
+        "size": 0.39186399999994137,
+        "time": 9.5199010707438
+    },
+    "AnalysisTrigMatch_HLT_g120_loose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g120_looseAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g120_looseAuxDyn.TrigMatchedObjects": {
+        "size": 0.40107399999999416,
+        "time": 7.5740427523851395
+    },
+    "AnalysisTrigMatch_HLT_g140_loose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g140_looseAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g140_looseAuxDyn.TrigMatchedObjects": {
+        "size": 0.3986010000000988,
+        "time": 7.57977282255888
+    },
+    "AnalysisTrigMatch_HLT_g200_etcut": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g200_etcutAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g200_etcutAuxDyn.TrigMatchedObjects": {
+        "size": 0.37477400000000216,
+        "time": 7.228344947099686
+    },
+    "AnalysisTrigMatch_HLT_g300_etcut": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g300_etcutAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g300_etcutAuxDyn.TrigMatchedObjects": {
+        "size": 0.3787499999998545,
+        "time": 7.25687313824892
+    },
+    "AnalysisTrigMatch_HLT_g35_loose_g25_loose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_loose_g25_looseAux.": {
+        "size": 0.36377999999999133,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VHAux.": {
+        "size": 0.3660910000000115,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_loose_g25_loose_L12EM20VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.38604000000009364,
+        "time": 7.333861161023378
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VH": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VHAux.": {
+        "size": 0.36684899999998777,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L12EM20VHAuxDyn.TrigMatchedObjects": {
+        "size": 0.398270000000025,
+        "time": 7.2415808737277985
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_EMPTYAux.": {
+        "size": 0.36787900000000207,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_UNPAIRED_ISO": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g35_medium_g25_medium_L1EM7_UNPAIRED_ISOAux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240Aux.": {
+        "size": 0.36532599999999604,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_g45_loose_6j45_0eta240AuxDyn.TrigMatchedObjects": {
+        "size": 0.3850590000000693,
+        "time": 7.119566783308983
+    },
+    "AnalysisTrigMatch_HLT_id_cosmicid_L1MU11_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_id_cosmicid_L1MU11_EMPTYAux.": {
+        "size": 0.3658410000000032,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10Aux.": {
+        "size": 0.3609700000000089,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10AuxDyn.TrigMatchedObjects": {
+        "size": 0.46555899999998474,
+        "time": 0.3442314527928829
+    },
+    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEBAux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": {
+        "size": 0.3789990000000216,
+        "time": 7.736958514899015
+    },
+    "AnalysisTrigMatch_HLT_mu10_bJpsi_Trkloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu10_bJpsi_TrklooseAux.": {
+        "size": 0.36377999999999133,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_bJpsi_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_bJpsi_TrkPEBAux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumuAux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bJpsimumuAuxDyn.TrigMatchedObjects": {
+        "size": 0.3805339999998978,
+        "time": 7.053774233907461
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumuAux.": {
+        "size": 0.36455499999999574,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu11_mu6_bUpsimumuAuxDyn.TrigMatchedObjects": {
+        "size": 0.38629199999991215,
+        "time": 7.224777691066265
+    },
+    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_Zmumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_ZmumuAux.": {
+        "size": 0.36532599999999604,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu13_mu13_idperf_ZmumuAuxDyn.TrigMatchedObjects": {
+        "size": 0.4008699999999408,
+        "time": 7.255864270031452
+    },
+    "AnalysisTrigMatch_HLT_mu14": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14AuxDyn.TrigMatchedObjects": {
+        "size": 0.46431100000000924,
+        "time": 0.35542207956314087
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IM": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IMAux.": {
+        "size": 0.37478800000000945,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwoEF_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": {
+        "size": 0.42076299999996536,
+        "time": 7.171538479626179
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IM": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IMAux.": {
+        "size": 0.3740219999999965,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_medium1_tracktwo_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": {
+        "size": 0.4182630000000245,
+        "time": 7.291949648410082
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IM": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IMAux.": {
+        "size": 0.3760910000000024,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_L1MU11_tau35_mediumRNN_tracktwoMVA_L1MU11_TAU20IMAuxDyn.TrigMatchedObjects": {
+        "size": 0.41905099999996764,
+        "time": 7.130138300359249
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoAux.": {
+        "size": 0.36838799999999594,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoAuxDyn.TrigMatchedObjects": {
+        "size": 0.40701799999999366,
+        "time": 7.197806175798178
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEFAux.": {
+        "size": 0.36889999999999645,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": {
+        "size": 0.40816000000006625,
+        "time": 7.261235594749451
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25Aux.": {
+        "size": 0.3770930000000021,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.42108199999995577,
+        "time": 7.1838271133601665
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12Aux.": {
+        "size": 0.37402200000001073,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwoEF_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.41131099999995513,
+        "time": 7.262701082974672
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25Aux.": {
+        "size": 0.3760909999999882,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.41924600000004375,
+        "time": 7.146810971200466
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12Aux.": {
+        "size": 0.3735140000000001,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_medium1_tracktwo_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.4102810000000545,
+        "time": 7.139712743461132
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVAAux.": {
+        "size": 0.3706949999999978,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": {
+        "size": 0.4109019999999646,
+        "time": 7.197921171784401
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25Aux.": {
+        "size": 0.37683400000000233,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1DR-MU10TAU12I_TAU12I-J25AuxDyn.TrigMatchedObjects": {
+        "size": 0.4235589999999547,
+        "time": 7.165963765233755
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12Aux.": {
+        "size": 0.37632500000000846,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau25_mediumRNN_tracktwoMVA_L1MU10_TAU12IM_3J12AuxDyn.TrigMatchedObjects": {
+        "size": 0.4130719999999428,
+        "time": 7.186925109475851
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwo": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoAux.": {
+        "size": 0.36838799999999594,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoAuxDyn.TrigMatchedObjects": {
+        "size": 0.4072159999999485,
+        "time": 7.223427224904299
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEF": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEFAux.": {
+        "size": 0.36889999999999645,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_medium1_tracktwoEFAuxDyn.TrigMatchedObjects": {
+        "size": 0.40850700000009965,
+        "time": 7.156675890088081
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVA": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVAAux.": {
+        "size": 0.3706949999999978,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu14_ivarloose_tau35_mediumRNN_tracktwoMVAAuxDyn.TrigMatchedObjects": {
+        "size": 0.41005299999994804,
+        "time": 7.173143830150366
+    },
+    "AnalysisTrigMatch_HLT_mu18": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu18Aux.": {
+        "size": 0.3609700000000089,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20AuxDyn.TrigMatchedObjects": {
+        "size": 0.44889999999998054,
+        "time": 0.39362161979079247
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFS": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFSAux.": {
+        "size": 0.3658410000000032,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu2noL1_JpsimumuFSAuxDyn.TrigMatchedObjects": {
+        "size": 0.38121399999999994,
+        "time": 7.838780477643013
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2Aux.": {
+        "size": 0.36506199999999467,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4_JpsimumuL2AuxDyn.TrigMatchedObjects": {
+        "size": 0.39028799999994135,
+        "time": 7.148595117032528
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4noL1Aux.": {
+        "size": 0.36275500000000704,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_2mu4noL1AuxDyn.TrigMatchedObjects": {
+        "size": 0.37994499999990694,
+        "time": 7.264687567949295
+    },
+    "AnalysisTrigMatch_HLT_mu20_bJpsi_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_bJpsi_TrkPEBAux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1Aux.": {
+        "size": 0.3648029999999949,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_ivarmedium_mu8noL1AuxDyn.TrigMatchedObjects": {
+        "size": 0.38629100000002836,
+        "time": 6.974148575216532
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU4_UNPAIRED_ISO": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU4_UNPAIRED_ISOAux.": {
+        "size": 0.37632500000000846,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU6_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_iloosems_mu6noL1_msonly_nscan05_L1MU6_EMPTYAux.": {
+        "size": 0.37300399999999456,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noCombAux.": {
+        "size": 0.3706949999999978,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU4_UNPAIRED_ISO": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU4_UNPAIRED_ISOAux.": {
+        "size": 0.37478799999999524,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU6_EMPTY": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu15noL1_msonly_nscan05_noComb_L1MU6_EMPTYAux.": {
+        "size": 0.37402600000000064,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05Aux.": {
+        "size": 0.3686490000000049,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu20_msonly_mu6noL1_msonly_nscan05AuxDyn.TrigMatchedObjects": {
+        "size": 0.3857550000000174,
+        "time": 7.1913347989320755
+    },
+    "AnalysisTrigMatch_HLT_mu22": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22AuxDyn.TrigMatchedObjects": {
+        "size": 0.4463370000000282,
+        "time": 0.33626533299684525
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1Aux.": {
+        "size": 0.36277200000000676,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1AuxDyn.TrigMatchedObjects": {
+        "size": 0.38983299999995324,
+        "time": 7.140715532004833
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbe": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbeAux.": {
+        "size": 0.3658410000000032,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu22_mu8noL1_TagandProbeAuxDyn.TrigMatchedObjects": {
+        "size": 0.41443900000001577,
+        "time": 7.6208851002156734
+    },
+    "AnalysisTrigMatch_HLT_mu24": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu24Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu24AuxDyn.TrigMatchedObjects": {
+        "size": 0.44421199999999317,
+        "time": 0.3365706354379654
+    },
+    "AnalysisTrigMatch_HLT_mu24_ivarmedium": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu24_ivarmediumAux.": {
+        "size": 0.36275500000000704,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu26_ivarmedium": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu26_ivarmediumAux.": {
+        "size": 0.36275499999999283,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu26_ivarmediumAuxDyn.TrigMatchedObjects": {
+        "size": 0.43786099999999806,
+        "time": 9.748308200389147
+    },
+    "AnalysisTrigMatch_HLT_mu4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4Aux.": {
+        "size": 0.3604389999999995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4AuxDyn.TrigMatchedObjects": {
+        "size": 0.4956369999999879,
+        "time": 0.3721112720668316
+    },
+    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEBAux.": {
+        "size": 0.3640359999999987,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": {
+        "size": 0.37680999999997766,
+        "time": 7.056569021195173
+    },
+    "AnalysisTrigMatch_HLT_mu4_bJpsi_Trkloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_bJpsi_TrklooseAux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36813799999998764,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j15_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.38717700000006516,
+        "time": 8.705025233328342
+    },
+    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36813800000000185,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j25_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.3868840000000091,
+        "time": 8.630644962191582
+    },
+    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36813800000000185,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j35_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.3867560000001049,
+        "time": 8.565098971128464
+    },
+    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36992100000000505,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_j45_gsc55_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.38960499999984677,
+        "time": 8.808940082788467
+    },
+    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noid": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noidAux.": {
+        "size": 0.3660909999999973,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu4_mu4_idperf_bJpsimumu_noidAuxDyn.TrigMatchedObjects": {
+        "size": 0.3883010000001832,
+        "time": 7.230301428586245
+    },
+    "AnalysisTrigMatch_HLT_mu50": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu50Aux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu50AuxDyn.TrigMatchedObjects": {
+        "size": 0.40455100000008315,
+        "time": 7.776639860123396
+    },
+    "AnalysisTrigMatch_HLT_mu6": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu60_0eta105_msonly": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu60_0eta105_msonlyAux.": {
+        "size": 0.36378000000000554,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu60_0eta105_msonlyAuxDyn.TrigMatchedObjects": {
+        "size": 0.39643599999999424,
+        "time": 7.271015048027039
+    },
+    "AnalysisTrigMatch_HLT_mu6Aux.": {
+        "size": 0.3604389999999995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6AuxDyn.TrigMatchedObjects": {
+        "size": 0.4898560000000316,
+        "time": 0.38010000064969063
+    },
+    "AnalysisTrigMatch_HLT_mu6_2mu4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_2mu4Aux.": {
+        "size": 0.36199299999999823,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEBAux.": {
+        "size": 0.3640359999999987,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrkPEBAuxDyn.TrigMatchedObjects": {
+        "size": 0.3766359999999622,
+        "time": 8.40713294222951
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_Trkloose": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_TrklooseAux.": {
+        "size": 0.36455500000000995,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEB": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEBAux.": {
+        "size": 0.36532599999999604,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_bJpsi_lowpt_TrkPEBAuxDyn.TrigMatchedObjects": {
+        "size": 0.38137799999981326,
+        "time": 7.719856817275286
+    },
+    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonly": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonlyAux.": {
+        "size": 0.37121299999999735,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_dRl1_mu20_msonly_iloosems_mu6noL1_dRl1_msonlyAuxDyn.TrigMatchedObjects": {
+        "size": 0.41203700000005483,
+        "time": 7.161955013871193
+    },
+    "AnalysisTrigMatch_HLT_mu6_idperf": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_idperfAux.": {
+        "size": 0.36225600000000213,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_idperfAuxDyn.TrigMatchedObjects": {
+        "size": 0.49114299999996547,
+        "time": 0.42287034168839455
+    },
+    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j110_gsc150_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.3933569999999236,
+        "time": 7.325402710586786
+    },
+    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j150_gsc175_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.39390499999990425,
+        "time": 7.266923036426306
+    },
+    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.3701870000000014,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j175_gsc260_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.39373700000010103,
+        "time": 7.380949027836323
+    },
+    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36992099999999084,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j60_gsc85_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.39123300000005656,
+        "time": 7.18846520408988
+    },
+    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02Aux.": {
+        "size": 0.36889999999999645,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_j85_gsc110_boffperf_split_dr05_dz02AuxDyn.TrigMatchedObjects": {
+        "size": 0.3930310000000645,
+        "time": 7.325060337781906
+    },
+    "AnalysisTrigMatch_HLT_mu6_mu4_bJpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_mu4_bJpsimumuAux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_mu4_bUpsimumu": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_mu4_bUpsimumuAux.": {
+        "size": 0.36327,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_nomucomb_2mu4_nomucomb_L1MU6_3MU4": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu6_nomucomb_2mu4_nomucomb_L1MU6_3MU4Aux.": {
+        "size": 0.36838800000001015,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu80_msonly_3layersEC": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu80_msonly_3layersECAux.": {
+        "size": 0.36429199999999184,
+        "time": 0
+    },
+    "AnalysisTrigMatch_HLT_mu80_msonly_3layersECAuxDyn.TrigMatchedObjects": {
+        "size": 0.394608000000062,
+        "time": 7.199134062975645
+    },
+    "AntiKt10UFOCSSKJets": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AntiKt10UFOCSSKJetsAux.": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.constituentLinks": {
+        "size": 8.484683999999987,
+        "time": 1.357563827186823
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.constituentWeights": {
+        "size": 1.2705559999999991,
+        "time": 0.2057027630507946
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.eta": {
+        "size": 1.3720329999999876,
+        "time": 0.0979580320417881
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.m": {
+        "size": 1.3244250000000193,
+        "time": 0.09527846053242683
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.phi": {
+        "size": 1.369168000000002,
+        "time": 0.21328311786055565
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.pt": {
+        "size": 1.3192549999999983,
+        "time": 0.09767377376556396
+    },
+    "AntiKt10UFOCSSKJetsAux./AntiKt10UFOCSSKJetsAux.xAOD::AuxContainerBase": {
+        "size": 0.0,
+        "time": 0
+    },
+    "AntiKt10UFOCSSKJetsAuxDyn.GhostAntiKtVR30Rmax4Rmin02PV0TrackJets": {
+        "size": 1.036307000000022,
+        "time": 0.2748679369688034
+    },
+    "BTagging_AntiKt4EMPFlow": {
+        "size": 0.0,
+        "time": 0
+    },
+    "BTagging_AntiKt4EMPFlowAux.": {
+        "size": 0.35866700000001117,
+        "time": 0
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pb": {
+        "size": 5.125852000000009,
+        "time": 0.08479442819952965
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pc": {
+        "size": 5.052650000000085,
+        "time": 0.08310486376285553
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.DL1dv01_pu": {
+        "size": 5.002199999999959,
+        "time": 0.08554666489362717
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pb": {
+        "size": 3.965029999999956,
+        "time": 0.07979412376880646
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pc": {
+        "size": 3.9427049999999326,
+        "time": 0.0813605934381485
+    },
+    "BTagging_AntiKt4EMPFlowAuxDyn.GN2v00_pu": {
+        "size": 3.867847000000097,
+        "time": 0.08044197782874107
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02Track": {
+        "size": 0.0,
+        "time": 0
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAux.": {
+        "size": 0.36275499999999283,
+        "time": 0
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pb": {
+        "size": 3.4465240000000676,
+        "time": 0.11279531568288803
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pc": {
+        "size": 3.3643389999999727,
+        "time": 0.11208314821124077
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.DL1dv01_pu": {
+        "size": 3.4135689999999386,
+        "time": 0.11246118694543839
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pb": {
+        "size": 3.477056999999945,
+        "time": 0.11060232296586037
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pc": {
+        "size": 3.410665999999992,
+        "time": 0.11345938593149185
+    },
+    "BTagging_AntiKtVR30Rmax4Rmin02TrackAuxDyn.GN2v00_pu": {
+        "size": 3.421132000000057,
+        "time": 0.11423973739147186
+    },
+    "CombinedMuonTrackParticles": {
+        "size": 0.0,
+        "time": 0
+    },
+    "CombinedMuonTrackParticlesAux.": {
+        "size": 0.3609699999999947,
+        "time": 0
+    },
+    "CombinedMuonTrackParticlesAuxDyn.chiSquared": {
+        "size": 1.078106000000048,
+        "time": 0.15909932926297188
+    },
+    "CombinedMuonTrackParticlesAuxDyn.d0": {
+        "size": 1.1095719999999574,
+        "time": 0.1003953330218792
+    },
+    "CombinedMuonTrackParticlesAuxDyn.definingParametersCovMatrixDiag": {
+        "size": 3.2848000000000184,
+        "time": 0.36441922932863235
+    },
+    "CombinedMuonTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": {
+        "size": 5.838675999999964,
+        "time": 0.206968005746603
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberDoF": {
+        "size": 0.7333879999999908,
+        "time": 0.09876095503568649
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelDeadSensors": {
+        "size": 0.5110339999999951,
+        "time": 0.09485171362757683
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelHits": {
+        "size": 0.5653780000000097,
+        "time": 0.09698561951518059
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfPixelHoles": {
+        "size": 0.49611300000003666,
+        "time": 0.09520578011870384
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTDeadSensors": {
+        "size": 0.5022920000000113,
+        "time": 0.09541701897978783
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTHits": {
+        "size": 0.5844189999999116,
+        "time": 0.09442666918039322
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfSCTHoles": {
+        "size": 0.5166350000000648,
+        "time": 0.09508701786398888
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfTRTHits": {
+        "size": 0.6257630000000063,
+        "time": 0.09563476964831352
+    },
+    "CombinedMuonTrackParticlesAuxDyn.numberOfTRTOutliers": {
+        "size": 0.5811410000000024,
+        "time": 0.09513872116804123
+    },
+    "CombinedMuonTrackParticlesAuxDyn.phi": {
+        "size": 1.0919039999999995,
+        "time": 0.10240016505122185
+    },
+    "CombinedMuonTrackParticlesAuxDyn.qOverP": {
+        "size": 1.0999009999999316,
+        "time": 0.10084449127316475
+    },
+    "CombinedMuonTrackParticlesAuxDyn.theta": {
+        "size": 1.0691430000000537,
+        "time": 0.0972171351313591
+    },
+    "CombinedMuonTrackParticlesAuxDyn.vz": {
+        "size": 0.4836369999999306,
+        "time": 0.09639644995331764
+    },
+    "CombinedMuonTrackParticlesAuxDyn.z0": {
+        "size": 1.09675900000002,
+        "time": 0.09942292422056198
+    },
+    "EventInfo": {
+        "size": 0.3491260000000125,
+        "time": 0
+    },
+    "EventInfoAux.": {
+        "size": 0.35558300000000287,
+        "time": 0
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDDistanceFromFront": {
+        "size": 0.23336300000005394,
+        "time": 0.060963038355112076
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDDistanceTail": {
+        "size": 0.2307019999999511,
+        "time": 0.05933442711830139
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDGapAfterTrain": {
+        "size": 0.13790900000003603,
+        "time": 0.05724445357918739
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDGapAfterTrainMinus12": {
+        "size": 0.15953200000001289,
+        "time": 0.0604017972946167
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDGapBeforeTrain": {
+        "size": 0.13919699999996737,
+        "time": 0.05971623584628105
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDGapBeforeTrainMinus12": {
+        "size": 0.16239100000007056,
+        "time": 0.060515109449625015
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDType": {
+        "size": 0.14518599999996695,
+        "time": 0.05892438441514969
+    },
+    "EventInfoAuxDyn.DFCommonJets_BCIDTypeMinus12": {
+        "size": 0.15802499999995234,
+        "time": 0.05905478075146675
+    },
+    "EventInfoAuxDyn.DFCommonJets_eventClean_LooseBad": {
+        "size": 0.04393300000003819,
+        "time": 0.03044414520263672
+    },
+    "EventInfoAuxDyn.DFCommonJets_eventClean_LooseBadLLP": {
+        "size": 0.06808000000000902,
+        "time": 0.03005083277821541
+    },
+    "EventInfoAuxDyn.DFCommonJets_isBadBatman": {
+        "size": 0.037127999999938766,
+        "time": 0.03039826825261116
+    },
+    "EventInfoAuxDyn.actualInteractionsPerCrossing": {
+        "size": 0.5150169999999434,
+        "time": 0.06227264553308487
+    },
+    "EventInfoAuxDyn.averageInteractionsPerCrossing": {
+        "size": 0.07836799999995492,
+        "time": 0.05440572276711464
+    },
+    "EventInfoAuxDyn.bcid": {
+        "size": 0.3623099999999795,
+        "time": 0.06390345096588135
+    },
+    "EventInfoAuxDyn.beamPosSigmaX": {
+        "size": 0.06961599999999635,
+        "time": 0.057119257748126984
+    },
+    "EventInfoAuxDyn.beamPosSigmaXY": {
+        "size": 0.07012799999995423,
+        "time": 0.057648420333862305
+    },
+    "EventInfoAuxDyn.beamPosSigmaY": {
+        "size": 0.06961599999999635,
+        "time": 0.056236475706100464
+    },
+    "EventInfoAuxDyn.beamPosSigmaZ": {
+        "size": 0.06961599999999635,
+        "time": 0.05647606402635574
+    },
+    "EventInfoAuxDyn.beamPosX": {
+        "size": 0.06744900000001053,
+        "time": 0.05821361392736435
+    },
+    "EventInfoAuxDyn.beamPosY": {
+        "size": 0.06744900000001053,
+        "time": 0.056363996118307114
+    },
+    "EventInfoAuxDyn.beamPosZ": {
+        "size": 0.06744900000001053,
+        "time": 0.05716531351208687
+    },
+    "EventInfoAuxDyn.beamStatus": {
+        "size": 0.06834600000001956,
+        "time": 0.059750765562057495
+    },
+    "EventInfoAuxDyn.beamTiltXZ": {
+        "size": 0.06834600000001956,
+        "time": 0.05798981711268425
+    },
+    "EventInfoAuxDyn.beamTiltYZ": {
+        "size": 0.06834600000001956,
+        "time": 0.05752146244049072
+    },
+    "EventInfoAuxDyn.coreFlags": {
+        "size": 0.0668039999999337,
+        "time": 0.0563821978867054
+    },
+    "EventInfoAuxDyn.detDescrTags": {
+        "size": 0.6886709999999994,
+        "time": 13.71149206906557
+    },
+    "EventInfoAuxDyn.detDescrTags/EventInfoAuxDyn.detDescrTags.first": {
+        "size": 0.34423199999991994,
+        "time": 6.892844878137112
+    },
+    "EventInfoAuxDyn.detDescrTags/EventInfoAuxDyn.detDescrTags.second": {
+        "size": 0.34443900000007943,
+        "time": 6.812507811933756
+    },
+    "EventInfoAuxDyn.eventNumber": {
+        "size": 0.534671000000003,
+        "time": 0.11568612977862358
+    },
+    "EventInfoAuxDyn.eventTypeBitmask": {
+        "size": 0.07012799999995423,
+        "time": 0.06327147781848907
+    },
+    "EventInfoAuxDyn.forwardDetFlags": {
+        "size": 0.06961599999999635,
+        "time": 0.05697697028517723
+    },
+    "EventInfoAuxDyn.hardScatterVertexLink": {
+        "size": 0.0,
+        "time": 0
+    },
+    "EventInfoAuxDyn.hardScatterVertexLink/EventInfoAuxDyn.hardScatterVertexLink": {
+        "size": 0.0,
+        "time": 0
+    },
+    "EventInfoAuxDyn.larFlags": {
+        "size": 0.06770300000005136,
+        "time": 0.05584883689880371
+    },
+    "EventInfoAuxDyn.lumiBlock": {
+        "size": 0.06786399999998594,
+        "time": 0.05902760848402977
+    },
+    "EventInfoAuxDyn.lumiFlags": {
+        "size": 0.06680400000004738,
+        "time": 0.11608192324638367
+    },
+    "EventInfoAuxDyn.mcChannelNumber": {
+        "size": 0.06961599999999635,
+        "time": 0.11599699780344963
+    },
+    "EventInfoAuxDyn.mcEventNumber": {
+        "size": 0.13451500000007854,
+        "time": 0.16998103633522987
+    },
+    "EventInfoAuxDyn.mcEventWeights": {
+        "size": 0.36770000000001346,
+        "time": 0.09701836109161377
+    },
+    "EventInfoAuxDyn.muonFlags": {
+        "size": 0.06680400000004738,
+        "time": 0.05670209974050522
+    },
+    "EventInfoAuxDyn.pixelFlags": {
+        "size": 0.06731800000000021,
+        "time": 0.057265765964984894
+    },
+    "EventInfoAuxDyn.runNumber": {
+        "size": 0.06783200000006673,
+        "time": 0.05734176188707352
+    },
+    "EventInfoAuxDyn.sctFlags": {
+        "size": 0.06641899999999623,
+        "time": 0.058003660291433334
+    },
+    "EventInfoAuxDyn.tileFlags": {
+        "size": 0.09934899999996105,
+        "time": 0.05887456238269806
+    },
+    "EventInfoAuxDyn.timeStamp": {
+        "size": 0.16909799999996267,
+        "time": 0.05884745344519615
+    },
+    "EventInfoAuxDyn.timeStampNSOffset": {
+        "size": 0.5662480000000869,
+        "time": 0.044210851192474365
+    },
+    "EventInfoAuxDyn.trtFlags": {
+        "size": 0.06641899999999623,
+        "time": 0.05694993585348129
+    },
+    "ExtrapolatedMuonTrackParticles": {
+        "size": 0.0,
+        "time": 0
+    },
+    "ExtrapolatedMuonTrackParticlesAux.": {
+        "size": 0.36199300000001244,
+        "time": 0
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.d0": {
+        "size": 1.1354369999999108,
+        "time": 0.10560975968837738
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.definingParametersCovMatrixDiag": {
+        "size": 3.3463779999999588,
+        "time": 0.37134018540382385
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": {
+        "size": 5.915569000000005,
+        "time": 0.21100714430212975
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.phi": {
+        "size": 1.1075099999999338,
+        "time": 0.10153310000896454
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.qOverP": {
+        "size": 1.1148260000001073,
+        "time": 0.10095694288611412
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.theta": {
+        "size": 1.0839129999999386,
+        "time": 0.0999833308160305
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.vz": {
+        "size": 0.4898150000000214,
+        "time": 0.10079436749219894
+    },
+    "ExtrapolatedMuonTrackParticlesAuxDyn.z0": {
+        "size": 1.1228610000000572,
+        "time": 0.10236318036913872
+    },
+    "FourLeptonVertices": {
+        "size": 0.0,
+        "time": 0
+    },
+    "FourLeptonVerticesAux.": {
+        "size": 0.3586639999999903,
+        "time": 0
+    },
+    "FourLeptonVerticesAuxDyn.chiSquared": {
+        "size": 0.36099699999999757,
+        "time": 0.09174004942178726
+    },
+    "FourLeptonVerticesAuxDyn.numberDoF": {
+        "size": 0.3617790000000696,
+        "time": 0.09342963621020317
+    },
+    "FourLeptonVerticesAuxDyn.trackParticleLinks": {
+        "size": 0.36758000000008906,
+        "time": 9.175942283123732
+    },
+    "FourLeptonVerticesAuxDyn.vertexType": {
+        "size": 0.3609639999999672,
+        "time": 0.09460283815860748
+    },
+    "FourLeptonVerticesAuxDyn.x": {
+        "size": 0.3571749999998701,
+        "time": 0.09290419891476631
+    },
+    "FourLeptonVerticesAuxDyn.y": {
+        "size": 0.3571830000000773,
+        "time": 0.09098722413182259
+    },
+    "FourLeptonVerticesAuxDyn.z": {
+        "size": 0.3571629999999004,
+        "time": 0.09337851405143738
+    },
+    "GSFConversionVertices": {
+        "size": 0.0,
+        "time": 0
+    },
+    "GSFConversionVerticesAux.": {
+        "size": 0.3586559999999963,
+        "time": 0
+    },
+    "GSFConversionVerticesAuxDyn.minRfirstHit": {
+        "size": 0.46002499999997326,
+        "time": 0.09874661266803741
+    },
+    "GSFConversionVerticesAuxDyn.neutralParticleLinks": {
+        "size": 0.40941799999995965,
+        "time": 14.725964412093163
+    },
+    "GSFConversionVerticesAuxDyn.pt1": {
+        "size": 0.4589780000000019,
+        "time": 0.09707044064998627
+    },
+    "GSFConversionVerticesAuxDyn.pt2": {
+        "size": 0.4589180000000397,
+        "time": 0.09538229182362556
+    },
+    "GSFConversionVerticesAuxDyn.px": {
+        "size": 0.4922640000000911,
+        "time": 0.09906068444252014
+    },
+    "GSFConversionVerticesAuxDyn.py": {
+        "size": 0.49221699999998236,
+        "time": 0.09459276869893074
+    },
+    "GSFConversionVerticesAuxDyn.pz": {
+        "size": 0.4933539999999539,
+        "time": 0.09466418996453285
+    },
+    "GSFConversionVerticesAuxDyn.trackParticleLinks": {
+        "size": 0.46154200000000856,
+        "time": 0.3398354612290859
+    },
+    "GSFConversionVerticesAuxDyn.x": {
+        "size": 0.4917750000000751,
+        "time": 0.09651966392993927
+    },
+    "GSFConversionVerticesAuxDyn.y": {
+        "size": 0.49183899999991354,
+        "time": 0.09475952014327049
+    },
+    "GSFConversionVerticesAuxDyn.z": {
+        "size": 0.4915770000000066,
+        "time": 0.09675702452659607
+    },
+    "GSFTrackParticles": {
+        "size": 0.0,
+        "time": 0
+    },
+    "GSFTrackParticlesAux.": {
+        "size": 0.35713500000001375,
+        "time": 0
+    },
+    "GSFTrackParticlesAuxDyn.chiSquared": {
+        "size": 0.7860290000000987,
+        "time": 0.09764770790934563
+    },
+    "GSFTrackParticlesAuxDyn.d0": {
+        "size": 0.8160949999999048,
+        "time": 0.09870448336005211
+    },
+    "GSFTrackParticlesAuxDyn.definingParametersCovMatrixDiag": {
+        "size": 2.0749739999999974,
+        "time": 0.32711124047636986
+    },
+    "GSFTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": {
+        "size": 3.4804619999999886,
+        "time": 0.43010010197758675
+    },
+    "GSFTrackParticlesAuxDyn.expectInnermostPixelLayerHit": {
+        "size": 0.4732970000000023,
+        "time": 0.09383651241660118
+    },
+    "GSFTrackParticlesAuxDyn.expectNextToInnermostPixelLayerHit": {
+        "size": 0.47913199999993594,
+        "time": 0.09350736066699028
+    },
+    "GSFTrackParticlesAuxDyn.numberOfInnermostPixelLayerHits": {
+        "size": 0.4854890000000296,
+        "time": 0.09576180577278137
+    },
+    "GSFTrackParticlesAuxDyn.numberOfNextToInnermostPixelLayerHits": {
+        "size": 0.49057200000004286,
+        "time": 0.15675737708806992
+    },
+    "GSFTrackParticlesAuxDyn.numberOfPixelHits": {
+        "size": 0.5066140000000132,
+        "time": 0.0988520197570324
+    },
+    "GSFTrackParticlesAuxDyn.numberOfSCTHits": {
+        "size": 0.5111409999999523,
+        "time": 0.09509995207190514
+    },
+    "GSFTrackParticlesAuxDyn.originalTrackParticle": {
+        "size": 0.482120000000009,
+        "time": 0.1481119804084301
+    },
+    "GSFTrackParticlesAuxDyn.originalTrackParticle/GSFTrackParticlesAuxDyn.originalTrackParticle.m_persIndex": {
+        "size": 0.2536450000000059,
+        "time": 0.07195405662059784
+    },
+    "GSFTrackParticlesAuxDyn.originalTrackParticle/GSFTrackParticlesAuxDyn.originalTrackParticle.m_persKey": {
+        "size": 0.2284750000000031,
+        "time": 0.07210686802864075
+    },
+    "GSFTrackParticlesAuxDyn.phi": {
+        "size": 0.8058350000000019,
+        "time": 0.1005142480134964
+    },
+    "GSFTrackParticlesAuxDyn.qOverP": {
+        "size": 0.8131369999999833,
+        "time": 0.09948880970478058
+    },
+    "GSFTrackParticlesAuxDyn.theta": {
+        "size": 0.7926539999999704,
+        "time": 0.09904658794403076
+    },
+    "GSFTrackParticlesAuxDyn.vz": {
+        "size": 0.45002599999997983,
+        "time": 0.09592029824852943
+    },
+    "GSFTrackParticlesAuxDyn.z0": {
+        "size": 0.8059900000000653,
+        "time": 0.09964500367641449
+    },
+    "InDetTrackParticles": {
+        "size": 0.0,
+        "time": 0
+    },
+    "InDetTrackParticlesAux.": {
+        "size": 0.3586509999999947,
+        "time": 0
+    },
+    "InDetTrackParticlesAuxDyn.TTVA_AMVFVertices": {
+        "size": 2.497393000000102,
+        "time": 0.9710742384195328
+    },
+    "InDetTrackParticlesAuxDyn.TTVA_AMVFWeights": {
+        "size": 8.155802999999992,
+        "time": 0.4053690917789936
+    },
+    "InDetTrackParticlesAuxDyn.chiSquared": {
+        "size": 8.625685999999973,
+        "time": 0.09856940060853958
+    },
+    "InDetTrackParticlesAuxDyn.d0": {
+        "size": 9.078319999999962,
+        "time": 0.10020104050636292
+    },
+    "InDetTrackParticlesAuxDyn.definingParametersCovMatrixDiag": {
+        "size": 43.05193100000008,
+        "time": 0.7506638430058956
+    },
+    "InDetTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": {
+        "size": 84.8101979999999,
+        "time": 1.2186132930219173
+    },
+    "InDetTrackParticlesAuxDyn.numberDoF": {
+        "size": 3.141336000000024,
+        "time": 0.08764232695102692
+    },
+    "InDetTrackParticlesAuxDyn.numberOfInnermostPixelLayerHits": {
+        "size": 1.0427949999999555,
+        "time": 0.10941353440284729
+    },
+    "InDetTrackParticlesAuxDyn.numberOfPixelDeadSensors": {
+        "size": 1.1062289999999848,
+        "time": 0.107854463160038
+    },
+    "InDetTrackParticlesAuxDyn.numberOfPixelHits": {
+        "size": 1.4446550000000116,
+        "time": 0.10956188663840294
+    },
+    "InDetTrackParticlesAuxDyn.numberOfPixelHoles": {
+        "size": 0.8530889999999545,
+        "time": 0.10358348488807678
+    },
+    "InDetTrackParticlesAuxDyn.numberOfPixelSharedHits": {
+        "size": 0.8822660000000724,
+        "time": 0.10957928746938705
+    },
+    "InDetTrackParticlesAuxDyn.numberOfSCTDeadSensors": {
+        "size": 0.9825260000000071,
+        "time": 0.1664554476737976
+    },
+    "InDetTrackParticlesAuxDyn.numberOfSCTHits": {
+        "size": 1.6589040000000068,
+        "time": 0.10963085293769836
+    },
+    "InDetTrackParticlesAuxDyn.numberOfSCTHoles": {
+        "size": 1.0695439999999508,
+        "time": 0.10765821859240532
+    },
+    "InDetTrackParticlesAuxDyn.numberOfSCTSharedHits": {
+        "size": 1.111945999999989,
+        "time": 0.10599146038293839
+    },
+    "InDetTrackParticlesAuxDyn.numberOfTRTHits": {
+        "size": 2.0806029999999964,
+        "time": 0.17053215578198433
+    },
+    "InDetTrackParticlesAuxDyn.numberOfTRTOutliers": {
+        "size": 1.8969199999999091,
+        "time": 0.11147574335336685
+    },
+    "InDetTrackParticlesAuxDyn.phi": {
+        "size": 8.909706000000028,
+        "time": 0.10347631201148033
+    },
+    "InDetTrackParticlesAuxDyn.qOverP": {
+        "size": 8.986342000000036,
+        "time": 0.10491906851530075
+    },
+    "InDetTrackParticlesAuxDyn.theta": {
+        "size": 8.658134999999902,
+        "time": 0.0963725857436657
+    },
+    "InDetTrackParticlesAuxDyn.vz": {
+        "size": 0.7646000000000868,
+        "time": 0.0767257772386074
+    },
+    "InDetTrackParticlesAuxDyn.z0": {
+        "size": 8.93887600000005,
+        "time": 0.09686366096138954
+    },
+    "Kt4EMPFlowEventShape": {
+        "size": 0.35423000000000116,
+        "time": 0
+    },
+    "Kt4EMPFlowEventShapeAux.": {
+        "size": 0.3591789999999975,
+        "time": 0
+    },
+    "Kt4EMPFlowEventShapeAuxDyn.Density": {
+        "size": 0.5368520000000672,
+        "time": 0.06180782616138458
+    },
+    "METAssoc_AnalysisMET": {
+        "size": 0.0,
+        "time": 0
+    },
+    "METAssoc_AnalysisMETAux.": {
+        "size": 0.0,
+        "time": 0
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.cale": {
+        "size": 2.329567000000001,
+        "time": 0.27598680555820465
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calkey": {
+        "size": 1.1912599999999998,
+        "time": 0.27709387615323067
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpx": {
+        "size": 2.371383999999999,
+        "time": 0.27491864189505577
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpy": {
+        "size": 2.3710109999999993,
+        "time": 0.2763523794710636
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calpz": {
+        "size": 2.3758820000000007,
+        "time": 0.27399909496307373
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.calsumpt": {
+        "size": 2.3245799999999974,
+        "time": 0.2807418182492256
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.isMisc": {
+        "size": 0.6342849999999984,
+        "time": 0.0962907038629055
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jetLink": {
+        "size": 0.6725860000000026,
+        "time": 0
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrke": {
+        "size": 3.5265489999999957,
+        "time": 0.07510603964328766
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpx": {
+        "size": 3.6206539999999947,
+        "time": 0.08099351078271866
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpy": {
+        "size": 3.619995000000003,
+        "time": 0.0783957913517952
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrkpz": {
+        "size": 3.6265920000000023,
+        "time": 0.07727959007024765
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.jettrksumpt": {
+        "size": 3.5175040000000024,
+        "time": 0.07659396901726723
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.objectLinks": {
+        "size": 1.4048879999999997,
+        "time": 0.340526957064867
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.overlapIndices": {
+        "size": 1.1689450000000008,
+        "time": 0.3191310241818428
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.overlapTypes": {
+        "size": 1.1429800000000014,
+        "time": 0.3113476075232029
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trke": {
+        "size": 1.1790340000000015,
+        "time": 0.2673090659081936
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkkey": {
+        "size": 0.8486110000000053,
+        "time": 0.2827110327780247
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpx": {
+        "size": 1.1921999999999997,
+        "time": 0.2731369249522686
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpy": {
+        "size": 1.1920320000000046,
+        "time": 0.26894502341747284
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trkpz": {
+        "size": 1.194359999999996,
+        "time": 0.2672339826822281
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.trksumpt": {
+        "size": 1.177076999999997,
+        "time": 0.27019866928458214
+    },
+    "METAssoc_AnalysisMETAux./METAssoc_AnalysisMETAux.xAOD::AuxContainerBase": {
+        "size": 0.0,
+        "time": 0
+    },
+    "MET_Core_AnalysisMET": {
+        "size": 0.0,
+        "time": 0
+    },
+    "MET_Core_AnalysisMETAux.": {
+        "size": 0.3591789999999975,
+        "time": 0
+    },
+    "MET_Core_AnalysisMETAuxDyn.mpx": {
+        "size": 1.4399589999999307,
+        "time": 0.10240733250975609
+    },
+    "MET_Core_AnalysisMETAuxDyn.mpy": {
+        "size": 1.4400000000000546,
+        "time": 0.10168095678091049
+    },
+    "MET_Core_AnalysisMETAuxDyn.name": {
+        "size": 0.41659900000001926,
+        "time": 0.30448126792907715
+    },
+    "MET_Core_AnalysisMETAuxDyn.source": {
+        "size": 0.38709300000004987,
+        "time": 0.09829999133944511
+    },
+    "MET_Core_AnalysisMETAuxDyn.sumet": {
+        "size": 1.3561899999999696,
+        "time": 0.10010483860969543
+    },
+    "MuonSpectrometerTrackParticles": {
+        "size": 0.0,
+        "time": 0
+    },
+    "MuonSpectrometerTrackParticlesAux.": {
+        "size": 0.36199299999999823,
+        "time": 0
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.d0": {
+        "size": 1.0252920000000358,
+        "time": 0.1018773540854454
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.definingParametersCovMatrixDiag": {
+        "size": 5.24723199999994,
+        "time": 0.21271273493766785
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.definingParametersCovMatrixOffDiag": {
+        "size": 8.881402999999978,
+        "time": 0.23285432532429695
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.phi": {
+        "size": 1.573564000000033,
+        "time": 0.10302384570240974
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.qOverP": {
+        "size": 1.308587999999986,
+        "time": 0.10658498853445053
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.theta": {
+        "size": 1.5345519999999624,
+        "time": 0.10480432212352753
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.vz": {
+        "size": 1.2408430000000408,
+        "time": 0.16093957796692848
+    },
+    "MuonSpectrometerTrackParticlesAuxDyn.z0": {
+        "size": 1.0233230000000049,
+        "time": 0.10121577978134155
+    },
+    "PrimaryVertices": {
+        "size": 0.0,
+        "time": 0
+    },
+    "PrimaryVerticesAux.": {
+        "size": 0.3573820000000012,
+        "time": 0
+    },
+    "PrimaryVerticesAuxDyn.neutralParticleLinks": {
+        "size": 0.6652389999999286,
+        "time": 170.55129978060722
+    },
+    "PrimaryVerticesAuxDyn.trackParticleLinks": {
+        "size": 20.933671000000004,
+        "time": 16.270811446011066
+    },
+    "PrimaryVerticesAuxDyn.vertexType": {
+        "size": 0.6355570000000625,
+        "time": 0.16397284343838692
+    },
+    "PrimaryVerticesAuxDyn.x": {
+        "size": 10.820352999999955,
+        "time": 0.11843468993902206
+    },
+    "PrimaryVerticesAuxDyn.y": {
+        "size": 10.532887000000073,
+        "time": 0.1154383197426796
+    },
+    "PrimaryVerticesAuxDyn.z": {
+        "size": 13.108659999999986,
+        "time": 0.12029745057225227
+    },
+    "TauTracks": {
+        "size": 0.0,
+        "time": 0
+    },
+    "TauTracksAux.": {
+        "size": 0.35558300000001,
+        "time": 0
+    },
+    "TauTracksAuxDyn.eta": {
+        "size": 6.079283000000032,
+        "time": 0.08412259444594383
+    },
+    "TauTracksAuxDyn.flagSet": {
+        "size": 0.9514639999999872,
+        "time": 0.10481018200516701
+    },
+    "TauTracksAuxDyn.phi": {
+        "size": 6.074325000000044,
+        "time": 0.08488407358527184
+    },
+    "TauTracksAuxDyn.pt": {
+        "size": 5.9276219999999284,
+        "time": 0.08679064363241196
+    },
+    "TauTracksAuxDyn.trackLinks": {
+        "size": 2.7908239999999296,
+        "time": 0.7332989908754826
+    },
+    "TrigConfKeys": {
+        "size": 0.33365499999999315,
+        "time": 0.08111618831753731
+    },
     "_file_size": 1123.430726,
-    "egammaClusters": 0.0,
-    "egammaClustersAux.": 0.3576439999999934,
-    "egammaClustersAuxDyn.ETA2CALOFRAME": 2.6702569999999923,
-    "egammaClustersAuxDyn.ETACALOFRAME": 2.671619000000078,
-    "egammaClustersAuxDyn.PHI2CALOFRAME": 2.665973000000008,
-    "egammaClustersAuxDyn.PHICALOFRAME": 2.6661319999999478,
-    "egammaClustersAuxDyn.calE": 2.5893539999999575,
-    "egammaClustersAuxDyn.calEta": 2.6693199999999706,
-    "egammaClustersAuxDyn.calM": 0.5777009999999336,
-    "egammaClustersAuxDyn.calPhi": 2.6635780000000295,
-    "egammaClustersAuxDyn.constituentClusterLinks": 1.610133000000019,
-    "egammaClustersAuxDyn.e_sampl": 8.809478000000013,
-    "egammaClustersAuxDyn.eta_sampl": 8.62268800000004,
-    "index_ref": 0.2547959999999989,
-    "xTrigDecision": 0.351932000000005,
-    "xTrigDecisionAux.": 0.010691000000000006,
-    "xTrigDecisionAux./xTrigDecisionAux.bgCode": 0.05617099999999997,
-    "xTrigDecisionAux./xTrigDecisionAux.efErrorBits": 0.12920100000000012,
-    "xTrigDecisionAux./xTrigDecisionAux.efPassedPhysics": 1.5451639999999998,
-    "xTrigDecisionAux./xTrigDecisionAux.efPassedRaw": 2.844722000000001,
-    "xTrigDecisionAux./xTrigDecisionAux.efPassedThrough": 0.49220699999999873,
-    "xTrigDecisionAux./xTrigDecisionAux.efPrescaled": 2.486025999999999,
-    "xTrigDecisionAux./xTrigDecisionAux.efResurrected": 1.655338999999998,
-    "xTrigDecisionAux./xTrigDecisionAux.efTruncated": 0.03539299999999912,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2ErrorBits": 0.13372299999999981,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedPhysics": 0.48871600000000015,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedRaw": 0.48687199999999997,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedThrough": 0.48871600000000015,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2Prescaled": 0.48687199999999997,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2Resurrected": 0.48799900000000207,
-    "xTrigDecisionAux./xTrigDecisionAux.lvl2Truncated": 0.03649500000000039,
-    "xTrigDecisionAux./xTrigDecisionAux.smk": 0.12224499999999994,
-    "xTrigDecisionAux./xTrigDecisionAux.tap": 2.396336,
-    "xTrigDecisionAux./xTrigDecisionAux.tav": 1.344833,
-    "xTrigDecisionAux./xTrigDecisionAux.tbp": 3.0113660000000007,
-    "xTrigDecisionAux./xTrigDecisionAux.xAOD::AuxInfoBase": 0.0
+    "egammaClusters": {
+        "size": 0.0,
+        "time": 0
+    },
+    "egammaClustersAux.": {
+        "size": 0.3576439999999934,
+        "time": 0
+    },
+    "egammaClustersAuxDyn.ETA2CALOFRAME": {
+        "size": 2.6702569999999923,
+        "time": 0.11041107028722763
+    },
+    "egammaClustersAuxDyn.ETACALOFRAME": {
+        "size": 2.671618999999964,
+        "time": 0.11042103171348572
+    },
+    "egammaClustersAuxDyn.PHI2CALOFRAME": {
+        "size": 2.665973000000008,
+        "time": 0.10815631598234177
+    },
+    "egammaClustersAuxDyn.PHICALOFRAME": {
+        "size": 2.6661320000000615,
+        "time": 0.11235019937157631
+    },
+    "egammaClustersAuxDyn.calE": {
+        "size": 2.589354000000071,
+        "time": 0.11287485435605049
+    },
+    "egammaClustersAuxDyn.calEta": {
+        "size": 2.6693199999999706,
+        "time": 0.10938971862196922
+    },
+    "egammaClustersAuxDyn.calM": {
+        "size": 0.5777010000000473,
+        "time": 0.10491812229156494
+    },
+    "egammaClustersAuxDyn.calPhi": {
+        "size": 2.6635780000000295,
+        "time": 0.10940481722354889
+    },
+    "egammaClustersAuxDyn.constituentClusterLinks": {
+        "size": 1.610133000000019,
+        "time": 0.3451158069074154
+    },
+    "egammaClustersAuxDyn.e_sampl": {
+        "size": 8.809478000000013,
+        "time": 0.2539125680923462
+    },
+    "egammaClustersAuxDyn.eta_sampl": {
+        "size": 8.622687999999926,
+        "time": 0.254741657525301
+    },
+    "index_ref": {
+        "size": 0.2547959999999989,
+        "time": 0.11582158505916595
+    },
+    "xTrigDecision": {
+        "size": 0.351932000000005,
+        "time": 0
+    },
+    "xTrigDecisionAux.": {
+        "size": 0.010691000000000006,
+        "time": 0
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.bgCode": {
+        "size": 0.05617099999999997,
+        "time": 0.03159550204873085
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efErrorBits": {
+        "size": 0.12920100000000012,
+        "time": 0.10688559338450432
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efPassedPhysics": {
+        "size": 1.5451639999999998,
+        "time": 0.3619129844009876
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efPassedRaw": {
+        "size": 2.844722000000001,
+        "time": 0.36718562990427017
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efPassedThrough": {
+        "size": 0.49220699999999873,
+        "time": 0.5189481228590012
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efPrescaled": {
+        "size": 2.486025999999999,
+        "time": 0.3642568103969097
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efResurrected": {
+        "size": 1.655338999999998,
+        "time": 0.35105592384934425
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.efTruncated": {
+        "size": 0.03539299999999912,
+        "time": 0.030043132603168488
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2ErrorBits": {
+        "size": 0.13372299999999981,
+        "time": 0.2870953641831875
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedPhysics": {
+        "size": 0.48871600000000015,
+        "time": 0.3805435001850128
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedRaw": {
+        "size": 0.48687199999999997,
+        "time": 0.3410380594432354
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2PassedThrough": {
+        "size": 0.48871600000000015,
+        "time": 0.34081556648015976
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2Prescaled": {
+        "size": 0.48687199999999997,
+        "time": 0.3675512261688709
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2Resurrected": {
+        "size": 0.48799900000000207,
+        "time": 0.3407711610198021
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.lvl2Truncated": {
+        "size": 0.03649500000000039,
+        "time": 0.0307176411151886
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.smk": {
+        "size": 0.12224499999999994,
+        "time": 0.41322318091988564
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.tap": {
+        "size": 2.396336,
+        "time": 0.08597370982170105
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.tav": {
+        "size": 1.344833,
+        "time": 0.08467699214816093
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.tbp": {
+        "size": 3.0113660000000007,
+        "time": 0.08685525506734848
+    },
+    "xTrigDecisionAux./xTrigDecisionAux.xAOD::AuxInfoBase": {
+        "size": 0.0,
+        "time": 0
+    }
 }
