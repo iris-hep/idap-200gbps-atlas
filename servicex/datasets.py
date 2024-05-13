@@ -74,20 +74,23 @@ def determine_dataset(ds_option: str) -> data_info:
     all = load_containers()
     if ds_option == "mc_10TB":
         ds_list = [
-            "data15_13TeV:data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp15_v01_p6026"
+            "data15_13TeV:data15_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE"
+            ".grp15_v01_p6026"
         ]
         return make_data_info(ds_list, all)
     elif ds_option == "data_50TB":
         return make_data_info(
             [
-                "data18_13TeV:data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE.grp18_v01_p6026"
+                "data18_13TeV:data18_13TeV.periodAllYear.physics_Main.PhysCont.DAOD_PHYSLITE"
+                ".grp18_v01_p6026"
             ],
             all,
         )
     elif ds_option == "mc_1TB":
         return make_data_info(
             [
-                "mc20_13TeV:mc20_13TeV.364157.Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv"
+                "mc20_13TeV:mc20_13TeV.364157."
+                "Sherpa_221_NNPDF30NNLO_Wmunu_MAXHTPTV0_70_CFilterBVeto.deriv"
                 ".DAOD_PHYSLITE.e5340_s3681_r13145_p6026"
             ],
             all,
