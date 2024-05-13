@@ -66,14 +66,19 @@ class RateMeasurement:
     def log_rates(self):
         "Log the event and data rates"
         elapsed_time = self.elapsed_time()
-        hours = int(elapsed_time // 3600)
-        minutes = int((elapsed_time % 3600) // 60)
-        seconds = int(elapsed_time % 60)
-        logging.info(
-            f"Event rate for {self.name}: {hours:02d}:{minutes:02d}:{seconds:02d} time, "
-            f"{self.event_rate():.2f} kHz, "
-            f"Data rate: {self.data_rate():.2f} Gbits/s"
-        )
+        if elapsed_time < 1.0:
+            logging.info(
+                f"Event rate for {self.name} not calculated since cached result was used"
+            )
+        else:
+            hours = int(elapsed_time // 3600)
+            minutes = int((elapsed_time % 3600) // 60)
+            seconds = int(elapsed_time % 60)
+            logging.info(
+                f"Event rate for {self.name}: {hours:02d}:{minutes:02d}:{seconds:02d} time, "
+                f"{self.event_rate():.2f} kHz, "
+                f"Data rate: {self.data_rate():.2f} Gbits/s"
+            )
 
 
 def query_servicex(
@@ -160,13 +165,18 @@ def main(
     """
     assert query is not None, "No query provided to run."
 
+    assert ds_info is not None
+    logging.info(
+        f"Running over {len(ds_info.samples)} datasets, {ds_info.total_size_TB} TB "
+        f"and {ds_info.total_events} events."
+    )
+
     # Make sure there is a file here to save the SX query ID's to
     # improve performance!
     sx_query_ids = Path("./servicex_query_cache.json")
     if not sx_query_ids.exists():
         sx_query_ids.touch()
 
-    assert ds_info is not None
     with RateMeasurement("ServiceX", ds_info) as sx_rm:
         dataset_files = query_servicex(
             ignore_cache=ignore_cache,
@@ -184,7 +194,10 @@ def main(
     # We need to figure out how many events there are in the
     # skimmed dataset (often different from the full dataset)
     report, n_events = dask.compute(*calculate_n_events(dataset_files, steps_per_file))
-    logging.info(f"Number of skimmed events: {n_events}")
+    logging.info(
+        f"Number of skimmed events: {n_events} "
+        f"(skim percent: {n_events/ds_info.total_events*100:.4f}%)"
+    )
     dump_dask_report(report)
 
     # now materialize everything.
@@ -283,7 +296,7 @@ def calculate_total_count(
 
     n_optimized_tasks = len(dask.optimize(total_count)[0].dask)  # type: ignore
     logging.log(
-        logging.INFO,
+        logging.DEBUG,
         f"{ds_name}: Number of tasks in the dask graph: optimized: "
         f"{n_optimized_tasks:,} "  # type: ignore
         f"unoptimized: {len(total_count.dask):,}",  # type: ignore
