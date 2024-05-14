@@ -191,19 +191,19 @@ def main(
         logging.info(f"Dataset {ds} has {len(files)} files")
         assert len(files) > 0, "No files found in the dataset"
 
-    # We need to figure out how many events there are in the
-    # skimmed dataset (often different from the full dataset)
-    report, n_events = dask.compute(*calculate_n_events(dataset_files, steps_per_file))
-    logging.info(
-        f"Number of skimmed events: {n_events} "
-        f"(skim percent: {n_events/ds_info.total_events*100:.4f}%)"
-    )
-    dump_dask_report(report)
-
     # now materialize everything.
     logging.info(
         f"Using `uproot.dask` to open files (splitting files {steps_per_file} ways)."
     )
+
+    # We need to figure out how many events there are in the
+    # skimmed dataset (often different from the full dataset)
+    report, n_events = dask.compute(*calculate_n_events(dataset_files, 4))
+    logging.info(
+        f"Number of skimmed events: {n_events:,} "
+        f"(skim percent: {n_events/ds_info.total_events*100:.4f}%)"
+    )
+    dump_dask_report(report)
 
     # The 20 steps per file was tuned for this query and 8 CPU's and 32 GB of memory.
     logging.info("Starting build of DASK graphs")

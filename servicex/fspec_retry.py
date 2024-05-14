@@ -14,6 +14,17 @@ def register_retry_http_filesystem(client):
 
     import tenacity
 
+    def wrap(f):
+        def log_retry(state):
+            logging.warning(f"Retry for {state.fn} - attempt {state.attempt_number}")
+
+        new_r = tenacity.retry(
+            wait=tenacity.wait_random_exponential(multiplier=1, max=60),
+            stop=tenacity.stop_after_attempt(30),
+            after=log_retry,
+        )(f)
+        return new_r
+
     class RetryHTTPFile(HTTPFile):
         """Retry version of HTTPFile.
 
@@ -23,25 +34,16 @@ def register_retry_http_filesystem(client):
         def __init__(self, *args, **kwargs):
             super().__init__(*args, **kwargs)
 
-            def log_retry(state):
-                logging.warning(
-                    f"Retry for {state.fn} - attempt {state.attempt_number}"
-                )
-
-            def wrap(f):
-                new_r = tenacity.retry(
-                    wait=tenacity.wait_random_exponential(multiplier=1, max=60),
-                    stop=tenacity.stop_after_attempt(30),
-                    after=log_retry,
-                )(f)
-                return new_r
-
             self.async_fetch_range = wrap(self.async_fetch_range)
             self._fetch_range = sync_wrapper(self.async_fetch_range)
             self.read = wrap(self.read)
 
     class RetryHTTPFileSystem(HTTPFileSystem):
         """Retry version of HTTPFileSystem."""
+
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            self._cat_file = wrap(self._cat_file)
 
         def _open(
             self,
@@ -99,21 +101,23 @@ def register_retry_http_filesystem(client):
                     **kw,
                 )
 
-    return
-
     def do_register_retry_http_filesystem():
         fsspec.register_implementation("http", RetryHTTPFileSystem, clobber=True)
         fsspec.register_implementation("https", RetryHTTPFileSystem, clobber=True)
 
     if client is None:
+        logging.info("Registering retry HTTPFileSystem and HTTPFile with fsspec")
         do_register_retry_http_filesystem()
     else:
 
-        def install_tenacity():
-            import subprocess
-            import sys
+        # def install_tenacity():
+        #     import subprocess
+        #     import sys
 
-            subprocess.check_call([sys.executable, "-m", "pip", "install", "tenacity"])
+        #     subprocess.check_call([sys.executable, "-m", "pip", "install", "tenacity"])
 
-        client.run(install_tenacity)
+        # client.run(install_tenacity)
+        logging.info(
+            "Registering retry HTTPFileSystem and HTTPFile with fsspec on DASK cluster"
+        )
         client.run(do_register_retry_http_filesystem)
