@@ -11,9 +11,6 @@ from func_adl_servicex_xaodr22 import (
 from servicex import FuncADLQuery
 
 
-# TODO: Seems crazy to return the `codegen` here when it is so connected.
-# TODO: This should return a ObjectStream, not a func adl
-#       thing!
 def build_query(name: str) -> Tuple[FuncADLQuery, str]:
     if name == "xaod_all":
         return (query_xaod_all(), "atlasr22")
@@ -44,12 +41,6 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
     ds = FuncADLQueryPHYSLITE()
 
     # Build the query
-    # TODO: The EventInfo argument should default correctly
-    #       (that may just be a matter of using func_adl xaod r22)
-    #       Same for Vertices
-    # TODO: dataclass should be supported so as not to lose type-following!
-
-    # Build the event model.
     event_model = ds.Select(
         lambda e: {
             "evt": e.EventInfo("EventInfo"),
@@ -61,11 +52,6 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
     )
 
     # Apply slimming and skimming
-    # TODO: New servicex frontend does not know how to return transformation error
-    #       when you have a malformed query and the code generator errors out.
-    # TODO: The SX dashboard, when it has stuck transforms, becomes an unsorted mess
-    #       of failed and successful queries. It would be nice if dead queries were
-    #       sorted to the bottom or something similar.
     def skim_jets(events, jet_cut: float):
         return events.Select(
             lambda e: {
@@ -80,7 +66,6 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
         )
 
     def count_jets(events, n_jets: int):
-        # TODO: The `len` has an unknown type warning in `func_adl`.
         return events.Where(lambda e: len(e.jet) >= n_jets)
 
     if q_type == "medium":
@@ -173,7 +158,6 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "jet_JVFCorr": ei.jet.Select(  # type: ignore
                 lambda j: j.getAttribute[cpp_float]("JVFCorr")
             ),
-            # TODO: Get cpp_char defined
             # "jet_NNJvtPass": ei.jet.Select(  # type: ignore
             #     lambda j: j.getAttribute[cpp_char]("NNJvtPass")
             # ),
@@ -184,15 +168,6 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             "ele_eta": ei.ele.Select(lambda e: e.eta()),  # type: ignore
             "ele_phi": ei.ele.Select(lambda e: e.phi()),  # type: ignore
             "ele_m": ei.ele.Select(lambda e: e.m() / 1000),  # type: ignore
-            # TODO: Figure out what these represent in actual C++ calls
-            # "AnalysisElectronsAuxDyn.topoetcone20_CloseByCorr",
-            # "AnalysisElectronsAuxDyn.topoetcone20ptCorrection",
-            # "AnalysisElectronsAuxDyn.topoetcone20",
-            # "AnalysisElectronsAuxDyn.ambiguityLink",
-            # "AnalysisElectronsAuxDyn.DFCommonElectronsECIDSResult",
-            # "AnalysisElectronsAuxDyn.neflowisol20",
-            # "AnalysisElectronsAuxDyn.f1",
-            # "AnalysisElectronsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVALooseCone_pt500",
             "muons_pt": ei.muons.Select(lambda m: m.pt() / 1000),  # type: ignore
             "muons_eta": ei.muons.Select(lambda m: m.pt()),  # type: ignore
             "muons_phi": ei.muons.Select(lambda m: m.pt()),  # type: ignore
@@ -201,41 +176,10 @@ def build_xaod_query(q_type: str) -> FuncADLQuery:
             # "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink",
             # "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink",
             # "AnalysisMuonsAuxDyn.inDetTrackParticleLink",
-            # "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleLink",
-            # TODO: Many of these are accessed with the `parameterFloat` method, which
-            #       takes an enum as an argument. So need the muon backend to access this.
-            # "AnalysisMuonsAuxDyn.momentumBalanceSignificance",
-            # "AnalysisMuonsAuxDyn.topoetcone20_CloseByCorr",
-            # "AnalysisMuonsAuxDyn.scatteringCurvatureSignificance",
-            # "AnalysisMuonsAuxDyn.scatteringNeighbourSignificance",
-            # "AnalysisMuonsAuxDyn.neflowisol20_CloseByCorr",
-            # "AnalysisMuonsAuxDyn.topoetcone20",
-            # "AnalysisMuonsAuxDyn.topoetcone30",
-            # "AnalysisMuonsAuxDyn.topoetcone40",
-            # "AnalysisMuonsAuxDyn.neflowisol20",
-            # "AnalysisMuonsAuxDyn.segmentDeltaEta",
-            # "AnalysisMuonsAuxDyn.DFCommonJetDr",
-            # "AnalysisMuonsAuxDyn.combinedTrackParticleLink",
-            # "AnalysisMuonsAuxDyn.InnerDetectorPt",
-            # "AnalysisMuonsAuxDyn.MuonSpectrometerPt",
-            # "AnalysisMuonsAuxDyn.clusterLink",
-            # "AnalysisMuonsAuxDyn.spectrometerFieldIntegral",
-            # "AnalysisMuonsAuxDyn.EnergyLoss",
-            # "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500_CloseByCorr",
-            # "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt500",
-            # "AnalysisMuonsAuxDyn.ptcone40",
-            # "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000_CloseByCorr",
-            # "AnalysisMuonsAuxDyn.ptvarcone30_Nonprompt_All_MaxWeightTTVA_pt1000",
-            # "AnalysisMuonsAuxDyn.ptvarcone40",
-            # "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt500",
-            # "AnalysisMuonsAuxDyn.ptvarcone30",
-            # "AnalysisMuonsAuxDyn.ptcone30",
-            # "AnalysisMuonsAuxDyn.ptcone20_Nonprompt_All_MaxWeightTTVA_pt1000",
-            # "AnalysisMuonsAuxDyn.CaloLRLikelihood",
+            # "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleL
             "pv_x": ei.pv.Select(lambda p: p.x() / 1000),  # type: ignore
             "pv_y": ei.pv.Select(lambda p: p.y() / 1000),  # type: ignore
             "pv_z": ei.pv.Select(lambda p: p.z() / 1000),  # type: ignore
-            # TODO: Get the enum backend code in AF for this to work (returns an enum).
             # "PrimaryVerticesAuxDyn.vertexType",
         }
     )
