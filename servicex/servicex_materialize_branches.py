@@ -94,9 +94,6 @@ def query_servicex(
     logging.info("Building ServiceX query")
 
     # Do the query.
-    # TODO: Where is the enum that does DeliveryEnum come from?
-    # TODO: Why does `Sample` fail type checking - that type ignore has already hidden one bug!
-    # TODO: If I change Name after running, cache seems to fail (name doesn't track).
     # TODO: If you change the name of the item you'll get a multiple cache hit!
     # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
     # TODO: servicex_query_cache.json is being ignored (feature?)
@@ -117,7 +114,6 @@ def query_servicex(
             Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
         ),
         Sample=[
-            # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
                 Name=f"speed_test_{ds_name}"[0:128],
                 RucioDID=ds_name,
