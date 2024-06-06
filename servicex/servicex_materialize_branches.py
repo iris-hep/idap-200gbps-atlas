@@ -94,18 +94,6 @@ def query_servicex(
     logging.info("Building ServiceX query")
 
     # Do the query.
-    # TODO: If you change the name of the item you'll get a multiple cache hit!
-    # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
-    # TODO: servicex_query_cache.json is being ignored (feature?)
-    # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
-    #       strings?
-    # TODO: If some of these submissions work and others do not, we lose the ability to track the
-    #       ones we fired off.
-    #       an example is a title that is longer than 128 characters causes an immediate crash -
-    #       but other queries
-    #       already worked. Cache recovery @ the server would mean this wasn't important.
-    # TODO: Would be nice if you didn't have to specify codegen at the top level, but just at
-    #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
         General=sx.General(
             ServiceX="atlasr22",
@@ -121,7 +109,7 @@ def query_servicex(
                 Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
-            )  # type: ignore
+            )
             for ds_name in ds_names
         ],
     )
