@@ -121,14 +121,6 @@ def query_servicex(
         logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
-    # TODO: When SX is queried for status, it always sends back the full
-    #       qastle. This is way too much information for a long query
-    #       like this.
-    # TODO: async def get_transform_status(self, request_id: str) -> TransformStatus:
-    #       needs to have a retry/backoff for when there is a timeout.
-    # TODO: we should make servicex-app deployment scale based on time it takes
-    #       to get response to a rest request.
-    # TODO: Silent mode to suppress the marching ants progress.
     results = sx.deliver(spec)
     assert results is not None
     return results
