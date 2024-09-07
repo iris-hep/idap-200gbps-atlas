@@ -398,7 +398,7 @@ Note on the dataset argument: \n
             "multi_data",
         ],
         default="mc_1TB",
-        help="Specify the dataset to use",
+        help="Specify the dataset to use. Defaults to mc_1TB.",
     )
 
     # Add a flag for three queries - xaod_all, xaod_medium, xaod_small:
