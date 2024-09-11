@@ -96,21 +96,6 @@ def query_servicex(
     logging.info("Building ServiceX query")
 
     # Do the query.
-    # TODO: Where is the enum that does DeliveryEnum come from?
-    # TODO: Why does `Sample` fail type checking - that type ignore has already hidden one bug!
-    # TODO: If I change Name after running, cache seems to fail (name doesn't track).
-    # TODO: If you change the name of the item you'll get a multiple cache hit!
-    # TODO: `servicex cache list` doesn't work and can't figure out how to make it work.
-    # TODO: servicex_query_cache.json is being ignored (feature?)
-    # TODO: Why does OutputFormat and delivery not work as enums? And fail typechecking with
-    #       strings?
-    # TODO: If some of these submissions work and others do not, we lose the ability to track the
-    #       ones we fired off.
-    #       an example is a title that is longer than 128 characters causes an immediate crash -
-    #       but other queries
-    #       already worked. Cache recovery @ the server would mean this wasn't important.
-    # TODO: Would be nice if you didn't have to specify codegen at the top level, but just at
-    #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
         General=sx.General(
             Codegen=query[1],
@@ -120,7 +105,6 @@ def query_servicex(
             Delivery=("LocalCache" if download else "URLs"),  # type: ignore
         ),
         Sample=[
-            # TODO: Need a way to have the DID finder re-fetch the file list.
             sx.Sample(
                 Name=f"speed_test_{ds_name}"[0:128],
                 RucioDID=ds_name,
@@ -128,7 +112,7 @@ def query_servicex(
                 Query=query[0],
                 NFiles=num_files,
                 IgnoreLocalCache=ignore_cache,
-            )  # type: ignore
+            )
             for ds_name in ds_names
         ],
     )
@@ -140,14 +124,6 @@ def query_servicex(
         logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
-    # TODO: When SX is queried for status, it always sends back the full
-    #       qastle. This is way too much information for a long query
-    #       like this.
-    # TODO: async def get_transform_status(self, request_id: str) -> TransformStatus:
-    #       needs to have a retry/backoff for when there is a timeout.
-    # TODO: we should make servicex-app deployment scale based on time it takes
-    #       to get response to a rest request.
-    # TODO: Silent mode to suppress the marching ants progress.
     results = sx.deliver(spec)
     assert results is not None
     return results
