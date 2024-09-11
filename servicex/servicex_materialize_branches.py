@@ -14,6 +14,8 @@ from dask.distributed import Client, LocalCluster, performance_report
 from datasets import data_info, determine_dataset
 from query_library import build_query
 
+from servicex.func_adl.func_adl_dataset import FuncADLQuery
+
 import servicex as sx
 
 
@@ -86,7 +88,7 @@ def query_servicex(
     num_files: int,
     ds_names: List[str],
     download: bool,
-    query: Tuple[sx.FuncADLQuery, str],
+    query: Tuple[FuncADLQuery, str],
 ) -> Dict[str, List[str]]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
@@ -111,10 +113,11 @@ def query_servicex(
     #       the sample level (get an error if you move Codegen)
     spec = sx.ServiceXSpec(
         General=sx.General(
-            ServiceX="atlasr22",
             Codegen=query[1],
-            OutputFormat=sx.ResultFormat.root,  # type: ignore
-            Delivery=("LocalCache" if download else "SignedURLs"),  # type: ignore
+            # TODO: Fix to us enum
+            OutputFormat="root-ttree",  # type: ignore
+            # OutputFormat=sx.ResultFormat.root_ttree,  # Fails with error
+            Delivery=("LocalCache" if download else "URLs"),  # type: ignore
         ),
         Sample=[
             # TODO: Need a way to have the DID finder re-fetch the file list.
@@ -157,7 +160,7 @@ def main(
     ds_info: Optional[data_info] = None,
     download_sx_result: bool = False,
     steps_per_file: int = 3,
-    query: Optional[Tuple[sx.FuncADLQuery, str]] = None,
+    query: Optional[Tuple[FuncADLQuery, str]] = None,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened

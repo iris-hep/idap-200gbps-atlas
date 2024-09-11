@@ -1,5 +1,6 @@
 import logging
 from typing import Tuple
+from servicex.func_adl.func_adl_dataset import FuncADLQuery
 from func_adl_servicex_xaodr22 import (
     FuncADLQueryPHYSLITE,
     cpp_float,
@@ -8,7 +9,6 @@ from func_adl_servicex_xaodr22 import (
     cpp_vint,
     atlas_release,
 )
-from servicex import FuncADLQuery
 
 
 # TODO: Seems crazy to return the `codegen` here when it is so connected.
