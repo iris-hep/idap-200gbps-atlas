@@ -59,6 +59,10 @@ Use `none` and it will not set up any sort of distributed `dask` client, which l
 
 When using `local`, it is hardcoded to use 8 cores. This works for a notebook allocated with 32 GB and 8 cores, and `steps_per_file=20`. There is hand tuning here, which I hope will eventually not be required!
 
+### `--sx-name`
+
+This allows you to run on other frontend's besides the typical `servicex-uc-af`. Just make sure the end points are listed in your `servicex.yaml` or `.servicex` file!
+
 ### `--profile`
 
 This will write out a `sx_materialize_branches.pstats` file, which you can then run `snakeviz` on.
