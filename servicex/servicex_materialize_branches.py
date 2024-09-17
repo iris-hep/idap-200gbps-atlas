@@ -89,6 +89,7 @@ def query_servicex(
     ds_names: List[str],
     download: bool,
     query: Tuple[FuncADLQuery, str],
+    sx_name: str,
 ) -> Dict[str, List[str]]:
     """Load and execute the servicex query. Returns a complete list of paths
     (be they local or url's) for the root or parquet files.
@@ -124,7 +125,7 @@ def query_servicex(
         logging.info(f"Running on {num_files} files of dataset.")
 
     logging.info("Starting ServiceX query")
-    results = sx.deliver(spec)
+    results = sx.deliver(spec, servicex_name=sx_name)
     assert results is not None
     return results
 
@@ -137,6 +138,7 @@ def main(
     download_sx_result: bool = False,
     steps_per_file: int = 3,
     query: Optional[Tuple[FuncADLQuery, str]] = None,
+    sx_name: str = "servicex-uc-af",
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
@@ -163,6 +165,7 @@ def main(
             ds_names=ds_info.samples,
             download=download_sx_result,
             query=query,
+            sx_name=sx_name,
         )
     sx_rm.log_rates()
 
@@ -428,6 +431,14 @@ Note on the dataset argument: \n
         help="Number of files in the dataset to run on. Default to 10. Specify 0 to run on full.",
     )
 
+    # The ServiceX backend name. Defaults to 'servicex-uc-af'.
+    parser.add_argument(
+        "--sx-name",
+        type=str,
+        default="servicex-uc-af",
+        help="Specify the ServiceX backend name. Defaults to 'servicex-uc-af'.",
+    )
+
     # Parse the command line arguments
     args = parser.parse_args()
 
@@ -492,6 +503,7 @@ Note on the dataset argument: \n
             download_sx_result=args.download_sx_result,
             steps_per_file=steps_per_file,
             query=query,
+            sx_name=args.sx_name,
         )
     else:
         cProfile.run(
@@ -500,5 +512,6 @@ Note on the dataset argument: \n
             "download_sx_result=args.download_sx_result, steps_per_file=steps_per_file"
             "query=query)",
             "sx_materialize_branches.pstats",
+            "sx_name=args.sx_name",
         )
         logging.info("Profiling data saved to `sx_materialize_branches.pstats`")
