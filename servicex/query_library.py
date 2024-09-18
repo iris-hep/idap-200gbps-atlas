@@ -1,5 +1,5 @@
 import logging
-from typing import Tuple
+from typing import Tuple, Any
 from servicex.func_adl.func_adl_dataset import FuncADLQuery
 from func_adl_servicex_xaodr22 import (
     FuncADLQueryPHYSLITE,
@@ -9,6 +9,7 @@ from func_adl_servicex_xaodr22 import (
     cpp_vint,
     atlas_release,
 )
+from servicex import query as q
 
 
 def build_query(name: str) -> Tuple[FuncADLQuery, str]:
@@ -18,6 +19,12 @@ def build_query(name: str) -> Tuple[FuncADLQuery, str]:
         return (query_xaod_medium(), "atlasr22")
     elif name == "xaod_small":
         return (query_xaod_small(), "atlasr22")
+    elif name == "xaod_all_uproot":
+        return (build_xaod_query_uproot("all"), "")
+    elif name == "xaod_medium_uproot":
+        return (build_xaod_query_uproot("medium"), "")
+    elif name == "xaod_small_uproot":
+        return (build_xaod_query_uproot("small"), "")
     else:
         raise ValueError(f"Unknown query type {name}")
 
@@ -33,12 +40,92 @@ def query_xaod_medium() -> FuncADLQuery:
 def query_xaod_small() -> FuncADLQuery:
     return build_xaod_query("small")
 
+def build_xaod_query_uproot(q_type: str):
+    # Because we are going to do a specialized query, we'll alter the return type here.
+
+    query_dict: dict[str, Any] = {'treename': {'CollectionTree': 'atlas_xaod_tree'}} 
+
+    if q_type in ("medium", "small"):
+        query_dict['cut'] = f'count_nonzero((abs(jet_eta)<2.5) & (jet_pt>{25 if q_type == "medium" else 50}), axis=1)>4'
+
+    variables = {
+        "event_number": "EventInfoAuxDyn.eventNumber", 
+        "run_number": "EventInfoAuxDyn.runNumber",
+        "jet_pt": "AnalysisJetsAuxDyn.pt", 
+        "jet_eta": "AnalysisJetsAuxDyn.eta", 
+        "jet_phi": "AnalysisJetsAuxDyn.phi", 
+        "jet_m": "AnalysisJetsAuxDyn.m",
+        "jet_Timing": "AnalysisJetsAuxDyn.Timing",
+        "jet_JetConstitScaleMomentum_eta": "AnalysisJetsAuxDyn.JetConstitScaleMomentum_eta", 
+        "jet_JetConstitScaleMomentum_m": "AnalysisJetsAuxDyn.JetConstitScaleMomentum_m",
+        "jet_JetConstitScaleMomentum_pt": "AnalysisJetsAuxDyn.JetConstitScaleMomentum_pt", 
+        "jet_JetConstitScaleMomentum_phi": "AnalysisJetsAuxDyn.JetConstitScaleMomentum_phi",
+        "jet_ActiveArea4vec_eta": "AnalysisJetsAuxDyn.ActiveArea4vec_eta",
+        "jet_ActiveArea4vec_phi": "AnalysisJetsAuxDyn.ActiveArea4vec_phi", 
+        "jet_ActiveArea4vec_m": "AnalysisJetsAuxDyn.ActiveArea4vec_m", 
+        "jet_ActiveArea4vec_pt": "AnalysisJetsAuxDyn.ActiveArea4vec_pt",
+        "jet_DetectorEta": "AnalysisJetsAuxDyn.DetectorEta", 
+        "jet_Width": "AnalysisJetsAuxDyn.Width", 
+        "jet_EMFrac": "AnalysisJetsAuxDyn.EMFrac",
+        "jet_DFCommonJets_QGTagger_TracksWidth": "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksWidth",
+        "jet_DFCommonJets_QGTagger_TracksC1": "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_TracksC1",
+        "jet_DFCommonJets_QGTagger_NTracks": "AnalysisJetsAuxDyn.DFCommonJets_QGTagger_NTracks",
+        "jet_DFCommonJets_fJvt": "AnalysisJetsAuxDyn.DFCommonJets_fJvt", 
+        "jet_PSFrac": "AnalysisJetsAuxDyn.PSFrac",
+        "jet_JVFCorr": "AnalysisJetsAuxDyn.JVFCorr", 
+        "jet_GhostMuonSegmentCount": "AnalysisJetsAuxDyn.GhostMuonSegmentCount", 
+        "ele_pt": "AnalysisElectronsAuxDyn.pt / 1000",
+        "ele_eta": "AnalysisElectronsAuxDyn.eta",
+        "ele_phi": "AnalysisElectronsAuxDyn.phi",
+        "ele_m": "AnalysisElectronsAuxDyn.m / 1000", 
+        "muons_pt": "AnalysisMuonsAuxDyn.pt / 1000", 
+        "muons_eta": "AnalysisMuonsAuxDyn.eta",
+        "muons_phi": "AnalysisMuonsAuxDyn.phi", 
+        "pv_x": "PrimaryVerticesAuxDyn.x / 1000",
+        "pv_y": "PrimaryVerticesAuxDyn.y / 1000",
+        "pv_z": "PrimaryVerticesAuxDyn.z / 1000" 
+    }
+    # there is no AnalysisMuonsAuxDyn.m
+
+    query_dict['expressions'] = list(variables.keys())
+    query_dict['aliases'] = { _[0] : _[1] for _ in variables.items() if _[1] is not None }
+
+    # the following are broken in uproot writing to ROOT because of vectors of vectors
+    # "jet_EnergyPerSampling": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vfloat]("EnergyPerSampling")
+    # ),
+    # "jet_SumPtTrkPt500": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vfloat]("SumPtTrkPt500")
+    # ),
+    # "jet_TrackWidthPt1000": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vfloat]("TrackWidthPt1000")
+    # ),
+    # "jet_NumTrkPt500": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vint]("NumTrkPt500")
+    # ),
+    # "jet_NumTrkPt1000": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vint]("NumTrkPt1000")
+    # ),
+    # "jet_SumPtChargedPFOPt500": ei.jet.Select(  # type: ignore
+    #     lambda j: j.getAttribute[cpp_vfloat]("SumPtChargedPFOPt500")
+    # ),
+    # "AnalysisMuonsAuxDyn.muonSegmentLinks",
+    # "AnalysisMuonsAuxDyn.msOnlyExtrapolatedMuonSpectrometerTrackParticleLink",
+    # "AnalysisMuonsAuxDyn.extrapolatedMuonSpectrometerTrackParticleLink",
+    # "AnalysisMuonsAuxDyn.inDetTrackParticleLink",
+    # "AnalysisMuonsAuxDyn.muonSpectrometerTrackParticleL
+
+    query = q.UprootRaw(query_dict)
+
+    return query
+
 
 def build_xaod_query(q_type: str) -> FuncADLQuery:
     # Because we are going to do a specialized query, we'll alter the return type here.
     logging.info(f"Using release {atlas_release} for type information.")
 
     ds = FuncADLQueryPHYSLITE()
+    ds.default_codegen = 'atlasr22'
 
     # Build the query
     event_model = ds.Select(
