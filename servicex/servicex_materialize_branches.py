@@ -109,7 +109,7 @@ def query_servicex(
                 Name=f"speed_test_{ds_name}"[0:128],
                 Dataset=sx.dataset.Rucio(ds_name),
                 Query=query[0],
-                NFiles=num_files,
+                NFiles=num_files if num_files > 0 else None,
                 IgnoreLocalCache=ignore_cache,
             )
             for ds_name in ds_names
