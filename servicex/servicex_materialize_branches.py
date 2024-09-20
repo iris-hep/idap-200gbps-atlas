@@ -99,7 +99,6 @@ def query_servicex(
     # Do the query.
     spec = sx.ServiceXSpec(
         General=sx.General(
-            Codegen=query[1],
             # TODO: Fix to us enum
             OutputFormat="root-ttree",  # type: ignore
             # OutputFormat=sx.ResultFormat.root_ttree,  # Fails with error
@@ -108,8 +107,7 @@ def query_servicex(
         Sample=[
             sx.Sample(
                 Name=f"speed_test_{ds_name}"[0:128],
-                RucioDID=ds_name,
-                Codegen=query[1],
+                Dataset=sx.dataset.Rucio(ds_name),
                 Query=query[0],
                 NFiles=num_files if num_files > 0 else None,
                 IgnoreLocalCache=ignore_cache,
@@ -410,7 +408,8 @@ Note on the dataset argument: \n
     # Add a flag for three queries - xaod_all, xaod_medium, xaod_small:
     parser.add_argument(
         "--query",
-        choices=["xaod_all", "xaod_medium", "xaod_small"],
+        choices=["xaod_all", "xaod_medium", "xaod_small",
+                 "xaod_all_uproot", "xaod_medium_uproot", "xaod_small_uproot"],
         default="xaod_all",
         help="Specify the query to use. Defaults to xao_all.",
     )
