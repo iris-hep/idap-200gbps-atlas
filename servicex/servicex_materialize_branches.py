@@ -111,7 +111,7 @@ def query_servicex(
                 RucioDID=ds_name,
                 Codegen=query[1],
                 Query=query[0],
-                NFiles=num_files,
+                NFiles=num_files if num_files > 0 else None,
                 IgnoreLocalCache=ignore_cache,
             )
             for ds_name in ds_names
