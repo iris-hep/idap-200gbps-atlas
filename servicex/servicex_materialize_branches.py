@@ -125,7 +125,7 @@ def query_servicex(
     logging.info("Starting ServiceX query")
     results = sx.deliver(spec, servicex_name=sx_name)
     assert results is not None
-    return results
+    return results  # type: ignore
 
 
 def main(
@@ -247,6 +247,7 @@ def calculate_total_count(
         open_files=False,
         steps_per_file=steps_per_file,
         allow_read_errors_with_report=True,
+        timeout=15,
     )
 
     # Now, do the counting.
@@ -313,15 +314,18 @@ def calculate_n_events(
             open_files=False,
             steps_per_file=steps_per_file,
             allow_read_errors_with_report=True,
+            timeout=15,
         )
 
-        assert isinstance(data, dak.Array)
+        # assert isinstance(data, dak.Array)
         data, report_to_be = uproot.dask(
             {f: "atlas_xaod_tree" for f in files},
             open_files=False,
             steps_per_file=steps_per_file,
             allow_read_errors_with_report=True,
+            timeout=15,
         )
+        assert isinstance(data, dak.Array)
 
         total_count += dak.count(data.run_number)
 
@@ -474,7 +478,7 @@ Note on the dataset argument: \n
     elif args.distributed_client == "scheduler":
         logging.debug("Connecting to Dask scheduler at {scheduler_address}")
         assert args.dask_scheduler is not None
-        client = Client(args.dask_scheduler)
+        client = Client(args.dask_scheduler, timeout="30s", heartbeat_interval='10s')
         steps_per_file = 2
 
     # Register fsspec special http retry filesystem
