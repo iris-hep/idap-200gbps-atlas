@@ -18,19 +18,32 @@ The default `servicex.yaml` file was used from the UChicago AF.
 The following tests were used to run a performance test using the `servicex_materialize_branches.py`:
 
 1. Create a JupyterHub cluster on UChicago:
-    1. Create the j-lab instance
+    1. Create the jupyterlab instance
         * Use the `AB-dev` image
-        * 32 GB of memory
+        * 16 GB of memory
         * 8 cores
-        * Follow the instructions below to install what you need.
-    2. Once started create a DASK cluster
-        * Use the `dask` web page
+    1. Open up the JupyterLab interface
+    2. Create a DASK cluster (and capture the address)
+        * Use the `dask` side-bar left-column in the jupyterlab interface.
         * At the bottom click "create"
+            * While you can configure what you need, the default (1000 max) is just fine.
         * Copy the scheduler address that appears in the new cluster.
-    3. Run the materialize bench mark:
-        * `python servicex/servicex_materialize_branches.py -v --distributed-client scheduler --dask-scheduler 'tcp://dask-gwatts-51a0bb30-c.af-jupyter:8786' --num-files 0`
-        * The `-v` turns on a first level of verbosity which dumps out timings to `stdout`.
-        * The second two are required to run with a full `dask` scheduler.
+            * You'll need the `tcp://dask-xxxxxx-xxxxxx-x.af-jupyter:8786` like address.
+            * Easiest way to get this is by creating an empty notebook, and then dragging the DASK cluster tile onto the notebook. It will create a cell with the address in it!
+3. Run the materialize bench mark:
+    1. Create a terminal window
+    1. Make sure that the packages needed are up to date
+        * As of this, just do `pip install servicex==3.0.1-rc1`  
+    * `python servicex/servicex_materialize_branches.py --distributed-client scheduler --dask-scheduler 'tcp://dask-xxxxxx-xxxxxxxx-x.af-jupyter:8786' --num-files 0 --query xaod_small`
+        * Add `--ignore-cache` if need be
+        * Use `--help` to get a full list of things
+        * Drop `--num-files 0` if you want to test more than 10 files per dataset.
+        * Add `--dataset all` to run on all datasets.
+    * The `-v` turns on a first level of verbosity which dumps out timings to `stdout`.
+    * The second two are required to run with a full `dask` scheduler.
+    * For stress testing on uchicago, I've been using `python servicex/servicex_materialize_branches.py --distributed-client scheduler --dask-scheduler 'tcp://dask-xxx-xxxxxxxx-x.af-jupyter:8786' --query xaod_small --ignore-cache --dataset all`
+        * This queues up some 200 datasets, not all of which have files any more!
+        * Seems to hang for days in the front end, though the back end seems to run a number of the transforms (seems to).
 
 ## Notes on using `servicex_materialize_branches.py`
 
