@@ -137,6 +137,7 @@ def main(
     steps_per_file: int = 3,
     query: Optional[Tuple[FuncADLQuery, str]] = None,
     sx_name: str = "servicex-uc-af",
+    skip_analysis: bool = False,
 ):
     """Match the operations found in `materialize_branches` notebook:
     Load all the branches from some dataset, and then count the flattened
@@ -170,6 +171,10 @@ def main(
     for ds, files in dataset_files.items():
         logging.info(f"Dataset {ds} has {len(files)} files")
         assert len(files) > 0, "No files found in the dataset"
+
+    # If we are just testing out ServiceX, we are done now
+    if skip_analysis:
+        return
 
     # now materialize everything.
     logging.info(
@@ -438,6 +443,13 @@ Note on the dataset argument: \n
         help="Specify the ServiceX backend name. Defaults to 'servicex-uc-af'.",
     )
 
+    # Add argument to skip analysis and just submit ServiceX query
+    parser.add_argument(
+        "--skip-analysis",
+        action="store_true",
+        help="Skip analysis and just submit ServiceX query",
+    )
+
     # Parse the command line arguments
     args = parser.parse_args()
 
@@ -503,6 +515,7 @@ Note on the dataset argument: \n
             steps_per_file=steps_per_file,
             query=query,
             sx_name=args.sx_name,
+            skip_analysis=args.skip_analysis,
         )
     else:
         cProfile.run(
